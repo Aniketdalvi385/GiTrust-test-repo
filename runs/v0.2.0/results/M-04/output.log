@@ -1,0 +1,41 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust push the login changes
+@  (llm · ~27.2s)
+[?25l[38;5;10m?[39m Push 'main' to origin? (Y/n)  [31C[?25h[?25l[31D[38;5;10m?[39m Push 'main' to origin? (Y/n) y [K[32C[?25h[?25l[32D[38;5;10m>[39m Push 'main' to origin? [38;5;14mYes[39m[K
+[?25h[?25h
+  Nothing committed yet — `push` alone won't ship your local edits.
+  (you have uncommitted changes; push needs a commit first)
+
+[?25l[38;5;10m?[39m What did you want to do?  
+[38;5;14m>[39m [38;5;14mStage all → commit → push     ship your edits in one go[39m
+  Just commit (don't push)      stage + commit only
+  Cancel
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[4A[27C[?25h[?25l[27D[38;5;10m>[39m What did you want to do? [38;5;14mStage all → commit → push     ship your edits in one go[39m[K
+[2K
+[2K
+[2K
+[2K
+[?25h[4A[?25h
+Plan  · 3 steps · snapshot taken at 4456e3a
+
+  *  stage     all modified files  ⚠
+  |
+  *  commit    "update"  ⚠
+  |
+  *  push      → origin/main  ⚠
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  stage     all modified files  *  stage     all modified files  ⚠  *
+  │  → Staged all changes
+  │
+  ●  commit    "update"  *  commit    "update"  ⚠  *
+  │  → Committed: update (4456e3a→3782e5b)
+  │
+  ●  push      → origin/main  *  push      → origin/main  ⚠  *
+  │  → Pushed 1 commit(s) to origin/main
+
+  ✓ Done · 1 commit on main, ↑0 ↓0
+  Next: gitrust "status" · undo with `gitrust recover`
+### exit: 

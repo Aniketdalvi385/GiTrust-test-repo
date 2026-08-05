@@ -1,0 +1,5 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust --yes undo
+*  (instant)
+✗  --yes flag cannot choose a reconciliation strategy (rebase vs merge). Run interactively and pick a strategy manually.
+### exit: 

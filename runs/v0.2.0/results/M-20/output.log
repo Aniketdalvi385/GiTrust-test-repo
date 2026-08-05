@@ -1,0 +1,22 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust fix the last commit message to 'typo message fixed'
+@  (llm · ~17.7s)
+  Drafting commit message from diff… ✓
+[?25l[38;5;10m?[39m Commit message (edit or accept): update files [47C[?25h[?25l[47D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mupdate files[39m[K
+[?25h[?25h✗  Pre-check failed:
+   · Nothing staged to commit. Stage files first (e.g. 'commit the <file>' or 'commit all my files').
+✗  Pre-checks blocked execution.
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust fix the last commit message to 'typo message fixed'
+? Are you trying to undo the last commit and change the commit message to 'typo message fixed'?
+[?25l[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n)  [61C[?25h[?25l[61D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) g [K[62C[?25h[?25l[62D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) gi [K[63C[?25h[?25l[63D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git [K[64C[?25h[?25l[64D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git  [K[65C[?25h[?25l[65D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git l [K[66C[?25h[?25l[66D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git lo [K[67C[?25h[?25l[67D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log [K[68C[?25h[?25l[68D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log  [K[69C[?25h[?25l[69D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log - [K[70C[?25h[?25l[70D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 [K[71C[?25h[?25l[71D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1  [K[72C[?25h[?25l[72D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 - [K[73C[?25h[?25l[73D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 -- [K[74C[?25h[?25l[74D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 --o [K[75C[?25h[?25l[75D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 --on [K[76C[?25h[?25l[76D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 --one [K[77C[?25h[?25l[77D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 --onel [K[78C[?25h[?25l[78D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 --oneli [K[79C[?25h[?25l[79D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 --onelin [K[80C[?25h[?25l[80D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 --oneline [K[81C[?25h[?25l[81D[38;5;9m#[39m [38;5;9mInvalid answer, try typing 'y' for yes or 'n' for no[39m[K
+[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) git log -1 --oneline [81C[?25h[1B[81D[?25h✗  Aborted.
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust fix the last commit message to 'typo message fixed'
+? Are you trying to undo the last commit and change the commit message to 'typo message fixed'?
+[?25l[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n)  [61C[?25h[?25l[61D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) y [K[62C[?25h[?25l[62D[38;5;10m>[39m Would you like to provide more context? (no = abort) [38;5;14mYes[39m[K
+[?25h[?25h[?25l[38;5;10m?[39m Clarification:  [17C[?25h[?25l[17D[38;5;10m>[39m Clarification: [K
+[?25h[?25h? Do you want to update the commit message of the last commit to 'typo message fixed'?
+[?25l[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n)  [61C[?25h[?25l[61D[38;5;10m?[39m Would you like to provide more context? (no = abort) (Y/n) n [K[62C[?25h[?25l[62D[38;5;10m>[39m Would you like to provide more context? (no = abort) [38;5;14mNo[39m[K
+[?25h[?25h✗  Aborted.
+### exit: 

@@ -1,0 +1,4 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust --recover
+No interrupted GiTrust pipeline found for this repo. If you're looking for lost commits, try `gitrust "find my lost work"`.
+### exit: 

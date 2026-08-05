@@ -1,0 +1,12 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust find my lost work
+*  (instant)
+
+Lost & recoverable commits (restoring creates a rescue branch — your current work is never touched):
+[?25l[38;5;10m?[39m Recover which commit?  
+[38;5;14m>[39m [38;5;14mjust now — 'the work I'll lose' — 1 file[39m
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[2A[24C[?25h[?25l[24D[38;5;10m>[39m Recover which commit? [38;5;14mjust now — 'the work I'll lose' — 1 file[39m[K
+[2K
+[2K
+[?25h[2A[?25hRecovered eb5955b onto new branch `rescue/20260804-eb5955b`. Your current branch and files are unchanged.
+### exit: 

@@ -1,0 +1,11 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust create branch feature-x
+@  (llm · ~16.5s)
+* main
+  origin/main
+  Nothing to do.
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust checkout main
+@  (llm · ~10.1s)
+✗  No target branch specified. Try: gitrust "checkout <branch-name>"
+### exit: 

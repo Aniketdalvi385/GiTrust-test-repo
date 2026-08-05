@@ -1,0 +1,42 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust revert last commit
+*  (instant)
+[?25l[38;5;10m?[39m Revert a92ab72 with a new inverse commit? (Y/n)  [50C[?25h[?25l[50D[38;5;10m?[39m Revert a92ab72 with a new inverse commit? (Y/n) y [K[51C[?25h[?25l[51D[38;5;10m>[39m Revert a92ab72 with a new inverse commit? [38;5;14mYes[39m[K
+[?25h[?25h
+Plan  · 1 steps · snapshot taken at a92ab72
+
+  *  revert    a92ab72  ⚠
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  revert    a92ab72error: Your local changes to the following files would be overwritten by merge:
+	app.txt
+Please commit your changes or stash them before you merge.
+Aborting
+fatal: revert failed
+  X  revert    a92ab72  X
+  │  git revert --no-edit a92ab724c07af520fadf88ef3216178957044563 exited with status exit status: 128
+✗  git revert --no-edit a92ab724c07af520fadf88ef3216178957044563 exited with status exit status: 128
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust revert last commit
+*  (instant)
+[?25l[38;5;10m?[39m Revert 8daac11 with a new inverse commit? (Y/n)  [50C[?25h[?25l[50D[38;5;10m?[39m Revert 8daac11 with a new inverse commit? (Y/n) y [K[51C[?25h[?25l[51D[38;5;10m>[39m Revert 8daac11 with a new inverse commit? [38;5;14mYes[39m[K
+[?25h[?25h
+Plan  · 1 steps · snapshot taken at 8daac11
+
+  *  revert    8daac11  ⚠
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  revert    8daac11[main 9a91c9c] Revert "base"
+ Date: Tue Aug 4 18:23:08 2026 +0530
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 app.txt
+  *  revert    8daac11  ⚠  *
+  │  → Reverted 8daac11 (inverse commit added)
+
+  ✓ Done · on main, ↑1 ↓0
+  Next: gitrust "status" · undo with `gitrust recover`
+### exit: 

@@ -1,0 +1,13 @@
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust --version
+gitrust 0.2.0
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust setup
+GiTrust setup
+
+✓ Ollama installed
+✓ Ollama running
+✓ Model qwen2.5:3b ready
+  Running smoke test... passed
+
+✓ Setup complete. Try: gitrust "show status"
+### exit: 

@@ -1,0 +1,74 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust undo
+*  (instant)
+[?25l[38;5;10m?[39m Undo 4b472b8 "feat: the mistake" — what should happen to its changes?  
+[38;5;14m>[39m [38;5;14mKeep them staged — keep them staged (soft reset) — the commit is removed, files stay ready to re-commit.[39m
+  Keep them in files — keep them in your files, unstaged (mixed reset) — re-stage what you want before committing.
+  Make an inverse commit (revert) — add an inverse commit (revert) — history is preserved; safe even after pushing.
+  Discard completely — discard them completely (hard reset) — the changes are gone (reflog holds them ~90 days). Requires typing to confirm.
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[5A[72C[?25h[?25l[72D
+  Keep them staged — keep them staged (soft reset) — the commit is removed, files stay ready to re-commit.[K
+[38;5;14m>[39m [38;5;14mKeep them in files — keep them in your files, unstaged (mixed reset) — re-stage what you want before committing.[39m[K
+
+
+[5A[72C[?25h[?25l[72D
+
+  Keep them in files — keep them in your files, unstaged (mixed reset) — re-stage what you want before committing.[K
+[38;5;14m>[39m [38;5;14mMake an inverse commit (revert) — add an inverse commit (revert) — history is preserved; safe even after pushing.[39m[K
+
+[5A[72C[?25h[?25l[72D
+
+
+  Make an inverse commit (revert) — add an inverse commit (revert) — history is preserved; safe even after pushing.[K
+[38;5;14m>[39m [38;5;14mDiscard completely — discard them completely (hard reset) — the changes are gone (reflog holds them ~90 days). Requires typing to confirm.[39m[K
+[5A[72C[?25h[?25l[72D
+[38;5;14m>[39m [38;5;14mKeep them staged — keep them staged (soft reset) — the commit is removed, files stay ready to re-commit.[39m[K
+
+
+  Discard completely — discard them completely (hard reset) — the changes are gone (reflog holds them ~90 days). Requires typing to confirm.[K
+[5A[72C[?25h[?25l[72D
+  Keep them staged — keep them staged (soft reset) — the commit is removed, files stay ready to re-commit.[K
+
+
+[38;5;14m>[39m [38;5;14mDiscard completely — discard them completely (hard reset) — the changes are gone (reflog holds them ~90 days). Requires typing to confirm.[39m[K
+[5A[72C[?25h[?25l[72D[38;5;10m>[39m Undo 4b472b8 "feat: the mistake" — what should happen to its changes? [38;5;14mDiscard completely — discard them completely (hard reset) — the changes are gone (re[39m[K
+[38;5;14mflog holds them ~90 days). Requires typing to confirm.[39m[K
+[2K
+[2K
+[2K
+[2K
+[?25h[4A[?25h
+  ⚠⚠ Destructive: Moves HEAD to the parent commit AND throws away every change in the working tree and index.
+     Risks:    Any uncommitted work — staged or unstaged — is gone. The commit itself is also dropped from the branch.
+     Recovery: `git reflog` keeps a record of the old HEAD for ~90 days; you can recover the commit if you remember the SHA.
+     Safety:   This op requires you to type the branch name to confirm.
+
+[?25l[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: [38;5;8m4b472b8[39m [84C[?25h[?25l[84D[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: y [K[85C[?25h[?25l[85D[38;5;9m#[39m [38;5;9mMust type '4b472b8' exactly to confirm.[39m[K
+[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: y [85C[?25h[?25l[1A[85D
+[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: [38;5;8m4b472b8[39m [K[84C[?25h[?25l[1A[84D
+[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: 4 [K[85C[?25h[?25l[1A[85D
+[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: 4b [K[86C[?25h[?25l[1A[86D
+[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: 4b4 [K[87C[?25h[?25l[1A[87D
+[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: 4b47 [K[88C[?25h[?25l[1A[88D
+[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: 4b472 [K[89C[?25h[?25l[1A[89D
+[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: 4b472b [K[90C[?25h[?25l[1A[90D
+[38;5;10m?[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: 4b472b8 [K[91C[?25h[?25l[1A[91D[38;5;10m>[39m Type '4b472b8' to DISCARD commit 4b472b8 "feat: the mistake" and all its changes: [38;5;14m4b472b8[39m[K
+[2K
+[?25h[1A[?25h
+Plan  · 1 steps · snapshot taken at 4b472b8
+
+  *  reset     hard (discards working tree)  ⚠⚠
+
+  Warnings:
+    · reset --hard will discard ALL uncommitted changes. This cannot be undone (except via git reflog).
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  reset     hard (discards working tree)  *  reset     hard (discards working tree)  ⚠⚠  *
+  │  → reset (hard)
+  │  A backup of the discarded changes is in /Users/aniket.dalvi/.gitrust/trash for 7 days.
+
+  ✓ Done · on main, ↑1 ↓0
+  Next: gitrust "status" · undo with `gitrust recover`
+### exit: 

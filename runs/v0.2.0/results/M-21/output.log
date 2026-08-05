@@ -1,0 +1,39 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust commit this
+@  (llm · ~14.6s)
+  Drafting commit message from diff… ✓
+[?25l[38;5;10m?[39m Commit message (edit or accept): feat(app.txt): add newline at end of file [76C[?25h[?25l[76D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mfeat(app.txt): add newline at end of file[39m[K
+[?25h[?25h
+Plan  · 2 steps · snapshot taken at a92ab72
+
+  *  stage     all modified files  ⚠
+  |
+  *  commit    "feat(app.txt): add newline at end of file"  ⚠
+
+  Warnings:
+    · Hook(s) present (pre-commit) — GiTrust will run them via system git.
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  stage     all modified files  *  stage     all modified files  ⚠  *
+  │  → Staged all changes
+  │
+  ●  commit    "feat(app.txt): add newline at end of file"  hooks detected — using system git so they run.
+  X  commit    "feat(app.txt): add newline at end of file"  X
+  │  the pre-commit hook refused the operation:
+LINT FAILED
+
+  Snapshot preserved at ~/.gitrust/snapshots/a5c2b596-dc21-4a7b-b8b6-161427781ab1.json
+  Run 'gitrust --recover' to restore to pre-pipeline state.
+
+  fix `commit` and continue:
+[?25l[38;5;10m?[39m Pick one:  
+[38;5;14m>[39m [38;5;14mShow    re-print the hook output[39m
+  Cancel
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[3A[12C[?25h[?25l[12D[38;5;10m>[39m Pick one: [38;5;14mShow    re-print the hook output[39m[K
+[2K
+[2K
+[2K
+[?25h[3A[?25h  Hook output was printed above the failure block.
+### exit: 

@@ -1,0 +1,39 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust push
+*  (instant)
+Fetching origin… ✓
+[?25l[38;5;10m?[39m Your branch and origin/main have diverged (ahead 1, behind 1). How should GiTrust reconcile?  
+[38;5;14m>[39m [38;5;14mRebase — replay your 1 commit(s) on top of theirs; history stays linear. Recommended when nobody else has your commits.[39m
+  Merge — keep both histories, adds a merge commit. Safer if others may have pulled your commits.
+  Abort — do nothing.
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[4A[95C[?25h[?25l[95D
+  Rebase — replay your 1 commit(s) on top of theirs; history stays linear. Recommended when nobody else has your commits.[K
+[38;5;14m>[39m [38;5;14mMerge — keep both histories, adds a merge commit. Safer if others may have pulled your commits.[39m[K
+
+[4A[95C[?25h[?25l[95D[38;5;10m>[39m Your branch and origin/main have diverged (ahead 1, behind 1). How should GiTrust reconcile? [38;5;14mMerge — keep both histories, adds a merge commit. Safer if ot[39m[K
+[38;5;14mhers may have pulled your commits.[39m[K
+[2K
+[2K
+[2K
+[?25h[3A[?25h
+Plan  · 2 steps · snapshot taken at ff5be0a
+
+  *  merge     origin/main → "Merge origin/main into main"  ⚠
+  |
+  *  push      → origin/main  ⚠
+
+  Warnings:
+    · Local branch is 1 commit(s) behind upstream. Consider pulling first to avoid a non-fast-forward rejection.
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  merge     origin/main → "Merge origin/main into main"  *  merge     origin/main → "Merge origin/main into main"  ⚠  *
+  │  → Merged origin/main (merge commit recorded)
+  │
+  ●  push      → origin/main  *  push      → origin/main  ⚠  *
+  │  → Pushed 2 commit(s) to origin/main
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status" · undo with `gitrust recover`
+### exit: 

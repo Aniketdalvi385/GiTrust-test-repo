@@ -1,0 +1,10 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust anything new in my repo?
+@  (llm · ~15.5s)
+On branch main · tracking origin/main · up to date
+Last commit: b79d8e1 "base" (just now)
+
+Nothing to commit, working tree clean.
+
+(Remote state from last fetch — run `gitrust "fetch"` to refresh.)
+### exit: 

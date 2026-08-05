@@ -1,0 +1,9 @@
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust status
+*  (instant)
+On branch main · tracking origin/main · up to date
+Last commit: c0e3847 "base" (just now)
+
+Nothing to commit, working tree clean.
+
+(Remote state from last fetch — run `gitrust "fetch"` to refresh.)
+### exit: 

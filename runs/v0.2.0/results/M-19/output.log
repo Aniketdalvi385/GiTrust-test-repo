@@ -1,0 +1,22 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust squash the last 3 commits
+@  (llm · ~10.1s)
+
+  Reset --soft preview:
+    Will move HEAD back from: 2b3f99f "c3"
+    Files: untouched (kept staged).
+
+
+Plan  · 1 steps · snapshot taken at 2b3f99f
+
+  *  reset     soft (keeps staged)  ⚠
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  reset     soft (keeps staged)  *  reset     soft (keeps staged)  ⚠  *
+  │  → reset (soft)
+
+  ✓ Done · on main, ↑3 ↓0
+  Next: gitrust "status" · undo with `gitrust recover`
+### exit: 

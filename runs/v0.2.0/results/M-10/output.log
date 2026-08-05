@@ -1,0 +1,10 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust sync with main
+@  (llm · ~19.6s)
+On branch feature · no upstream
+Last commit: baeb2f0 "base" (1m ago)
+
+Nothing to commit, working tree clean.
+
+→ No upstream set. Try: gitrust "publish"
+### exit: 

@@ -1,0 +1,28 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust undo
+*  (instant)
+[?25l[38;5;10m?[39m Undo b1f6c0d "feat: the mistake" — what should happen to its changes?  
+[38;5;14m>[39m [38;5;14mKeep them staged — keep them staged (soft reset) — the commit is removed, files stay ready to re-commit.[39m
+  Keep them in files — keep them in your files, unstaged (mixed reset) — re-stage what you want before committing.
+  Make an inverse commit (revert) — add an inverse commit (revert) — history is preserved; safe even after pushing.
+  Discard completely — discard them completely (hard reset) — the changes are gone (reflog holds them ~90 days). Requires typing to confirm.
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[5A[72C[?25h[?25l[72D[38;5;10m>[39m Undo b1f6c0d "feat: the mistake" — what should happen to its changes? [38;5;14mKeep them staged — keep them staged (soft reset) — the commit is removed, files stay[39m[K
+[38;5;14m ready to re-commit.[39m[K
+[2K
+[2K
+[2K
+[2K
+[?25h[4A[?25h
+Plan  · 1 steps · snapshot taken at b1f6c0d
+
+  *  undo      b1f6c0d "feat: the mistake"  ⚠
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  undo      b1f6c0d "feat: the mistake"  *  undo      b1f6c0d "feat: the mistake"  ⚠  *
+  │  → Undid commit b1f6c0d "feat: the mistake" (files re-staged)
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status" · undo with `gitrust recover`
+### exit: 

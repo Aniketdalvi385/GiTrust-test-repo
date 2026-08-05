@@ -1,0 +1,23 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust clean up my repo
+*  (instant)
+[?25l[38;5;10m?[39m Clean up — what should be removed?  
+[38;5;14m>[39m [38;5;14mDelete untracked files — delete 1 untracked file(s) — these have NO git history; only the trash-net protects them.[39m
+  Abort — do nothing.
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[3A[37C[?25h[?25l[37D[38;5;10m>[39m Clean up — what should be removed? [38;5;14mDelete untracked files — delete 1 untracked file(s) — these have NO git history; only the trash-net protects them.[39m[K
+[2K
+[2K
+[2K
+[?25h[3A[?25h
+Plan  · 1 steps · snapshot taken at 7880185
+
+  *  clean     delete untracked files  ⛔
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  clean     delete untracked files  X  clean     delete untracked files  X
+  │  Failed to create trash dir /Users/aniket.dalvi/.gitrust/trash/20260805-114537
+✗  Failed to create trash dir /Users/aniket.dalvi/.gitrust/trash/20260805-114537
+   caused by: Permission denied (os error 13)
+### exit: 

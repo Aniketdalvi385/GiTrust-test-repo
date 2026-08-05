@@ -1,0 +1,350 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust what changed in the auth files?
+@  (llm · ~22.3s)
+No changes vs HEAD.
+Last commit: 9e3a294 "base" (1m ago)
+  → Try: gitrust "log" for history, or gitrust "show" for full commit details.
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust status
+*  (instant)
+On branch main · tracking origin/main · up to date
+Last commit: 9e3a294 "base" (1m ago)
+
+Nothing to commit, working tree clean.
+
+(Remote state from last fetch — run `gitrust "fetch"` to refresh.)
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust what changed in the auth files?
+⚠  LLM classification failed: Failed to connect to Ollama at http://localhost:11434/api/generate.
+  Run `gitrust setup` to install and configure Ollama, or start it manually with `ollama serve`.
+   Falling back to manual mode.
+
+  LLM unavailable. Entering manual mode.
+  What would you like to do?
+[?25l[38;5;10m?[39m Select operation:  
+[38;5;14m>[39m [38;5;14mgit init[39m
+  git remote add
+  git remote remove
+  delete repository (.git)
+  git status
+  git remote -v
+v git branch --list
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[8A[20C[?25h[?25l[20D
+  git init[K
+[38;5;14m>[39m [38;5;14mgit remote add[39m[K
+
+
+
+
+
+[8A[20C[?25h[?25l[20D
+
+  git remote add[K
+[38;5;14m>[39m [38;5;14mgit remote remove[39m[K
+
+
+
+
+[8A[20C[?25h[?25l[20D
+
+
+  git remote remove[K
+[38;5;14m>[39m [38;5;14mdelete repository (.git)[39m[K
+
+
+
+[8A[20C[?25h[?25l[20D
+^ git remote add[K
+  git remote remove[K
+  delete repository (.git)[K
+[38;5;14m>[39m [38;5;14mgit status[39m[K
+  git remote -v[K
+  git branch --list[K
+v git config (user)[K
+[8A[20C[?25h[?25l[20D
+^ git remote remove[K
+  delete repository (.git)[K
+  git status[K
+[38;5;14m>[39m [38;5;14mgit remote -v[39m[K
+  git branch --list[K
+  git config (user)[K
+v git add (stage files)[K
+[8A[20C[?25h[?25l[20D
+^ delete repository (.git)[K
+  git status[K
+  git remote -v[K
+[38;5;14m>[39m [38;5;14mgit branch --list[39m[K
+  git config (user)[K
+  git add (stage files)[K
+v git commit[K
+[8A[20C[?25h[?25l[20D
+^ git status[K
+  git remote -v[K
+  git branch --list[K
+[38;5;14m>[39m [38;5;14mgit config (user)[39m[K
+  git add (stage files)[K
+  git commit[K
+v git push[K
+[8A[20C[?25h[?25l[20D
+^ git remote -v[K
+  git branch --list[K
+  git config (user)[K
+[38;5;14m>[39m [38;5;14mgit add (stage files)[39m[K
+  git commit[K
+  git push[K
+v git pull[K
+[8A[20C[?25h[?25l[20D
+^ git branch --list[K
+  git config (user)[K
+  git add (stage files)[K
+[38;5;14m>[39m [38;5;14mgit commit[39m[K
+  git push[K
+  git pull[K
+v git log[K
+[8A[20C[?25h[?25l[20D
+^ git config (user)[K
+  git add (stage files)[K
+  git commit[K
+[38;5;14m>[39m [38;5;14mgit push[39m[K
+  git pull[K
+  git log[K
+v git diff[K
+[8A[20C[?25h[?25l[20D
+^ git add (stage files)[K
+  git commit[K
+  git push[K
+[38;5;14m>[39m [38;5;14mgit pull[39m[K
+  git log[K
+  git diff[K
+v git branch (create)[K
+[8A[20C[?25h[?25l[20D
+^ git commit[K
+  git push[K
+  git pull[K
+[38;5;14m>[39m [38;5;14mgit log[39m[K
+  git diff[K
+  git branch (create)[K
+v git checkout[K
+[8A[20C[?25h[?25l[20D
+^ git push[K
+  git pull[K
+  git log[K
+[38;5;14m>[39m [38;5;14mgit diff[39m[K
+  git branch (create)[K
+  git checkout[K
+v git stash / stash pop[K
+[8A[20C[?25h[?25l[20D
+^ git pull[K
+  git log[K
+  git diff[K
+[38;5;14m>[39m [38;5;14mgit branch (create)[39m[K
+  git checkout[K
+  git stash / stash pop[K
+  git reset[K
+[8A[20C[?25h[?25l[20D
+
+
+
+  git branch (create)[K
+[38;5;14m>[39m [38;5;14mgit checkout[39m[K
+
+
+[8A[20C[?25h[?25l[20D
+
+
+
+
+  git checkout[K
+[38;5;14m>[39m [38;5;14mgit stash / stash pop[39m[K
+
+[8A[20C[?25h[?25l[20D
+
+
+
+
+
+  git stash / stash pop[K
+[38;5;14m>[39m [38;5;14mgit reset[39m[K
+[8A[20C[?25h[?25l[20D
+[38;5;14m>[39m [38;5;14mgit init[39m[K
+  git remote add[K
+  git remote remove[K
+  delete repository (.git)[K
+  git status[K
+  git remote -v[K
+v git branch --list[K
+[8A[20C[?25h[?25l[20D
+  git init[K
+[38;5;14m>[39m [38;5;14mgit remote add[39m[K
+
+
+
+
+
+[8A[20C[?25h[?25l[20D
+
+  git remote add[K
+[38;5;14m>[39m [38;5;14mgit remote remove[39m[K
+
+
+
+
+[8A[20C[?25h[?25l[20D
+
+
+  git remote remove[K
+[38;5;14m>[39m [38;5;14mdelete repository (.git)[39m[K
+
+
+
+[8A[20C[?25h[?25l[20D
+^ git remote add[K
+  git remote remove[K
+  delete repository (.git)[K
+[38;5;14m>[39m [38;5;14mgit status[39m[K
+  git remote -v[K
+  git branch --list[K
+v git config (user)[K
+[8A[20C[?25h[?25l[20D
+^ git remote remove[K
+  delete repository (.git)[K
+  git status[K
+[38;5;14m>[39m [38;5;14mgit remote -v[39m[K
+  git branch --list[K
+  git config (user)[K
+v git add (stage files)[K
+[8A[20C[?25h[?25l[20D
+^ delete repository (.git)[K
+  git status[K
+  git remote -v[K
+[38;5;14m>[39m [38;5;14mgit branch --list[39m[K
+  git config (user)[K
+  git add (stage files)[K
+v git commit[K
+[8A[20C[?25h[?25l[20D
+^ git status[K
+  git remote -v[K
+  git branch --list[K
+[38;5;14m>[39m [38;5;14mgit config (user)[39m[K
+  git add (stage files)[K
+  git commit[K
+v git push[K
+[8A[20C[?25h[?25l[20D
+^ git remote -v[K
+  git branch --list[K
+  git config (user)[K
+[38;5;14m>[39m [38;5;14mgit add (stage files)[39m[K
+  git commit[K
+  git push[K
+v git pull[K
+[8A[20C[?25h[?25l[20D
+^ git branch --list[K
+  git config (user)[K
+  git add (stage files)[K
+[38;5;14m>[39m [38;5;14mgit commit[39m[K
+  git push[K
+  git pull[K
+v git log[K
+[8A[20C[?25h[?25l[20D
+^ git config (user)[K
+  git add (stage files)[K
+  git commit[K
+[38;5;14m>[39m [38;5;14mgit push[39m[K
+  git pull[K
+  git log[K
+v git diff[K
+[8A[20C[?25h[?25l[20D
+^ git add (stage files)[K
+  git commit[K
+  git push[K
+[38;5;14m>[39m [38;5;14mgit pull[39m[K
+  git log[K
+  git diff[K
+v git branch (create)[K
+[8A[20C[?25h[?25l[20D
+^ git commit[K
+  git push[K
+  git pull[K
+[38;5;14m>[39m [38;5;14mgit log[39m[K
+  git diff[K
+  git branch (create)[K
+v git checkout[K
+[8A[20C[?25h[?25l[20D
+^ git push[K
+  git pull[K
+  git log[K
+[38;5;14m>[39m [38;5;14mgit diff[39m[K
+  git branch (create)[K
+  git checkout[K
+v git stash / stash pop[K
+[8A[20C[?25h[?25l[20D
+^ git pull[K
+  git log[K
+  git diff[K
+[38;5;14m>[39m [38;5;14mgit branch (create)[39m[K
+  git checkout[K
+  git stash / stash pop[K
+  git reset[K
+[8A[20C[?25h[?25l[20D
+
+
+
+  git branch (create)[K
+[38;5;14m>[39m [38;5;14mgit checkout[39m[K
+
+
+[8A[20C[?25h[?25l[20D
+
+
+
+[38;5;14m>[39m [38;5;14mgit branch (create)[39m[K
+  git checkout[K
+
+
+[8A[20C[?25h[?25l[20D
+^ git push[K
+  git pull[K
+  git log[K
+[38;5;14m>[39m [38;5;14mgit diff[39m[K
+  git branch (create)[K
+  git checkout[K
+v git stash / stash pop[K
+[8A[20C[?25h[?25l[20D
+^ git commit[K
+  git push[K
+  git pull[K
+[38;5;14m>[39m [38;5;14mgit log[39m[K
+  git diff[K
+  git branch (create)[K
+v git checkout[K
+[8A[20C[?25h[?25l[20D
+^ git push[K
+  git pull[K
+  git log[K
+[38;5;14m>[39m [38;5;14mgit diff[39m[K
+  git branch (create)[K
+  git checkout[K
+v git stash / stash pop[K
+[8A[20C[?25h[?25l[20D[38;5;10m>[39m Select operation: [38;5;14mgit diff[39m[K
+[2K
+[2K
+[2K
+[2K
+[2K
+[2K
+[2K
+[2K
+[?25h[8A[?25h*  (instant)
+No changes vs HEAD.
+Last commit: 9e3a294 "base" (5m ago)
+  → Try: gitrust "log" for history, or gitrust "show" for full commit details.
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust status
+*  (instant)
+On branch main · tracking origin/main · up to date
+Last commit: 9e3a294 "base" (6m ago)
+
+Nothing to commit, working tree clean.
+
+(Remote state from last fetch — run `gitrust "fetch"` to refresh.)
+### exit: 

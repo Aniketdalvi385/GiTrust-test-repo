@@ -1,0 +1,5 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust undo the last 3 commits
+@  (llm · ~16.7s)
+✗  Multi-commit undo isn't supported yet. Did you mean: squash the last 3 into one (gitrust "squash last 3"), revert a specific commit, or undo just the most recent (gitrust "undo")?
+### exit: 

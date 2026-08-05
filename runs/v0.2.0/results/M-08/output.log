@@ -1,0 +1,81 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust push
+*  (instant)
+[?25l[38;5;10m?[39m Push 'main' to origin? (Y/n)  [31C[?25h[?25l[31D[38;5;10m?[39m Push 'main' to origin? (Y/n) y [K[32C[?25h[?25l[32D[38;5;10m>[39m Push 'main' to origin? [38;5;14mYes[39m[K
+[?25h[?25h
+Plan  · 1 steps · snapshot taken at 5f77c2b
+
+  *  push      → origin/main  ⚠
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  push      → origin/main  *  push      → origin/main  ⚠  *
+  │  → Pushed 1 commit(s) to origin/main
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status" · undo with `gitrust recover`
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust continue rebase
+*  (instant)
+✗  There's no rebase in progress.
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust push
+*  (instant)
+Fetching origin… ✓
+[?25l[38;5;10m?[39m Your branch and origin/main have diverged (ahead 1, behind 1). How should GiTrust reconcile?  
+[38;5;14m>[39m [38;5;14mRebase — replay your 1 commit(s) on top of theirs; history stays linear. Recommended when nobody else has your commits.[39m
+  Merge — keep both histories, adds a merge commit. Safer if others may have pulled your commits.
+  Abort — do nothing.
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[4A[95C[?25h[?25l[95D[38;5;10m>[39m Your branch and origin/main have diverged (ahead 1, behind 1). How should GiTrust reconcile? [38;5;14mRebase — replay your 1 commit(s) on top of theirs; history st[39m[K
+[38;5;14mays linear. Recommended when nobody else has your commits.[39m[K
+[2K
+[2K
+[2K
+[?25h[3A[?25h
+Plan  · 2 steps · snapshot taken at 9f2e9cf
+
+  *  rebase    onto origin/main  ⚠
+  |
+  *  push      → origin/main  ⚠
+
+  Warnings:
+    · Local branch is 1 commit(s) behind upstream. Consider pulling first to avoid a non-fast-forward rejection.
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  rebase    onto origin/mainRebasing (1/1)Auto-merging app.txt
+CONFLICT (content): Merge conflict in app.txt
+error: could not apply 9f2e9cf... mine: app line1
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 9f2e9cf... mine: app line1
+  X  rebase    onto origin/main  X
+✗  Paused on conflicts in 0 file(s) — nothing is lost. Resolve them, then `gitrust "continue rebase"`, or `gitrust "abort rebase"` to return to where you started.
+### exit: 
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust continue rebase
+⚠  An interrupted pipeline was found (captured at 2026-08-04T16:02:01.663810+05:30).
+   Run 'gitrust --recover' to restore the repository to its pre-pipeline state.
+   Or delete ~/.gitrust/snapshots/ to ignore it.
+
+*  (instant)
+
+Plan  · 1 steps · snapshot taken at 0ca95d7
+
+  *  rebase    continue  ⚠
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  rebase    continue[detached HEAD 7f4f1a0] mine: app line1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[KSuccessfully rebased and updated refs/heads/main.
+  *  rebase    continue  ⚠  *
+  │  → Rebase continued
+
+  ✓ Done · on main, ↑1 ↓0
+  Next: gitrust "status" · undo with `gitrust recover`
+### exit: 

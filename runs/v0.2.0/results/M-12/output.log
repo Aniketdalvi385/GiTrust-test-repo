@@ -1,0 +1,32 @@
+(paste or tee the command output here — see run.sh)
+### $ /Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust commit the merge
+@  (llm · ~10.0s)
+[?25l[38;5;10m?[39m Commit message (edit or accept): Merge branch 'side'
+# Conflicts:
+#	app.txt [2A[78C[?25h[?25l[78D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mMerge branch 'side'[39m[K
+[38;5;14m[39m[K
+[38;5;14m# Conflicts:[39m[K
+[38;5;14m#	app.txt[39m
+[?25h[?25h
+Plan  · 1 steps · snapshot taken at 695ec3b
+
+  *  commit    "Merge branch 'side'
+
+# Conflicts:
+#	app.txt"  ⚠
+
+  [Enter] run · [q] cancel
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  ●  commit    "Merge branch 'side'
+
+# Conflicts:
+#	app.txt"  *  commit    "Merge branch 'side'
+
+# Conflicts:
+#	app.txt"  ⚠  *
+  │  → Committed: Merge branch 'side' (695ec3b→0f609e8)
+
+  ✓ Done · 1 commit on main, ↑3 ↓0
+  Next: gitrust "status" · undo with `gitrust recover`
+### exit: 
