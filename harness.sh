@@ -1,11 +1,14 @@
-# Source this once per terminal session:  source ~/GiTrust-test/harness.sh
-# Provides: $GITRUST, $TESTROOT, mk_sandbox, mk_teammate, and (after mk_sandbox) $BR.
+# Source this once per terminal session:  source harness.sh   (from the repo root)
+# Provides: $GITRUST, $TESTROOT, $REPO_ROOT, mk_sandbox, mk_teammate, and (after mk_sandbox) $BR.
+
+# Repo root = wherever this script lives (location-independent; survives moving the repo).
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 
 # Point $GITRUST at the release binary for the version under test.
 # Rebuild (`cargo build --release` in gitrust/) before each new version's run, then confirm
 # `$GITRUST --version` matches the run folder you record into (runs/vX.Y.Z).
 GITRUST=/Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust
-TESTROOT="$HOME/GiTrust-test/sandboxes"
+TESTROOT="$REPO_ROOT/sandboxes"
 
 mk_sandbox() {                                  # fresh bare remote + working clone
   local name=$1
@@ -27,4 +30,5 @@ mk_teammate() {                                 # second clone that pushes a com
 }
 
 echo "harness loaded — GITRUST=$GITRUST"
+echo "REPO_ROOT=$REPO_ROOT"
 echo "TESTROOT=$TESTROOT"
