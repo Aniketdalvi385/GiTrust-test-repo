@@ -210,7 +210,17 @@ M-08/M-09/M-19/M-21: a paused rebase preserves its snapshot (correct), but after
 
 **State after P0–P5 (offline set complete):** `cargo test` **202/0**, clippy clean (no new lints), fmt clean, release binary rebuilt.
 
-### ⏳ Remaining: P2 LLM-path only (M-04 scope, M-10 sync, M-20 amend) — prompt/flow work that needs Ollama running and has fuzzy acceptance; best done interactively. Also still-pending lower-value copy: M-02 marker glyph, M-06/07 redundant "pull first" nudge, M-03 long-subject re-prompt.
+### ✅ P2 LLM-path — **FIXED** (2026-08-07, verified live against Ollama qwen2.5:3b)
+
+The last three high-value failures. **Key finding:** the 3B model cannot be prompted into these — probing showed *identical* reasoning across repeated runs ("push the login changes" → "a push operation") regardless of prompt wording. This matches the SLM literature (small models get little/unreliable benefit from few-shot examples; the fix for *regular, rule-shaped* distinctions is deterministic capture, not prompting). So all three are fixed with **deterministic fast-path capture** — the same research-backed hybrid pattern (deterministic-first, LLM only for genuinely semantic calls) used throughout GiTrust. See [`../../docs`] / the SLM research note.
+
+- **M-04 — FIXED.** `capture_scoped_push` in `intent.rs`: "push [the] `<topic>` changes/files/fixes/work/…" → `FeaturePipeline::AddCommitPush { feature_hint: <topic> }`. Possessive ("my … work"), bare push, and "all/everything" defer to a plain push. Verified live: routes fast-path `*` → the resolver's file-select gate (login = Related, readme = Unrelated/hidden). The *semantic* part (which files are login-related) still runs on the LLM resolver — and works.
+- **M-10 — FIXED.** `capture_sync`: "sync with/onto/against `<branch>`" (and "update my branch with …") → `FeaturePipeline::Sync`. Verified live: fast-path `*` → fetch + resolve default branch + Sync plan (was: read-only status). A bare "sync" and "sync check" (fetch-status) correctly excluded.
+- **M-20 — FIXED.** `capture_amend_message`: "fix/change/update/reword the [last] commit message to '`<msg>`'" → message-only `Amend`, extracting the quoted/`to:`-delimited new message (case preserved). Verified live: fast-path `*` → amend recognized → **published-commit detection → force-push escalation → `--force-with-lease`** (the full flagship flow that never triggered before).
+
+Redundant M-04 prompt edits reverted to keep the prompt lean (per the research). New tests: `test_canonical_parameterized_sync`, `_scoped_push`, `test_canonical_amend_message_capture`. `cargo test` **205/0**, clippy clean, fmt clean.
+
+### 🎯 State: all P0–P5 + P2-LLM fixed. Remaining is only low-value cosmetic (M-02 glyph alignment, M-06/07 redundant "pull first" nudge, M-03 long-subject re-prompt) — non-blocking for the v0.3.0 gate. Next: bump Cargo.toml → 0.3.0, rebuild, re-run the full M-00…M-30 suite (via runner.sh) targeting 0 FAIL.
 
 ---
 
