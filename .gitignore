@@ -1,1 +1,3 @@
 sandboxes/
+# per-session verdict ledger written by runner.sh (transient)
+runs/*/.verdicts.tsv
