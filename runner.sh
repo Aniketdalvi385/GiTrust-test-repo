@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-# runner.sh — interactive acceptance-suite driver (bash 3.2-compatible).
+# runner.sh — capture-only acceptance-suite driver (bash 3.2-compatible).
 #
-# You run this, WATCH the terminal, and drive every gate/choice yourself. The
-# runner does the tedious deterministic parts: scaffolds runs/vX.Y.Z/, does each
-# test's sandbox setup, records the exact command, runs it live with the terminal
-# ATTACHED (so you make the gate choices and see real output while it's captured),
-# prints the deterministic post-facts to inform your call, then asks you for the
-# verdict + notes and writes the per-test record. Nothing is auto-adjudicated.
+# Division of labor: YOU drive the interactive gates (the judgment steps); CLAUDE
+# adjudicates afterward. The runner does all the deterministic work — scaffolds
+# runs/vX.Y.Z/, does each test's sandbox setup, runs the command live with the
+# terminal ATTACHED (so you make the gate choices and see real output), and
+# CAPTURES the full session + post-facts to results/M-NN/output.log. It does NOT
+# ask you for a verdict — each record is written PENDING. When you're done, tell
+# Claude "adjudicate vX.Y.Z"; Claude reads the output.logs, writes each verdict +
+# notes into the per-test README, and generates README.md + REPORT.md.
 #
 # Usage:
 #   ./runner.sh 0.3.0                 # whole suite -> runs/v0.3.0/
@@ -163,10 +165,10 @@ run_one() {
     echo "(session not captured — no tty)" >> "$log"
   fi
 
-  # 3) CHECK — deterministic post-facts (informational only).
+  # 3) CHECK — deterministic post-facts, captured for adjudication.
   if [ -n "$T_CHECK" ]; then
     echo
-    echo "${DIM}# post-facts (informational - you decide the verdict):${RST}"
+    echo "${DIM}# post-facts (captured for adjudication):${RST}"
     { echo; echo "# ===== POST-FACTS ($id) ====="; } >> "$log"
     ( eval "$T_CHECK" ) 2>&1 | tee -a "$log" | sed 's/^/  /'
   fi
@@ -177,26 +179,13 @@ run_one() {
     echo "  ${DIM}(cleanup ran)${RST}"
   fi
 
-  # 5) VERDICT — always from you.
+  # 5) CAPTURE ONLY — NO verdict typed here. You drive the gates; the verdict,
+  # notes, and per-test README are written by Claude afterward from output.log.
+  # A provisional PENDING record is written so the folder + transcript exist.
+  write_record "$id" "PENDING" "awaiting adjudication"
   echo
-  local verdict=""
-  while true; do
-    read -r -p "  ${BOLD}Verdict${RST} [p=PASS f=FAIL w=PASS-with-defects b=BLOCKED s=SKIP]: " v </dev/tty
-    case "$v" in
-      p|P) verdict="PASS"; break ;;
-      f|F) verdict="FAIL"; break ;;
-      w|W) verdict="PASS-with-defects"; break ;;
-      b|B) verdict="BLOCKED"; break ;;
-      s|S) verdict="SKIP"; break ;;
-      *) echo "    (enter p/f/w/b/s)";;
-    esac
-  done
-  echo "  notes (one line; what you saw / any defect). Enter to leave blank:"
-  read -r notes </dev/tty
-
-  write_record "$id" "$verdict" "$notes"
-  echo "  ${GREEN}recorded${RST} -> results/$id/  ($verdict)"
-  printf '%s\t%s\t%s\n' "$id" "$verdict" "$notes" >> "$RUN_DIR/.verdicts.tsv"
+  echo "  ${GREEN}captured${RST} -> results/$id/output.log  ${DIM}(verdict pending — Claude will adjudicate)${RST}"
+  printf '%s\tPENDING\t\n' "$id" >> "$RUN_DIR/.verdicts.tsv"
 }
 
 write_record() {
@@ -209,6 +198,7 @@ write_record() {
     PASS-with-defects) glyph="⚠️ PASS (with defects)" ;;
     BLOCKED) glyph="⛔ BLOCKED" ;;
     SKIP) glyph="⏭️ SKIP" ;;
+    PENDING) glyph="🕒 PENDING (awaiting adjudication)" ;;
     *) glyph="$verdict" ;;
   esac
   cat > "$base/README.md" <<EOF
@@ -244,13 +234,17 @@ for id in $SELECTED; do
   run_one "$id"
 done
 
-# ---- roll-up ----------------------------------------------------------------
+# ---- done: hand off to Claude for adjudication ------------------------------
 hr
-echo "${BOLD}Run complete - v$VERSION${RST}"
+echo "${BOLD}Capture complete - v$VERSION${RST}  (all verdicts PENDING)"
 if [ -s "$RUN_DIR/.verdicts.tsv" ]; then
   echo
   awk -F'\t' '{printf "  %-6s %s\n", $1, $2}' "$RUN_DIR/.verdicts.tsv"
-  echo
-  echo "  ${DIM}Ledger: $RUN_DIR/.verdicts.tsv"
-  echo "  Next: ask me to roll these into runs/v$VERSION/README.md + REPORT.md and the top-level dashboard.${RST}"
 fi
+echo
+echo "  ${DIM}Each test's live transcript + post-facts is saved to"
+echo "  runs/v$VERSION/results/M-NN/output.log."
+echo
+echo "  ${BOLD}Next:${RST} tell Claude \"adjudicate v$VERSION\" (or the ids you ran)."
+echo "  ${DIM}Claude reads the output.logs, writes each verdict + notes into the"
+echo "  per-test README, then generates README.md + REPORT.md via rollup.sh.${RST}"

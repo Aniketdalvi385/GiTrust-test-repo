@@ -7,8 +7,10 @@ verdict, but all the setup, capture, and paperwork is automated.
 | Script | Role |
 |---|---|
 | [`tests.manifest.sh`](tests.manifest.sh) | the 31 tests as data (setup / command / post-facts / notes). Edit here if the suite changes. |
-| [`runner.sh`](runner.sh) | the interactive driver — scaffolds the run folder, does each test's setup, runs the command **live with the terminal attached** so you drive gates, captures the session, shows post-facts, asks you for the verdict, writes the per-test record. |
-| [`rollup.sh`](rollup.sh) | after a run, generates the version's `README.md` (index) + `REPORT.md` (summary) from the per-test verdicts. |
+| [`runner.sh`](runner.sh) | the capture-only driver — scaffolds the run folder, does each test's setup, runs the command **live with the terminal attached** so you drive the gates, and captures the session + post-facts to `results/M-NN/output.log`. It does **not** ask for a verdict (records are written PENDING). |
+| [`rollup.sh`](rollup.sh) | after adjudication, generates the version's `README.md` (index) + `REPORT.md` (summary) from the per-test verdicts. |
+
+**Division of labor:** you drive the gates (the judgment steps); **Claude adjudicates** — reads the captured `output.log`s, writes each verdict + notes into the per-test README, then runs the roll-up. You never type verdicts into the script.
 
 ## Prerequisites
 
@@ -32,21 +34,23 @@ verdict, but all the setup, capture, and paperwork is automated.
 
 For each test the runner:
 1. prints what to watch for, and nudges Ollama on/off if needed;
-2. runs the setup (creates a throwaway sandbox with a local bare remote);
+2. runs the setup (creates a throwaway sandbox with a local bare remote, in `$TMPDIR/gitrust-sandboxes` — outside any git repo);
 3. runs the gitrust command **live** — you drive the gates and watch real output;
-4. prints deterministic post-facts (HEAD moved? tree oid? exit code? file counts?) to inform your call — **these never decide the verdict for you**;
-5. asks: `p`=PASS `f`=FAIL `w`=PASS-with-defects `b`=BLOCKED `s`=SKIP, plus a one-line note;
-6. writes `runs/v0.3.0/results/M-NN/README.md` + `commands.sh` + `output.log`.
+4. runs the deterministic post-facts (HEAD moved? tree oid? exit code? file counts?) and captures them;
+5. saves the whole session + post-facts to `results/M-NN/output.log` (+ `commands.sh`), writes a PENDING record, and moves on — **no verdict typed**.
 
-## Roll it up
+## Adjudicate (Claude)
 
-```bash
-./rollup.sh 0.3.0
+When the run (or a batch) finishes, tell Claude:
+
+```
+adjudicate v0.3.0            # or: adjudicate v0.3.0 M-04 M-10 M-20
 ```
 
-Generates `runs/v0.3.0/README.md` (environment table + 31-row index) and
-`REPORT.md` (verdict summary + failures-to-triage). Then add a row to the
-top-level [README](README.md) Runs table.
+Claude reads each `results/M-NN/output.log`, decides PASS / FAIL / PASS-with-defects
+/ BLOCKED, writes the verdict + a findings note into that test's `README.md`, then
+runs `./rollup.sh 0.3.0` to generate `runs/v0.3.0/README.md` (index) + `REPORT.md`
+(summary) and adds a row to the top-level [README](README.md) Runs table.
 
 ## Notes
 
