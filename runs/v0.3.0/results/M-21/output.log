@@ -1,15 +1,19 @@
 sandbox 'm21' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m21/work
 
 # ===== LIVE SESSION (M-21) =====
-[2;35m◉[0m  (llm · ~10.1s)
+⚠  An interrupted pipeline was found (captured at 2026-08-07T13:19:19.260389+05:30).
+   Run 'gitrust --recover' to restore the repository to its pre-pipeline state.
+   Or delete ~/.gitrust/snapshots/ to ignore it.
+
+[2;35m◉[0m  (llm · ~11.0s)
   Drafting commit message from diff… ✓
-[?25l[38;5;10m?[39m Commit message (edit or accept): feat(app.txt): Add newline at the end of file [80C[?25h[?25l[80D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mfeat(app.txt): Add newline at the end of file[39m[K
+[?25l[38;5;10m?[39m Commit message (edit or accept): feat(app.txt): add newline at end of file [76C[?25h[?25l[76D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mfeat(app.txt): add newline at end of file[39m[K
 [?25h[?25h
-Plan  · 2 steps · [2msnapshot taken at dd6c22a[0m
+Plan  · 2 steps · [2msnapshot taken at b88ab7d[0m
 
   ●  stage     all modified files  [33m⚠[0m
   [2m│[0m
-  ●  commit    "feat(app.txt): Add newline at the end of file"  [33m⚠[0m
+  ●  commit    "feat(app.txt): add newline at end of file"  [33m⚠[0m
 
   Warnings:
     · Hook(s) present (pre-commit) — GiTrust will run them via system git.
@@ -20,12 +24,12 @@ Plan  · 2 steps · [2msnapshot taken at dd6c22a[0m
 [?25h[?25h  [2m●[0m  stage     all modified files  [32m●[0m  stage     all modified files  [33m⚠[0m  [32m●[0m
   [2m│[0m  [2m→ Staged all changes[0m
   [2m│[0m
-  [2m●[0m  commit    "feat(app.txt): Add newline at the end of file"  hooks detected — using system git so they run.
-  [31m✗[0m  commit    "feat(app.txt): Add newline at the end of file"  [31m✗[0m
+  [2m●[0m  commit    "feat(app.txt): add newline at end of file"  hooks detected — using system git so they run.
+  [31m✗[0m  commit    "feat(app.txt): add newline at end of file"  [31m✗[0m
   [31m│[0m  the pre-commit hook refused the operation:
 LINT FAILED
 
-  Snapshot preserved at ~/.gitrust/snapshots/27a45b34-0f2d-4816-8c1b-e1009db55772.json
+  Snapshot preserved at ~/.gitrust/snapshots/42b7dea5-bb06-4d27-a5df-b890f17f67cf.json
   Run 'gitrust --recover' to restore to pre-pipeline state.
 
   [2mfix `commit` and continue:[0m
@@ -37,7 +41,9 @@ LINT FAILED
 [2K
 [2K
 [?25h[3A[?25h  [2mHook output was printed above the failure block.[0m
-EXIT=0
+✗  the pre-commit hook refused the operation:
+LINT FAILED
+EXIT=1
 
 # ===== POST-FACTS (M-21) =====
 count before: 1  after: 1  (must be unchanged)

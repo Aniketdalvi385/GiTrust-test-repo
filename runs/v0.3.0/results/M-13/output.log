@@ -1,10 +1,10 @@
 sandbox 'm13' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m13/work
 
 # ===== LIVE SESSION (M-13) =====
-[2;35m◉[0m  (llm · ~10.2s)
+[2;35m◉[0m  (llm · ~18.3s)
 
 ⚠  You are in DETACHED HEAD state.
-   Currently at commit 99c26bf — not on any branch.
+   Currently at commit 936ffaa — not on any branch.
    Any commit you make here will be orphaned (lose-able) unless you save it.
 
 [?25l[38;5;10m?[39m What would you like to do?  
@@ -18,16 +18,26 @@ sandbox 'm13' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy74000
 [2K
 [?25h[4A[?25h[?25l[38;5;10m?[39m New branch name: rescue-work [30C[?25h[?25l[30D[38;5;10m>[39m New branch name: [38;5;14mrescue-work[39m[K
 [?25h[?25h  ✓ Created and switched to branch 'rescue-work'
+  ✓ Staged your current changes on 'rescue-work'
   Drafting commit message from diff… ✓
-[?25l[38;5;10m?[39m Commit message (edit or accept): update files [47C[?25h[?25l[47D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mupdate files[39m[K
-[?25h[?25h✗  Pre-check failed:
-   · Nothing staged to commit. Stage files first (e.g. 'commit the <file>' or 'commit all my files').
-✗  Pre-checks blocked execution.
+[?25l[38;5;10m?[39m Commit message (edit or accept): fix(app.txt): Add missing newline at the end [79C[?25h[?25l[79D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mfix(app.txt): Add missing newline at the end[39m[K
+[?25h[?25h
+Plan  · 1 steps · [2msnapshot taken at 936ffaa[0m
+
+  ●  commit    "fix(app.txt): Add missing newline at the end"  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  commit    "fix(app.txt): Add missing newline at the end"  [32m●[0m  commit    "fix(app.txt): Add missing newline at the end"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Committed: fix(app.txt): Add missing newline at the end (936ffaa→39c9c94)[0m
+
+  [32m✓[0m [32mDone · 1 commit on rescue-work[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
 
 # ===== POST-FACTS (M-13) =====
 branch + did the commit actually happen?
   main
 * rescue-work
-99c26bf base
+39c9c94 fix(app.txt): Add missing newline at the end
 ## rescue-work
- M app.txt

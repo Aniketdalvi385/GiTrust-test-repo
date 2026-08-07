@@ -12,7 +12,7 @@ across releases as bugs get fixed and the tool moves toward public release.
 | Version | Date | Result | Report |
 |---|---|---|---|
 | [**v0.2.0**](runs/v0.2.0/) | 2026-07-31 → 08-05 | 19 ✅ · 4 ⚠️ · 8 ❌ | [REPORT](runs/v0.2.0/REPORT.md) |
-| [**v0.3.0**](runs/v0.3.0/) | 2026-08-07 | 28 ✅ · 2 ⚠️ · 0 ❌ · 1 ⏭️ | [REPORT](runs/v0.3.0/REPORT.md) |
+| [**v0.3.0**](runs/v0.3.0/) | 2026-08-07 | 31 ✅ · 0 ⚠️ · 0 ❌ · 0 ⏭️ | [REPORT](runs/v0.3.0/REPORT.md) |
 
 **Public-release gate:** all 🔴 critical/systemic findings resolved and a clean re-run (0 ❌) before
 the tool goes public. v0.2.0 surfaced three root-cause clusters (below) — v0.3.0 re-runs the same

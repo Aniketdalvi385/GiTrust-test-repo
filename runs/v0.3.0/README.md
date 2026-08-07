@@ -8,7 +8,7 @@
 | `gitrust --version` | 0.3.0 |
 | Ollama model | qwen2.5:3b |
 
-**Verdicts:** ✅ 28 PASS · ⚠️ 2 PASS-with-defects · ❌ 0 FAIL · ⛔ 0 BLOCKED · ⏭️ 1 SKIP
+**Verdicts:** ✅ 31 PASS · ⚠️ 0 PASS-with-defects · ❌ 0 FAIL · ⛔ 0 BLOCKED · ⏭️ 0 SKIP
 
 | ID | Title | LLM | Result |
 |---|---|---|---|
@@ -25,7 +25,7 @@
 | [M-10](results/M-10/) | Sync with main via origin/HEAD | yes | ✅ PASS |
 | [M-11](results/M-11/) | Mid-rebase never says checkout a branch | yes | ✅ PASS |
 | [M-12](results/M-12/) | Merge-aware commit: two parents | yes | ✅ PASS |
-| [M-13](results/M-13/) | Detached write -> rescue | yes | ⚠️ PASS (with defects) |
+| [M-13](results/M-13/) | Detached write -> rescue | yes | ✅ PASS |
 | [M-14](results/M-14/) | Stranded-commit guard (flagship) | no | ✅ PASS |
 | [M-15](results/M-15/) | Undo gate: four options, names the commit | no | ✅ PASS |
 | [M-16](results/M-16/) | Undo -> discard: TypeToConfirm + trash-net | no | ✅ PASS |
@@ -33,7 +33,7 @@
 | [M-18](results/M-18/) | Multi-count undo halts with guidance | yes | ✅ PASS |
 | [M-19](results/M-19/) | Squash last 3: tree-identical | yes | ✅ PASS |
 | [M-20](results/M-20/) | Amend-on-pushed: escalation + lease (flagship) | yes | ✅ PASS |
-| [M-21](results/M-21/) | Failing pre-commit blocks (via system git) | yes | ⚠️ PASS (with defects) |
+| [M-21](results/M-21/) | Failing pre-commit blocks (via system git) | yes | ✅ PASS |
 | [M-22](results/M-22/) | Revert parity: succeeds despite the same hook | no | ✅ PASS |
 | [M-23](results/M-23/) | Deleted branch -> find my lost work (flagship) | no | ✅ PASS (flawless) |
 | [M-24](results/M-24/) | Dropped stash surfaces | no | ✅ PASS |
@@ -41,5 +41,5 @@
 | [M-26](results/M-26/) | Clean-up gate + trash backup, nested dirs | no | ✅ PASS |
 | [M-27](results/M-27/) | Fail-closed trash-net | no | ✅ PASS |
 | [M-28](results/M-28/) | Recover precedence: sideways pointer | no | ✅ PASS |
-| [M-29](results/M-29/) | Ollama down: graceful degrade | dash | ⏭️ SKIP (not exercised — Ollama was up) |
+| [M-29](results/M-29/) | Ollama down: graceful degrade | dash | ✅ PASS |
 | [M-30](results/M-30/) | Not a repo | no | ✅ PASS |
