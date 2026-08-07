@@ -8,7 +8,11 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
 # Rebuild (`cargo build --release` in gitrust/) before each new version's run, then confirm
 # `$GITRUST --version` matches the run folder you record into (runs/vX.Y.Z).
 GITRUST=/Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust
-TESTROOT="$REPO_ROOT/sandboxes"
+# Sandboxes MUST live outside this (or any) git repo: a "not a repo" test dir
+# under the repo would walk up and find THIS repo's .git, breaking M-30 and any
+# not-a-repo assertion. A temp dir outside the repo is also the natural home for
+# throwaway per-test state.
+TESTROOT="${GITRUST_TESTROOT:-${TMPDIR:-/tmp}/gitrust-sandboxes}"
 
 mk_sandbox() {                                  # fresh bare remote + working clone
   local name=$1
