@@ -31,10 +31,47 @@ notes_of() {
   [ -f "$f" ] || return
   awk '/^## Notes$/{getline; if($0!="—") print; exit}' "$f"
 }
+llm_of() {
+  local id="$1" f="$RUN_DIR/results/$id/README.md"
+  [ -f "$f" ] || { echo "—"; return; }
+  grep -E '^\| \*\*LLM\*\* \|' "$f" | sed -E 's/^\| \*\*LLM\*\* \| (.*) \|$/\1/' | head -1
+}
+# Title for a row. Base ids (M-04) get it from the manifest; variant sub-ids
+# (M-04a) aren't manifest functions, so read the title from the record header
+# "# M-04a · <title>".
+title_of() {
+  local id="$1" f="$RUN_DIR/results/$id/README.md"
+  if declare -f "t_$(echo "$id" | tr '-' '_')" >/dev/null 2>&1; then
+    load_test "$id" >/dev/null 2>&1; echo "$T_TITLE"; return
+  fi
+  [ -f "$f" ] && sed -n '1s/^# [^·]*· //p' "$f"
+}
+
+# Expand TEST_ORDER into the actual records that exist: a base id with variants
+# expands to its present sub-records (M-04 -> M-04a M-04b …); a base id with a
+# record of its own stays as-is; ids with neither are skipped. Preserves order.
+expand_ids() {
+  local base sub found
+  for base in $TEST_ORDER; do
+    if [ -f "$RUN_DIR/results/$base/README.md" ]; then
+      echo "$base"
+    fi
+    # Append any variant sub-records (base + single letter), in sorted order.
+    for sub in "$RUN_DIR/results/$base"?/; do
+      [ -d "$sub" ] || continue
+      sub="$(basename "$sub")"
+      # only accept "<base><letter>", not unrelated dirs
+      case "$sub" in
+        "$base"[a-z]) echo "$sub" ;;
+      esac
+    done
+  done
+}
+EFFECTIVE_IDS="$(expand_ids)"
 
 # ---- counts (order matters: match *defect* before the generic *PASS*) -------
 pass=0; fail=0; defect=0; blocked=0; skip=0; total=0
-for id in $TEST_ORDER; do
+for id in $EFFECTIVE_IDS; do
   [ -f "$RUN_DIR/results/$id/README.md" ] || continue
   total=$((total+1))
   v="$(verdict_of "$id")"
@@ -63,10 +100,9 @@ done
   echo
   echo "| ID | Title | LLM | Result |"
   echo "|---|---|---|---|"
-  for id in $TEST_ORDER; do
+  for id in $EFFECTIVE_IDS; do
     [ -f "$RUN_DIR/results/$id/README.md" ] || continue
-    load_test "$id" >/dev/null 2>&1
-    printf '| [%s](results/%s/) | %s | %s | %s |\n' "$id" "$id" "$T_TITLE" "$T_LLM" "$(verdict_of "$id")"
+    printf '| [%s](results/%s/) | %s | %s | %s |\n' "$id" "$id" "$(title_of "$id")" "$(llm_of "$id")" "$(verdict_of "$id")"
   done
 } > "$RUN_DIR/README.md"
 
@@ -90,21 +126,20 @@ done
   echo
   echo "| ID | Title | Result | Notes |"
   echo "|---|---|---|---|"
-  for id in $TEST_ORDER; do
+  for id in $EFFECTIVE_IDS; do
     [ -f "$RUN_DIR/results/$id/README.md" ] || continue
-    load_test "$id" >/dev/null 2>&1
-    printf '| %s | %s | %s | %s |\n' "$id" "$T_TITLE" "$(verdict_of "$id")" "$(notes_of "$id")"
+    printf '| %s | %s | %s | %s |\n' "$id" "$(title_of "$id")" "$(verdict_of "$id")" "$(notes_of "$id")"
   done
   echo
   if [ "$fail" -gt 0 ] || [ "$defect" -gt 0 ]; then
     echo "## Failures & defects to triage"
     echo
-    for id in $TEST_ORDER; do
+    for id in $EFFECTIVE_IDS; do
       [ -f "$RUN_DIR/results/$id/README.md" ] || continue
       v="$(verdict_of "$id")"
       case "$v" in
         *FAIL*|*defect*|*BLOCKED*)
-          echo "- **$id** — $v — $(notes_of "$id")" ;;
+          echo "- **$id** ($(title_of "$id")) — $v — $(notes_of "$id")" ;;
       esac
     done
     echo

@@ -52,6 +52,40 @@ Claude reads each `results/M-NN/output.log`, decides PASS / FAIL / PASS-with-def
 runs `./rollup.sh 0.3.0` to generate `runs/v0.3.0/README.md` (index) + `REPORT.md`
 (summary) and adds a row to the top-level [README](README.md) Runs table.
 
+## Variants (multi-phrasing / multi-scope tests)
+
+A classification/scoping test often exercises **one behavior** through **many
+phrasings** — "push the login changes" vs "push all docs changes" vs "push all
+api changes". Those tests declare `T_VARIANTS` in the manifest and fan out into
+**sub-records**: `M-04` becomes `M-04a` (login), `M-04b` (docs), `M-04c` (api),
+`M-04d` (schema) — each with its own sandbox, `output.log`, and verdict.
+
+Tests currently carrying variants:
+
+| Base | What varies | Sub-records |
+|---|---|---|
+| **M-03** | commit-phrasing (`commit this` / `save my changes` / `commit everything`) | M-03a–c |
+| **M-04** | feature scope (login / docs / api / schema) | M-04a–d |
+| **M-10** | sync target phrasing (`sync with main` / `update … from main` / `pull main into feature`) | M-10a–c |
+| **M-19** | squash count (`3` / `three` / `combine … into one`) | M-19a–c |
+| **M-20** | amend-message phrasing (`fix … to` / `reword … to` / `change … message to`) | M-20a–c |
+
+Running a base id runs **all its variants** in sequence:
+
+```bash
+./runner.sh 0.3.1 M-04          # runs M-04a, M-04b, M-04c, M-04d
+./runner.sh 0.3.1 M-04 M-10     # all variants of both
+```
+
+Adjudicating uses the sub-ids (Claude reads each variant's `output.log` and
+writes each `results/M-04a/README.md`, …). The roll-up lists every sub-record as
+its own row and counts each toward the totals. A test with no `T_VARIANTS` runs
+as a single record exactly as before.
+
+**Adding a variant:** in the test's manifest function, call
+`variant <suffix> <label> <SETUP> <CMD> <CHECK>` — the SETUP must name its own
+sandbox (`mk_sandbox m04e`). See `t_M_04` for the pattern.
+
 ## Notes
 
 - Sandboxes live under `sandboxes/` (git-ignored) and are recreated per test.

@@ -86,34 +86,73 @@ ensure_ollama() {
 }
 
 # ---- per-test ---------------------------------------------------------------
+# A test either runs directly (single record) or, if it declares T_VARIANTS,
+# fans out into sub-records M-NNa/M-NNb/… — each a full capture with its own
+# sandbox, output.log, and verdict. run_one dispatches; run_capture does the
+# actual work for one (sub-)id.
 run_one() {
   local id="$1"
   if ! load_test "$id"; then
     echo "${RED}unknown test: $id${RST}"; return
   fi
-  local base="$RUN_DIR/results/$id"
-  mkdir -p "$base"
-  local log="$base/output.log" cmds="$base/commands.sh"
-  : > "$log"; : > "$cmds"
 
   hr
   echo "${BOLD}${CYAN}$id${RST} - ${BOLD}$T_TITLE${RST}"
   echo "  LLM: $T_LLM   Ollama: $T_OLLAMA"
   [ -n "$T_NOTE" ] && echo "  ${YEL}> $T_NOTE${RST}"
-  echo
 
-  ensure_ollama "$T_OLLAMA"
+  if [ -z "$T_VARIANTS" ]; then
+    echo
+    run_capture "$id" "$T_TITLE" "$T_SETUP" "$T_CMD" "$T_CHECK"
+    return
+  fi
+
+  # Variant fan-out. Each line: suffix @@@ label @@@ SETUP @@@ CMD @@@ CHECK
+  local n; n=$(printf '%s' "$T_VARIANTS" | grep -c '@@@' 2>/dev/null || echo 0)
+  echo "  ${DIM}$n variants: $id -> ${id}a, ${id}b, …${RST}"
+  # Preserve the shared fields across the loop (load_test reset happens only per
+  # top-level id, but run_capture doesn't reload, so these stay put).
+  local base_title="$T_TITLE"
+  # IFS-by-newline walk. Skip blank lines (trailing newline from `variant`).
+  local OLDIFS="$IFS"; IFS='
+'
+  local line
+  for line in $T_VARIANTS; do
+    [ -z "$line" ] && continue
+    local suffix label vsetup vcmd vcheck
+    suffix="${line%%@@@*}";           line="${line#*@@@}"
+    label="${line%%@@@*}";            line="${line#*@@@}"
+    vsetup="${line%%@@@*}";           line="${line#*@@@}"
+    vcmd="${line%%@@@*}";             vcheck="${line#*@@@}"
+    IFS="$OLDIFS"
+    echo
+    echo "  ${BOLD}${CYAN}${id}${suffix}${RST}  ${DIM}($label)${RST}"
+    run_capture "${id}${suffix}" "$base_title — $label" "$vsetup" "$vcmd" "$vcheck"
+    IFS='
+'
+  done
+  IFS="$OLDIFS"
+}
+
+run_capture() {
+  local id="$1" title="$2" c_setup="$3" c_cmd="$4" c_check="$5"
+  # run_capture writes records keyed on these; expose to write_record.
+  T_TITLE="$title"; T_CMD="$c_cmd"
+  local base="$RUN_DIR/results/$id"
+  mkdir -p "$base"
+  local log="$base/output.log" cmds="$base/commands.sh"
+  : > "$log"; : > "$cmds"
 
   # Scratch dir for PRE/TIP files; $SBX/work symlinks the test's sandbox work dir.
   export SBX="$TESTROOT/${id}_scratch"
   rm -rf "$SBX"; mkdir -p "$SBX"
 
   # 1) SETUP — run for the user (subshell so cd/vars don't leak), tee to log.
-  if [ -n "$T_SETUP" ]; then
+  if [ -n "$c_setup" ]; then
     echo "${DIM}# setup${RST}"
-    echo "$T_SETUP" | fold -s -w 76 | sed 's/^/  /'
-    { echo "# ===== SETUP ($id) ====="; echo "$T_SETUP"; } >> "$cmds"
-    ( eval "$T_SETUP" ) >>"$log" 2>&1
+    echo "$c_setup" | fold -s -w 76 | sed 's/^/  /'
+    { echo "# ===== SETUP ($id) ====="; echo "$c_setup"; } >> "$cmds"
+    ( eval "$c_setup" ) >>"$log" 2>&1
     local rc=$?
     # mk_sandbox <name> uses lowercase, dash-stripped id (m05); link it in.
     local sname; sname="$(echo "$id" | tr 'A-Z' 'a-z' | tr -d '-')"
@@ -139,16 +178,16 @@ run_one() {
   [ -d "$work_dir" ] || work_dir="$REPO_ROOT"
   echo
   echo "${DIM}# live in:${RST} $work_dir"
-  echo "  ${BOLD}$T_CMD${RST}"
+  echo "  ${BOLD}$c_cmd${RST}"
   echo "  ${YEL}> drive any gates now (arrows/Enter, type-to-confirm, etc.)${RST}"
-  { echo "# ===== COMMAND ($id) ====="; echo "cd \"$work_dir\""; echo "$T_CMD"; } >> "$cmds"
+  { echo "# ===== COMMAND ($id) ====="; echo "cd \"$work_dir\""; echo "$c_cmd"; } >> "$cmds"
   read -r -p "  press Enter to run... " _ </dev/tty
   { echo; echo "# ===== LIVE SESSION ($id) ====="; } >> "$log"
   local sess="$SBX/.session.txt"
   # Source harness.sh inside the child so $GITRUST / $BR / helpers resolve there
   # too (exports cover most, but sourcing is the robust guarantee, and keeps $BR
   # correct for the working dir). Then cd into the test dir and run the command.
-  local inner="source \"$REPO_ROOT/harness.sh\" >/dev/null 2>&1; BR=\"$BR\"; cd \"$work_dir\" 2>/dev/null; $T_CMD"
+  local inner="source \"$REPO_ROOT/harness.sh\" >/dev/null 2>&1; BR=\"$BR\"; cd \"$work_dir\" 2>/dev/null; $c_cmd"
   # Prefer `script` (macOS BSD form: `script [-q] file [command ...]`) so the
   # interactive session is BOTH driveable and captured. If `script` isn't usable
   # (no real tty, unexpected platform), fall back to running the command directly
@@ -166,11 +205,11 @@ run_one() {
   fi
 
   # 3) CHECK — deterministic post-facts, captured for adjudication.
-  if [ -n "$T_CHECK" ]; then
+  if [ -n "$c_check" ]; then
     echo
     echo "${DIM}# post-facts (captured for adjudication):${RST}"
     { echo; echo "# ===== POST-FACTS ($id) ====="; } >> "$log"
-    ( eval "$T_CHECK" ) 2>&1 | tee -a "$log" | sed 's/^/  /'
+    ( eval "$c_check" ) 2>&1 | tee -a "$log" | sed 's/^/  /'
   fi
 
   # 4) CLEANUP

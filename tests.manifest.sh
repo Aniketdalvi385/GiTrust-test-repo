@@ -15,16 +15,43 @@
 #   T_CHECK    shell printing deterministic post-facts (informational only)
 #   T_CLEANUP  shell run after the test (chmod back, etc.) — may be empty
 #   T_NOTE     reminder printed before the test (what to watch for)
+#   T_VARIANTS (optional) multiple phrasings/scopes of the SAME behavior — see below
 #
 # $SBX/work is a symlink to the test's sandbox work/ dir (set by the runner);
 # CHECK reads it via `git -C "$SBX/work"`.
+#
+# ---- Variants ---------------------------------------------------------------
+# A classification/scoping test often has ONE behavior exercised by many
+# phrasings ("push the login changes" vs "push all the docs" vs "push api
+# changes"). Rather than one sandbox, such a test sets T_VARIANTS: a
+# newline-separated list where each line is FOUR fields joined by the delimiter
+# `@@@`:
+#
+#     suffix @@@ label @@@ SETUP @@@ CMD @@@ CHECK
+#
+#   suffix  a single letter (a,b,c…) → the sub-id M-04a, M-04b, …
+#   label   short human label appended to the title ("docs scope")
+#   SETUP   this variant's sandbox setup (must call `mk_sandbox m04a` itself)
+#   CMD     the live command for this variant
+#   CHECK   this variant's post-facts
+#
+# When T_VARIANTS is set, the runner IGNORES T_SETUP/T_CMD/T_CHECK for that test
+# and instead runs each variant as its own sub-record (own sandbox, own
+# output.log, own verdict). T_LLM/T_OLLAMA/T_NOTE are shared across variants.
+# A test with NO T_VARIANTS runs exactly as before (single record). Use
+# `variant` (defined below) to append one line safely.
+
+# Append one variant line to T_VARIANTS. Keeps the manifest readable and makes
+# the `@@@` delimiter a single source of truth.
+variant() { T_VARIANTS="${T_VARIANTS}${1}@@@${2}@@@${3}@@@${4}@@@${5}
+"; }
 
 # The ordered list of test ids.
 TEST_ORDER="M-00 M-01 M-02 M-03 M-04 M-05 M-06 M-07 M-08 M-09 M-10 M-11 M-12 M-13 M-14 M-15 M-16 M-17 M-18 M-19 M-20 M-21 M-22 M-23 M-24 M-25 M-26 M-27 M-28 M-29 M-30"
 
 # Reset all fields, then dispatch to the test's function.
 load_test() {
-  T_TITLE=""; T_LLM=""; T_OLLAMA="on"; T_SETUP=""; T_CMD=""; T_CHECK=""; T_CLEANUP=""; T_NOTE=""
+  T_TITLE=""; T_LLM=""; T_OLLAMA="on"; T_SETUP=""; T_CMD=""; T_CHECK=""; T_CLEANUP=""; T_NOTE=""; T_VARIANTS=""
   local fn="t_$(echo "$1" | tr '-' '_')"
   if ! declare -f "$fn" >/dev/null 2>&1; then
     return 1
@@ -60,17 +87,44 @@ t_M_02() {
 }
 t_M_03() {
   T_TITLE="Commit with editable message"; T_LLM="yes"; T_OLLAMA="on"
-  T_SETUP='mk_sandbox m03; echo change >> app.txt'
-  T_CMD='$GITRUST "commit this"'
-  T_CHECK='git -C "$SBX/work" log -1 --format=%s 2>/dev/null | sed "s/^/HEAD subject: /"'
-  T_NOTE='EDIT the draft in the message gate; the commit subject must be YOUR edited text.'
+  T_NOTE='Each variant is a different way to say "commit my change". EDIT the draft in the message gate; the commit subject must be YOUR edited text. PASS = every phrasing reaches the editable-message commit path (not a read-only/misroute).'
+  local check='git -C "$SBX/work" log -1 --format=%s 2>/dev/null | sed "s/^/HEAD subject: /"'
+  variant a "\"commit this\"" \
+    'mk_sandbox m03a; echo change >> app.txt' \
+    '$GITRUST "commit this"' \
+    "$check"
+  variant b "\"save my changes\"" \
+    'mk_sandbox m03b; echo change >> app.txt' \
+    '$GITRUST "save my changes"' \
+    "$check"
+  variant c "\"commit everything\"" \
+    'mk_sandbox m03c; echo change >> app.txt' \
+    '$GITRUST "commit everything"' \
+    "$check"
 }
 t_M_04() {
   T_TITLE="Scoped feature pipeline (flagship)"; T_LLM="yes"; T_OLLAMA="on"
-  T_SETUP='mk_sandbox m04; echo "login page" > login.txt; echo "login helper" > auth.txt; echo "unrelated" > readme.txt'
-  T_CMD='$GITRUST "push the login changes"'
-  T_CHECK='echo "pushed files:"; git -C "$SBX/work" show --stat "origin/$BR" 2>/dev/null | tail -8'
-  T_NOTE='PASS = only login.txt + auth.txt committed/pushed; readme.txt must NOT be included.'
+  T_NOTE='PASS = only the files matching the named scope are committed/pushed; the unrelated files must NOT be included. Same behavior across every phrasing/scope below.'
+  # Each variant seeds files matching ONE scope + two decoys, and pushes that
+  # scope. The decoys are always present so exclusion is actually tested. The
+  # CHECK prints exactly which files landed on the remote.
+  local seed_check='echo "pushed files (only the scoped ones should appear):"; git -C "$SBX/work" show --stat "origin/$BR" 2>/dev/null | tail -12'
+  variant a "login scope" \
+    'mk_sandbox m04a; echo "login page" > login.txt; echo "login helper" > auth.txt; echo "unrelated" > readme.txt; echo "api thing" > api_client.txt' \
+    '$GITRUST "push the login changes"' \
+    "$seed_check"
+  variant b "docs scope" \
+    'mk_sandbox m04b; echo "readme docs" > README.md; echo "guide docs" > docs/guide.md 2>/dev/null || (mkdir -p docs && echo "guide docs" > docs/guide.md); echo "login page" > login.txt; echo "schema def" > schema.sql' \
+    '$GITRUST "push all docs changes"' \
+    "$seed_check"
+  variant c "api scope" \
+    'mk_sandbox m04c; echo "api client" > api_client.txt; echo "api routes" > api_routes.txt; echo "login page" > login.txt; echo "readme" > README.md' \
+    '$GITRUST "push all api changes"' \
+    "$seed_check"
+  variant d "schema scope" \
+    'mk_sandbox m04d; echo "users schema" > schema.sql; echo "orders schema" > migrations.sql; echo "api client" > api_client.txt; echo "readme" > README.md' \
+    '$GITRUST "push all schema changes"' \
+    "$seed_check"
 }
 t_M_05() {
   T_TITLE="Branch create + dirty switch block"; T_LLM="no"; T_OLLAMA="on"
@@ -112,11 +166,25 @@ t_M_09() {
   T_NOTE='Setup already triggered the conflict+pause. PASS = HEAD returns to exactly PRE, tree clean, no rebase language.'
 }
 t_M_10() {
-  T_TITLE="Sync with main via origin/HEAD"; T_LLM="yes"; T_OLLAMA="on"
-  T_SETUP='mk_sandbox m10; git remote set-head origin --auto; git checkout -qb feature; mk_teammate m10; git fetch -q'
-  T_CMD='$GITRUST "sync with main"'
-  T_CHECK='echo "does feature now contain the teammate commit?"; git -C "$SBX/work" log --oneline -4 2>/dev/null'
-  T_NOTE='Expect target resolved via origin/HEAD -> rebase ChoiceGate -> feature contains mains commit. Choose REBASE.'
+  T_TITLE="Sync feature with a target branch"; T_LLM="yes"; T_OLLAMA="on"
+  T_NOTE='Each variant names the sync TARGET a different way. Expect the target resolved, a rebase ChoiceGate, and feature ending up with the target commit. Choose REBASE. PASS = the captured target is correct across every phrasing (the v0.3.0 sync-arg fix).'
+  # Base sandbox: a teammate pushes to main; we branch `feature` off and try to
+  # pull main's commit into it via various phrasings. The "into feature" arm
+  # names both source and destination to prove destination capture too.
+  local base='mk_sandbox %S; git remote set-head origin --auto; mk_teammate %S; git fetch -q; git checkout -qb feature'
+  local check='echo "does feature now contain the teammate (main) commit?"; git -C "$SBX/work" log --oneline -5 2>/dev/null'
+  variant a "sync with main" \
+    "$(echo "$base" | sed 's/%S/m10a/g')" \
+    '$GITRUST "sync with main"' \
+    "$check"
+  variant b "update from main" \
+    "$(echo "$base" | sed 's/%S/m10b/g')" \
+    '$GITRUST "update feature from main"' \
+    "$check"
+  variant c "pull main into feature" \
+    "$(echo "$base" | sed 's/%S/m10c/g')" \
+    '$GITRUST "pull main into feature"' \
+    "$check"
 }
 
 # ============================================================================
@@ -184,17 +252,39 @@ t_M_18() {
 }
 t_M_19() {
   T_TITLE="Squash last 3: tree-identical"; T_LLM="yes"; T_OLLAMA="on"
-  T_SETUP='mk_sandbox m19; echo a > a.txt && git add a.txt && git commit -qm c1; echo b > b.txt && git add b.txt && git commit -qm c2; echo c > c.txt && git add c.txt && git commit -qm c3; git rev-parse "HEAD^{tree}" > "$SBX/TIP.txt"; git rev-list --count HEAD > "$SBX/COUNT.txt"'
-  T_CMD='$GITRUST "squash the last 3 commits"'
-  T_CHECK='echo "count before: $(cat "$SBX/COUNT.txt" 2>/dev/null)  after: $(git -C "$SBX/work" rev-list --count HEAD 2>/dev/null)  (expect -2)"; echo "tree before: $(cat "$SBX/TIP.txt" 2>/dev/null)"; echo "tree after:  $(git -C "$SBX/work" rev-parse "HEAD^{tree}" 2>/dev/null)  (expect identical)"'
-  T_NOTE='PASS (post-fix) = routes to squash (fast-path), count drops by 2, tree oid identical. Confirm + edit the message.'
+  T_NOTE='Each variant names the squash COUNT a different way (digit, word, "last few"). PASS = routes to squash, count drops by 2 (3->1), tree oid identical. Confirm + edit the message. Tests that the count is captured correctly across phrasings.'
+  local setup='mk_sandbox %S; echo a > a.txt && git add a.txt && git commit -qm c1; echo b > b.txt && git add b.txt && git commit -qm c2; echo c > c.txt && git add c.txt && git commit -qm c3; git rev-parse "HEAD^{tree}" > "$SBX/TIP.txt"; git rev-list --count HEAD > "$SBX/COUNT.txt"'
+  local check='echo "count before: $(cat "$SBX/COUNT.txt" 2>/dev/null)  after: $(git -C "$SBX/work" rev-list --count HEAD 2>/dev/null)  (expect -2)"; echo "tree before: $(cat "$SBX/TIP.txt" 2>/dev/null)"; echo "tree after:  $(git -C "$SBX/work" rev-parse "HEAD^{tree}" 2>/dev/null)  (expect identical)"'
+  variant a "digit: \"last 3 commits\"" \
+    "$(echo "$setup" | sed 's/%S/m19a/g')" \
+    '$GITRUST "squash the last 3 commits"' \
+    "$check"
+  variant b "word: \"last three commits\"" \
+    "$(echo "$setup" | sed 's/%S/m19b/g')" \
+    '$GITRUST "squash the last three commits"' \
+    "$check"
+  variant c "verb: \"combine the last 3\"" \
+    "$(echo "$setup" | sed 's/%S/m19c/g')" \
+    '$GITRUST "combine the last 3 commits into one"' \
+    "$check"
 }
 t_M_20() {
   T_TITLE="Amend-on-pushed: escalation + lease (flagship)"; T_LLM="yes"; T_OLLAMA="on"
-  T_SETUP='mk_sandbox m20; echo v2 >> app.txt && git commit -qam "typo mesage" && git push -q'
-  T_CMD='$GITRUST "fix the last commit message to '\''typo message fixed'\''"'
-  T_CHECK='echo "local HEAD: $(git -C "$SBX/work" rev-parse HEAD 2>/dev/null)"; echo "origin subject: $(git -C "$SBX/work" log -1 --format=%s "origin/$BR" 2>/dev/null)"'
-  T_NOTE='Expect published-detection -> force-push escalation -> TypeToConfirm on branch -> --force-with-lease (NO bare --force). Remote subject should become "typo message fixed".'
+  T_NOTE='Each variant rewords the LAST (already-pushed) commit a different way, and each carries a NEW quoted message. Expect published-detection -> force-push escalation -> TypeToConfirm on branch -> --force-with-lease (NO bare --force). PASS = remote subject becomes the new quoted text across every phrasing (amend-message capture, M-20 fix).'
+  local setup='mk_sandbox %S; echo v2 >> app.txt && git commit -qam "typo mesage" && git push -q'
+  local check='echo "local HEAD: $(git -C "$SBX/work" rev-parse HEAD 2>/dev/null)"; echo "origin subject: $(git -C "$SBX/work" log -1 --format=%s "origin/$BR" 2>/dev/null)"'
+  variant a "\"fix the last commit message to …\"" \
+    "$(echo "$setup" | sed 's/%S/m20a/g')" \
+    '$GITRUST "fix the last commit message to '\''typo message fixed'\''"' \
+    "$check"
+  variant b "\"reword the last commit to …\"" \
+    "$(echo "$setup" | sed 's/%S/m20b/g')" \
+    '$GITRUST "reword the last commit to '\''cleaner subject line'\''"' \
+    "$check"
+  variant c "\"change my last commit message to …\"" \
+    "$(echo "$setup" | sed 's/%S/m20c/g')" \
+    '$GITRUST "change my last commit message to '\''final wording here'\''"' \
+    "$check"
 }
 
 # ============================================================================
