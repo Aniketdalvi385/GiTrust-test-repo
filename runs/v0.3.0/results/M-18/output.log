@@ -1,0 +1,9 @@
+sandbox 'm18' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m18/work
+
+# ===== LIVE SESSION (M-18) =====
+[2;35m◉[0m  (llm · ~10.1s)
+✗  Multi-commit undo isn't supported yet. Did you mean: squash the last 3 into one (gitrust "squash last 3"), revert a specific commit, or undo just the most recent (gitrust "undo")?
+
+# ===== POST-FACTS (M-18) =====
+PRE: PRE=7aff556dda699ad3243946ec9be7ba9c7f986b38
+HEAD: 7aff556dda699ad3243946ec9be7ba9c7f986b38

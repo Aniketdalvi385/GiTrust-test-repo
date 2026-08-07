@@ -1,0 +1,49 @@
+sandbox 'm20' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m20/work
+
+# ===== LIVE SESSION (M-20) =====
+[2;36m⚡[0m  (instant)
+  Heads up: the target commit is already published. Amending/squashing it rewrites shared history.
+
+  [1;31m⛔[0m [1;31mIrreversible[0m: Replaces the remote branch with your local version, overwriting whatever is there.
+     Risks:    Anyone who fetched the old version will need to reset. Their commits made on top are abandoned.
+     Recovery: Recovery exists only if someone has the old SHA: `git reflog` finds it locally; otherwise it's gone.
+     Safety:   Uses --force-with-lease — refuses if the remote moved since your last fetch (catches accidental teammate overwrites).
+
+[?25l[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): [38;5;8mmain[39m [149C[?25h[?25l[149D[38;5;9m#[39m [38;5;9mMust type 'main' exactly to confirm.[39m[K
+[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): [38;5;8mmain[39m [149C[?25h[?25l[1A[149D
+[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): m [K[150C[?25h[?25l[1A[150D
+[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): ma [K[151C[?25h[?25l[1A[151D
+[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): mai [K[152C[?25h[?25l[1A[152D
+[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): main [K[153C[?25h[?25l[1A[153D[38;5;10m>[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): [38;5;14mmain[39m[K
+[2K
+[?25h[1A[?25h
+Plan  · 2 steps · [2msnapshot taken at ba1a4a3[0m
+
+  ●  amend     "typo message fixed"  [33m⚠[0m
+  [2m│[0m
+  ●  force push→ origin/main (with-lease)  [1;31m⛔[0m
+
+  Warnings:
+    · This rewrites a commit that's already on the remote — completing it needs a force push (with lease).
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  amend     "typo message fixed"  [32m●[0m  amend     "typo message fixed"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Amended the last commit[0m
+  [2m│[0m
+  [2m●[0m  force push→ origin/main (with-lease)Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To /var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m20/remote.git
+ + ba1a4a3...03e7312 main -> main (forced update)
+  [32m●[0m  force push→ origin/main (with-lease)  [1;31m⛔[0m  [32m●[0m
+  [2m│[0m  [2m→ Force-pushed to origin/main (with-lease)[0m
+
+  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-20) =====
+local HEAD: 03e731252d3b56346a8a9f8d561905b136ce909f
+origin subject: typo message fixed

@@ -1,0 +1,13 @@
+sandbox 'm02' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m02/work
+
+# ===== LIVE SESSION (M-02) =====
+[2;35m◉[0m  (llm · ~15.5s)
+On branch main · tracking origin/main · up to date
+Last commit: 09637f3 "base" (just now)
+
+Nothing to commit, working tree clean.
+
+(Remote state from last fetch — run `gitrust "fetch"` to refresh.)
+
+# ===== POST-FACTS (M-02) =====
+expect: @ (llm) marker, classified read-only status/log; note latency

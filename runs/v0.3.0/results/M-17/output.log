@@ -1,0 +1,10 @@
+sandbox 'm17' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m17/work
+
+# ===== LIVE SESSION (M-17) =====
+[2;36m⚡[0m  (instant)
+✗  --yes flag cannot answer this choice for you: "Undo ff54d5e "to undo" — what should happen to its changes?" Run interactively and pick an option manually.
+EXIT=1
+
+# ===== POST-FACTS (M-17) =====
+PRE: PRE=ff54d5e22fd50b9cd0126e31a9a16a0f8bad9655
+HEAD: ff54d5e22fd50b9cd0126e31a9a16a0f8bad9655

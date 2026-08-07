@@ -1,0 +1,8 @@
+sandbox 'm25' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m25/work
+
+# ===== LIVE SESSION (M-25) =====
+[2;36m⚡[0m  (instant)
+Nothing found. Work that was never committed, or that git has already garbage-collected, may be unrecoverable.
+
+# ===== POST-FACTS (M-25) =====
+expect an honest caveat about never-committed / gc-d work, not a bare nothing-found

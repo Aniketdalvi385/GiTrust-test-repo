@@ -1,0 +1,13 @@
+sandbox 'm01' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m01/work
+
+# ===== LIVE SESSION (M-01) =====
+[2;36m⚡[0m  (instant)
+On branch main · tracking origin/main · up to date
+Last commit: cbe60ef "base" (just now)
+
+Nothing to commit, working tree clean.
+
+(Remote state from last fetch — run `gitrust "fetch"` to refresh.)
+
+# ===== POST-FACTS (M-01) =====
+expect: instant, fast-path marker, NO ollama error

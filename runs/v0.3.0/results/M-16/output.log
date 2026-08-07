@@ -1,0 +1,49 @@
+sandbox 'm16' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m16/work
+
+# ===== LIVE SESSION (M-16) =====
+[2;36m⚡[0m  (instant)
+[?25l[38;5;10m?[39m Undo c616313 "feat: the mistake" — what should happen to its changes?  
+[38;5;14m>[39m [38;5;14mKeep them staged — [2mkeep them staged (soft reset) — the commit is removed, files stay ready to re-commit.[0m[39m
+  Keep them in files — [2mkeep them in your files, unstaged (mixed reset) — re-stage what you want before committing.[0m
+  Make an inverse commit (revert) — [2madd an inverse commit (revert) — history is preserved; safe even after pushing.[0m
+  Discard completely — [2mdiscard them completely (hard reset) — the changes are gone (reflog holds them ~90 days). Requires typing to confirm.[0m
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[5A[72C[?25h[?25l[72D
+  Keep them staged — [2mkeep them staged (soft reset) — the commit is removed, files stay ready to re-commit.[0m[K
+
+
+[38;5;14m>[39m [38;5;14mDiscard completely — [2mdiscard them completely (hard reset) — the changes are gone (reflog holds them ~90 days). Requires typing to confirm.[0m[39m[K
+[5A[72C[?25h[?25l[72D[38;5;10m>[39m Undo c616313 "feat: the mistake" — what should happen to its changes? [38;5;14mDiscard completely — [2mdiscard them completely (hard reset) — the changes are gone (reflog holds them ~90 days). Requires typing to c[39m[K
+[38;5;14monfirm.[0m[39m[K
+[2K
+[2K
+[2K
+[2K
+[?25h[4A[?25h
+  [31m⚠⚠[0m [31mDestructive[0m: Moves HEAD to the parent commit AND throws away every change in the working tree and index.
+     Risks:    Any uncommitted work — staged or unstaged — is gone. The commit itself is also dropped from the branch.
+     Recovery: `git reflog` keeps a record of the old HEAD for ~90 days; you can recover the commit if you remember the SHA.
+     Safety:   This op requires you to type the highlighted value exactly to confirm.
+
+[?25l[38;5;10m?[39m Type 'c616313' to DISCARD commit c616313 "feat: the mistake" and all its changes: [38;5;8mc616313[39m [84C[?25h[?25l[84D[38;5;10m?[39m Type 'c616313' to DISCARD commit c616313 "feat: the mistake" and all its changes: c [K[85C[?25h[?25l[85D[38;5;10m?[39m Type 'c616313' to DISCARD commit c616313 "feat: the mistake" and all its changes: c6 [K[86C[?25h[?25l[86D[38;5;10m?[39m Type 'c616313' to DISCARD commit c616313 "feat: the mistake" and all its changes: c61 [K[87C[?25h[?25l[87D[38;5;10m?[39m Type 'c616313' to DISCARD commit c616313 "feat: the mistake" and all its changes: c616 [K[88C[?25h[?25l[88D[38;5;10m?[39m Type 'c616313' to DISCARD commit c616313 "feat: the mistake" and all its changes: c6163 [K[89C[?25h[?25l[89D[38;5;10m?[39m Type 'c616313' to DISCARD commit c616313 "feat: the mistake" and all its changes: c61631 [K[90C[?25h[?25l[90D[38;5;10m?[39m Type 'c616313' to DISCARD commit c616313 "feat: the mistake" and all its changes: c616313 [K[91C[?25h[?25l[91D[38;5;10m>[39m Type 'c616313' to DISCARD commit c616313 "feat: the mistake" and all its changes: [38;5;14mc616313[39m[K
+[?25h[?25h
+Plan  · 1 steps · [2msnapshot taken at c616313[0m
+
+  ●  reset     hard (discards working tree)  [31m⚠⚠[0m
+
+  Warnings:
+    · reset --hard will discard ALL uncommitted changes. This cannot be undone (except via git reflog).
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  reset     hard (discards working tree)  [32m●[0m  reset     hard (discards working tree)  [31m⚠⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ reset (hard)[0m
+
+  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-16) =====
+HEAD (commit should be DROPPED post-fix):
+ebc0ea5 base
+latest trash dirs:
+20260805-113833

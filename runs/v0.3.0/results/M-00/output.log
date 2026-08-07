@@ -1,0 +1,6 @@
+
+# ===== LIVE SESSION (M-00) =====
+gitrust 0.3.0
+
+# ===== POST-FACTS (M-00) =====
+version must match the run folder vX.Y.Z (bump Cargo.toml if not)

@@ -1,0 +1,33 @@
+sandbox 'm19' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m19/work
+
+# ===== LIVE SESSION (M-19) =====
+[2;36m⚡[0m  (instant)
+[?25l[38;5;10m?[39m Squashed commit message (3 commits): c3
+c2
+c1 [2A[47C[?25h[?25l[47D[38;5;10m>[39m Squashed commit message (3 commits): [38;5;14mc3[39m[K
+[38;5;14mc2[39m[K
+[38;5;14mc1[39m[K
+[?25h[?25h
+Plan  · 1 steps · [2msnapshot taken at addc244[0m
+
+  ●  squash    last 3 → "c3
+c2
+c1"  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  squash    last 3 → "c3
+c2
+c1"  [32m●[0m  squash    last 3 → "c3
+c2
+c1"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Squashed the last 3 commits into one[0m
+
+  [32m✓[0m [32mDone · on main, ↑1 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-19) =====
+count before: 4  after: 2  (expect -2)
+tree before: bf23f090aa240bb252e284cdee9487d26dbe7313
+tree after:  bf23f090aa240bb252e284cdee9487d26dbe7313  (expect identical)

@@ -1,0 +1,12 @@
+sandbox 'm11' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m11/work
+
+# ===== LIVE SESSION (M-11) =====
+⚠  An interrupted pipeline was found (captured at 2026-08-07T13:13:22.348857+05:30).
+   Run 'gitrust --recover' to restore the repository to its pre-pipeline state.
+   Or delete ~/.gitrust/snapshots/ to ignore it.
+
+[2;35m◉[0m  (llm · ~10.5s)
+✗  A rebase is in progress. Back out with `gitrust "abort rebase"`, or resolve the conflicts and `gitrust "continue rebase"`.
+
+# ===== POST-FACTS (M-11) =====
+FAIL instantly if the words "checkout a branch" appear

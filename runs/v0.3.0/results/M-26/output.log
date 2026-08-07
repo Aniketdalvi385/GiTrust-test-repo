@@ -1,0 +1,43 @@
+sandbox 'm26' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m26/work
+
+# ===== LIVE SESSION (M-26) =====
+[2;36m⚡[0m  (instant)
+[?25l[38;5;10m?[39m Clean up — what should be removed?  
+[38;5;14m>[39m [38;5;14mDiscard tracked changes — [2mdiscard 1 tracked change(s) (a hard reset — backed up to the trash-net first).[0m[39m
+  Delete untracked files — [2mdelete 1 untracked file(s) — these have NO git history; only the trash-net protects them.[0m
+  Both — [2mdiscard tracked changes AND delete untracked files (both backed up to the trash-net first).[0m
+  Abort — [2mdo nothing.[0m
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[5A[37C[?25h[?25l[37D
+  Discard tracked changes — [2mdiscard 1 tracked change(s) (a hard reset — backed up to the trash-net first).[0m[K
+[38;5;14m>[39m [38;5;14mDelete untracked files — [2mdelete 1 untracked file(s) — these have NO git history; only the trash-net protects them.[0m[39m[K
+
+
+[5A[37C[?25h[?25l[37D[38;5;10m>[39m Clean up — what should be removed? [38;5;14mDelete untracked files — [2mdelete 1 untracked file(s) — these have NO git history; only the trash-net protects them.[0m[39m[K
+[2K
+[2K
+[2K
+[2K
+[2K
+[?25h[5A[?25h
+Plan  · 1 steps · [2msnapshot taken at 9003f48[0m
+
+  ●  clean     delete untracked files  [1;31m⛔[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  clean     delete untracked filesRemoving junk/
+  [32m●[0m  clean     delete untracked files  [1;31m⛔[0m  [32m●[0m
+  [2m│[0m  [2m→ Deleted untracked files (backed up to the trash-net)[0m
+  [2m│[0m  [2mA backup of the discarded changes is in /Users/aniket.dalvi/.gitrust/trash/20260807-132721 for 7 days.[0m
+
+  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-26) =====
+junk/ removed from tree?
+  removed
+latest trash backup dir:
+/Users/aniket.dalvi/.gitrust/trash/20260807-132721/
+nested file present in trash?
+/Users/aniket.dalvi/.gitrust/trash/20260807-132721/junk/inner/file.txt

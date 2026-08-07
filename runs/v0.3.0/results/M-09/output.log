@@ -1,0 +1,26 @@
+sandbox 'm09' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m09/work
+
+# ===== LIVE SESSION (M-09) =====
+⚠  An interrupted pipeline was found (captured at 2026-08-07T13:12:51.921296+05:30).
+   Run 'gitrust --recover' to restore the repository to its pre-pipeline state.
+   Or delete ~/.gitrust/snapshots/ to ignore it.
+
+[2;36m⚡[0m  (instant)
+
+Plan  · 1 steps
+
+  ●  rebase    abort  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  rebase    abort  [32m●[0m  rebase    abort  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Rebase aborted — back to the original HEAD[0m
+
+  [32m✓[0m [32mDone · on main, ↑1 ↓1[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-09) =====
+PRE was: PRE=9bf91244ed700e18d74838de9bbfbeb84e2a4d7f
+HEAD now: 9bf91244ed700e18d74838de9bbfbeb84e2a4d7f
+## main...origin/main [ahead 1, behind 1]

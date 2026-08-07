@@ -1,0 +1,24 @@
+sandbox 'm12' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m12/work
+
+# ===== LIVE SESSION (M-12) =====
+[2;35m◉[0m  (llm · ~10.0s)
+[?25l[38;5;10m?[39m Commit message (edit or accept): Merge branch 'side' [54C[?25h[?25l[54D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mMerge branch 'side'[39m[K
+[?25h[?25h
+Plan  · 1 steps · [2msnapshot taken at 0ea21ff[0m
+
+  ●  commit    "Merge branch 'side'"  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  commit    "Merge branch 'side'"  [32m●[0m  commit    "Merge branch 'side'"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Committed: Merge branch 'side' (0ea21ff→1b2130f)[0m
+
+  [32m✓[0m [32mDone · 1 commit on main, ↑3 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-12) =====
+parent count (expect 2):
+       2
+message (must have NO # Conflicts: lines):
+Merge branch 'side'

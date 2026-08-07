@@ -1,0 +1,43 @@
+sandbox 'm21' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m21/work
+
+# ===== LIVE SESSION (M-21) =====
+[2;35m◉[0m  (llm · ~10.1s)
+  Drafting commit message from diff… ✓
+[?25l[38;5;10m?[39m Commit message (edit or accept): feat(app.txt): Add newline at the end of file [80C[?25h[?25l[80D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mfeat(app.txt): Add newline at the end of file[39m[K
+[?25h[?25h
+Plan  · 2 steps · [2msnapshot taken at dd6c22a[0m
+
+  ●  stage     all modified files  [33m⚠[0m
+  [2m│[0m
+  ●  commit    "feat(app.txt): Add newline at the end of file"  [33m⚠[0m
+
+  Warnings:
+    · Hook(s) present (pre-commit) — GiTrust will run them via system git.
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  stage     all modified files  [32m●[0m  stage     all modified files  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Staged all changes[0m
+  [2m│[0m
+  [2m●[0m  commit    "feat(app.txt): Add newline at the end of file"  hooks detected — using system git so they run.
+  [31m✗[0m  commit    "feat(app.txt): Add newline at the end of file"  [31m✗[0m
+  [31m│[0m  the pre-commit hook refused the operation:
+LINT FAILED
+
+  Snapshot preserved at ~/.gitrust/snapshots/27a45b34-0f2d-4816-8c1b-e1009db55772.json
+  Run 'gitrust --recover' to restore to pre-pipeline state.
+
+  [2mfix `commit` and continue:[0m
+[?25l[38;5;10m?[39m Pick one:  
+[38;5;14m>[39m [38;5;14mShow    [2mre-print the hook output[0m[39m
+  Cancel
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[3A[12C[?25h[?25l[12D[38;5;10m>[39m Pick one: [38;5;14mShow    [2mre-print the hook output[0m[39m[K
+[2K
+[2K
+[2K
+[?25h[3A[?25h  [2mHook output was printed above the failure block.[0m
+EXIT=0
+
+# ===== POST-FACTS (M-21) =====
+count before: 1  after: 1  (must be unchanged)

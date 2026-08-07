@@ -1,0 +1,7 @@
+sandbox 'm28' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m28/work
+
+# ===== LIVE SESSION (M-28) =====
+No interrupted GiTrust pipeline found for this repo. If you're looking for lost commits, try `gitrust "find my lost work"`.
+
+# ===== POST-FACTS (M-28) =====
+expect: no interrupted pipeline + pointer to gitrust find my lost work

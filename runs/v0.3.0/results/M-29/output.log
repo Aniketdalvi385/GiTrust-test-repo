@@ -1,0 +1,10 @@
+sandbox 'm29' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m29/work
+
+# ===== LIVE SESSION (M-29) =====
+[2;35m◉[0m  (llm · ~15.9s)
+No changes vs HEAD.
+Last commit: ce81775 "base" (just now)
+  → Try: gitrust "log" for history, or gitrust "show" for full commit details.
+
+# ===== POST-FACTS (M-29) =====
+then run: $GITRUST "status" (must still work instantly)

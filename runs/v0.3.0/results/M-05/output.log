@@ -1,0 +1,38 @@
+sandbox 'm05' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m05/work
+
+# ===== LIVE SESSION (M-05) =====
+[2;36m⚡[0m  (instant)
+
+Plan  · 1 steps · [2msnapshot taken at 55eed63[0m
+
+  ●  branch    feature-x  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  branch    feature-x  [32m●[0m  branch    feature-x  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Created branch feature-x[0m
+
+  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+[2;36m⚡[0m  (instant)
+
+Plan  · 1 steps · [2msnapshot taken at 55eed63[0m
+
+  ●  checkout  main  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  checkout  main  [32m●[0m  checkout  main  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Switched to main[0m
+
+  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-05) =====
+  feature-x
+* main
+  remotes/origin/main
+## main...origin/main
+ M app.txt

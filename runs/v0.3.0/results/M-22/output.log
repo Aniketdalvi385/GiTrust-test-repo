@@ -1,0 +1,26 @@
+sandbox 'm22' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m22/work
+
+# ===== LIVE SESSION (M-22) =====
+[2;36m⚡[0m  (instant)
+[?25l[38;5;10m?[39m Revert 03ec465 with a new inverse commit? (Y/n)  [50C[?25h[?25l[50D[38;5;10m?[39m Revert 03ec465 with a new inverse commit? (Y/n) y [K[51C[?25h[?25l[51D[38;5;10m>[39m Revert 03ec465 with a new inverse commit? [38;5;14mYes[39m[K
+[?25h[?25h
+Plan  · 1 steps · [2msnapshot taken at 03ec465[0m
+
+  ●  revert    03ec465  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  revert    03ec465[main 317f629] Revert "to revert"
+ Date: Fri Aug 7 13:20:06 2026 +0530
+ 1 file changed, 1 deletion(-)
+  [32m●[0m  revert    03ec465  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Reverted 03ec465 (inverse commit added)[0m
+
+  [32m✓[0m [32mDone · on main, ↑2 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-22) =====
+317f629 Revert "to revert"
+03ec465 to revert
+9e45e7c base

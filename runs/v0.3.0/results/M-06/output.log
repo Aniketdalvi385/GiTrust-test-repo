@@ -1,0 +1,45 @@
+sandbox 'm06' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m06/work
+teammate pushed a commit to m06's remote
+## main...origin/main [ahead 1, behind 1]
+
+# ===== LIVE SESSION (M-06) =====
+[2;36m⚡[0m  (instant)
+Fetching origin… ✓
+[?25l[38;5;10m?[39m Your branch and origin/main have diverged (ahead 1, behind 1). How should GiTrust reconcile?  
+[38;5;14m>[39m [38;5;14mRebase — [2mreplay your 1 commit(s) on top of theirs; history stays linear. Recommended when nobody else has your commits.[0m[39m
+  Merge — [2mkeep both histories, adds a merge commit. Safer if others may have pulled your commits.[0m
+  Abort — [2mdo nothing.[0m
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[4A[95C[?25h[?25l[95D[38;5;10m>[39m Your branch and origin/main have diverged (ahead 1, behind 1). How should GiTrust reconcile? [38;5;14mRebase — [2mreplay your 1 commit(s) on top of theirs; history stays linear. Recommended when nobody else has yo[39m[K
+[38;5;14mur commits.[0m[39m[K
+[2K
+[2K
+[2K
+[?25h[3A[?25h
+Plan  · 2 steps · [2msnapshot taken at 09f7a64[0m
+
+  ●  rebase    onto origin/main  [33m⚠[0m
+  [2m│[0m
+  ●  push      → origin/main  [33m⚠[0m
+
+  Warnings:
+    · Local branch is 1 commit(s) behind upstream. Consider pulling first to avoid a non-fast-forward rejection.
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  rebase    onto origin/mainRebasing (1/1)[KSuccessfully rebased and updated refs/heads/main.
+  [32m●[0m  rebase    onto origin/main  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Rebased onto origin/main[0m
+  [2m│[0m
+  [2m●[0m  push      → origin/main  [32m●[0m  push      → origin/main  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Pushed 1 commit(s) to origin/main[0m
+
+  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-06) =====
+left-right vs origin (expect 0 0):
+0	0
+24beae0 feat: mine
+2d9c993 teammate: hotfix
+b869a1b base

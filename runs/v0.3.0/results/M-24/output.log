@@ -1,0 +1,26 @@
+sandbox 'm24' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m24/work
+
+# ===== LIVE SESSION (M-24) =====
+[2;36m⚡[0m  (instant)
+
+Lost & recoverable commits (restoring creates a rescue branch — your current work is never touched):
+[?25l[38;5;10m?[39m Recover which commit?  
+[38;5;14m>[39m [38;5;14mjust now — 'index on main: de12f70 base' — 0 files[39m
+  just now — 'On main: important wip' — 1 file [stash]
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[3A[24C[?25h[?25l[24D
+  just now — 'index on main: de12f70 base' — 0 files[K
+[38;5;14m>[39m [38;5;14mjust now — 'On main: important wip' — 1 file [stash][39m[K
+[3A[24C[?25h[?25l[24D
+[38;5;14m>[39m [38;5;14mjust now — 'index on main: de12f70 base' — 0 files[39m[K
+  just now — 'On main: important wip' — 1 file [stash][K
+[3A[24C[?25h[?25l[24D
+  just now — 'index on main: de12f70 base' — 0 files[K
+[38;5;14m>[39m [38;5;14mjust now — 'On main: important wip' — 1 file [stash][39m[K
+[3A[24C[?25h[?25l[24D[38;5;10m>[39m Recover which commit? [38;5;14mjust now — 'On main: important wip' — 1 file [stash][39m[K
+[2K
+[2K
+[2K
+[?25h[3A[?25hRecovered bab6a0a onto new branch `rescue/20260807-bab6a0a`. Your current branch and files are unchanged.
+
+# ===== POST-FACTS (M-24) =====
+  rescue/20260807-bab6a0a

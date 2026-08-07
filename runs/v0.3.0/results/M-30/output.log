@@ -1,0 +1,8 @@
+
+# ===== LIVE SESSION (M-30) =====
+[2;36m⚡[0m  (instant)
+✗  Not inside a git repository. Run 'gitrust "initialize a repository"' or 'git init' first.
+EXIT=1
+
+# ===== POST-FACTS (M-30) =====
+expect: friendly not-a-repo message, no stack trace, EXIT nonzero
