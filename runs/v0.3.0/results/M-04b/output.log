@@ -1,0 +1,64 @@
+sandbox 'm04b' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m04b/work
+./runner.sh: line 155: docs/guide.md: No such file or directory
+
+# ===== LIVE SESSION (M-04b) =====
+[2;35m◉[0m  (llm · ~10.8s)
+[?25l[38;5;10m?[39m Push 'main' to origin? (Y/n)  [31C[?25h[?25l[31D[38;5;10m>[39m Push 'main' to origin? [38;5;14mYes[39m[K
+[?25h[?25h
+  Nothing committed yet — `push` alone won't ship your local edits.
+  [2m(you have uncommitted changes; push needs a commit first)[0m
+
+[?25l[38;5;10m?[39m What did you want to do?  
+[38;5;14m>[39m [38;5;14mStage all → commit → push     [2mship your edits in one go[0m[39m
+  Just commit (don't push)      [2mstage + commit only[0m
+  Cancel
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[4A[27C[?25h[?25l[27D[38;5;10m?[39m What did you want to do? y [K
+
+
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[K
+[2K[4A[28C[?25h[?25l[28D[38;5;10m?[39m What did you want to do?  [K
+
+
+  Cancel[K
+[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[4A[27C[?25h[?25l[27D[38;5;10m>[39m What did you want to do? [38;5;14mStage all → commit → push     [2mship your edits in one go[0m[39m[K
+[2K
+[2K
+[2K
+[2K
+[?25h[4A[?25h
+Plan  · 3 steps · [2msnapshot taken at 3840fc2[0m
+
+  ●  stage     all modified files  [33m⚠[0m
+  [2m│[0m
+  ●  commit    "update"  [33m⚠[0m
+  [2m│[0m
+  ●  push      → origin/main  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  stage     all modified files  [32m●[0m  stage     all modified files  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Staged all changes[0m
+  [2m│[0m
+  [2m●[0m  commit    "update"  [32m●[0m  commit    "update"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Committed: update (3840fc2→e1d8f4b)[0m
+  [2m│[0m
+  [2m●[0m  push      → origin/main  [32m●[0m  push      → origin/main  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Pushed 1 commit(s) to origin/main[0m
+
+  [32m✓[0m [32mDone · 1 commit on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-04b) =====
+pushed files (only the scoped ones should appear):
+commit e1d8f4bf6dd205e61c273e954c0cbead6e5ef7a5
+Author: you <you@test.com>
+Date:   Mon Aug 10 12:03:57 2026 +0530
+
+    update
+
+ README.md     | 1 +
+ docs/guide.md | 1 +
+ login.txt     | 1 +
+ schema.sql    | 1 +
+ 4 files changed, 4 insertions(+)

@@ -1,0 +1,54 @@
+sandbox 'm04c' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m04c/work
+
+# ===== LIVE SESSION (M-04c) =====
+[2;35m◉[0m  (llm · ~11.1s)
+
+Select files to stage
+  Related   (0, pre-checked)
+  Uncertain (1, visible, not pre-checked)
+  Unrelated (3, hidden · re-run with --show-all to see)
+
+[?25l[38;5;10m?[39m Select files to stage (Space to toggle, Enter to confirm):  
+[38;5;14m>[39m [38;5;14m[ ][39m [38;5;14m[uncertain] api_routes.txt  [2mregistering a route is not necessarily related to the export functionality unless explicitly stated or contextually implied.[0m[39m
+[38;5;14m[[39m[38;5;14m↑↓ to move, space to select one, → to all, ← to none, type to filter[39m[38;5;14m][39m[2A[61C[?25h[?25l[61D
+[38;5;14m>[39m [38;5;14m[x][39m [38;5;14m[uncertain] api_routes.txt  [2mregistering a route is not necessarily related to the export functionality unless explicitly stated or contextually implied.[0m[39m[K
+[2A[61C[?25h[?25l[61D[38;5;10m>[39m Select files to stage (Space to toggle, Enter to confirm): [38;5;14m[uncertain] api_routes.txt  [2mregistering a route is not necessarily related to the export functionality unless exp[39m[K
+[38;5;14mlicitly stated or contextually implied.[0m[39m[K
+[2K
+[?25h[1A[?25h  Drafting commit message from diff… ✓
+[?25l[38;5;10m?[39m Commit message (edit or accept): update files [47C[?25h[?25l[47D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mupdate files[39m[K
+[?25h[?25h
+Plan  · 3 steps · [2msnapshot taken at 8d605f1[0m
+
+  ●  stage     api_routes.txt  [33m⚠[0m
+  [2m│[0m     [2m+ api_routes.txt[0m
+  [2m│[0m
+  ●  commit    "update files"  [33m⚠[0m
+  [2m│[0m
+  ●  push      → origin/main  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  stage     api_routes.txt  [32m●[0m  stage     api_routes.txt  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Staged api_routes.txt[0m
+  [2m│[0m
+  [2m●[0m  commit    "update files"  [32m●[0m  commit    "update files"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Committed: update files (8d605f1→39ac9d6)[0m
+  [2m│[0m
+  [2m●[0m  push      → origin/main  [32m●[0m  push      → origin/main  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Pushed 1 commit(s) to origin/main[0m
+
+  [32m✓[0m [32mDone · 1 commit on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-04c) =====
+pushed files (only the scoped ones should appear):
+commit 39ac9d648bad810e1a7efff6d7593b850b12cb45
+Author: you <you@test.com>
+Date:   Mon Aug 10 12:05:09 2026 +0530
+
+    update files
+
+ api_routes.txt | 1 +
+ 1 file changed, 1 insertion(+)

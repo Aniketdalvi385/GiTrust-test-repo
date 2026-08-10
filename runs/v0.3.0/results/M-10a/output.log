@@ -1,0 +1,26 @@
+sandbox 'm10a' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m10a/work
+origin/HEAD set to main
+teammate pushed a commit to m10a's remote
+
+# ===== LIVE SESSION (M-10a) =====
+[2;36m⚡[0m  (instant)
+Fetching origin… ✓
+  Fast-forwarded to origin/main — no merge or rebase needed.
+
+Plan  · 1 steps · [2msnapshot taken at 370a9bb[0m
+
+  ●  merge     origin/main → "Merge origin/main into feature"  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  merge     origin/main → "Merge origin/main into feature"  [32m●[0m  merge     origin/main → "Merge origin/main into feature"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Merged origin/main (merge commit recorded)[0m
+
+  [32m✓[0m [32mDone · on feature[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
+
+# ===== POST-FACTS (M-10a) =====
+does feature now contain the teammate (main) commit?
+aa3f231 teammate: hotfix
+370a9bb base
