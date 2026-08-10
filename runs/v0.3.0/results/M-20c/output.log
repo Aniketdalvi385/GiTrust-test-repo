@@ -11,7 +11,7 @@ sandbox 'm20c' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy7400
 
 [?25l[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): [38;5;8mmain[39m [149C[?25h[?25l[149D[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): m [K[150C[?25h[?25l[150D[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): ma [K[151C[?25h[?25l[151D[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): mai [K[152C[?25h[?25l[152D[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): main [K[153C[?25h[?25l[153D[38;5;10m>[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): [38;5;14mmain[39m[K
 [?25h[?25h
-Plan  · 2 steps · [2msnapshot taken at 7911fb8[0m
+Plan  · 2 steps · [2msnapshot taken at 2bce6df[0m
 
   ●  amend     "final wording here"  [33m⚠[0m
   [2m│[0m
@@ -31,7 +31,7 @@ Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (
 Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To /var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m20c/remote.git
- + 7911fb8...4be278f main -> main (forced update)
+ + 2bce6df...d2c2fcb main -> main (forced update)
   [32m●[0m  force push→ origin/main (with-lease)  [1;31m⛔[0m  [32m●[0m
   [2m│[0m  [2m→ Force-pushed to origin/main (with-lease)[0m
 
@@ -39,5 +39,5 @@ To /var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m20c/remot
   [2mNext: gitrust "status" · undo with `gitrust recover`[0m
 
 # ===== POST-FACTS (M-20c) =====
-local HEAD: 4be278f2fc482bab691e948f0665eea429dd5f99
+local HEAD: d2c2fcb834c3524bebc5b2a6fd7c9c10e728d3cf
 origin subject: final wording here

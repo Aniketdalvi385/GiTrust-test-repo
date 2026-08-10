@@ -5,10 +5,10 @@
 | **LLM** | partial |
 | **Ollama** | on |
 | **Result** | ⚠️ PASS (with defects) |
-| **Run** | v0.3.0 · 2026-08-10 12:13 |
+| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
 
 ## Notes
-Routed through the scoped resolver (⚡). BUT scope quality is wrong: the model pre-checked api_client.txt as Related to login ("might handle authentication"), so the push shipped login.txt + api_client.txt. readme.txt correctly hidden. Scoping MACHINERY works; the model's relatedness judgment is loose. Compare M-04c where the same api_client.txt was called Unrelated — inconsistent relatedness.
+⚡ instant (fast-path scoped — routing FIXED). Resolver quality loose: pre-checked login.txt + api_client.txt as Related to login ("might handle authentication"); auth.txt offered as Uncertain and toggled on. Pushed login.txt + api_client.txt + auth.txt. readme.txt correctly excluded. Routing is now instant and correct; the model relatedness is over-inclusive (api_client pulled into "login").
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command

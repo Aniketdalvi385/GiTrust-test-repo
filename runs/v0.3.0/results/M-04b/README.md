@@ -2,13 +2,13 @@
 
 | | |
 |---|---|
-| **LLM** | yes |
+| **LLM** | partial |
 | **Ollama** | on |
-| **Result** | ❌ FAIL |
-| **Run** | v0.3.0 · 2026-08-10 12:13 |
+| **Result** | ⚠️ PASS (with defects) |
+| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
 
 ## Notes
-MISROUTE: "push all docs changes" was classified as a BARE push (◉ LLM), not a scoped pipeline. Hit "nothing committed yet" → chose Stage-all→commit→push → committed ALL FOUR files (README.md, docs/guide.md, login.txt, schema.sql). No scoping happened. Root cause: the docs scope phrase is not captured deterministically; the 3B LLM does not scope it. Contrast M-04a (login) which DID scope. Same root cause as M-10c/M-19b/M-20b.
+ROUTING FIXED (⚡ instant, was ◉ LLM bare-push shipping all 4 files). But scope QUALITY is wrong: only docs/guide.md was Related/pre-checked; README.md — also a docs file — was classified Unrelated/hidden and NOT pushed. A "docs" push that omits the README is under-inclusive. Big improvement over the prior FAIL (no longer ships schema/login), but the resolver missed an obvious docs file. ⚠️ not ✅.
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command

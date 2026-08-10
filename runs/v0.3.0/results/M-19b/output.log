@@ -1,33 +1,33 @@
 sandbox 'm19b' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m19b/work
 
 # ===== LIVE SESSION (M-19b) =====
-[2;35m◉[0m  (llm · ~9.7s)
-[?25l[38;5;10m?[39m Undo 48e0ec8 "c3" — what should happen to its changes?  
-[38;5;14m>[39m [38;5;14mKeep them staged — [2mkeep them staged (soft reset) — the commit is removed, files stay ready to re-commit.[0m[39m
-  Keep them in files — [2mkeep them in your files, unstaged (mixed reset) — re-stage what you want before committing.[0m
-  Make an inverse commit (revert) — [2madd an inverse commit (revert) — history is preserved; safe even after pushing.[0m
-  Discard completely — [2mdiscard them completely (hard reset) — the changes are gone (reflog holds them ~90 days). Requires typing to confirm.[0m
-[38;5;14m[[39m[38;5;14m↑↓ to move, enter to select, type to filter[39m[38;5;14m][39m[5A[57C[?25h[?25l[57D[38;5;10m>[39m Undo 48e0ec8 "c3" — what should happen to its changes? [38;5;14mKeep them staged — [2mkeep them staged (soft reset) — the commit is removed, files stay ready to re-commit.[0m[39m[K
-[2K
-[2K
-[2K
-[2K
-[2K
-[?25h[5A[?25h
-Plan  · 1 steps · [2msnapshot taken at 48e0ec8[0m
+[2;36m⚡[0m  (instant)
+[?25l[38;5;10m?[39m Squashed commit message (3 commits): c3
+c2
+c1 [2A[47C[?25h[?25l[47D[38;5;10m>[39m Squashed commit message (3 commits): [38;5;14mc3[39m[K
+[38;5;14mc2[39m[K
+[38;5;14mc1[39m[K
+[?25h[?25h
+Plan  · 1 steps · [2msnapshot taken at 8e935ee[0m
 
-  ●  undo      48e0ec8 "c3"  [33m⚠[0m
+  ●  squash    last 3 → "c3
+c2
+c1"  [33m⚠[0m
 
   [2m[Enter] run · [q] cancel[0m
 
 [?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
-[?25h[?25h  [2m●[0m  undo      48e0ec8 "c3"  [32m●[0m  undo      48e0ec8 "c3"  [33m⚠[0m  [32m●[0m
-  [2m│[0m  [2m→ Undid commit 48e0ec8 "c3" (files re-staged)[0m
+[?25h[?25h  [2m●[0m  squash    last 3 → "c3
+c2
+c1"  [32m●[0m  squash    last 3 → "c3
+c2
+c1"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Squashed the last 3 commits into one[0m
 
-  [32m✓[0m [32mDone · on main, ↑2 ↓0[0m
+  [32m✓[0m [32mDone · on main, ↑1 ↓0[0m
   [2mNext: gitrust "status" · undo with `gitrust recover`[0m
 
 # ===== POST-FACTS (M-19b) =====
-count before: 4  after: 3  (expect -2)
+count before: 4  after: 2  (expect -2)
 tree before: bf23f090aa240bb252e284cdee9487d26dbe7313
-tree after:  2d2e01acc6617e36cb322c14a9028bcf520836be  (expect identical)
+tree after:  bf23f090aa240bb252e284cdee9487d26dbe7313  (expect identical)

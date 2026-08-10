@@ -4,11 +4,11 @@
 |---|---|
 | **LLM** | partial |
 | **Ollama** | on |
-| **Result** | ⚠️ PASS (with defects) |
-| **Run** | v0.3.0 · 2026-08-10 12:13 |
+| **Result** | ✅ PASS |
+| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
 
 ## Notes
-Routed through the scoped resolver (◉). Scope quality wrong the OTHER way: api_client.txt (the obvious api file) was classified Unrelated/hidden; only api_routes.txt was offered (as Uncertain). Pushed api_routes.txt only — api_client.txt, the primary api file, was EXCLUDED. Machinery works; model relatedness is unreliable and inconsistent with M-04a (which called api_client.txt related-to-login).
+⚡ instant (routing fixed). Resolver correct this time: api_client.txt + api_routes.txt both Related/pre-checked; login.txt + README.md hidden. Pushed exactly the two api files. Clean scope. PASS.
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command

@@ -4,11 +4,15 @@ sandbox 'm19c' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy7400
 [2;36m⚡[0m  (instant)
 [?25l[38;5;10m?[39m Squashed commit message (3 commits): c3
 c2
-c1 [2A[47C[?25h[?25l[47D[38;5;10m>[39m Squashed commit message (3 commits): [38;5;14mc3[39m[K
+c1 [2A[47C[?25h[?25l[47D
+
+c1y [K[2A[48C[?25h[?25l[48D
+
+c1 [K[2A[47C[?25h[?25l[47D[38;5;10m>[39m Squashed commit message (3 commits): [38;5;14mc3[39m[K
 [38;5;14mc2[39m[K
 [38;5;14mc1[39m[K
 [?25h[?25h
-Plan  · 1 steps · [2msnapshot taken at 1a7f76b[0m
+Plan  · 1 steps · [2msnapshot taken at 450ecea[0m
 
   ●  squash    last 3 → "c3
 c2

@@ -1,26 +1,27 @@
 sandbox 'm04c' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m04c/work
 
 # ===== LIVE SESSION (M-04c) =====
-[2;35m◉[0m  (llm · ~11.1s)
+[2;36m⚡[0m  (instant)
 
 Select files to stage
-  Related   (0, pre-checked)
-  Uncertain (1, visible, not pre-checked)
-  Unrelated (3, hidden · re-run with --show-all to see)
+  Related   (2, pre-checked)
+  Uncertain (0, visible, not pre-checked)
+  Unrelated (2, hidden · re-run with --show-all to see)
 
 [?25l[38;5;10m?[39m Select files to stage (Space to toggle, Enter to confirm):  
-[38;5;14m>[39m [38;5;14m[ ][39m [38;5;14m[uncertain] api_routes.txt  [2mregistering a route is not necessarily related to the export functionality unless explicitly stated or contextually implied.[0m[39m
-[38;5;14m[[39m[38;5;14m↑↓ to move, space to select one, → to all, ← to none, type to filter[39m[38;5;14m][39m[2A[61C[?25h[?25l[61D
-[38;5;14m>[39m [38;5;14m[x][39m [38;5;14m[uncertain] api_routes.txt  [2mregistering a route is not necessarily related to the export functionality unless explicitly stated or contextually implied.[0m[39m[K
-[2A[61C[?25h[?25l[61D[38;5;10m>[39m Select files to stage (Space to toggle, Enter to confirm): [38;5;14m[uncertain] api_routes.txt  [2mregistering a route is not necessarily related to the export functionality unless exp[39m[K
-[38;5;14mlicitly stated or contextually implied.[0m[39m[K
+[38;5;14m>[39m [38;5;14m[x][39m [38;5;14m[related]   api_client.txt  [2mfilename match[0m[39m
+  [38;5;10m[x][39m [related]   api_routes.txt  [2mfilename match[0m
+[38;5;14m[[39m[38;5;14m↑↓ to move, space to select one, → to all, ← to none, type to filter[39m[38;5;14m][39m[3A[61C[?25h[?25l[61D[38;5;10m>[39m Select files to stage (Space to toggle, Enter to confirm): [38;5;14m[related]   api_client.txt  [2mfilename match[0m, [related]   api_routes.txt  [2mfilename match[0m[39m[K
 [2K
-[?25h[1A[?25h  Drafting commit message from diff… ✓
+[2K
+[2K
+[?25h[3A[?25h  Drafting commit message from diff… ✓
 [?25l[38;5;10m?[39m Commit message (edit or accept): update files [47C[?25h[?25l[47D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mupdate files[39m[K
 [?25h[?25h
-Plan  · 3 steps · [2msnapshot taken at 8d605f1[0m
+Plan  · 3 steps · [2msnapshot taken at fe55b48[0m
 
-  ●  stage     api_routes.txt  [33m⚠[0m
+  ●  stage     api_client.txt, api_routes.txt  [33m⚠[0m
+  [2m│[0m     [2m+ api_client.txt[0m
   [2m│[0m     [2m+ api_routes.txt[0m
   [2m│[0m
   ●  commit    "update files"  [33m⚠[0m
@@ -30,11 +31,11 @@ Plan  · 3 steps · [2msnapshot taken at 8d605f1[0m
   [2m[Enter] run · [q] cancel[0m
 
 [?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
-[?25h[?25h  [2m●[0m  stage     api_routes.txt  [32m●[0m  stage     api_routes.txt  [33m⚠[0m  [32m●[0m
-  [2m│[0m  [2m→ Staged api_routes.txt[0m
+[?25h[?25h  [2m●[0m  stage     api_client.txt, api_routes.txt  [32m●[0m  stage     api_client.txt, api_routes.txt  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Staged 2 files[0m
   [2m│[0m
   [2m●[0m  commit    "update files"  [32m●[0m  commit    "update files"  [33m⚠[0m  [32m●[0m
-  [2m│[0m  [2m→ Committed: update files (8d605f1→39ac9d6)[0m
+  [2m│[0m  [2m→ Committed: update files (fe55b48→1b0b515)[0m
   [2m│[0m
   [2m●[0m  push      → origin/main  [32m●[0m  push      → origin/main  [33m⚠[0m  [32m●[0m
   [2m│[0m  [2m→ Pushed 1 commit(s) to origin/main[0m
@@ -44,11 +45,12 @@ Plan  · 3 steps · [2msnapshot taken at 8d605f1[0m
 
 # ===== POST-FACTS (M-04c) =====
 pushed files (only the scoped ones should appear):
-commit 39ac9d648bad810e1a7efff6d7593b850b12cb45
+commit 1b0b51541293b923359d4f3a1c064a37c045ab63
 Author: you <you@test.com>
-Date:   Mon Aug 10 12:05:09 2026 +0530
+Date:   Mon Aug 10 16:19:09 2026 +0530
 
     update files
 
+ api_client.txt | 1 +
  api_routes.txt | 1 +
- 1 file changed, 1 insertion(+)
+ 2 files changed, 2 insertions(+)

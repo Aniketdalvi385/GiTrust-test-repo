@@ -2,13 +2,13 @@
 
 | | |
 |---|---|
-| **LLM** | yes |
+| **LLM** | llm |
 | **Ollama** | on |
 | **Result** | ✅ PASS |
-| **Run** | v0.3.0 · 2026-08-10 12:13 |
+| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
 
 ## Notes
-LLM → stage-all → editable message → committed (5c21696→d72726a). Same behavior as M-03a. PASS. All three commit phrasings route identically.
+◉ LLM → stage-all → editable message → committed (f945a22→f5a06da). PASS.
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command

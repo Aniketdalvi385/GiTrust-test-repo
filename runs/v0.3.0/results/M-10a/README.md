@@ -5,10 +5,10 @@
 | **LLM** | no |
 | **Ollama** | on |
 | **Result** | ✅ PASS |
-| **Run** | v0.3.0 · 2026-08-10 12:13 |
+| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
 
 ## Notes
-Fast-path (⚡) → fetch → merged origin/main into feature. feature now contains teammate/main commit (aa3f231). Target correctly resolved. (Note: it merged rather than offering a rebase ChoiceGate because the branch fast-forwarded — acceptable; the sync landed.)
+⚡ instant → fetch → merged origin/main into feature; feature now has teammate/main commit (c50b360). Target resolved. PASS.
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command

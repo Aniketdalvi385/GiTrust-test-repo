@@ -1,15 +1,15 @@
 sandbox 'm03c' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m03c/work
 
 # ===== LIVE SESSION (M-03c) =====
-[2;35m◉[0m  (llm · ~11.2s)
+[2;35m◉[0m  (llm · ~16.6s)
   Drafting commit message from diff… ✓
-[?25l[38;5;10m?[39m Commit message (edit or accept): fix(app.txt): add missing line in app.txt [76C[?25h[?25l[76D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mfix(app.txt): add missing line in app.txt[39m[K
+[?25l[38;5;10m?[39m Commit message (edit or accept): fix(app.txt): add missing change line [72C[?25h[?25l[72D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mfix(app.txt): add missing change line[39m[K
 [?25h[?25h
-Plan  · 2 steps · [2msnapshot taken at 5c21696[0m
+Plan  · 2 steps · [2msnapshot taken at f945a22[0m
 
   ●  stage     all modified files  [33m⚠[0m
   [2m│[0m
-  ●  commit    "fix(app.txt): add missing line in app.txt"  [33m⚠[0m
+  ●  commit    "fix(app.txt): add missing change line"  [33m⚠[0m
 
   [2m[Enter] run · [q] cancel[0m
 
@@ -17,11 +17,11 @@ Plan  · 2 steps · [2msnapshot taken at 5c21696[0m
 [?25h[?25h  [2m●[0m  stage     all modified files  [32m●[0m  stage     all modified files  [33m⚠[0m  [32m●[0m
   [2m│[0m  [2m→ Staged all changes[0m
   [2m│[0m
-  [2m●[0m  commit    "fix(app.txt): add missing line in app.txt"  [32m●[0m  commit    "fix(app.txt): add missing line in app.txt"  [33m⚠[0m  [32m●[0m
-  [2m│[0m  [2m→ Committed: fix(app.txt): add missing line in app.txt (5c21696→d72726a)[0m
+  [2m●[0m  commit    "fix(app.txt): add missing change line"  [32m●[0m  commit    "fix(app.txt): add missing change line"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Committed: fix(app.txt): add missing change line (f945a22→f5a06da)[0m
 
   [32m✓[0m [32mDone · 1 commit on main, ↑1 ↓0[0m
   [2mNext: gitrust "status" · undo with `gitrust recover`[0m
 
 # ===== POST-FACTS (M-03c) =====
-HEAD subject: fix(app.txt): add missing line in app.txt
+HEAD subject: fix(app.txt): add missing change line

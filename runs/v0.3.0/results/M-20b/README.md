@@ -2,13 +2,13 @@
 
 | | |
 |---|---|
-| **LLM** | yes |
+| **LLM** | llm |
 | **Ollama** | on |
 | **Result** | ❌ FAIL |
-| **Run** | v0.3.0 · 2026-08-10 12:13 |
+| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
 
 ## Notes
-MISROUTE: "reword the last commit to '…'" fell to the LLM (◉), which read it as a NEW commit, drafted "update files", hit "Nothing staged", and BLOCKED. No amend, no force-push; remote subject unchanged ("typo mesage"). The verb "reword" is not a recognized amend-message trigger; only "fix the last commit message to" / "change my last commit message to" fast-path. Same root cause as the other misroutes.
+MISROUTE (unchanged): "reword the last commit to '…'" (◉ LLM) read as a new commit → drafted "update files" → "Nothing staged" → BLOCKED. No amend, no force-push; remote subject unchanged ("typo mesage"). capture_amend_message requires "commit message" in the phrase; "reword the last commit to X" (no literal "message") is not matched, and amend is router-excluded. Known gap; candidate for capture_amend_message widening ("reword … to X").
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command

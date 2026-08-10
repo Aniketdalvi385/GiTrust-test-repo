@@ -1,13 +1,13 @@
 sandbox 'm20b' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m20b/work
 
 # ===== LIVE SESSION (M-20b) =====
-[2;35m◉[0m  (llm · ~10.5s)
+[2;35m◉[0m  (llm · ~16.1s)
   Drafting commit message from diff… ✓
-[?25l[38;5;10m?[39m Commit message (edit or accept): update files [47C[?25h[?25l[47D[38;5;10m?[39m Commit message (edit or accept): update files\ [K[48C[?25h[?25l[48D[38;5;10m?[39m Commit message (edit or accept): update files [K[47C[?25h[?25l[47D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mupdate files[39m[K
+[?25l[38;5;10m?[39m Commit message (edit or accept): update files [47C[?25h[?25l[47D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mupdate files[39m[K
 [?25h[?25h✗  Pre-check failed:
    · Nothing staged to commit. Stage files first (e.g. 'commit the <file>' or 'commit all my files').
 ✗  Pre-checks blocked execution.
 
 # ===== POST-FACTS (M-20b) =====
-local HEAD: d70582307b37fe52ef2108f27e5a020ae4eb8f9e
+local HEAD: e1803d380c7bbef0c922ecc253a9a1d91b0d85e8
 origin subject: typo mesage

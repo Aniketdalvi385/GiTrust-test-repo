@@ -5,10 +5,10 @@
 | **LLM** | no |
 | **Ollama** | on |
 | **Result** | ✅ PASS |
-| **Run** | v0.3.0 · 2026-08-10 12:13 |
+| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
 
 ## Notes
-Fast-path (⚡) → fetch → merged origin/main into feature (ffdba6b teammate: hotfix present). Target resolved correctly. Same behavior as M-10a.
+⚡ instant → fetch → merged origin/main; feature has teammate commit (451dd1d). PASS.
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command
