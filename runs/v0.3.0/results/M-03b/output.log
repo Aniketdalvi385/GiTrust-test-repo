@@ -1,20 +1,27 @@
 sandbox 'm03b' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m03b/work
 
 # ===== LIVE SESSION (M-03b) =====
-[2;35m◉[0m  (llm · ~13.8s)
-
-Plan  · 1 steps · [2msnapshot taken at 6c57c6a[0m
+[2;36m⚡[0m  (instant)
+  Drafting commit message from diff… ✓
+[?25l[38;5;10m?[39m Commit message (edit or accept): fix(app.txt): add missing change line [72C[?25h[?25l[72D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mfix(app.txt): add missing change line[39m[K
+[?25h[?25h
+Plan  · 2 steps · [2msnapshot taken at ae7632b[0m
 
   ●  stage     all modified files  [33m⚠[0m
+  [2m│[0m
+  ●  commit    "fix(app.txt): add missing change line"  [33m⚠[0m
 
   [2m[Enter] run · [q] cancel[0m
 
 [?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
 [?25h[?25h  [2m●[0m  stage     all modified files  [32m●[0m  stage     all modified files  [33m⚠[0m  [32m●[0m
   [2m│[0m  [2m→ Staged all changes[0m
+  [2m│[0m
+  [2m●[0m  commit    "fix(app.txt): add missing change line"  [32m●[0m  commit    "fix(app.txt): add missing change line"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Committed: fix(app.txt): add missing change line (ae7632b→0249dc2)[0m
 
-  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [32m✓[0m [32mDone · 1 commit on main, ↑1 ↓0[0m
   [2mNext: gitrust "status" · undo with `gitrust recover`[0m
 
 # ===== POST-FACTS (M-03b) =====
-HEAD subject: base
+HEAD subject: fix(app.txt): add missing change line

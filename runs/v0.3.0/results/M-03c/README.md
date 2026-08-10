@@ -2,13 +2,13 @@
 
 | | |
 |---|---|
-| **LLM** | llm |
+| **LLM** | no |
 | **Ollama** | on |
 | **Result** | ✅ PASS |
-| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
+| **Run** | v0.3.0 · 2026-08-10 16:40 (capture-fix re-run) |
 
 ## Notes
-◉ LLM → stage-all → editable message → committed (f945a22→f5a06da). PASS.
+⚡ instant → stage-all → editable message → committed (75e2ee6→525b2ac). PASS.
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command

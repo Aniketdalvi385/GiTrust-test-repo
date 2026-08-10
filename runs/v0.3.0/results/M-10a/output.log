@@ -7,7 +7,7 @@ teammate pushed a commit to m10a's remote
 Fetching origin… ✓
   Fast-forwarded to origin/main — no merge or rebase needed.
 
-Plan  · 1 steps · [2msnapshot taken at a10fbf9[0m
+Plan  · 1 steps · [2msnapshot taken at 6756168[0m
 
   ●  merge     origin/main → "Merge origin/main into feature"  [33m⚠[0m
 
@@ -22,5 +22,5 @@ Plan  · 1 steps · [2msnapshot taken at a10fbf9[0m
 
 # ===== POST-FACTS (M-10a) =====
 does feature now contain the teammate (main) commit?
-c50b360 teammate: hotfix
-a10fbf9 base
+2b0b066 teammate: hotfix
+6756168 base

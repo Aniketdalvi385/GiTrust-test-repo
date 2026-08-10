@@ -8,16 +8,16 @@
 | `gitrust --version` | 0.3.0 |
 | Ollama model | qwen2.5:3b |
 
-**Verdicts:** ✅ 37 PASS · ⚠️ 2 PASS-with-defects · ❌ 3 FAIL · ⛔ 0 BLOCKED · ⏭️ 0 SKIP
+**Verdicts:** ✅ 40 PASS · ⚠️ 2 PASS-with-defects · ❌ 0 FAIL · ⛔ 0 BLOCKED · ⏭️ 0 SKIP
 
 | ID | Title | LLM | Result |
 |---|---|---|---|
 | [M-00](results/M-00/) | Build, version, setup | yes | ✅ PASS |
 | [M-01](results/M-01/) | Fast-path status (Ollama OFF) | no | ✅ PASS |
 | [M-02](results/M-02/) | LLM-path classification | yes | ✅ PASS |
-| [M-03a](results/M-03a/) | Commit with editable message — "commit this" | llm | ✅ PASS |
-| [M-03b](results/M-03b/) | Commit with editable message — "save my changes" | llm | ❌ FAIL |
-| [M-03c](results/M-03c/) | Commit with editable message — "commit everything" | llm | ✅ PASS |
+| [M-03a](results/M-03a/) | Commit with editable message — "commit this" | no | ✅ PASS |
+| [M-03b](results/M-03b/) | Commit with editable message — "save my changes" | no | ✅ PASS |
+| [M-03c](results/M-03c/) | Commit with editable message — "commit everything" | no | ✅ PASS |
 | [M-04a](results/M-04a/) | Scoped feature pipeline — login scope | partial | ⚠️ PASS (with defects) |
 | [M-04b](results/M-04b/) | Scoped feature pipeline — docs scope | partial | ⚠️ PASS (with defects) |
 | [M-04c](results/M-04c/) | Scoped feature pipeline — api scope | partial | ✅ PASS |
@@ -29,7 +29,7 @@
 | [M-09](results/M-09/) | Abort restores exactly | no | ✅ PASS |
 | [M-10a](results/M-10a/) | Sync feature with a target branch — "sync with main" | no | ✅ PASS |
 | [M-10b](results/M-10b/) | Sync feature with a target branch — "update feature from main" | no | ✅ PASS |
-| [M-10c](results/M-10c/) | Sync feature with a target branch — "pull main into feature" | llm | ❌ FAIL |
+| [M-10c](results/M-10c/) | Sync feature with a target branch — "pull main into feature" | no | ✅ PASS |
 | [M-11](results/M-11/) | Mid-rebase never says checkout a branch | yes | ✅ PASS |
 | [M-12](results/M-12/) | Merge-aware commit: two parents | yes | ✅ PASS |
 | [M-13](results/M-13/) | Detached write -> rescue | yes | ✅ PASS |
@@ -42,8 +42,8 @@
 | [M-19b](results/M-19b/) | Squash last 3 — word "last three commits" | yes | ✅ PASS |
 | [M-19c](results/M-19c/) | Squash last 3 — verb "combine the last 3" | yes | ✅ PASS |
 | [M-20a](results/M-20a/) | Amend-on-pushed — "fix the last commit message to …" | yes | ✅ PASS |
-| [M-20b](results/M-20b/) | Amend-on-pushed — "reword the last commit to …" | llm | ❌ FAIL |
-| [M-20c](results/M-20c/) | Amend-on-pushed — "change my last commit message to …" | yes | ✅ PASS |
+| [M-20b](results/M-20b/) | Amend-on-pushed — "reword the last commit to …" | no | ✅ PASS |
+| [M-20c](results/M-20c/) | Amend-on-pushed — "change my last commit message to …" | no | ✅ PASS |
 | [M-21](results/M-21/) | Failing pre-commit blocks (via system git) | yes | ✅ PASS |
 | [M-22](results/M-22/) | Revert parity: succeeds despite the same hook | no | ✅ PASS |
 | [M-23](results/M-23/) | Deleted branch -> find my lost work (flagship) | no | ✅ PASS (flawless) |

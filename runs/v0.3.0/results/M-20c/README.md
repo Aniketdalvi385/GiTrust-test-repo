@@ -2,10 +2,10 @@
 
 | | |
 |---|---|
-| **LLM** | yes |
+| **LLM** | no |
 | **Ollama** | on |
 | **Result** | ✅ PASS |
-| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
+| **Run** | v0.3.0 · 2026-08-10 16:40 (capture-fix re-run) |
 
 ## Notes
 ⚡ instant → published-detection → TypeToConfirm → --force-with-lease. Remote subject = "final wording here". PASS.

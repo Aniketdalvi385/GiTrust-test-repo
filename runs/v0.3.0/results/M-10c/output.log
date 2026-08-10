@@ -3,14 +3,24 @@ origin/HEAD set to main
 teammate pushed a commit to m10c's remote
 
 # ===== LIVE SESSION (M-10c) =====
-[2;35m◉[0m  (llm · ~16.5s)
-On branch feature · no upstream
-Last commit: 05c84c3 "base" (just now)
+[2;36m⚡[0m  (instant)
+Fetching origin… ✓
+  Fast-forwarded to origin/main — no merge or rebase needed.
 
-Nothing to commit, working tree clean.
+Plan  · 1 steps · [2msnapshot taken at 69a7416[0m
 
-→ No upstream set. Try: gitrust "publish"
+  ●  merge     origin/main → "Merge origin/main into feature"  [33m⚠[0m
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  merge     origin/main → "Merge origin/main into feature"  [32m●[0m  merge     origin/main → "Merge origin/main into feature"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Merged origin/main (merge commit recorded)[0m
+
+  [32m✓[0m [32mDone · on feature[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
 
 # ===== POST-FACTS (M-10c) =====
 does feature now contain the teammate (main) commit?
-05c84c3 base
+5151af6 teammate: hotfix
+69a7416 base

@@ -12,7 +12,7 @@ across releases as bugs get fixed and the tool moves toward public release.
 | Version | Date | Result | Report |
 |---|---|---|---|
 | [**v0.2.0**](runs/v0.2.0/) | 2026-07-31 → 08-05 | 19 ✅ · 4 ⚠️ · 8 ❌ | [REPORT](runs/v0.2.0/REPORT.md) |
-| [**v0.3.0**](runs/v0.3.0/) | 2026-08-07 → 08-10 | 37 ✅ · 2 ⚠️ · 3 ❌ · 0 ⏭️ (42 incl. variants; after embedding-router) | [REPORT](runs/v0.3.0/REPORT.md) |
+| [**v0.3.0**](runs/v0.3.0/) | 2026-08-07 → 08-10 | 40 ✅ · 2 ⚠️ · 0 ❌ · 0 ⏭️ (42 incl. variants; router + capture widening) | [REPORT](runs/v0.3.0/REPORT.md) |
 
 **Public-release gate:** all 🔴 critical/systemic findings resolved and a clean re-run (0 ❌) before
 the tool goes public. v0.2.0 surfaced three root-cause clusters (below) — v0.3.0 re-runs the same

@@ -2,13 +2,13 @@
 
 | | |
 |---|---|
-| **LLM** | llm |
+| **LLM** | no |
 | **Ollama** | on |
-| **Result** | ❌ FAIL |
-| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
+| **Result** | ✅ PASS |
+| **Run** | v0.3.0 · 2026-08-10 16:40 (capture-fix re-run) |
 
 ## Notes
-MISROUTE (unchanged): "reword the last commit to '…'" (◉ LLM) read as a new commit → drafted "update files" → "Nothing staged" → BLOCKED. No amend, no force-push; remote subject unchanged ("typo mesage"). capture_amend_message requires "commit message" in the phrase; "reword the last commit to X" (no literal "message") is not matched, and amend is router-excluded. Known gap; candidate for capture_amend_message widening ("reword … to X").
+FIXED. ⚡ instant (was ◉ LLM → misread as new commit → blocked). capture_amend_message now accepts the reword/rename shape without the literal word "message". Full flagship fired: published-detection → TypeToConfirm → --force-with-lease. Remote subject = "cleaner subject line".
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command

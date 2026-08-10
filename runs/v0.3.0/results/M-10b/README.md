@@ -5,10 +5,10 @@
 | **LLM** | no |
 | **Ollama** | on |
 | **Result** | ✅ PASS |
-| **Run** | v0.3.0 · 2026-08-10 16:22 (router re-run) |
+| **Run** | v0.3.0 · 2026-08-10 16:40 (capture-fix re-run) |
 
 ## Notes
-⚡ instant → fetch → merged origin/main; feature has teammate commit (451dd1d). PASS.
+⚡ instant → fetch → merged origin/main; teammate commit present (d3a1735). PASS.
 
 ## Evidence
 - [`commands.sh`](commands.sh) — setup + command

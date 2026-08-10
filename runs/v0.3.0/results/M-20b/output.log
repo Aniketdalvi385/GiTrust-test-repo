@@ -1,13 +1,43 @@
 sandbox 'm20b' ready — BR=main, cwd=/var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m20b/work
 
 # ===== LIVE SESSION (M-20b) =====
-[2;35m◉[0m  (llm · ~16.1s)
-  Drafting commit message from diff… ✓
-[?25l[38;5;10m?[39m Commit message (edit or accept): update files [47C[?25h[?25l[47D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mupdate files[39m[K
-[?25h[?25h✗  Pre-check failed:
-   · Nothing staged to commit. Stage files first (e.g. 'commit the <file>' or 'commit all my files').
-✗  Pre-checks blocked execution.
+[2;36m⚡[0m  (instant)
+  Heads up: the target commit is already published. Amending/squashing it rewrites shared history.
+
+  [1;31m⛔[0m [1;31mIrreversible[0m: Replaces the remote branch with your local version, overwriting whatever is there.
+     Risks:    Anyone who fetched the old version will need to reset. Their commits made on top are abandoned.
+     Recovery: Recovery exists only if someone has the old SHA: `git reflog` finds it locally; otherwise it's gone.
+     Safety:   Uses --force-with-lease — refuses if the remote moved since your last fetch (catches accidental teammate overwrites).
+
+[?25l[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): [38;5;8mmain[39m [149C[?25h[?25l[149D[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): m [K[150C[?25h[?25l[150D[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): ma [K[151C[?25h[?25l[151D[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): mai [K[152C[?25h[?25l[152D[38;5;10m?[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): main [K[153C[?25h[?25l[153D[38;5;10m>[39m This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm the rewrite + force-push (with lease): [38;5;14mmain[39m[K
+[?25h[?25h
+Plan  · 2 steps · [2msnapshot taken at d4bac2b[0m
+
+  ●  amend     "cleaner subject line"  [33m⚠[0m
+  [2m│[0m
+  ●  force push→ origin/main (with-lease)  [1;31m⛔[0m
+
+  Warnings:
+    · This rewrites a commit that's already on the remote — completing it needs a force push (with lease).
+
+  [2m[Enter] run · [q] cancel[0m
+
+[?25l[38;5;10m?[39m Execute this plan? [Y/n] (Y/n)  [33C[?25h[?25l[33D[38;5;10m?[39m Execute this plan? [Y/n] (Y/n) y [K[34C[?25h[?25l[34D[38;5;10m>[39m Execute this plan? [Y/n] [38;5;14mYes[39m[K
+[?25h[?25h  [2m●[0m  amend     "cleaner subject line"  [32m●[0m  amend     "cleaner subject line"  [33m⚠[0m  [32m●[0m
+  [2m│[0m  [2m→ Amended the last commit[0m
+  [2m│[0m
+  [2m●[0m  force push→ origin/main (with-lease)Enumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 243 bytes | 243.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To /var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-sandboxes/m20b/remote.git
+ + d4bac2b...ebe28cb main -> main (forced update)
+  [32m●[0m  force push→ origin/main (with-lease)  [1;31m⛔[0m  [32m●[0m
+  [2m│[0m  [2m→ Force-pushed to origin/main (with-lease)[0m
+
+  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · undo with `gitrust recover`[0m
 
 # ===== POST-FACTS (M-20b) =====
-local HEAD: e1803d380c7bbef0c922ecc253a9a1d91b0d85e8
-origin subject: typo mesage
+local HEAD: ebe28cb0b5d505178ba7e46535dc7512dd74f1bb
+origin subject: cleaner subject line
