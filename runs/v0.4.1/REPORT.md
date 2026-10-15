@@ -4,6 +4,9 @@
 `AniketDalvi385/gitrust-kev-0.8b@v2` (T = 4.0, MLX, Apple M2 8 GB)
 **Suite:** 43 tests (M-00…M-30 carried over from v0.2/v0.3 with v0.4 expectations, M-31…M-42 new)
 **Eval:** 450 requests in three held-out sets, through the binary.
+**Fix plan:** in the GiTrust repo,
+[`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/v0.5.0-fixes/docs/v0.5.0_fix_plan.md) —
+all 20 findings, root causes in source, batches, decisions.
 
 ## How this run was done
 
@@ -58,15 +61,17 @@ Severity: 🔴 wrong action or crash · 🟠 misleading / inconsistent behaviour
 | F1 | 🔴 | **Panic on a closed pipe.** `gitrust --yes "show history" \| head -1` → `failed printing to stdout: Broken pipe`, exit 101. Fix: ignore `BrokenPipe` on output (or reset SIGPIPE). | M-41 |
 | F2 | 🟠 | **Raw error chain when the trash can't be written.** Safe (nothing deleted, exit 1) but prints `caused by: Permission denied (os error 13)` and a long temp path, twice, and never says "nothing was deleted". | M-27 |
 | F3 | 🔴 | **Exact-phrase rule misroutes "pull … into this branch" to sync.** "Pull the latest from origin into this branch." and "Update my branch from upstream; …" → ⚡ *Update from main* (merge main), not *Pull*. Deterministic, so the model can't save it. | eval v3 |
-| F4 | 🟠 | **One confident model miss: stash ↔ stash pop.** "Park my local modifications on the stash stack." → *Restore stashed changes* at 0.91. Failed harmlessly (no stash) but printed `Recovery: Some(NoLocalChange { … })` (a debug struct) and a `caused by:` chain. | eval v3 |
+| F4 | 🟠 | **One confident model miss: stash ↔ stash pop.** "Park my local modifications on the stash stack." → *Restore stashed changes* at 0.91. Failed harmlessly (no stash) but with a raw `caused by: reference 'refs/stash' not found` chain. (The `Recovery: Some(NoLocalChange …)` line seen in the eval output only prints under `GITRUST_DEBUG=1`, which the eval sets.) | eval v3 |
 | F5 | 🟠 | **Argument capture gaps.** Routed right, argument missed: topics in "only … the login related files", "the search part of my code", "the billing module changes", "Only the auth changes …"; branch names after a comma ("a fresh branch, release/2.4") or in "Check out release/2.3"; "my last few commits" (no count). And "push the login changes **with message 'login page'**" loses the topic entirely. | eval v3, M-04 |
 | F6 | 🟠 | **Side effects before the plan is confirmed.** The detached-HEAD rescue creates the branch and stages the changes *before* showing the plan; pressing `q` at the plan leaves them. | M-13, M-14 |
-| F7 | 🟠 | **Misleading "interrupted pipeline — run `gitrust --recover`" banner** after a deliberate conflict pause (the next `continue rebase` shows it). Needs checking what `--recover` would do after the rebase is finished. | M-08 |
+| F7 | 🔴 | **The paused-pipeline snapshot is a trap.** After a deliberate conflict pause, the next command shows "An interrupted pipeline was found — run `gitrust --recover`". `continue rebase` via GiTrust clears it afterwards, but if the rebase is finished with plain `git rebase --continue` the snapshot stays, and `--recover` on the now-clean repo would reset the branch to before the rebase — undoing the user's resolution (recoverable only via the reflog). Confirmed by reading `recovery_plan` (planning, not run). | M-08 |
 | F8 | 🟠 | **Hook failure dead-end.** After a pre-commit hook blocks the commit: a "Pick one: Show / Cancel" menu (a Cancel row), and Esc says "Canceled — nothing was done." although the files stay staged. | M-21 |
 | F9 | 🟠 | **Double confirmation.** Revert asks its own `(Y/n)` *and* then the plan prompt; undo-discard and pushed-amend ask type-to-confirm *and* the plan prompt. | M-22, M-16, M-20 |
 | F10 | 🟠 | **Older menus break the conventions:** the detached-HEAD rescue menu is un-numbered and has a "Cancel" row (also "Create a branch HERE"). | M-13, M-14 |
 | F11 | 🟠 | **Deleting untracked files has no typed confirmation** — the ⛔ plan + Enter only; the trash backup is their only copy. | M-26 |
 | F18 | 🟠 | **Switching branches with an edit in the way shows a raw libgit2 error:** `caused by: 1 conflict prevents checkout; class=Checkout (20); code=Conflict (-13)`, twice, with no next step (commit / stash first). Safe — the edit survives, exit ≠ 0. | M-05 |
+| F19 | 🔴 | **"merge/pull X into Y" ignores X and can run backwards** (found while planning, confirmed on the binary). The sync rule always uses origin's default branch: "merge develop into feature" and "pull develop into this branch" sync with *main*; "merge feature into main" (said on `feature`) brings main *into* feature — the opposite. The echo says "Update from main" and the gate names `origin/main`, and `--yes` refuses the gate, so it is never silent. | planning |
+| F20 | 🟠 | **A recovery option drafts a commit message.** When a dirty tree blocks a pull, the "Commit → pull" recovery option commits everything with the hard-coded message `"update"` — breaking "GiTrust never writes your commit messages". (Found while planning, by reading the code.) | planning |
 | F12 | 🟡 | **Raw git output leaks onto step lines** ("Successfully rebased…", "Enumerating objects…", "Removing junk/", `[main 4fe1afd] Revert …`, garbled "Auto-merging app.txtorigin/mainRebasing (1/1)"). | M-06, M-08, M-10, M-20, M-22, M-26 |
 | F13 | 🟡 | **Redundant "Consider pulling first" warning** on a plan that already rebases/merges upstream. | M-06, M-07 |
 | F14 | 🟡 | **Squash pre-fills the message with the three old subjects** joined — borderline against "never drafts a message"; the plan then shows a multi-line message. | M-19 |

@@ -17,7 +17,8 @@ releases.
 
 v0.4 replaced the qwen LLM with the Kev decision model and tightened the conventions (every
 back-out exits 1, no Cancel rows, no raw errors), so its ⚠️ count isn't comparable with v0.3's.
-The v0.4.1 findings list (F1–F18) is in its [REPORT](runs/v0.4.1/REPORT.md#findings).
+The v0.4.1 findings (F1–F20) are in its [REPORT](runs/v0.4.1/REPORT.md#findings); the plan to fix them lives with the code, in
+GiTrust's [`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/v0.5.0-fixes/docs/v0.5.0_fix_plan.md).
 
 ## Layout
 
