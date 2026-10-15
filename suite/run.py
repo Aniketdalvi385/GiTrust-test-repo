@@ -79,6 +79,8 @@ def run_manual(version, ids):
         t.setup(fx)
         print(f"    sandbox: {fx.work}")
         results = []
+        import dataclasses
+        t = dataclasses.replace(t, id=f"{t.id}-manual")   # kept beside the auto record
         rec_dir = os.path.join(run_dir, "results", t.id)
         os.makedirs(rec_dir, exist_ok=True)
         for i, r in enumerate(t.runs, 1):
