@@ -1,0 +1,743 @@
+{
+ "persona": "senior",
+ "cases": [
+  {
+   "q": "What's dirty in the tree right now? Modified, staged, untracked, the lot.",
+   "intent": "status",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Give me the working tree state before I context-switch.",
+   "intent": "status",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Which files have I touched and which are still untracked?",
+   "intent": "status",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Show me the last 15 commits on this branch.",
+   "intent": "log",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "I need the commit history for the release cut, newest first.",
+   "intent": "log",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Walk me through what landed recently: who committed what, in order.",
+   "intent": "log",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Show me the line-by-line changes in my working files before I commit.",
+   "intent": "diff",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "What exactly did I change in the tree? Hunks, not just filenames.",
+   "intent": "diff",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Print the uncommitted patch so I can eyeball it.",
+   "intent": "diff",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "List all local branches.",
+   "intent": "branches",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Which branch am I on right now?",
+   "intent": "branches",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "What branches exist in this clone? Mark the checked-out one.",
+   "intent": "branches",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "What user.name and user.email is git using in this repo?",
+   "intent": "config",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Dump the git config, I suspect my commits are going out under the wrong identity.",
+   "intent": "config",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Print my configured git author details.",
+   "intent": "config",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Show commit a3f9c1e: author, date, message and files touched.",
+   "intent": "show",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Pull up the details of the commit at HEAD.",
+   "intent": "show",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Open up that one commit 7bd02f4 for me; I want the metadata and changed files.",
+   "intent": "show",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Check origin and tell me whether my branch is ahead or behind, but don't touch my files.",
+   "intent": "fetch",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Am I behind upstream? Just look, no merging.",
+   "intent": "fetch",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Hit the remote and report how many commits I'm ahead/behind without altering the working tree.",
+   "intent": "fetch",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Dry-run the pull: will it conflict with what's on origin?",
+   "intent": "merge_preview",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Tell me whether merging origin/main into this branch would produce conflicts, and don't change anything.",
+   "intent": "merge_preview",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Before I pull, predict if there will be merge conflicts. Read-only.",
+   "intent": "merge_preview",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Stage everything and commit it with the message 'fix null deref in parser'.",
+   "intent": "add_commit",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "git add -A and commit: 'bump deps for release 2.4'. Don't push.",
+   "intent": "add_commit",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Stage src/auth.rs and tests/auth_test.rs and commit them as 'tighten token validation', local only.",
+   "intent": "add_commit",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Commit what's already staged with the message 'refactor: extract retry helper'.",
+   "intent": "commit",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "I've staged exactly what I want; just commit it, 'drop deprecated flag'.",
+   "intent": "commit",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Commit the index as-is, message 'wip: schema migration'. Don't add anything else.",
+   "intent": "commit",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Push the current branch to origin.",
+   "intent": "push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Upload my local commits to the remote, all of them.",
+   "intent": "push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Send HEAD up to its upstream; everything's already committed.",
+   "intent": "push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Commit and push only the logging-related files, leave the rest of my changes alone.",
+   "intent": "scoped_push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Only the auth changes should go out: commit and push just those files.",
+   "intent": "scoped_push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Ship just the billing module changes to origin; the other edits stay local and uncommitted.",
+   "intent": "scoped_push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Create a branch called feature/oauth-refresh.",
+   "intent": "branch",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Cut a new branch named hotfix/null-session off here.",
+   "intent": "branch",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "I need a fresh branch, release/2.4, to work on.",
+   "intent": "branch",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Switch to the develop branch.",
+   "intent": "checkout",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Check out release/2.3, it already exists.",
+   "intent": "checkout",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Move me over to the existing branch fix/login-redirect.",
+   "intent": "checkout",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Pull the latest from origin into this branch.",
+   "intent": "pull",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Bring in whatever's new on the remote and integrate it here.",
+   "intent": "pull",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Update my branch from upstream; CI is red so I want the fixes someone pushed.",
+   "intent": "pull",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Bring main into my feature branch so it's current.",
+   "intent": "sync",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Update this branch with the latest main before I open the PR.",
+   "intent": "sync",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Merge main into the branch I'm on; it has drifted.",
+   "intent": "sync",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Undo my last commit.",
+   "intent": "undo",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Take back that commit I just made, it was a mistake.",
+   "intent": "undo",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Roll back the most recent commit.",
+   "intent": "undo",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Amend HEAD's commit message to 'fix: handle empty payload'.",
+   "intent": "amend",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "I forgot a file in the last commit; fold it into that commit.",
+   "intent": "amend",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Rewrite the message on my most recent commit.",
+   "intent": "amend",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Squash my last 4 commits into one.",
+   "intent": "squash",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Collapse the last three commits into a single commit before review.",
+   "intent": "squash",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Combine the 5 most recent commits on this branch into one clean commit.",
+   "intent": "squash",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Revert commit 4e1a9bd with a new commit; it's already on main so no history rewrite.",
+   "intent": "revert",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Create an inverse commit for 9c03d12, keep history intact.",
+   "intent": "revert",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Back out the change from commit b7720ae by committing its opposite.",
+   "intent": "revert",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Unstage everything, but keep my edits.",
+   "intent": "unstage",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Pull src/config.rs out of the index without touching its contents.",
+   "intent": "unstage",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "I staged too much; remove the files from staging, leave the working copy alone.",
+   "intent": "unstage",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Stash my uncommitted changes, I need a clean tree.",
+   "intent": "stash",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Shelve the work in progress so I can switch branches.",
+   "intent": "stash",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Park my local modifications on the stash stack.",
+   "intent": "stash",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Discard all my uncommitted changes and untracked files, start fresh.",
+   "intent": "cleanup",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Nuke the working tree back to clean; I don't care about the edits.",
+   "intent": "cleanup",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Throw away every local modification and untracked file.",
+   "intent": "cleanup",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Throw away my unpushed commits and reset to origin's version of this branch.",
+   "intent": "discard_local",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Reset the branch hard to origin; the local commits aren't on the remote and I don't want them.",
+   "intent": "discard_local",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Drop everything I committed locally that isn't pushed and match the remote.",
+   "intent": "discard_local",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Force push this branch to origin, I rebased and rewrote history.",
+   "intent": "force_push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Overwrite the remote branch with my local history.",
+   "intent": "force_push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Push with force-with-lease to origin; the remote copy is stale after my rebase.",
+   "intent": "force_push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Initialize a git repo in this directory.",
+   "intent": "init",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "This folder isn't versioned yet; make it a new git repository.",
+   "intent": "init",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Run a fresh git init here.",
+   "intent": "init",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Add a remote called origin pointing at git@github.com:acme/payments.git.",
+   "intent": "add_remote",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Set the origin URL to https://github.com/acme/api.git.",
+   "intent": "add_remote",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Register upstream as a remote with URL https://github.com/torvalds/linux.git.",
+   "intent": "add_remote",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "I lost a commit after a bad reset; dig through the reflog and recover it.",
+   "intent": "find_lost_work",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Find my deleted commits, I think I dropped some work.",
+   "intent": "find_lost_work",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Recover the work from the branch I deleted yesterday.",
+   "intent": "find_lost_work",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "List the configured remotes and their URLs.",
+   "intent": "remotes",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Where does origin point? Show me all remotes.",
+   "intent": "remotes",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Show the remote repositories this clone knows about.",
+   "intent": "remotes",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Pop the stash.",
+   "intent": "stash_pop",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Restore the changes I stashed earlier into the working tree.",
+   "intent": "stash_pop",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Bring back my most recently stashed work.",
+   "intent": "stash_pop",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Pull from origin and rebase my local commits on top instead of merging.",
+   "intent": "pull_rebase",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Fetch and rebase onto upstream, I want linear history.",
+   "intent": "pull_rebase",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Replay my unpushed commits on top of the remote's latest; no merge commit.",
+   "intent": "pull_rebase",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Make this branch track origin/feature/oauth-refresh.",
+   "intent": "set_upstream",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Set upstream for the current branch to origin.",
+   "intent": "set_upstream",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Configure tracking so this branch follows its counterpart on origin.",
+   "intent": "set_upstream",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Remove the remote named upstream.",
+   "intent": "remove_remote",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Delete the stale 'backup' remote from this repo.",
+   "intent": "remove_remote",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Drop origin from the configured remotes.",
+   "intent": "remove_remote",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Delete the .git directory but keep my files.",
+   "intent": "delete_repo",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Strip git from this folder entirely; the files stay.",
+   "intent": "delete_repo",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Remove this folder's repository so it's no longer under version control.",
+   "intent": "delete_repo",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Stage everything, commit as 'hotfix: guard against nil config' and push to origin.",
+   "intent": "commit_push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Add all, commit 'release 2.4.1 notes' and push in one go.",
+   "intent": "commit_push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Commit my changes with message 'update lockfile' and push them up right away.",
+   "intent": "commit_push",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Conflicts are resolved and staged; continue the rebase.",
+   "intent": "rebase_continue",
+   "also_ok": [],
+   "situation": "rebase"
+  },
+  {
+   "q": "Rebase is stuck, I fixed the markers. Carry on with it.",
+   "intent": "rebase_continue",
+   "also_ok": [],
+   "situation": "rebase"
+  },
+  {
+   "q": "Skip the commit the rebase is stuck on and keep going.",
+   "intent": "rebase_skip",
+   "also_ok": [],
+   "situation": "rebase"
+  },
+  {
+   "q": "That commit is already upstream; skip it and continue the rebase.",
+   "intent": "rebase_skip",
+   "also_ok": [],
+   "situation": "rebase"
+  },
+  {
+   "q": "Abort the rebase, take me back to where the branch was.",
+   "intent": "rebase_abort",
+   "also_ok": [],
+   "situation": "rebase"
+  },
+  {
+   "q": "This rebase is a mess; cancel it and restore the original branch.",
+   "intent": "rebase_abort",
+   "also_ok": [],
+   "situation": "rebase"
+  },
+  {
+   "q": "Abort the merge, I'm not resolving this.",
+   "intent": "merge_abort",
+   "also_ok": [],
+   "situation": "merge"
+  },
+  {
+   "q": "Cancel the in-progress merge and go back to before it started.",
+   "intent": "merge_abort",
+   "also_ok": [],
+   "situation": "merge"
+  },
+  {
+   "q": "Push the docker image to our registry.",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Review the merge request from Priya and leave comments.",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Run the full test suite and tell me what fails.",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Deploy the staging build to the k8s cluster.",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "npm install the latest lodash.",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Re-run the failed CI pipeline on the release job.",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Restart the postgres container.",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "What's the weather like in Pune?",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Tell me a joke about rebasing.",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  },
+  {
+   "q": "Bump the version in package.json and publish to npm.",
+   "intent": "__reject__",
+   "also_ok": [],
+   "situation": "normal"
+  }
+ ]
+}

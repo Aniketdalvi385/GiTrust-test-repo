@@ -1,0 +1,54 @@
+######## run 1: gitrust 'push'  [pty, model up]  exit=0  1.6s
+
+--- reconcile choice ---
+⚡  Push to origin
+Fetching origin… ✓
+? Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge?
+> [1] Rebase  — replay your 1 commit(s) on top of theirs; history stays linear. Recommended when no…
+  [2] Merge  — keep both histories, adds a merge commit. Safer if others may have pulled your commi…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- plan ---
+⚡  Push to origin
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Merge
+
+Plan  · 2 steps · snapshot taken at 31756ab
+
+  ●  merge     origin/main → "Merge origin/main into main"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+  Warnings:
+    · Local branch is 1 commit(s) behind upstream. Consider pulling first to avoid a non-fast-forward rejectio
+n.
+
+
+  [Enter] run · [s] don't push · [q] cancel
+
+--- final ---
+⚡  Push to origin
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Merge
+
+Plan  · 2 steps · snapshot taken at 31756ab
+
+  ●  merge     origin/main → "Merge origin/main into main"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+  Warnings:
+    · Local branch is 1 commit(s) behind upstream. Consider pulling first to avoid a non-fast-forward rejectio
+n.
+
+
+  [Enter] run · [s] don't push · [q] cancel
+  ✓  merge     origin/main → "Merge origin/main into main"
+  │  → Merged origin/main (merge commit recorded)
+  │
+  ✓  push      → origin/main
+  │  → Pushed 2 commit(s) to origin/main
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+

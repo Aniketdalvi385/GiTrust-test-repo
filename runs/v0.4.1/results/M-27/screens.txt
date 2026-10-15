@@ -1,0 +1,47 @@
+######## run 1: gitrust 'clean up my repo'  [pty, model up]  exit=1  2.1s
+
+--- waited for 'Esc cancel' ---
+⚡  Discard uncommitted changes
+? Clean up — what should be removed?
+> [1] Delete 1 untracked file  — never committed, so the trash backup is their only copy
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- waited for ('to confirm', '[Enter] run') ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at ce13504
+
+  ●  delete    untracked files  ⛔
+
+
+  [Enter] run · [q] cancel
+
+--- waited for '[Enter] run' ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at ce13504
+
+  ●  delete    untracked files  ⛔
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at ce13504
+
+  ●  delete    untracked files  ⛔
+
+
+  [Enter] run · [q] cancel
+  ✗  delete    untracked files
+  │  Failed to create trash dir /var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-M-27-bxy47th9/home/.g
+itrust/trash/20261015-174311
+✗  Failed to create trash dir /var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-M-27-bxy47th9/home/.git
+rust/trash/20261015-174311
+   caused by: Permission denied (os error 13)
+

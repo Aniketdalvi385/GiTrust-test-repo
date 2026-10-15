@@ -1,0 +1,48 @@
+{
+ "id": "M-11",
+ "title": "Mid-rebase commit request names the rebase",
+ "part": "3 · Stuck states",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:17",
+ "checks": [
+  {
+   "name": "screen never shows 'checkout a branch'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen shows 'rebase'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "did not exit 0 silently",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit my changes"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "pre": "0bc7b54d28e2014a9a6f60b891a5023f02a1906b"
+ }
+}

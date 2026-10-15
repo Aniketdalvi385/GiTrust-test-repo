@@ -1,0 +1,37 @@
+######## run 1: gitrust 'revert last commit'  [pty, model up]  exit=0  1.6s
+
+--- revert's own question ---
+⚡  Revert
+? Revert a7ec361 with a new inverse commit? (Y/n)
+
+--- plan ---
+⚡  Revert
+> Revert a7ec361 with a new inverse commit? Yes
+
+Plan  · 1 step · snapshot taken at a7ec361
+
+  ●  revert    a7ec361  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Revert
+> Revert a7ec361 with a new inverse commit? Yes
+
+Plan  · 1 step · snapshot taken at a7ec361
+
+  ●  revert    a7ec361  ⚠
+
+
+  [Enter] run · [q] cancel
+  ○  revert    a7ec361[main 4fe1afd] Revert "to be reverted"
+ Date: Thu Oct 15 17:51:57 2026 +0530
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 other.txt
+  ✓  revert    a7ec361
+  │  → Reverted a7ec361 (inverse commit added)
+
+  ✓ Done · on main, ↑2 ↓0
+  Next: gitrust "status"
+

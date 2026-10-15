@@ -1,0 +1,48 @@
+{
+ "id": "M-39",
+ "title": "Status mid-rebase says what to do",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:17",
+ "checks": [
+  {
+   "name": "screen shows 'Rebase in progress'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen shows 'app.txt'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen shows 'continue rebase'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "status"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "pre": "4ff8f5cf0ff5fac6ea385f4f6c8ab2dec7f01ff8"
+ }
+}

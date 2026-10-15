@@ -1,0 +1,51 @@
+{
+ "id": "M-01",
+ "title": "Exact phrase works with the model down",
+ "part": "1 · Everyday",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:16",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "screen shows 'Show status'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen never shows \"isn't running\"",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "status says how old the remote view is",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "status"
+   ],
+   "mode": "pty",
+   "model": "down",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

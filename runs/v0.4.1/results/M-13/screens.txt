@@ -1,0 +1,107 @@
+######## run 1: gitrust "commit this with message 'detached work'"  [pty, model up]  exit=0  4.1s
+
+--- model: routed or asked ---
+✦  Commit everything · 0.8s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit f439fd2 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+? What would you like to do?
+> Create a branch HERE to save work
+  Switch back to your previous branch (no changes made)
+  Cancel
+[↑↓ move · Enter choose · Esc cancel]
+
+--- rescue choice ---
+✦  Commit everything · 0.8s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit f439fd2 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+? What would you like to do?
+> Create a branch HERE to save work
+  Switch back to your previous branch (no changes made)
+  Cancel
+[↑↓ move · Enter choose · Esc cancel]
+
+--- waited for 'Esc to cancel' ---
+✦  Commit everything · 0.8s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit f439fd2 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch HERE to save work
+? New branch name: rescue-work
+[Enter to continue · Esc to cancel]
+
+--- message (pre-filled) ---
+✦  Commit everything · 0.8s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit f439fd2 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch HERE to save work
+> New branch name: rescue-workrescued
+  ✓ Created and switched to branch 'rescue-workrescued'
+  ✓ Staged your current changes on 'rescue-workrescued'
+? Commit message (edit or accept): detached work
+[Enter to continue · Esc to cancel]
+
+--- waited for '[Enter] run' ---
+✦  Commit everything · 0.8s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit f439fd2 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch HERE to save work
+> New branch name: rescue-workrescued
+  ✓ Created and switched to branch 'rescue-workrescued'
+  ✓ Staged your current changes on 'rescue-workrescued'
+> Commit message (edit or accept): detached work
+
+Plan  · 2 steps · snapshot taken at f439fd2
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "detached work"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- final ---
+✦  Commit everything · 0.8s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit f439fd2 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch HERE to save work
+> New branch name: rescue-workrescued
+  ✓ Created and switched to branch 'rescue-workrescued'
+  ✓ Staged your current changes on 'rescue-workrescued'
+> Commit message (edit or accept): detached work
+
+Plan  · 2 steps · snapshot taken at f439fd2
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "detached work"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+  ✓  stage     all modified files
+  │  → Staged all changes
+  │
+  ✓  commit    "detached work"
+  │  → Committed: detached work (f439fd2→1014970)
+
+  ✓ Done · 1 commit on rescue-workrescued
+  Next: gitrust "status" · changed your mind? gitrust "undo"
+

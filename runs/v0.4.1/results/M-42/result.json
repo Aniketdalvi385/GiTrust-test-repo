@@ -1,0 +1,121 @@
+{
+ "id": "M-42",
+ "title": "Help lists only phrases that work instantly",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:39",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "'log' works with the model down",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "'branches' works with the model down",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "'current branch' works with the model down",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "'remotes' works with the model down",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "'config' works with the model down",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "'diff' works with the model down",
+   "ok": true,
+   "detail": "exit=0"
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "help"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "log"
+   ],
+   "mode": "pipe",
+   "model": "down",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "branches"
+   ],
+   "mode": "pipe",
+   "model": "down",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "current branch"
+   ],
+   "mode": "pipe",
+   "model": "down",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "remotes"
+   ],
+   "mode": "pipe",
+   "model": "down",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "config"
+   ],
+   "mode": "pipe",
+   "model": "down",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "diff"
+   ],
+   "mode": "pipe",
+   "model": "down",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

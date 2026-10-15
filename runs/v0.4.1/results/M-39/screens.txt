@@ -1,0 +1,13 @@
+######## run 1: gitrust 'status'  [pty, model up]  exit=0  0.0s
+
+--- final ---
+⚡  Show status
+Not on a branch · at 3346b9e
+⚠ Rebase in progress — stopped at commit 1 of 1
+  1 conflicted file (listed below) — edit it and remove the <<<<<<< / >>>>>>> markers.
+  Then: gitrust "continue rebase" · or go back to before it started: gitrust "abort rebase"
+Last commit: 3346b9e "teammate: app" (just now)
+
+Conflicted:
+  ! app.txt
+

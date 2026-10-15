@@ -1,0 +1,58 @@
+{
+ "id": "M-09",
+ "title": "Abort rebase restores exactly",
+ "part": "2 · Divergence",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:16",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "HEAD back at the pre-rebase tip",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "status shows no rebase",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "abort rebase"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.8,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "status"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "pre": "ba3773d714c947914c91dbbbfdf3bae44f63877d"
+ }
+}

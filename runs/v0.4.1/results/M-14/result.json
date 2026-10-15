@@ -1,0 +1,38 @@
+{
+ "id": "M-14",
+ "title": "Switching away would strand a commit → guard",
+ "part": "3 · Stuck states",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:17",
+ "checks": [
+  {
+   "name": "the detached commit is on a branch",
+   "ok": true,
+   "detail": "rescue-worksaved-work"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "checkout main"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 2.3,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "detached": "688c62f87bd9bf71dc6a7312a54acf019ebd00e1"
+ }
+}

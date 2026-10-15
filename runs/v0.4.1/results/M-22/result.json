@@ -1,0 +1,48 @@
+{
+ "id": "M-22",
+ "title": "Revert succeeds despite the same hook",
+ "part": "5 · Hooks",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:51",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "one new (revert) commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "other.txt gone",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "revert last commit"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 1.6,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "count": "2"
+ }
+}

@@ -1,0 +1,53 @@
+{
+ "id": "M-06",
+ "title": "Diverged push → rebase → pushed",
+ "part": "2 · Divergence",
+ "mode": "auto",
+ "flagship": true,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:17",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "in sync with origin (0 0)",
+   "ok": true,
+   "detail": "(0, 0)"
+  },
+  {
+   "name": "teammate commit below mine",
+   "ok": true,
+   "detail": "feat: mine\nteammate: hotfix\nbase"
+  },
+  {
+   "name": "linear history (no merge commit)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "push"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 1.7,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "mine": "55ae9545b2d3126aaa8830b2552c39a8f17295f1"
+ }
+}

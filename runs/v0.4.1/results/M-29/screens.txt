@@ -1,0 +1,53 @@
+######## run 1: gitrust 'what changed in the auth files?'  [pty, model down]  exit=1  0.8s
+
+--- manual menu ---
+⚠  The Kev model server isn't running at http://127.0.0.1:9.
+  Start it with `gitrust setup`, or set kev_dir + kev_autostart in ~/.gitrust.toml.
+? The local model isn't available — pick what you want to do (type to filter):
+> Show status  — what's changed, staged or untracked
+  Show history  — recent commits
+  Show changes  — line-by-line diff of your edits
+  List branches  — and which one you're on
+  Show Git settings  — your name, email and other config
+  Show a commit  — author, date, message and files
+  Check the remote  — ahead or behind? changes nothing
+  Preview a pull  — would it conflict? changes nothing
+  Commit everything  — stage all changes and commit — no push
+  Commit and push everything  — stage all, commit, push
+  Commit staged files  — only what's already staged
+v Push  — upload all your commits
+[↑↓ move · Enter choose · Esc cancel]
+
+--- final ---
+⚠  The Kev model server isn't running at http://127.0.0.1:9.
+  Start it with `gitrust setup`, or set kev_dir + kev_autostart in ~/.gitrust.toml.
+? The local model isn't available — pick what you want to do (type to filter): <canceled>
+↪  Canceled — nothing was done.
+
+######## run 2: gitrust '--yes' 'what changed in the auth files?'  [pipe, model down]  exit=1  0.0s
+
+--- final ---
+⚠  The Kev model server isn't running at http://127.0.0.1:9.
+  Start it with `gitrust setup`, or set kev_dir + kev_autostart in ~/.gitrust.toml.
+✗  --yes won't choose for you — The local model isn't available — pick what you want to do (type to filter):
+   Choices: Show status · Show history · Show changes · List branches · Show Git settings · Show a commit · Check the remote · Preview a pull · Commit everything · Commit and push everything · Commit staged files · Push · Push only some changes · Create a branch · Switch branch · Pull · Update from main · Undo the last commit · Amend the last commit · Squash commits · Revert a commit · Unstage files · Stash changes · Discard uncommitted changes · Reset to the remote · Force push · Start a repository here · Add a remote · Find lost work · List remotes · Restore stashed changes · Pull with rebase · Track a remote branch · Remove a remote · Remove Git from this folder
+   Run it interactively (without --yes) to pick one, or say more precisely what you want.
+
+######## run 3: gitrust 'what changed'  [pipe, model down]  exit=1  0.0s
+
+--- final ---
+⚠  The Kev model server isn't running at http://127.0.0.1:9.
+  Start it with `gitrust setup`, or set kev_dir + kev_autostart in ~/.gitrust.toml.
+✗  This needs an answer, and there's no terminal to ask in (input or output is redirected). Run it in a terminal — or, in a script, say it precisely enough to need no choice and add --yes.
+
+######## run 4: gitrust 'status'  [pty, model down]  exit=0  0.0s
+
+--- final ---
+⚡  Show status
+On branch main · tracking origin/main · up to date
+Last commit: 149c962 "base" (just now)
+
+Nothing to commit, working tree clean.
+
+Remote state as of the last fetch, just now — gitrust "fetch" refreshes it.
+

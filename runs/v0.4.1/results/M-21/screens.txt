@@ -1,0 +1,95 @@
+######## run 1: gitrust "commit everything with message 'try it'"  [pty, model up]  exit=1  3.8s
+
+--- model: routed or asked ---
+✦  Commit everything · 0.8s
+? Commit message (edit or accept): try it
+[Enter to continue · Esc to cancel]
+
+--- message (pre-filled) ---
+✦  Commit everything · 0.8s
+? Commit message (edit or accept): try it
+[Enter to continue · Esc to cancel]
+
+--- waited for '[Enter] run' ---
+✦  Commit everything · 0.8s
+> Commit message (edit or accept): try it
+
+Plan  · 2 steps · snapshot taken at 8d5903e
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "try it"  ⚠
+
+  Warnings:
+    · Hook(s) present (pre-commit) — GiTrust will run them via system git.
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- after the hook failed ---
+✦  Commit everything · 0.8s
+> Commit message (edit or accept): try it
+
+Plan  · 2 steps · snapshot taken at 8d5903e
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "try it"  ⚠
+
+  Warnings:
+    · Hook(s) present (pre-commit) — GiTrust will run them via system git.
+
+
+  [Enter] run · [e] edit message · [q] cancel
+  ✓  stage     all modified files
+  │  → Staged all changes
+  │
+  ○  commit    "try it"  hooks detected — using system git so they run.
+  ✗  commit    "try it"
+  │  the pre-commit hook refused the operation:
+LINT FAILED
+
+  Snapshot preserved at ~/.gitrust/snapshots/dbeca6fd-e5f6-45f8-92b8-ff2ddf4a2ee7.json
+  Run 'gitrust --recover' to restore to pre-pipeline state.
+
+  fix `commit` and continue:
+? Pick one:
+> Show    re-print the hook output
+  Cancel
+[↑↓ move · Enter choose · Esc cancel]
+
+--- final ---
+✦  Commit everything · 0.8s
+> Commit message (edit or accept): try it
+
+Plan  · 2 steps · snapshot taken at 8d5903e
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "try it"  ⚠
+
+  Warnings:
+    · Hook(s) present (pre-commit) — GiTrust will run them via system git.
+
+
+  [Enter] run · [e] edit message · [q] cancel
+  ✓  stage     all modified files
+  │  → Staged all changes
+  │
+  ○  commit    "try it"  hooks detected — using system git so they run.
+  ✗  commit    "try it"
+  │  the pre-commit hook refused the operation:
+LINT FAILED
+
+  Snapshot preserved at ~/.gitrust/snapshots/dbeca6fd-e5f6-45f8-92b8-ff2ddf4a2ee7.json
+  Run 'gitrust --recover' to restore to pre-pipeline state.
+
+  fix `commit` and continue:
+? Pick one: <canceled>
+  Canceled — nothing was done.
+✗  the pre-commit hook refused the operation:
+LINT FAILED
+

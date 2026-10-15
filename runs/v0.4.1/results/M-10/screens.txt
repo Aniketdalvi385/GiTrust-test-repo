@@ -1,0 +1,62 @@
+######## run 1: gitrust 'sync with main'  [pty, model up]  exit=0  1.4s
+
+--- model: routed or asked ---
+⚡  Update from main
+Fetching origin… ✓
+? Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge?
+> [1] Rebase  — replay your 1 commit(s) on top of theirs; history stays linear. Recommended when no…
+  [2] Merge  — keep both histories, adds a merge commit. Safer if others may have pulled your commi…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- waited for 'Esc cancel' ---
+⚡  Update from main
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 1 step · snapshot taken at 5f6c088
+
+  ●  rebase    onto origin/main  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- waited for '[Enter] run' ---
+⚡  Update from main
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 1 step · snapshot taken at 5f6c088
+
+  ●  rebase    onto origin/main  ⚠
+
+
+  [Enter] run · [q] cancel
+Successfully rebased and updated refs/heads/feature.
+  ✓  rebase    onto origin/main
+  │  → Rebased onto origin/main
+
+  ✓ Done · on feature
+  Next: gitrust "status"
+  Rebased onto origin/main. Not pushed — pushing this rebased branch needs a force push; re-run and confirm, o
+r push manually with `git push --force-with-lease`.
+
+--- final ---
+⚡  Update from main
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 1 step · snapshot taken at 5f6c088
+
+  ●  rebase    onto origin/main  ⚠
+
+
+  [Enter] run · [q] cancel
+Successfully rebased and updated refs/heads/feature.
+  ✓  rebase    onto origin/main
+  │  → Rebased onto origin/main
+
+  ✓ Done · on feature
+  Next: gitrust "status"
+  Rebased onto origin/main. Not pushed — pushing this rebased branch needs a force push; re-run and confirm, o
+r push manually with `git push --force-with-lease`.
+

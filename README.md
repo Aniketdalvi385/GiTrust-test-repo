@@ -1,54 +1,76 @@
-# GiTrust — Manual Acceptance Test Records
+# GiTrust — acceptance tests and evals
 
-Human-eyes acceptance testing for the GiTrust release binary — the experience-level complement to
-the automated `cargo test` suite. It verifies the *experience*: gates render right, copy reads
-right, refusals feel right, destructive ops are safe, recovery actually recovers.
+Release-level testing for [GiTrust](https://github.com/Aniketdalvi385/gitrust): the
+experience-level complement to its `cargo test` suite. Does the real binary do the right thing,
+say it clearly, refuse safely, exit with the right code, and recover what it promises to?
 
-Each **version** gets its own self-contained run under [`runs/`](runs/), so results are comparable
-across releases as bugs get fixed and the tool moves toward public release.
+Each **version** gets a self-contained run under [`runs/`](runs/), so results compare across
+releases.
 
 ## Runs
 
-| Version | Date | Result | Report |
+| Version | Date | How | Suite result | Eval (whole system) | Report |
+|---|---|---|---|---|---|
+| [v0.2.0](runs/v0.2.0/) | 2026-07-31 → 08-05 | manual, 31 tests | 19 ✅ · 4 ⚠️ · 8 ❌ | — | [REPORT](runs/v0.2.0/REPORT.md) |
+| [v0.3.0](runs/v0.3.0/) | 2026-08-07 → 08-10 | manual + captured, 31 tests + variants | 40 ✅ · 2 ⚠️ · 0 ❌ | — | [REPORT](runs/v0.3.0/REPORT.md) |
+| [**v0.4.1**](runs/v0.4.1/) | 2026-10-15 | automatic (PTY) + agent screen review + ★ by hand, 43 tests | 19 ✅ · 21 ⚠️ · 3 ❌ | 377 / 450 right, 68 asked, 3 wrong actions | [REPORT](runs/v0.4.1/REPORT.md) |
+
+v0.4 replaced the qwen LLM with the Kev decision model and tightened the conventions (every
+back-out exits 1, no Cancel rows, no raw errors), so its ⚠️ count isn't comparable with v0.3's.
+The v0.4.1 findings list (F1–F18) is in its [REPORT](runs/v0.4.1/REPORT.md#findings).
+
+## Layout
+
+```
+suite/                 the v0.4+ acceptance suite (Python) — start with suite/README.md
+  tests_v04.py           43 tests as data: setup, keys to press, checks
+  gitrust_suite.py       fixtures (scratch HOME + bare remote), the PTY driver, records
+  run.py                 auto | manual | list
+  rollup.py              builds runs/vX/README.md from the records
+eval/                  the eval: what GiTrust DOES with a request, through the binary
+  run_eval.py            gitrust --yes "<request>" in a throwaway repo, per request
+  sets/                  v1_44, v2_owner_68, v3_blind (+ the raw persona/annotator files)
+runs/vX.Y.Z/
+  README.md              index: every test, verdict, one-line note; eval table
+  REPORT.md              the narrative: method, results, findings
+  results/M-NN/          README.md · screens.txt · result.json · review.md (· session-N.txt)
+  eval/                  per-set rows (every request, outcome, output on misses) + summary
+  evidence/              screen recordings of the ★ flagship tests
+legacy/                the v0.2/v0.3 bash runner and 31-test document (kept for those runs)
+```
+
+## Running a release
+
+```bash
+# 0. build the binary and start the model it ships with
+(cd ../Glit/gitrust && cargo build --release)
+(cd ../Glit && KEV_DIR=../kev ./docs/classifier_eval/kevctl.sh start AniketDalvi385/gitrust-kev-0.8b@v2)
+
+# 1. the suite, automatically (4 parallel shards ≈ 10 min)
+for i in 0 1 2 3; do uv run --with pyte python suite/run.py auto 0.4.1 --shard=$i/4 & done; wait
+
+# 2. review the screens (an agent or you): write results/<id>/review.md
+#    "Verdict: PASS | PASS-WITH-NOTES | FAIL" + "Summary: …" + notes
+
+# 3. the flagship tests by hand, recorded
+python3 suite/run.py manual 0.4.1 M-06
+
+# 4. the eval (≈ 15 min), then the index
+python3 eval/run_eval.py 0.4.1
+python3 suite/rollup.py 0.4.1
+```
+
+Everything runs in throwaway directories with a scratch `HOME`; your real `~/.gitrust.toml`,
+`~/.gitrust/` and repositories are never touched. Sandboxes are not committed.
+
+## The eval sets
+
+| Set | n | Written by | Notes |
 |---|---|---|---|
-| [**v0.2.0**](runs/v0.2.0/) | 2026-07-31 → 08-05 | 19 ✅ · 4 ⚠️ · 8 ❌ | [REPORT](runs/v0.2.0/REPORT.md) |
-| [**v0.3.0**](runs/v0.3.0/) | 2026-08-07 → 08-10 | 40 ✅ · 2 ⚠️ · 0 ❌ · 0 ⏭️ (42 incl. variants; router + capture widening) | [REPORT](runs/v0.3.0/REPORT.md) |
+| `v1_44` | 44 | the 2026-08 classifier research | the paper's set; one strict label each |
+| `v2_owner_68` | 68 | the owner, 2026-10-14 | answers to 31 situations; never trained on |
+| `v3_blind` | 338 | three persona agents, 2026-10-15 | saw only operation descriptions, never training data; independently re-labelled (338/338 agree); near-duplicates of training phrasings removed |
 
-**Public-release gate:** all 🔴 critical/systemic findings resolved and a clean re-run (0 ❌) before
-the tool goes public. v0.2.0 surfaced three root-cause clusters (below) — v0.3.0 re-runs the same
-31-test suite to verify the fixes.
-
-## Open root-cause clusters (from v0.2.0 — must clear before public)
-
-1. **🔴 Systemic exit-code bug** — every non-success path returns exit 0 (7× confirmed). Makes the CLI unsafe to script.
-2. **🔴 Reset execution path is a phantom op** — `reset --hard`/`--soft` report success while HEAD never moves; M-16 also claims a trash backup never written. (Trash-net module itself is proven sound — bug is the reset executor.)
-3. **Argument/target extraction** — requests carrying a target/scope/argument get dropped or misrouted (scope, branch names, sync target, squash count, amend).
-
-Full detail, evidence, and the "what works well / keep" list are in each run's REPORT.
-
-## Repo layout
-
-```
-GiTrust-test/
-  README.md              ← this cross-version dashboard
-  MANUAL_TEST_SUITE.md   ← the 31-test suite (shared reference, all versions)
-  harness.sh  run.sh     ← test harness + output-capture helper (source once per terminal)
-  runs/
-    v0.2.0/
-      README.md          ← this run's index (env + results table)
-      REPORT.md          ← this run's summary (verdicts, root causes, keep-list)
-      results/M-00…M-30/ ← per-test: README (findings) + commands.sh + output.log
-      evidence/          ← flagship screen recordings (.mov)
-  sandboxes/             ← throwaway per-test git repos (git-ignored, never pushed)
-```
-
-## Running a new version's suite
-
-1. Build the new release binary; point `harness.sh`'s `$GITRUST` at it, bump the version note.
-2. `mkdir -p runs/vX.Y.Z/{results,evidence}` and copy the empty results scaffold (or re-generate).
-3. `source harness.sh && source run.sh`, then work through `MANUAL_TEST_SUITE.md` M-00 → M-30,
-   filling each `runs/vX.Y.Z/results/M-NN/README.md`.
-4. Write `runs/vX.Y.Z/REPORT.md` and add a row to the **Runs** table above.
-
-Tests run against a **local throwaway bare remote** per case (under `sandboxes/`, git-ignored — never pushed).
-Only the records in each run's `results/` and `evidence/` are committed.
+None of these may be used for training. Adding to the eval: write new requests to a new
+`sets/vN_*.json` (`{"cases": [{"id", "q", "accept": [ops], "situation"}]}`), run the near-duplicate
+filter against the training data first, and keep the set's provenance in its `about` field.

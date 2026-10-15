@@ -1,0 +1,49 @@
+{
+ "id": "M-17",
+ "title": "--yes cannot undo",
+ "part": "4 · Undo",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:39",
+ "checks": [
+  {
+   "name": "exits 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "HEAD untouched",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen shows 'Choices'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "--yes",
+    "undo"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 1,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "before": "638d1bfa02452023841502a2acbb84919810b653"
+ }
+}

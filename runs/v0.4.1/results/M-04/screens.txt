@@ -1,0 +1,76 @@
+######## run 1: gitrust 'push the login changes'  [pty, model up]  exit=0  18.8s
+
+--- model: routed or asked ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+? Stage which files?
+> [x] auth_login.txt  +1        new · name matches “login”
+  [x] login.txt       +1        new · name matches “login”
+  [ ] readme.txt      +1        new · might be part of “login” — your call
+[↑↓ move · Space toggle · → all · ← none · Enter stage · Esc cancel]
+
+--- file picker ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+> Stage which files? auth_login.txt, login.txt
+? Commit message:
+[Enter to continue · Esc to cancel]
+
+--- commit message ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+> Stage which files? auth_login.txt, login.txt
+# This can't be empty — type a value, or press Esc to cancel.
+? Commit message:
+[Enter to continue · Esc to cancel]
+
+--- plan ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+> Stage which files? auth_login.txt, login.txt
+> Commit message: login page
+
+Plan  · 3 steps · snapshot taken at 7a04a8c
+
+  ●  stage     auth_login.txt, login.txt
+  │
+  ●  commit    "login page"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel
+
+--- final ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+> Stage which files? auth_login.txt, login.txt
+> Commit message: login page
+
+Plan  · 3 steps · snapshot taken at 7a04a8c
+
+  ●  stage     auth_login.txt, login.txt
+  │
+  ●  commit    "login page"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel
+  ✓  stage     auth_login.txt, login.txt
+  │  → Staged 2 files
+  │
+  ✓  commit    "login page"
+  │  → Committed: login page (7a04a8c→4466ae1)
+  │
+  ✓  push      → origin/main
+  │  → Pushed 1 commit(s) to origin/main
+
+  ✓ Done · 1 commit on main, ↑0 ↓0
+  Next: gitrust "status" · changed your mind? gitrust "undo" (reverts it — it's pushed)
+

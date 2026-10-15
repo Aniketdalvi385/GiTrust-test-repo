@@ -1,0 +1,35 @@
+{
+ "id": "M-41",
+ "title": "Output piped into head doesn't crash",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "FAIL",
+ "when": "2026-10-15 17:43",
+ "checks": [
+  {
+   "name": "no panic when the reader closes early",
+   "ok": false,
+   "detail": "exit=101 stderr=thread 'main' (2889208) panicked at library/std/src/io/stdio.rs:1165:9:\nfailed printing to stdout: Broken pipe (os error"
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "--yes",
+    "show history"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 0,
+   "seconds": 2.1,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "tip": "7e9070e1eae3fb85a03012319e94da7daec327b0",
+  "tree": "c2e606665b5aedcb6079799ca6ec82b7164c8cd2"
+ }
+}

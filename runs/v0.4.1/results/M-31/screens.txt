@@ -1,0 +1,16 @@
+######## run 1: gitrust 'undo'  [pty, model up]  exit=1  0.8s
+
+--- waited for 'Esc cancel' ---
+⚡  Undo the last commit
+? Undo f4f7e88 "feat: the mistake" — what should happen to its changes?
+> [1] Undo, keep the changes staged  — the commit goes; its changes stay staged, ready to re-commit
+  [2] Undo, keep the changes in my files  — the commit goes; its changes stay in your files, unstag…
+  [3] Undo with a revert commit  — a new commit reverses it; history is kept — safe after pushing
+  [4] Undo and throw the changes away  ⚠⚠  — both go (git keeps them ~90 days) · you'll type to con…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- final ---
+⚡  Undo the last commit
+? Undo f4f7e88 "feat: the mistake" — what should happen to its changes? <canceled>
+↪  Canceled — nothing was done.
+

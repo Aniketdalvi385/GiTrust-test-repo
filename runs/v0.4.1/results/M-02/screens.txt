@@ -1,0 +1,17 @@
+######## run 1: gitrust 'anything new in my repo?'  [pty, model up]  exit=0  1.8s
+
+--- model: routed or asked ---
+? I'm not sure which operation you meant. Which one?
+> [1] Show history  — recent commits
+  [2] Show status  — what's changed, staged or untracked
+  [3] Check the remote  — ahead or behind? changes nothing
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- final ---
+> I'm not sure which operation you meant. Which one? Show history
+  ↳ Learned “anything new in my repo” → Show history · instant next time (gitrust aliases)
+◇  Show history · your choice
+On branch main · tracking origin/main · up to date
+
+31894a6  (just now)  base  ← HEAD
+

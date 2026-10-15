@@ -1,0 +1,41 @@
+{
+ "id": "M-27",
+ "title": "Backup can't be written → nothing deleted",
+ "part": "6 · Forensics",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "FAIL",
+ "when": "2026-10-15 17:43",
+ "checks": [
+  {
+   "name": "non-zero exit",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "untracked file still there",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": false,
+   "detail": "caused by:"
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "clean up my repo"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 2.1,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

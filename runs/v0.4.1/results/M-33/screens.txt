@@ -1,0 +1,85 @@
+######## run 1: gitrust 'commit and push'  [pty, model up]  exit=0  2.1s
+
+--- waited for 'Esc to cancel' ---
+⚡  Commit and push everything
+? Commit message:
+[Enter to continue · Esc to cancel]
+
+--- skip push ---
+⚡  Commit and push everything
+> Commit message: local only
+
+Plan  · 3 steps · snapshot taken at 5c59aab
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "local only"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel
+
+--- plan without push ---
+⚡  Commit and push everything
+> Commit message: local only
+
+Plan  · 3 steps · snapshot taken at 5c59aab
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "local only"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel
+  ↳ Not pushing this time — the commit stays local. Push later with gitrust "push".
+
+Plan  · 2 steps · snapshot taken at 5c59aab
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "local only"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- final ---
+⚡  Commit and push everything
+> Commit message: local only
+
+Plan  · 3 steps · snapshot taken at 5c59aab
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "local only"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel
+  ↳ Not pushing this time — the commit stays local. Push later with gitrust "push".
+
+Plan  · 2 steps · snapshot taken at 5c59aab
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "local only"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+  ✓  stage     all modified files
+  │  → Staged all changes
+  │
+  ✓  commit    "local only"
+  │  → Committed: local only (5c59aab→92b9f68)
+
+  ✓ Done · 1 commit on main, ↑1 ↓0
+  Next: gitrust "push" · changed your mind? gitrust "undo"
+

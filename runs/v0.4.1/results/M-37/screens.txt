@@ -1,0 +1,55 @@
+######## run 1: gitrust 'commit n push'  [pty, model up]  exit=0  3.2s
+
+--- model: routed or asked ---
+✦  Commit and push everything · 1.0s
+? Commit message:
+[Enter to continue · Esc to cancel]
+
+--- waited for 'Esc to cancel' ---
+✦  Commit and push everything · 1.0s
+? Commit message:
+[Enter to continue · Esc to cancel]
+
+--- waited for '[Enter] run' ---
+✦  Commit and push everything · 1.0s
+> Commit message: both at once
+
+Plan  · 3 steps · snapshot taken at 6d038ce
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "both at once"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel
+
+--- final ---
+✦  Commit and push everything · 1.0s
+> Commit message: both at once
+
+Plan  · 3 steps · snapshot taken at 6d038ce
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "both at once"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel
+  ✓  stage     all modified files
+  │  → Staged all changes
+  │
+  ✓  commit    "both at once"
+  │  → Committed: both at once (6d038ce→fdf2b8d)
+  │
+  ✓  push      → origin/main
+  │  → Pushed 1 commit(s) to origin/main
+
+  ✓ Done · 1 commit on main, ↑0 ↓0
+  Next: gitrust "status" · changed your mind? gitrust "undo" (reverts it — it's pushed)
+

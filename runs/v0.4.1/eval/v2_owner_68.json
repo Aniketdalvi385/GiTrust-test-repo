@@ -1,0 +1,972 @@
+{
+ "set": "v2_owner_68",
+ "model": "AniketDalvi385/gitrust-kev-0.8b@v2",
+ "rows": [
+  {
+   "id": "S01",
+   "q": "whats goin on",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S01",
+   "q": "What's the current state of the repo, and do I have anything uncommitted?",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "status",
+   "kev_top": "status",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S02",
+   "q": "which branch",
+   "accept": [
+    "branches",
+    "status"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S02",
+   "q": "Which branch am I currently on?",
+   "accept": [
+    "branches",
+    "status"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S03",
+   "q": "branches?",
+   "accept": [
+    "branches"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S03",
+   "q": "List all local and remote branches.",
+   "accept": [
+    "branches"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S04",
+   "q": "what did i do this week",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S04",
+   "q": "Show my commits from the last three days.",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S05",
+   "q": "diff",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "diff",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S05",
+   "q": "Show me line by line what I changed in each modified file.",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "diff",
+   "kev_top": "diff",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S06",
+   "q": "commit \"fix login bug\"",
+   "accept": [
+    "add_commit",
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "add_commit",
+   "kev_top": "add_commit",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S06",
+   "q": "Commit all my changes with the message \"Add search filter\".",
+   "accept": [
+    "add_commit"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "add_commit",
+   "kev_top": "add_commit",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S07",
+   "q": "commit n push",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "commit_push",
+   "kev_top": "commit_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S07",
+   "q": "Commit everything with the message \"Update header\" and push it to origin.",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "commit_push",
+   "kev_top": "commit_push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S08",
+   "q": "only push the search stuff not the docs",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S08",
+   "q": "Commit and push only the search feature files, and leave the docs typo fix uncommitted.",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S09",
+   "q": "psuh",
+   "accept": [
+    "push"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S09",
+   "q": "Push my local commits up to the remote.",
+   "accept": [
+    "push"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "push",
+   "kev_top": "push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S10",
+   "q": "pull",
+   "accept": [
+    "pull"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "pull",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S10",
+   "q": "Get the latest changes from the remote into my branch.",
+   "accept": [
+    "pull"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "pull",
+   "kev_top": "pull",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S11",
+   "q": "pull rebase",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "pull_rebase",
+   "kev_top": null,
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S11",
+   "q": "Pull the latest changes and replay my local commits on top instead of making a merge commit.",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S12",
+   "q": "will feature-x clash w mine",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S12",
+   "q": "Before I merge origin/feature-x, check whether it would conflict with my branch.",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S13",
+   "q": "stash",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "stash",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S13",
+   "q": "Put my unfinished changes aside without committing so I can work on something else.",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "stash",
+   "kev_top": "stash",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S14",
+   "q": "unstash",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "stash_pop",
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S14",
+   "q": "Bring back the changes I stashed earlier.",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "stash_pop",
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S15",
+   "q": "undo last commit",
+   "accept": [
+    "undo"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "undo",
+   "kev_top": null,
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S15",
+   "q": "Undo my last commit but keep the changes in my files.",
+   "accept": [
+    "undo"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "undo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S16",
+   "q": "revert the commit that broke checkout",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S16",
+   "q": "Revert last week's commit that introduced the bug, without rewriting history.",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S17",
+   "q": "fix last commit msg",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S17",
+   "q": "Change my last commit message to \"Fix typo in README\".",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "amend",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S18",
+   "q": "squash last 5",
+   "accept": [
+    "squash"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "squash",
+   "kev_top": null,
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S18",
+   "q": "Combine my last five commits into a single commit.",
+   "accept": [
+    "squash"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "squash",
+   "kev_top": null,
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S19",
+   "q": "throw away all changes",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S19",
+   "q": "Discard all my uncommitted changes and put the files back to the last commit.",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S20",
+   "q": "i lost a commit help",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S20",
+   "q": "I'm sure I committed some work that's gone now. Help me find it.",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S21",
+   "q": "remotes",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "remotes",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S21",
+   "q": "Which remote servers is this repo connected to?",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "remotes",
+   "kev_top": "remotes",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S22",
+   "q": "change origin to git@github.com:org/new-repo.git",
+   "accept": [
+    "add_remote"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "add_remote",
+   "kev_top": "add_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S22",
+   "q": "The repo moved, so update origin's URL to git@github.com:org/new-repo.git.",
+   "accept": [
+    "add_remote"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "add_remote",
+   "kev_top": "add_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S23",
+   "q": "rm remote legacy",
+   "accept": [
+    "remove_remote"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "remove_remote",
+   "kev_top": "remove_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S23",
+   "q": "Remove the old remote called \"legacy\" from this repo.",
+   "accept": [
+    "remove_remote"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "remove_remote",
+   "kev_top": "remove_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S24",
+   "q": "set upstream",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S24",
+   "q": "Push my new local branch and set it to track the same branch on origin.",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S25",
+   "q": "clean junk files",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S25",
+   "q": "Delete all untracked generated files, but show me what will go first.",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S26",
+   "q": "nuke the history",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "delete_repo",
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S26",
+   "q": "Wipe this project's entire Git history and start over with one fresh commit.",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "delete_repo",
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S27",
+   "q": "force push",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "force_push",
+   "kev_top": null,
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S27",
+   "q": "The remote is wrong and mine is right, so overwrite the remote with my branch.",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "force_push",
+   "kev_top": "force_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S28",
+   "q": "continue",
+   "accept": [
+    "rebase_continue"
+   ],
+   "situation": "rebase",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "rebase_continue",
+   "kev_top": "rebase_continue",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S28",
+   "q": "I've fixed the conflicts, so carry on with the rebase.",
+   "accept": [
+    "rebase_continue"
+   ],
+   "situation": "rebase",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "rebase_continue",
+   "kev_top": "rebase_continue",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S28",
+   "q": "skip",
+   "accept": [
+    "rebase_skip"
+   ],
+   "situation": "rebase",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "rebase_skip",
+   "kev_top": "rebase_skip",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S28",
+   "q": "Skip this commit and keep going.",
+   "accept": [
+    "rebase_skip"
+   ],
+   "situation": "rebase",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "rebase_skip",
+   "kev_top": "rebase_skip",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S28",
+   "q": "abort",
+   "accept": [
+    "rebase_abort"
+   ],
+   "situation": "rebase",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "rebase_abort",
+   "kev_top": "rebase_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S28",
+   "q": "Give up and put everything back the way it was before I started.",
+   "accept": [
+    "rebase_abort"
+   ],
+   "situation": "rebase",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "rebase_abort",
+   "kev_top": "rebase_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S29",
+   "q": "whats conflicting",
+   "accept": [
+    "something_else"
+   ],
+   "situation": "rebase",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "status",
+   "kev_top": null,
+   "exit": 0,
+   "output": "*  Show status\nNot on a branch · at f832c6d\n⚠ Rebase in progress — stopped at commit 1 of 2\n  1 conflicted file (listed below) — edit it and remove the <<<<<<< / >>>>>>> markers.\n  Then: gitrust \"continue rebase\" · or go back to before it started: gitrust \"abort rebase\"\nLast commit: f832c6d \"main change\" (just now)\n\nConflicted:\n  ! login.py\n"
+  },
+  {
+   "id": "S29",
+   "q": "Before I continue or abort, show me which files have conflicts.",
+   "accept": [
+    "something_else"
+   ],
+   "situation": "rebase",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "status",
+   "kev_top": null,
+   "exit": 0,
+   "output": "*  Show status\nNot on a branch · at f832c6d\n⚠ Rebase in progress — stopped at commit 1 of 2\n  1 conflicted file (listed below) — edit it and remove the <<<<<<< / >>>>>>> markers.\n  Then: gitrust \"continue rebase\" · or go back to before it started: gitrust \"abort rebase\"\nLast commit: f832c6d \"main change\" (just now)\n\nConflicted:\n  ! login.py\n"
+  },
+  {
+   "id": "S30",
+   "q": "cancel cherry pick",
+   "accept": [
+    "cherry_pick_abort"
+   ],
+   "situation": "cherry_pick",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "cherry_pick_abort",
+   "kev_top": "cherry_pick_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S30",
+   "q": "Stop the cherry-pick that's in progress and go back.",
+   "accept": [
+    "cherry_pick_abort"
+   ],
+   "situation": "cherry_pick",
+   "persona": null,
+   "outcome": "acted-right",
+   "op": "cherry_pick_abort",
+   "kev_top": "cherry_pick_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "S31",
+   "q": "how many stars does my repo have",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S31",
+   "q": "open a PR for this branch",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S31",
+   "q": "write a python function that parses dates",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "S31",
+   "q": "deploy to vercel",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": null,
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  }
+ ],
+ "n": 68,
+ "tally": {
+  "asked": 12,
+  "acted-right": 44,
+  "instant-right": 12
+ },
+ "right": 56,
+ "asked": 12,
+ "wrong_changes_something": 0,
+ "seconds": 46,
+ "arg_asked": 0
+}

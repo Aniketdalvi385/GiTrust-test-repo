@@ -1,0 +1,95 @@
+######## run 1: gitrust 'push'  [pty, model up]  exit=1  1.6s
+
+--- waited for 'Esc cancel' ---
+⚡  Push to origin
+Fetching origin… ✓
+? Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge?
+> [1] Rebase  — replay your 1 commit(s) on top of theirs; history stays linear. Recommended when no…
+  [2] Merge  — keep both histories, adds a merge commit. Safer if others may have pulled your commi…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- waited for '[Enter] run' ---
+⚡  Push to origin
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 2 steps · snapshot taken at 1d7b309
+
+  ●  rebase    onto origin/main  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+  Warnings:
+    · Local branch is 1 commit(s) behind upstream. Consider pulling first to avoid a non-fast-forward rejectio
+n.
+
+
+  [Enter] run · [s] don't push · [q] cancel
+
+--- final ---
+⚡  Push to origin
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 2 steps · snapshot taken at 1d7b309
+
+  ●  rebase    onto origin/main  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+  Warnings:
+    · Local branch is 1 commit(s) behind upstream. Consider pulling first to avoid a non-fast-forward rejectio
+n.
+
+
+  [Enter] run · [s] don't push · [q] cancel
+Auto-merging app.txtorigin/mainRebasing (1/1)
+CONFLICT (content): Merge conflict in app.txt
+error: could not apply 1d7b309... feat: my app change
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 1d7b309... feat: my app change
+  ✗  rebase    onto origin/main
+✗  Paused on conflicts in 1 file(s) — nothing is lost. Resolve them, then `gitrust "continue rebase"`, or `git
+rust "abort rebase"` to return to where you started.
+
+######## run 2: gitrust 'continue rebase'  [pty, model up]  exit=0  0.8s
+
+--- waited for '[Enter] run' ---
+⚠  An interrupted pipeline was found (captured at 2026-10-15T17:39:35.605280+05:30).
+   Run 'gitrust --recover' to restore the repository to its pre-pipeline state.
+   Or delete ~/.gitrust/snapshots/ to ignore it.
+
+⚡  Continue the rebase
+
+Plan  · 1 step · snapshot taken at ef4ce70
+
+  ●  rebase    continue  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚠  An interrupted pipeline was found (captured at 2026-10-15T17:39:35.605280+05:30).
+   Run 'gitrust --recover' to restore the repository to its pre-pipeline state.
+   Or delete ~/.gitrust/snapshots/ to ignore it.
+
+⚡  Continue the rebase
+
+Plan  · 1 step · snapshot taken at ef4ce70
+
+  ●  rebase    continue  ⚠
+
+
+  [Enter] run · [q] cancel
+[detached HEAD cb61730] feat: my app change
+ 1 file changed, 1 insertion(+)
+Successfully rebased and updated refs/heads/main.
+  ✓  rebase    continue
+  │  → Rebase continued
+
+  ✓ Done · on main, ↑1 ↓0
+  Next: gitrust "status"
+

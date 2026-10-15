@@ -1,0 +1,36 @@
+{
+ "id": "M-28",
+ "title": "--recover with nothing to recover points to forensics",
+ "part": "6 · Forensics",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:39",
+ "checks": [
+  {
+   "name": "screen shows 'find my lost work'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "--recover"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

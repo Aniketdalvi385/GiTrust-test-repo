@@ -1,0 +1,7 @@
+######## run 1: gitrust 'commit my changes'  [pty, model up]  exit=1  0.0s
+
+--- final ---
+⚡  Commit everything
+✗  A rebase is in progress. Back out with `gitrust "abort rebase"`, or resolve the conflicts and `gitrust "con
+tinue rebase"`.
+

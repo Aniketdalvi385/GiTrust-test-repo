@@ -1,0 +1,8 @@
+######## run 1: gitrust '--yes' 'undo'  [pipe, model up]  exit=1  0.0s
+
+--- final ---
+*  Undo the last commit
+✗  --yes won't choose for you — Undo f143c04 "feat: the mistake" — what should happen to its changes?
+   Choices: Undo, keep the changes staged · Undo, keep the changes in my files · Undo with a revert commit · Undo and throw the changes away  ⚠⚠
+   Run it interactively (without --yes) to pick one, or say more precisely what you want.
+

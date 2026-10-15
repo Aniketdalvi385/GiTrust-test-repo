@@ -1,0 +1,48 @@
+{
+ "id": "M-21",
+ "title": "A failing pre-commit hook blocks the commit",
+ "part": "5 · Hooks",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:53",
+ "checks": [
+  {
+   "name": "non-zero exit",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows 'LINT FAILED'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no new commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit everything with message 'try it'"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 3.8,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "count": "1"
+ }
+}

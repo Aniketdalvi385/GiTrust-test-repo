@@ -1,0 +1,46 @@
+{
+ "id": "M-33",
+ "title": "[s] at the plan: commit stays local",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:43",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "committed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "not pushed (ahead 1)",
+   "ok": true,
+   "detail": "(0, 1)"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit and push"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 2.1,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

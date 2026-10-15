@@ -1,0 +1,78 @@
+{
+ "id": "M-08",
+ "title": "Rebase conflict → calm pause → continue",
+ "part": "2 · Divergence",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:39",
+ "checks": [
+  {
+   "name": "paused with a non-zero exit",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows 'nothing is lost'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen shows 'continue rebase'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "git is mid-rebase",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "continue rebase exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "rebase finished",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "push"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 1.6,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "continue rebase"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.8,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "pre": "1d7b309feb507e2e75031a743a9c7919d3e35f74"
+ }
+}

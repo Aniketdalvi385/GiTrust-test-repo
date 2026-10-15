@@ -1,0 +1,66 @@
+{
+ "id": "M-05",
+ "title": "Create a branch; dirty switch is handled",
+ "part": "1 · Everyday",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "FAIL",
+ "when": "2026-10-15 18:01",
+ "checks": [
+  {
+   "name": "branch created (exit 0)",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "feature-x exists",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "the uncommitted edit survives the switch attempt",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "a refused switch does not exit 0",
+   "ok": true,
+   "detail": "exit=1 on=main"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": false,
+   "detail": "caused by:"
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "create branch feature-x"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.8,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "switch to other"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 0.7,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

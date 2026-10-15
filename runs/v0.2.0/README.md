@@ -6,8 +6,8 @@ the flagship demos — a screen recording. This is the experience-level compleme
 automated `cargo test` cases.
 
 - **This run's report:** [REPORT.md](REPORT.md) — verdicts, root-cause clusters, keep-list
-- **Full suite (reference):** [../../MANUAL_TEST_SUITE.md](../../MANUAL_TEST_SUITE.md)
-- **How to run locally:** [../../harness.sh](../../harness.sh) — source it once per terminal, then follow each folder's README.
+- **Full suite (reference):** [../../legacy/MANUAL_TEST_SUITE.md](../../MANUAL_TEST_SUITE.md)
+- **How to run locally:** [../../legacy/harness.sh](../../legacy/harness.sh) — source it once per terminal, then follow each folder's README.
 
 Tests ran against a **local throwaway bare remote** per case (under the repo-root `sandboxes/`, git-ignored — never pushed).
 Only the records in `results/` and `evidence/` are committed.

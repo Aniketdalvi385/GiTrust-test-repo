@@ -1,0 +1,50 @@
+######## run 1: gitrust 'clean up my repo'  [pty, model up]  exit=0  2.1s
+
+--- clean-up choice ---
+⚡  Discard uncommitted changes
+? Clean up — what should be removed?
+> [1] Discard changes to 1 tracked file  — backed up to ~/.gitrust/trash first
+  [2] Delete 1 untracked file  — never committed, so the trash backup is their only copy
+  [3] Both  — discard and delete — both backed up first
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- waited for ('to confirm', '[Enter] run') ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at 2f1e539
+
+  ●  delete    untracked files  ⛔
+
+
+  [Enter] run · [q] cancel
+
+--- waited for '[Enter] run' ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at 2f1e539
+
+  ●  delete    untracked files  ⛔
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at 2f1e539
+
+  ●  delete    untracked files  ⛔
+
+
+  [Enter] run · [q] cancel
+  ○  delete    untracked filesRemoving junk/
+  ✓  delete    untracked files
+  │  → Deleted untracked files (backed up to the trash-net)
+  │  A backup of the discarded changes is in ~/.gitrust/trash/20261015-174139 for 7 days.
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+

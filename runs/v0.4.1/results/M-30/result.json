@@ -1,0 +1,36 @@
+{
+ "id": "M-30",
+ "title": "Not a repository",
+ "part": "7 · Meta",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:18",
+ "checks": [
+  {
+   "name": "non-zero exit",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "status"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 1,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

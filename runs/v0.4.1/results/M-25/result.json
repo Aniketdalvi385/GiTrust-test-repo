@@ -1,0 +1,36 @@
+{
+ "id": "M-25",
+ "title": "Nothing lost: an honest empty result",
+ "part": "6 · Forensics",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:39",
+ "checks": [
+  {
+   "name": "screen shows 'may be unrecoverable'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "find my lost work"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

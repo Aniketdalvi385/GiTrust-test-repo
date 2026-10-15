@@ -1,0 +1,5 @@
+######## run 1: gitrust '--recover'  [pipe, model up]  exit=0  0.0s
+
+--- final ---
+No interrupted GiTrust pipeline found for this repo. If you're looking for lost commits, try `gitrust "find my lost work"`.
+

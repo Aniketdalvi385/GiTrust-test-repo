@@ -1,0 +1,55 @@
+######## run 1: gitrust "commit everything with message 'not this time'"  [pty, model up]  exit=1  6.6s
+
+--- model: routed or asked ---
+✦  Commit everything · 4.0s
+? Commit message (edit or accept): not this time
+[Enter to continue · Esc to cancel]
+
+--- message (pre-filled) ---
+✦  Commit everything · 4.0s
+? Commit message (edit or accept): not this time
+[Enter to continue · Esc to cancel]
+
+--- stray key ---
+✦  Commit everything · 4.0s
+> Commit message (edit or accept): not this time
+
+Plan  · 2 steps · snapshot taken at e8e17cc
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "not this time"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- q ---
+✦  Commit everything · 4.0s
+> Commit message (edit or accept): not this time
+
+Plan  · 2 steps · snapshot taken at e8e17cc
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "not this time"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- final ---
+✦  Commit everything · 4.0s
+> Commit message (edit or accept): not this time
+
+Plan  · 2 steps · snapshot taken at e8e17cc
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "not this time"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+↪  Canceled — nothing was done.
+

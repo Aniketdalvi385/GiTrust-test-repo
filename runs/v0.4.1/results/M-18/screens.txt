@@ -1,0 +1,7 @@
+######## run 1: gitrust 'undo the last 3 commits'  [pty, model up]  exit=1  1.8s
+
+--- final ---
+✦  Undo the last commit · 1.8s
+✗  Multi-commit undo isn't supported yet. Did you mean: squash the last 3 into one (gitrust "squash last 3"),
+revert a specific commit, or undo just the most recent (gitrust "undo")?
+

@@ -1,0 +1,76 @@
+######## run 1: gitrust 'help'  [pipe, model up]  exit=0  0.0s
+
+--- final ---
+GiTrust — say what you want to do in Git, in plain words.
+
+These always work instantly (no model needed):
+
+  Look:        status · log · diff · show · branches · remotes · config
+  Save:        commit all my files · commit and push · commit everything and push
+  Share:       push · publish · pull · fetch · safe to pull
+  Branches:    create branch <name> · switch to <name> · current branch
+  Undo & tidy: undo · stash · stash pop · clean up my repo · find my lost work
+  Mid-rebase:  continue rebase · skip rebase · abort rebase · abort merge
+  Setup:       init · add remote origin <url> · add remote <url>
+
+Anything else, just say it:  gitrust "push only the login changes"
+                             gitrust "what did I do yesterday"
+A small local model picks from a fixed list of Git operations — it never
+invents a command — and GiTrust asks you whenever it isn't sure.
+
+Keys: Enter chooses or runs · Esc cancels any prompt (nothing is changed).
+--yes skips prompts, but never picks an option for you and never skips
+a type-to-confirm.  GITRUST_DEBUG=1 shows the model's scores.
+
+Picks you make from a "which did you mean?" menu are remembered per repo
+(never for operations that discard or rewrite work): gitrust aliases.
+
+More: gitrust setup · gitrust aliases · gitrust recover --list · gitrust --help
+
+######## run 2: gitrust 'log'  [pipe, model down]  exit=0  0.0s
+
+--- final ---
+*  Show history
+On branch main · tracking origin/main · up to date
+
+e5ee583  (just now)  base  ← HEAD
+
+######## run 3: gitrust 'branches'  [pipe, model down]  exit=0  0.0s
+
+--- final ---
+*  List branches
+On branch main · tracking origin/main · up to date
+
+* main  →  origin/main (up to date)
+
+######## run 4: gitrust 'current branch'  [pipe, model down]  exit=0  0.0s
+
+--- final ---
+*  List branches
+On branch main · tracking origin/main · up to date
+
+* main  →  origin/main (up to date)
+
+######## run 5: gitrust 'remotes'  [pipe, model down]  exit=0  0.0s
+
+--- final ---
+*  List remotes
+Remotes:
+  origin  →  /var/folders/s7/1jv371kn3l94rpcf9w_3dy740000gp/T/gitrust-M-42-vsg4ao81/remote.git
+
+######## run 6: gitrust 'config'  [pipe, model down]  exit=0  0.0s
+
+--- final ---
+*  Show Git settings
+Git identity:
+  user.name   = You
+  user.email  = you@example.invalid
+
+######## run 7: gitrust 'diff'  [pipe, model down]  exit=0  0.0s
+
+--- final ---
+*  Show changes
+No changes vs HEAD.
+Last commit: e5ee583 "base" (just now)
+  → Try: gitrust "log" for history, or gitrust "show" for full commit details.
+

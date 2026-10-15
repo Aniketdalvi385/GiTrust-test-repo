@@ -1,0 +1,54 @@
+{
+ "id": "M-23",
+ "title": "Deleted branch → find my lost work",
+ "part": "6 · Forensics",
+ "mode": "auto",
+ "flagship": true,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:17",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "a rescue branch exists",
+   "ok": true,
+   "detail": "['rescue/20261015-63f6839']"
+  },
+  {
+   "name": "rescue branch at the lost commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "HEAD untouched",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "find my lost work"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.8,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "lost": "63f6839cc996e86c3f5dbf2676969cca35691707",
+  "head": "2e056041efb70e057c0b44de6608581b7193e753"
+ }
+}

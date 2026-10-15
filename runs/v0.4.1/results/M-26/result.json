@@ -1,0 +1,51 @@
+{
+ "id": "M-26",
+ "title": "Clean up: counts, untracked deleted, backed up",
+ "part": "6 · Forensics",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:41",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "junk/ deleted",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "backup holds junk/inner/file.txt",
+   "ok": true,
+   "detail": "['20261015-174139/junk/inner/file.txt']"
+  },
+  {
+   "name": "tracked edit untouched",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "clean up my repo"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 2.1,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

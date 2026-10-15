@@ -1,0 +1,100 @@
+######## run 1: gitrust 'commit this'  [pty, model up]  exit=0  3.4s
+
+--- model: routed or asked ---
+⚡  Commit everything
+? Commit message:
+[Enter to continue · Esc to cancel]
+
+--- message prompt ---
+⚡  Commit everything
+? Commit message:
+[Enter to continue · Esc to cancel]
+
+--- plan ---
+⚡  Commit everything
+> Commit message: first try
+
+Plan  · 2 steps · snapshot taken at 02f8984
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "first try"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- edit message ---
+⚡  Commit everything
+> Commit message: first try
+
+Plan  · 2 steps · snapshot taken at 02f8984
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "first try"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+? Commit message: first try
+[Enter to continue · Esc to cancel]
+
+--- plan again ---
+⚡  Commit everything
+> Commit message: first try
+
+Plan  · 2 steps · snapshot taken at 02f8984
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "first try"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+> Commit message: my message
+
+Plan  · 2 steps · snapshot taken at 02f8984
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "my message"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- final ---
+⚡  Commit everything
+> Commit message: first try
+
+Plan  · 2 steps · snapshot taken at 02f8984
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "first try"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+> Commit message: my message
+
+Plan  · 2 steps · snapshot taken at 02f8984
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "my message"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+  ✓  stage     all modified files
+  │  → Staged all changes
+  │
+  ✓  commit    "my message"
+  │  → Committed: my message (02f8984→3b7d40a)
+
+  ✓ Done · 1 commit on main, ↑1 ↓0
+  Next: gitrust "push" · changed your mind? gitrust "undo"
+

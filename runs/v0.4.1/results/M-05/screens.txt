@@ -1,0 +1,53 @@
+######## run 1: gitrust 'create branch feature-x'  [pty, model up]  exit=0  0.8s
+
+--- waited for '[Enter] run' ---
+⚡  Create branch “feature-x”
+
+Plan  · 1 step · snapshot taken at f989ddc
+
+  ●  branch    feature-x  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Create branch “feature-x”
+
+Plan  · 1 step · snapshot taken at f989ddc
+
+  ●  branch    feature-x  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  branch    feature-x
+  │  → Created branch feature-x
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+
+######## run 2: gitrust 'switch to other'  [pty, model up]  exit=1  0.7s
+
+--- waited for '[Enter] run' ---
+⚡  Switch to “other”
+
+Plan  · 1 step · snapshot taken at f989ddc
+
+  ●  checkout  other  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Switch to “other”
+
+Plan  · 1 step · snapshot taken at f989ddc
+
+  ●  checkout  other  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✗  checkout  other
+  │  Failed to checkout 'other'
+✗  Failed to checkout 'other'
+   caused by: 1 conflict prevents checkout; class=Checkout (20); code=Conflict (-13)
+

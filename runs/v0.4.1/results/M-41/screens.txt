@@ -1,0 +1,11 @@
+######## run 1: gitrust '--yes' 'show history'  [pipe, model up]  exit=0  2.1s
+
+--- final ---
++  Show history · 2.1s
+On branch main · tracking origin/main · 3 ahead
+
+7e9070e  (just now)  commit 3  ← HEAD
+a1eafbf  (just now)  commit 2
+64998ed  (just now)  commit 1
+f165569  (just now)  base
+

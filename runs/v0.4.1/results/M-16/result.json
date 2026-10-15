@@ -1,0 +1,58 @@
+{
+ "id": "M-16",
+ "title": "Undo → throw away: type to confirm, trash backup",
+ "part": "4 · Undo",
+ "mode": "auto",
+ "flagship": true,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:42",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "commit gone",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "working tree clean",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "trash backup written",
+   "ok": true,
+   "detail": "['20261015-174209/app.txt']"
+  },
+  {
+   "name": "screen shows 'backup'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "undo"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 2.4,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "before": "6155184819c64e43f754d731e45a230f49aa20fb"
+ }
+}

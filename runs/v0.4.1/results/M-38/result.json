@@ -1,0 +1,43 @@
+{
+ "id": "M-38",
+ "title": "No terminal, a question needed: plain message, exit 1",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:19",
+ "checks": [
+  {
+   "name": "exits 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows 'no terminal to ask in'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "undo"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 1,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "before": "dbf47f1e0084fdfb0c4f58a443b2c03fd9527436"
+ }
+}

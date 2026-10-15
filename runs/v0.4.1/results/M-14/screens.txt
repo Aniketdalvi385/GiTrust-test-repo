@@ -1,0 +1,71 @@
+######## run 1: gitrust 'checkout main'  [pty, model up]  exit=0  2.3s
+
+--- waited for 'Esc cancel' ---
+⚡  Switch to “main”
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 688c62f — not on any branch.
+   You have 1 commit(s) here that are on NO branch — switching away now would strand them.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+? What would you like to do?
+> Create a branch HERE to save work
+  Switch back to your previous branch (no changes made)
+  Cancel
+[↑↓ move · Enter choose · Esc cancel]
+
+--- waited for 'Esc to cancel' ---
+⚡  Switch to “main”
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 688c62f — not on any branch.
+   You have 1 commit(s) here that are on NO branch — switching away now would strand them.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch HERE to save work
+? New branch name: rescue-work
+[Enter to continue · Esc to cancel]
+
+--- waited for '[Enter] run' ---
+⚡  Switch to “main”
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 688c62f — not on any branch.
+   You have 1 commit(s) here that are on NO branch — switching away now would strand them.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch HERE to save work
+> New branch name: rescue-worksaved-work
+  ✓ Created and switched to branch 'rescue-worksaved-work'
+
+Plan  · 1 step · snapshot taken at 688c62f
+
+  ●  checkout  main  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Switch to “main”
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 688c62f — not on any branch.
+   You have 1 commit(s) here that are on NO branch — switching away now would strand them.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch HERE to save work
+> New branch name: rescue-worksaved-work
+  ✓ Created and switched to branch 'rescue-worksaved-work'
+
+Plan  · 1 step · snapshot taken at 688c62f
+
+  ●  checkout  main  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  checkout  main
+  │  → Switched to main
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+

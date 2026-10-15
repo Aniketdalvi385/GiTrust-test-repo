@@ -1,0 +1,357 @@
+{
+ "about": "The 44-case set from the 2026-08 classifier research (author-labelled; strict single label). Copied from Glit/docs/classifier_eval/eval_set.json.",
+ "cases": [
+  {
+   "id": "V1-01",
+   "q": "push the login changes",
+   "accept": [
+    "scoped_push"
+   ],
+   "bucket": "variant-M04"
+  },
+  {
+   "id": "V1-02",
+   "q": "push all docs changes",
+   "accept": [
+    "scoped_push"
+   ],
+   "bucket": "variant-M04"
+  },
+  {
+   "id": "V1-03",
+   "q": "push all api changes",
+   "accept": [
+    "scoped_push"
+   ],
+   "bucket": "variant-M04"
+  },
+  {
+   "id": "V1-04",
+   "q": "push all schema changes",
+   "accept": [
+    "scoped_push"
+   ],
+   "bucket": "variant-M04"
+  },
+  {
+   "id": "V1-05",
+   "q": "commit this",
+   "accept": [
+    "add_commit"
+   ],
+   "bucket": "variant-M03"
+  },
+  {
+   "id": "V1-06",
+   "q": "save my changes",
+   "accept": [
+    "add_commit"
+   ],
+   "bucket": "variant-M03"
+  },
+  {
+   "id": "V1-07",
+   "q": "commit everything",
+   "accept": [
+    "add_commit"
+   ],
+   "bucket": "variant-M03"
+  },
+  {
+   "id": "V1-08",
+   "q": "sync with main",
+   "accept": [
+    "sync"
+   ],
+   "bucket": "variant-M10"
+  },
+  {
+   "id": "V1-09",
+   "q": "update feature from main",
+   "accept": [
+    "sync"
+   ],
+   "bucket": "variant-M10"
+  },
+  {
+   "id": "V1-10",
+   "q": "pull main into feature",
+   "accept": [
+    "sync"
+   ],
+   "bucket": "variant-M10"
+  },
+  {
+   "id": "V1-11",
+   "q": "squash the last 3 commits",
+   "accept": [
+    "squash"
+   ],
+   "bucket": "variant-M19"
+  },
+  {
+   "id": "V1-12",
+   "q": "squash the last three commits",
+   "accept": [
+    "squash"
+   ],
+   "bucket": "variant-M19"
+  },
+  {
+   "id": "V1-13",
+   "q": "combine the last 3 commits into one",
+   "accept": [
+    "squash"
+   ],
+   "bucket": "variant-M19"
+  },
+  {
+   "id": "V1-14",
+   "q": "fix the last commit message to 'x'",
+   "accept": [
+    "amend"
+   ],
+   "bucket": "variant-M20"
+  },
+  {
+   "id": "V1-15",
+   "q": "reword the last commit to 'x'",
+   "accept": [
+    "amend"
+   ],
+   "bucket": "variant-M20"
+  },
+  {
+   "id": "V1-16",
+   "q": "change my last commit message to 'x'",
+   "accept": [
+    "amend"
+   ],
+   "bucket": "variant-M20"
+  },
+  {
+   "id": "V1-17",
+   "q": "ship the auth stuff",
+   "accept": [
+    "scoped_push"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-18",
+   "q": "collapse my last few commits",
+   "accept": [
+    "squash"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-19",
+   "q": "rename that commit",
+   "accept": [
+    "amend"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-20",
+   "q": "get the latest from origin",
+   "accept": [
+    "pull"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-21",
+   "q": "jump over to the dev branch",
+   "accept": [
+    "checkout"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-22",
+   "q": "spin up a branch called hotfix",
+   "accept": [
+    "branch"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-23",
+   "q": "where am i right now",
+   "accept": [
+    "branches"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-24",
+   "q": "roll back that last commit i just made",
+   "accept": [
+    "undo"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-25",
+   "q": "put my work up on github",
+   "accept": [
+    "push"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-26",
+   "q": "make an inverse commit for the bad one",
+   "accept": [
+    "revert"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-27",
+   "q": "take the readme out of staging",
+   "accept": [
+    "unstage"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-28",
+   "q": "show me the history",
+   "accept": [
+    "log"
+   ],
+   "bucket": "unseen"
+  },
+  {
+   "id": "V1-29",
+   "q": "status",
+   "accept": [
+    "status"
+   ],
+   "bucket": "canonical"
+  },
+  {
+   "id": "V1-30",
+   "q": "push",
+   "accept": [
+    "push"
+   ],
+   "bucket": "canonical"
+  },
+  {
+   "id": "V1-31",
+   "q": "undo",
+   "accept": [
+    "undo"
+   ],
+   "bucket": "canonical"
+  },
+  {
+   "id": "V1-32",
+   "q": "list branches",
+   "accept": [
+    "branches"
+   ],
+   "bucket": "canonical"
+  },
+  {
+   "id": "V1-33",
+   "q": "fetch",
+   "accept": [
+    "fetch"
+   ],
+   "bucket": "canonical"
+  },
+  {
+   "id": "V1-34",
+   "q": "will pulling cause conflicts",
+   "accept": [
+    "merge_preview"
+   ],
+   "bucket": "tricky"
+  },
+  {
+   "id": "V1-35",
+   "q": "am i up to date with the remote",
+   "accept": [
+    "fetch"
+   ],
+   "bucket": "tricky"
+  },
+  {
+   "id": "V1-36",
+   "q": "throw away my changes",
+   "accept": [
+    "cleanup"
+   ],
+   "bucket": "safety"
+  },
+  {
+   "id": "V1-37",
+   "q": "clean up my repo",
+   "accept": [
+    "cleanup"
+   ],
+   "bucket": "safety"
+  },
+  {
+   "id": "V1-38",
+   "q": "undo the last three commits",
+   "accept": [
+    "undo"
+   ],
+   "bucket": "safety"
+  },
+  {
+   "id": "V1-39",
+   "q": "discard my local commits",
+   "accept": [
+    "discard_local"
+   ],
+   "bucket": "safety"
+  },
+  {
+   "id": "V1-40",
+   "q": "force push overwriting the remote",
+   "accept": [
+    "force_push"
+   ],
+   "bucket": "safety"
+  },
+  {
+   "id": "V1-41",
+   "q": "what's the weather",
+   "accept": [
+    "__reject__"
+   ],
+   "bucket": "out-of-scope"
+  },
+  {
+   "id": "V1-42",
+   "q": "make me a sandwich",
+   "accept": [
+    "__reject__"
+   ],
+   "bucket": "out-of-scope"
+  },
+  {
+   "id": "V1-43",
+   "q": "write me a poem about git",
+   "accept": [
+    "__reject__"
+   ],
+   "bucket": "out-of-scope"
+  },
+  {
+   "id": "V1-44",
+   "q": "what time is it",
+   "accept": [
+    "__reject__"
+   ],
+   "bucket": "out-of-scope"
+  }
+ ]
+}

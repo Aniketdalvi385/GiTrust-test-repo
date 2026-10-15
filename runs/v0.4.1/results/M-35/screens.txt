@@ -1,0 +1,43 @@
+######## run 1: gitrust 'whats goin on'  [pty, model up]  exit=0  1.9s
+
+--- which did you mean ---
+? That may not be a Git request. If it is, which operation did you mean?
+> [1] Show status  — what's changed, staged or untracked
+  [2] Show history  — recent commits
+  [3] List branches  — and which one you're on
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- final ---
+> That may not be a Git request. If it is, which operation did you mean? Show status
+  ↳ Learned “whats goin on” → Show status · instant next time (gitrust aliases)
+◇  Show status · your choice
+On branch main · tracking origin/main · up to date
+Last commit: 9b15b4d "base" (just now)
+
+Nothing to commit, working tree clean.
+
+Remote state as of the last fetch, just now — gitrust "fetch" refreshes it.
+
+######## run 2: gitrust 'whats goin on'  [pty, model down]  exit=0  0.0s
+
+--- final ---
+⚡  Show status · learned
+On branch main · tracking origin/main · up to date
+Last commit: 9b15b4d "base" (just now)
+
+Nothing to commit, working tree clean.
+
+Remote state as of the last fetch, just now — gitrust "fetch" refreshes it.
+
+######## run 3: gitrust 'aliases'  [pipe, model up]  exit=0  0.0s
+
+--- final ---
+Learned phrases in this repo (.git/gitrust/aliases.toml):
+  “whats goin on”  →  Show status
+Forget one: gitrust aliases --forget "<phrase>" · all: gitrust aliases --clear
+
+######## run 4: gitrust 'aliases' '--forget' 'whats goin on'  [pipe, model up]  exit=0  0.0s
+
+--- final ---
+Forgot “whats goin on”.
+

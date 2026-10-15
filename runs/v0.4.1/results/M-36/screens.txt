@@ -1,0 +1,6 @@
+######## run 1: gitrust 'write a python function that parses dates'  [pty, model up]  exit=1  14.3s
+
+--- final ---
+✗  That doesn't look like a Git request. Try e.g. "show status" or "push my commits" — or `gitrust help` for p
+hrases that always work.
+

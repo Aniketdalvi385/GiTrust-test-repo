@@ -1,0 +1,36 @@
+{
+ "id": "M-13",
+ "title": "Commit on a detached HEAD → rescue to a branch",
+ "part": "3 · Stuck states",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:52",
+ "checks": [
+  {
+   "name": "now on a branch",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit this with message 'detached work'"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 4.1,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

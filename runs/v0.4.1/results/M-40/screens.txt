@@ -1,0 +1,6 @@
+######## run 1: gitrust 'commit everything'  [pipe, model up]  exit=1  0.0s
+
+--- final ---
+*  Commit everything
+✗  Nothing to commit — the working tree is clean.
+

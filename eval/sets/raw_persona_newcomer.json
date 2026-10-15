@@ -1,0 +1,161 @@
+{"persona": "newcomer", "cases": [
+{"q":"which files i changed and not saved yet","intent":"status","also_ok":[],"situation":"normal"},
+{"q":"i want to see what is modified, staged, and new files","intent":"status","also_ok":[],"situation":"normal"},
+{"q":"what is the state of my working folder right now","intent":"status","also_ok":[],"situation":"normal"},
+
+{"q":"show me the list of old commits","intent":"log","also_ok":[],"situation":"normal"},
+{"q":"what did people do in this project before, i want to see the history","intent":"log","also_ok":[],"situation":"normal"},
+{"q":"i need see all past commits with the author and date","intent":"log","also_ok":[],"situation":"normal"},
+
+{"q":"show me exactly which lines i changed in my files","intent":"diff","also_ok":[],"situation":"normal"},
+{"q":"what is different in the code now compared to the last save, line by line","intent":"diff","also_ok":[],"situation":"normal"},
+{"q":"i want to look at my code changes before i commit, the red and green lines","intent":"diff","also_ok":[],"situation":"normal"},
+
+{"q":"what branches do i have in this project","intent":"branches","also_ok":[],"situation":"normal"},
+{"q":"in which branch am i now?","intent":"branches","also_ok":[],"situation":"normal"},
+{"q":"list all the branch names so i can see them","intent":"branches","also_ok":[],"situation":"normal"},
+
+{"q":"what name and email git is using for me","intent":"config","also_ok":[],"situation":"normal"},
+{"q":"show my git settings","intent":"config","also_ok":[],"situation":"normal"},
+{"q":"i forgot which email i put in git setup, can you show","intent":"config","also_ok":[],"situation":"normal"},
+
+{"q":"show me what is inside the commit a1b2c3d","intent":"show","also_ok":[],"situation":"normal"},
+{"q":"i want details of one commit, the last one: who wrote it and which files it touched","intent":"show","also_ok":[],"situation":"normal"},
+{"q":"open commit 9f8e7d6 and tell me what it changed","intent":"show","also_ok":[],"situation":"normal"},
+
+{"q":"check if my teammates pushed something new, but dont change my files","intent":"fetch","also_ok":[],"situation":"normal"},
+{"q":"am i behind the server or ahead? only look, no download to my code","intent":"fetch","also_ok":[],"situation":"normal"},
+{"q":"ask the remote if there is new work, i just want to know","intent":"fetch","also_ok":[],"situation":"normal"},
+
+{"q":"if i pull now will i get conflicts? dont do it, just tell me","intent":"merge_preview","also_ok":[],"situation":"normal"},
+{"q":"can you test if merging main in my branch will break with conflicts, without changing anything","intent":"merge_preview","also_ok":[],"situation":"normal"},
+{"q":"predict conflict before i merge, i am afraid","intent":"merge_preview","also_ok":[],"situation":"normal"},
+
+{"q":"save all my work with message 'add login page'","intent":"add_commit","also_ok":[],"situation":"normal"},
+{"q":"take all my changed files and make a commit called fix navbar bug","intent":"add_commit","also_ok":[],"situation":"normal"},
+{"q":"add app.js and style.css then commit them with message 'update colors'","intent":"add_commit","also_ok":[],"situation":"normal"},
+
+{"q":"i already staged my files, now just commit them with message 'update readme'","intent":"commit","also_ok":[],"situation":"normal"},
+{"q":"commit only what i put in staging area, message: remove old function","intent":"commit","also_ok":[],"situation":"normal"},
+{"q":"make a commit from the staged files only, not other files. say 'fix typo'","intent":"commit","also_ok":[],"situation":"normal"},
+
+{"q":"send my commits to the server","intent":"push","also_ok":[],"situation":"normal"},
+{"q":"upload my branch to github, everything i have committed","intent":"push","also_ok":[],"situation":"normal"},
+{"q":"my work is already committed, now i want put it online for the team","intent":"push","also_ok":[],"situation":"normal"},
+
+{"q":"commit and push only the files about the payment feature","intent":"scoped_push","also_ok":[],"situation":"normal"},
+{"q":"i changed many things but only want to upload the login related files, not the rest","intent":"scoped_push","also_ok":[],"situation":"normal"},
+{"q":"send only the search part of my code to remote, other files stay with me","intent":"scoped_push","also_ok":[],"situation":"normal"},
+
+{"q":"make new branch called feature-search","intent":"branch","also_ok":[],"situation":"normal"},
+{"q":"i want to start working on something new in separate line, name it bugfix-header","intent":"branch","also_ok":[],"situation":"normal"},
+{"q":"create a branch for my homework named hw2","intent":"branch","also_ok":[],"situation":"normal"},
+
+{"q":"go to the branch develop","intent":"checkout","also_ok":[],"situation":"normal"},
+{"q":"i want to move to my other branch called feature-login","intent":"checkout","also_ok":[],"situation":"normal"},
+{"q":"change to main branch please","intent":"checkout","also_ok":[],"situation":"normal"},
+
+{"q":"my teammate's code is not in my branch, i want it","intent":"pull","also_ok":[],"situation":"normal"},
+{"q":"get the newest code from github and put in my project","intent":"pull","also_ok":[],"situation":"normal"},
+{"q":"download latest changes from the server and join with mine","intent":"pull","also_ok":["pull_rebase"],"situation":"normal"},
+
+{"q":"my feature branch is old, bring the changes of main inside it","intent":"sync","also_ok":[],"situation":"normal"},
+{"q":"update my branch with what is new in main","intent":"sync","also_ok":[],"situation":"normal"},
+{"q":"main has new things, i want them in the branch where i am working","intent":"sync","also_ok":[],"situation":"normal"},
+
+{"q":"i made a mistake in my last commit, take it back","intent":"undo","also_ok":[],"situation":"normal"},
+{"q":"undo the last commit please","intent":"undo","also_ok":[],"situation":"normal"},
+{"q":"go back one step, my last save was wrong","intent":"undo","also_ok":[],"situation":"normal"},
+
+{"q":"i wrote the wrong message in my last commit, change it to 'add footer links'","intent":"amend","also_ok":[],"situation":"normal"},
+{"q":"i forgot one file in the commit i just did, put it inside that same commit","intent":"amend","also_ok":[],"situation":"normal"},
+{"q":"fix the message of my latest commit, it has a typo","intent":"amend","also_ok":[],"situation":"normal"},
+
+{"q":"put my last 3 commits together to one commit","intent":"squash","also_ok":[],"situation":"normal"},
+{"q":"too many small commits, i want make them only one, the last 4","intent":"squash","also_ok":[],"situation":"normal"},
+{"q":"combine my recent 2 commits into single one","intent":"squash","also_ok":[],"situation":"normal"},
+
+{"q":"commit 4c5d6e7 was bad, make a new commit that cancel it but keep the history","intent":"revert","also_ok":[],"situation":"normal"},
+{"q":"i pushed a bug already, i need opposite commit of a1b2c3d so the history stay","intent":"revert","also_ok":[],"situation":"normal"},
+{"q":"reverse the changes of commit 7e8f9a0 by adding new commit on top","intent":"revert","also_ok":[],"situation":"normal"},
+
+{"q":"i added the wrong file to staging, take it out but keep my changes","intent":"unstage","also_ok":[],"situation":"normal"},
+{"q":"remove config.json from the staged files, dont delete the file","intent":"unstage","also_ok":[],"situation":"normal"},
+{"q":"i did add by mistake, i dont want those files in the next commit","intent":"unstage","also_ok":[],"situation":"normal"},
+
+{"q":"i am not ready to commit but i need clean folder for a moment, keep my changes somewhere","intent":"stash","also_ok":[],"situation":"normal"},
+{"q":"put my unfinished work aside, i will come back later","intent":"stash","also_ok":[],"situation":"normal"},
+{"q":"hide my changes temporary so i can change branch","intent":"stash","also_ok":[],"situation":"normal"},
+
+{"q":"delete all my changes and new files, i want fresh folder","intent":"cleanup","also_ok":[],"situation":"normal"},
+{"q":"i broke everything, throw away all not committed work","intent":"cleanup","also_ok":[],"situation":"normal"},
+{"q":"remove the untracked files and reset my modified files to clean state","intent":"cleanup","also_ok":[],"situation":"normal"},
+
+{"q":"my local commits are bad, make my branch same like the server one and lose mine","intent":"discard_local","also_ok":[],"situation":"normal"},
+{"q":"i want to throw away the commits that i did not push yet","intent":"discard_local","also_ok":[],"situation":"normal"},
+{"q":"reset my branch to what is on origin, i dont need my local commits","intent":"discard_local","also_ok":[],"situation":"normal"},
+
+{"q":"push my branch and overwrite what is on the server, i know it will replace","intent":"force_push","also_ok":[],"situation":"normal"},
+{"q":"server doesnt accept my push because history changed, force it","intent":"force_push","also_ok":[],"situation":"normal"},
+{"q":"make remote branch exactly like my local, replace their history","intent":"force_push","also_ok":[],"situation":"normal"},
+
+{"q":"start git in this folder","intent":"init","also_ok":[],"situation":"normal"},
+{"q":"this project is not tracked yet, make it a new repository","intent":"init","also_ok":[],"situation":"normal"},
+{"q":"i want to use version control for this folder, set it up","intent":"init","also_ok":[],"situation":"normal"},
+
+{"q":"connect this project to https://github.com/maria/todo-app.git","intent":"add_remote","also_ok":[],"situation":"normal"},
+{"q":"add a remote named origin with url git@github.com:ahmed/shop.git","intent":"add_remote","also_ok":[],"situation":"normal"},
+{"q":"link my local project with the github repo https://github.com/lee/notes.git","intent":"add_remote","also_ok":[],"situation":"normal"},
+
+{"q":"i deleted a commit by accident, can i get it back","intent":"find_lost_work","also_ok":[],"situation":"normal"},
+{"q":"my work is gone after reset, search for the lost commits","intent":"find_lost_work","also_ok":[],"situation":"normal"},
+{"q":"i lost a branch i deleted yesterday, find the work in it","intent":"find_lost_work","also_ok":[],"situation":"normal"},
+
+{"q":"where this project is connected online? show the links","intent":"remotes","also_ok":[],"situation":"normal"},
+{"q":"list the remote servers and their urls","intent":"remotes","also_ok":[],"situation":"normal"},
+{"q":"what is the github address saved in this repo","intent":"remotes","also_ok":[],"situation":"normal"},
+
+{"q":"bring back the changes i put aside before","intent":"stash_pop","also_ok":[],"situation":"normal"},
+{"q":"i want my hidden work back now","intent":"stash_pop","also_ok":[],"situation":"normal"},
+{"q":"restore the last thing i stashed","intent":"stash_pop","also_ok":[],"situation":"normal"},
+
+{"q":"get new commits from server and put my own commits after them, no merge commit","intent":"pull_rebase","also_ok":[],"situation":"normal"},
+{"q":"pull but keep history straight line, my commits on top","intent":"pull_rebase","also_ok":[],"situation":"normal"},
+{"q":"download remote changes and replay my commits over them","intent":"pull_rebase","also_ok":[],"situation":"normal"},
+
+{"q":"make my current branch follow origin/feature-search","intent":"set_upstream","also_ok":[],"situation":"normal"},
+{"q":"git says no tracking information for this branch, connect it with the remote branch","intent":"set_upstream","also_ok":[],"situation":"normal"},
+{"q":"i want this branch to be linked to same name branch on origin so pull works","intent":"set_upstream","also_ok":[],"situation":"normal"},
+
+{"q":"delete the remote called upstream from my project","intent":"remove_remote","also_ok":[],"situation":"normal"},
+{"q":"i dont want the connection named backup anymore, remove it","intent":"remove_remote","also_ok":[],"situation":"normal"},
+{"q":"disconnect this repo from the remote origin","intent":"remove_remote","also_ok":[],"situation":"normal"},
+
+{"q":"i dont want git in this folder anymore, but keep my files","intent":"delete_repo","also_ok":[],"situation":"normal"},
+{"q":"remove the .git folder only","intent":"delete_repo","also_ok":[],"situation":"normal"},
+{"q":"make this folder a normal folder again, no version control","intent":"delete_repo","also_ok":[],"situation":"normal"},
+
+{"q":"save everything and send it to github with message 'finish contact form'","intent":"commit_push","also_ok":[],"situation":"normal"},
+{"q":"commit my changes and upload them, all in one command, message 'fix bug in cart'","intent":"commit_push","also_ok":[],"situation":"normal"},
+{"q":"add index.html, commit as 'new homepage' and push to server","intent":"commit_push","also_ok":[],"situation":"normal"},
+
+{"q":"i fixed the conflicts, now go on with the rebase","intent":"rebase_continue","also_ok":[],"situation":"rebase"},
+{"q":"conflict is solved, continue","intent":"rebase_continue","also_ok":[],"situation":"rebase"},
+{"q":"this commit in the rebase is not needed, jump over it","intent":"rebase_skip","also_ok":[],"situation":"rebase"},
+{"q":"skip the one that is stuck and do the other commits","intent":"rebase_skip","also_ok":[],"situation":"rebase"},
+{"q":"too many conflicts, stop the rebase and bring my branch like before","intent":"rebase_abort","also_ok":[],"situation":"rebase"},
+{"q":"cancel this rebase, i dont want it anymore","intent":"rebase_abort","also_ok":[],"situation":"rebase"},
+{"q":"i dont want this merge anymore, cancel it and go back","intent":"merge_abort","also_ok":[],"situation":"merge"},
+{"q":"the merge has conflicts and i am lost, stop and return like before the merge","intent":"merge_abort","also_ok":[],"situation":"merge"},
+
+{"q":"run the unit tests for me","intent":"__reject__","also_ok":[],"situation":"normal"},
+{"q":"how is the weather in pune today","intent":"__reject__","also_ok":[],"situation":"normal"},
+{"q":"write a python function that reverse a string","intent":"__reject__","also_ok":[],"situation":"normal"},
+{"q":"push the button on the page to the right side with css","intent":"__reject__","also_ok":[],"situation":"normal"},
+{"q":"npm install is giving error, fix it","intent":"__reject__","also_ok":[],"situation":"normal"},
+{"q":"open my project in vscode","intent":"__reject__","also_ok":[],"situation":"normal"},
+{"q":"what is the difference between a branch and a tree in data structure","intent":"__reject__","also_ok":[],"situation":"normal"},
+{"q":"i have commitment issues with my deadline, give me advice","intent":"__reject__","also_ok":[],"situation":"normal"},
+{"q":"build the docker image and run it","intent":"__reject__","also_ok":[],"situation":"normal"},
+{"q":"translate this sentence to spanish: the build is ready","intent":"__reject__","also_ok":[],"situation":"normal"}
+]}

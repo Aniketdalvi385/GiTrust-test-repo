@@ -1,0 +1,48 @@
+{
+ "id": "M-34",
+ "title": "Numbered menu: a digit chooses at once",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-15 17:19",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "commit gone",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "changes unstaged in files",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "undo"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 2.1,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "before": "eca5b653f4476b3ef9c1ecf84ee683cbda55cfbd"
+ }
+}

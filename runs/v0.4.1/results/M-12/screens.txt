@@ -1,0 +1,39 @@
+######## run 1: gitrust 'commit the merge'  [pty, model up]  exit=0  20.8s
+
+--- model: routed or asked ---
+✦  Commit staged files · 18.8s
+? Commit message (edit or accept): Merge branch 'side'
+[Enter to continue · Esc to cancel]
+
+--- message (MERGE_MSG offered) ---
+✦  Commit staged files · 18.8s
+? Commit message (edit or accept): Merge branch 'side'
+[Enter to continue · Esc to cancel]
+
+--- waited for '[Enter] run' ---
+✦  Commit staged files · 18.8s
+> Commit message (edit or accept): Merge branch 'side'
+
+Plan  · 1 step · snapshot taken at 602c5eb
+
+  ●  commit    "Merge branch 'side'"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- final ---
+✦  Commit staged files · 18.8s
+> Commit message (edit or accept): Merge branch 'side'
+
+Plan  · 1 step · snapshot taken at 602c5eb
+
+  ●  commit    "Merge branch 'side'"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+  ✓  commit    "Merge branch 'side'"
+  │  → Committed: Merge branch 'side' (602c5eb→b591584)
+
+  ✓ Done · 1 commit on main, ↑3 ↓0
+  Next: gitrust "push" · changed your mind? gitrust "undo"
+
