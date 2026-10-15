@@ -5,7 +5,7 @@
 - **How:** `suite/run.py auto` — a pseudo-terminal drives the release binary, presses the keys each test lists, then checks exit code, repository and screen; every result was then reviewed from its screens (`review.md`). ★ = flagship, also run by hand (`suite/run.py manual`).
 - **Report:** [REPORT.md](REPORT.md)
 
-**Result:** 3 ❌ FAIL · 19 ✅ PASS · 21 ⚠️ PASS-WITH-NOTES
+**Result:** 3 ❌ FAIL · 21 ✅ PASS · 23 ⚠️ PASS-WITH-NOTES
 
 | ID | Test | Since | Mode | Result | Note |
 |---|---|---|---|---|---|
@@ -14,8 +14,10 @@
 | [M-02](results/M-02/) | Model classification of a read-only request | v0.2 | auto | ✅ PASS | Model asked a which-did-you-mean menu; chosen history ran correctly. |
 | [M-03](results/M-03/) | Commit: the message is yours, [e] edits it | v0.2 | auto | ✅ PASS | Message asked from user, shown in plan, [e] edit works, committed. |
 | [M-04](results/M-04/) | Scoped push: only the login files ★ | v0.2 | auto | ✅ PASS | Picker pre-selects login files; only they were committed and pushed. |
+| [M-04-manual](results/M-04-manual/) | Scoped push: only the login files ★ | v0.2 | manual | ✅ PASS | By hand: picker chose the login files; committed with own message and pushed. |
 | [M-05](results/M-05/) | Create a branch; dirty switch is handled | v0.2 | auto | ❌ FAIL | Branch created; dirty switch is safe but shows a raw libgit2 error chain. |
 | [M-06](results/M-06/) | Diverged push → rebase → pushed ★ | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Diverged push rebased and pushed linearly; plan carries a contradictory warning. |
+| [M-06-manual](results/M-06-manual/) | Diverged push → rebase → pushed ★ | v0.2 | manual | ⚠️ PASS-WITH-NOTES | By hand: diverged push rebased and pushed; same plan nits as auto. |
 | [M-07](results/M-07/) | Diverged push → merge | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Merge path makes a merge commit and pushes; same warning/truncation nits. |
 | [M-08](results/M-08/) | Rebase conflict → calm pause → continue | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Conflict pauses calmly with exit 1 and continue works; raw git noise and stale warning. |
 | [M-09](results/M-09/) | Abort rebase restores exactly | v0.2 | auto | ✅ PASS | Abort rebase returns to the original HEAD; status shows no rebase. |
@@ -26,6 +28,7 @@
 | [M-14](results/M-14/) | Switching away would strand a commit → guard | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Guard warns stranded commit, saves branch first, then switches; menu nits. |
 | [M-15](results/M-15/) | Undo: four plain options, keep staged | v0.2 | auto | ✅ PASS | Undo menu names the commit, four numbered options, keeps changes staged. |
 | [M-16](results/M-16/) | Undo → throw away: type to confirm, trash backup ★ | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Typed confirm and trash backup work; double confirmation and truncated menu text. |
+| [M-16-manual](results/M-16-manual/) | Undo → throw away: type to confirm, trash backup ★ | v0.2 | manual | ⚠️ PASS-WITH-NOTES | By hand: typed confirmation, discard, backup named; risk text overstates the loss. |
 | [M-17](results/M-17/) | --yes cannot undo | v0.2 | auto | ✅ PASS | --yes refuses to pick an undo mode, lists choices, exits 1. |
 | [M-18](results/M-18/) | Undo 3 commits halts with guidance | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Halts safely with guidance, but first line misstates the request as "last commit". |
 | [M-19](results/M-19/) | Squash last 3: same content, one commit | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Squash works and tree is identical, but message prompt and plan rendering are messy. |
@@ -33,6 +36,7 @@
 | [M-21](results/M-21/) | A failing pre-commit hook blocks the commit | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Hook failure blocks commit and shows output, but Cancel row and misleading cancel text. |
 | [M-22](results/M-22/) | Revert succeeds despite the same hook | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Revert works with exit 0, but uses its own Y/n question plus plan Enter. |
 | [M-23](results/M-23/) | Deleted branch → find my lost work ★ | v0.2 | auto | ✅ PASS | Lists lost commit in plain words, restores to a rescue branch safely. |
+| [M-23-manual](results/M-23-manual/) | Deleted branch → find my lost work ★ | v0.2 | manual | ✅ PASS | By hand: lost commit listed in plain words, restored to a rescue branch. |
 | [M-24](results/M-24/) | A dropped stash surfaces | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Dropped stash is listed and restored; an internal index entry adds noise. |
 | [M-25](results/M-25/) | Nothing lost: an honest empty result | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Clear "Nothing found" message, but exits 0 although nothing was done. |
 | [M-26](results/M-26/) | Clean up: counts, untracked deleted, backed up | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Clean-up deletes only chosen untracked files with backup; wording and raw output nits. |

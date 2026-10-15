@@ -1,0 +1,209 @@
+######## run 1: gitrust 'push the login changes'  [pty, model up]  exit=0  37.9s
+
+--- final ---
+⚡  Push only the “login” changes
+
+⠋ Matching files to your request…
+⠙ Matching files to your request…
+⠹ Matching files to your request…
+⠸ Matching files to your request…
+⠼ Matching files to your request…
+⠴ Matching files to your request…
+⠦ Matching files to your request…
+⠧ Matching files to your request…
+⠇ Matching files to your request…
+⠏ Matching files to your request…
+⠋ Matching files to your request…
+⠙ Matching files to your request…
+⠹ Matching files to your request…
+⠸ Matching files to your request…
+⠼ Matching files to your request…
+⠴ Matching files to your request…
+⠦ Matching files to your request…
+⠧ Matching files to your request…
+⠇ Matching files to your request…
+⠏ Matching files to your request…
+⠋ Matching files to your request…
+⠙ Matching files to your request…
+⠹ Matching files to your request… · 2s
+⠸ Matching files to your request… · 2s
+⠼ Matching files to your request… · 2s
+⠴ Matching files to your request… · 2s
+⠦ Matching files to your request… · 2s
+⠧ Matching files to your request… · 2s
+⠇ Matching files to your request… · 2s
+⠏ Matching files to your request… · 2s
+⠋ Matching files to your request… · 2s
+⠙ Matching files to your request… · 2s
+⠹ Matching files to your request… · 2s
+⠸ Matching files to your request… · 2s
+⠼ Matching files to your request… · 3s
+⠴ Matching files to your request… · 3s
+⠦ Matching files to your request… · 3s
+⠧ Matching files to your request… · 3s
+⠇ Matching files to your request… · 3s
+⠏ Matching files to your request… · 3s
+⠋ Matching files to your request… · 3s
+⠙ Matching files to your request… · 3s
+⠹ Matching files to your request… · 3s
+⠸ Matching files to your request… · 3s
+⠼ Matching files to your request… · 3s
+⠴ Matching files to your request… · 3s
+⠦ Matching files to your request… · 4s
+⠧ Matching files to your request… · 4s
+⠇ Matching files to your request… · 4s
+⠏ Matching files to your request… · 4s
+⠋ Matching files to your request… · 4s
+⠙ Matching files to your request… · 4s
+⠹ Matching files to your request… · 4s
+⠸ Matching files to your request… · 4s
+⠼ Matching files to your request… · 4s
+⠴ Matching files to your request… · 4s
+⠦ Matching files to your request… · 4s
+⠧ Matching files to your request… · 4s
+⠇ Matching files to your request… · 5s
+⠏ Matching files to your request… · 5s
+⠋ Matching files to your request… · 5s
+⠙ Matching files to your request… · 5s
+⠹ Matching files to your request… · 5s
+⠸ Matching files to your request… · 5s
+⠼ Matching files to your request… · 5s
+⠴ Matching files to your request… · 5s
+⠦ Matching files to your request… · 5s
+⠧ Matching files to your request… · 5s
+⠇ Matching files to your request… · 5s
+⠏ Matching files to your request… · 5s
+⠋ Matching files to your request… · 6s
+⠙ Matching files to your request… · 6s
+⠹ Matching files to your request… · 6s
+⠸ Matching files to your request… · 6s
+⠼ Matching files to your request… · 6s
+⠴ Matching files to your request… · 6s
+⠦ Matching files to your request… · 6s
+⠧ Matching files to your request… · 6s
+⠇ Matching files to your request… · 6s
+⠏ Matching files to your request… · 6s
+⠋ Matching files to your request… · 6s
+⠙ Matching files to your request… · 6s
+⠹ Matching files to your request… · 7s
+⠸ Matching files to your request… · 7s
+⠼ Matching files to your request… · 7s
+⠴ Matching files to your request… · 7s
+⠦ Matching files to your request… · 7s
+⠧ Matching files to your request… · 7s
+⠇ Matching files to your request… · 7s
+⠏ Matching files to your request… · 7s
+⠋ Matching files to your request… · 7s
+⠙ Matching files to your request… · 7s
+⠹ Matching files to your request… · 7s
+⠸ Matching files to your request… · 7s
+⠼ Matching files to your request… · 8s
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+? Stage which files?  
+> [x] auth_login.txt  +1        new · name matches “login”
+  [x] login.txt       +1        new · name matches “login”
+  [ ] readme.txt      +1        new · might be part of “login” — your call
+[↑↓ move · Space toggle · → all · ← none · Enter stage · Esc cancel]
+> Stage which files? auth_login.txt, login.txt
+
+
+
+
+? Commit message:  
+[Enter to continue · Esc to cancel]
+? Commit message: L 
+
+? Commit message: Lo 
+
+? Commit message: Lod 
+
+? Commit message: Lo 
+
+? Commit message: Log 
+
+? Commit message: Logi 
+
+? Commit message: Login 
+
+? Commit message: Login  
+
+? Commit message: Login a 
+
+? Commit message: Login ad 
+
+? Commit message: Login add 
+
+? Commit message: Login adde 
+
+? Commit message: Login added 
+
+? Commit message: Login added  
+
+? Commit message: Login added t 
+
+? Commit message: Login added to 
+
+? Commit message: Login added to  
+
+? Commit message: Login added to t 
+
+? Commit message: Login added to th 
+
+? Commit message: Login added to the 
+
+? Commit message: Login added to the  
+
+? Commit message: Login added to the a 
+
+? Commit message: Login added to the ap 
+
+? Commit message: Login added to the app 
+
+? Commit message: Login added to the appl 
+
+? Commit message: Login added to the appli 
+
+? Commit message: Login added to the applic 
+
+? Commit message: Login added to the applica 
+
+? Commit message: Login added to the applicat 
+
+? Commit message: Login added to the applicati 
+
+? Commit message: Login added to the applicatio 
+
+? Commit message: Login added to the application 
+
+? Commit message: Login added to the application. 
+
+> Commit message: Login added to the application.
+
+
+Plan  · 3 steps · snapshot taken at baa8382
+
+  ●  stage     auth_login.txt, login.txt
+  │
+  ●  commit    "Login added to the application."  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel  
+  ○  stage     auth_login.txt, login.txt
+  ✓  stage     auth_login.txt, login.txt
+  │  → Staged 2 files
+  │
+  ○  commit    "Login added to the application."
+  ✓  commit    "Login added to the application."
+  │  → Committed: Login added to the application. (baa8382→46fe6da)
+  │
+  ○  push      → origin/main
+  ✓  push      → origin/main
+  │  → Pushed 1 commit(s) to origin/main
+
+  ✓ Done · 1 commit on main, ↑0 ↓0
+  Next: gitrust "status" · changed your mind? gitrust "undo" (reverts it — it's pushed)
+
+

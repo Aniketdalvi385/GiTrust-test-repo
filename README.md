@@ -13,7 +13,7 @@ releases.
 |---|---|---|---|---|---|
 | [v0.2.0](runs/v0.2.0/) | 2026-07-31 → 08-05 | manual, 31 tests | 19 ✅ · 4 ⚠️ · 8 ❌ | — | [REPORT](runs/v0.2.0/REPORT.md) |
 | [v0.3.0](runs/v0.3.0/) | 2026-08-07 → 08-10 | manual + captured, 31 tests + variants | 40 ✅ · 2 ⚠️ · 0 ❌ | — | [REPORT](runs/v0.3.0/REPORT.md) |
-| [**v0.4.1**](runs/v0.4.1/) | 2026-10-15 | automatic (PTY) + agent screen review + ★ by hand, 43 tests | 19 ✅ · 21 ⚠️ · 3 ❌ | 377 / 450 right, 68 asked, 3 wrong actions | [REPORT](runs/v0.4.1/REPORT.md) |
+| [**v0.4.1**](runs/v0.4.1/) | 2026-10-15 | automatic (PTY) + agent screen review + ★ by hand, 43 tests | 19 ✅ · 21 ⚠️ · 3 ❌ (+ 4 ★ by hand: 2 ✅ · 2 ⚠️, recorded) | 377 / 450 right, 68 asked, 3 wrong actions | [REPORT](runs/v0.4.1/REPORT.md) |
 
 v0.4 replaced the qwen LLM with the Kev decision model and tightened the conventions (every
 back-out exits 1, no Cancel rows, no raw errors), so its ⚠️ count isn't comparable with v0.3's.

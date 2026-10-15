@@ -15,8 +15,10 @@
    mattered were re-checked against the screens before going into this report.
 3. **Eval** — `eval/run_eval.py`: each request ran as `gitrust --yes "<request>"` in a fresh
    dirty repo (or a repo stopped mid-rebase / mid-merge / mid-cherry-pick).
-4. **Flagship tests by hand** — ★ tests (M-04, M-06, M-16, M-23) re-run by the owner in
-   `manual` mode and recorded in `evidence/` (see the index for which were done).
+4. **Flagship tests by hand** — the four ★ tests (M-04, M-06, M-16, M-23) were re-run by the
+   owner in `manual` mode, driving every prompt, and screen-recorded in [`evidence/`](evidence/).
+   All four pass their automatic checks; their records are `results/<id>-manual/` and match the
+   automatic runs.
 
 ## Result
 
@@ -24,6 +26,7 @@
 |---|---|
 | Automatic checks | **40 / 43 pass** — the 3 failures are real bugs (F1, F2, F18) |
 | After screen review | 19 ✅ PASS · 21 ⚠️ PASS-WITH-NOTES · 3 ❌ FAIL |
+| ★ Flagships by hand (owner, recorded) | M-04 ✅ · M-06 ⚠️ · M-16 ⚠️ · M-23 ✅ — all automatic checks pass |
 | Behaviour wrong or unsafe | **none** — F2/F18 are safe but print raw errors; F1 is a crash on a closed pipe. No data lost, no wrong exit codes on back-outs, every destructive op gated |
 
 | Eval set | n | right | asked (menu) | wrong, read-only | **wrong, changes something** |
@@ -69,7 +72,7 @@ Severity: 🔴 wrong action or crash · 🟠 misleading / inconsistent behaviour
 | F14 | 🟡 | **Squash pre-fills the message with the three old subjects** joined — borderline against "never drafts a message"; the plan then shows a multi-line message. | M-19 |
 | F15 | 🟡 | **`--yes` refusal with the model down** pastes the menu prompt mid-sentence ("… pick what you want to do (type to filter):") and lists all 35 operations. | M-29 |
 | F16 | 🟡 | **Exit 0 when nothing was done:** "find my lost work" with nothing found, `--recover` with nothing to recover — decide whether these are queries (0) or not-done (1), and document it. | M-25, M-28 |
-| F17 | 🟡 | Smaller copy: "Undo the last commit" echoed for "undo the last 3 commits" before the halt; the dropped-stash browser lists the internal "index on main" commit; the conflict pause doesn't name the file; "already on main" not acknowledged; menu hints cut with "…"; the no-terminal advice suggests `--yes` for a case `--yes` refuses. | M-18, M-24, M-08, M-05, M-06, M-38 |
+| F17 | 🟡 | The undo-discard "Risks" text says uncommitted work "is gone" and names only `git reflog`, while the same run backs it up to ~/.gitrust/trash (found by hand, M-16-manual). Smaller copy: "Undo the last commit" echoed for "undo the last 3 commits" before the halt; the dropped-stash browser lists the internal "index on main" commit; the conflict pause doesn't name the file; "already on main" not acknowledged; menu hints cut with "…"; the no-terminal advice suggests `--yes` for a case `--yes` refuses. | M-16, M-18, M-24, M-08, M-05, M-06, M-38 |
 
 Not findings: the model sometimes asks a "which did you mean?" menu where it could have acted
 (M-02 asked; M-35 relies on it) — that is the designed behaviour. A 14 s refusal in M-36 came

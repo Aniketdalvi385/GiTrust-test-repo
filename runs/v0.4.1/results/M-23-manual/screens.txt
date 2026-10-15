@@ -1,0 +1,13 @@
+######## run 1: gitrust 'find my lost work'  [pty, model up]  exit=0  4.0s
+
+--- final ---
+⚡  Find lost work
+
+Lost & recoverable commits (restoring creates a rescue branch — your current work is never touched):
+? Recover which commit?
+> [1] just now — 'the work I'll lose' — 1 file
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+> Recover which commit? just now — 'the work I'll lose' — 1 file
+Recovered fbec8cb onto new branch `rescue/20261015-fbec8cb`. Your current branch and files are unchanged.
+
+

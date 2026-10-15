@@ -1,0 +1,70 @@
+[36m⚡[0m  Push only the “login” changes[2m[0m
+[2K[2m⠋ Matching files to your request…[0m[2K[2m⠙ Matching files to your request…[0m[2K[2m⠹ Matching files to your request…[0m[2K[2m⠸ Matching files to your request…[0m[2K[2m⠼ Matching files to your request…[0m[2K[2m⠴ Matching files to your request…[0m[2K[2m⠦ Matching files to your request…[0m[2K[2m⠧ Matching files to your request…[0m[2K[2m⠇ Matching files to your request…[0m[2K[2m⠏ Matching files to your request…[0m[2K[2m⠋ Matching files to your request…[0m[2K[2m⠙ Matching files to your request…[0m[2K[2m⠹ Matching files to your request…[0m[2K[2m⠸ Matching files to your request…[0m[2K[2m⠼ Matching files to your request…[0m[2K[2m⠴ Matching files to your request…[0m[2K[2m⠦ Matching files to your request…[0m[2K[2m⠧ Matching files to your request…[0m[2K[2m⠇ Matching files to your request…[0m[2K[2m⠏ Matching files to your request…[0m[2K[2m⠋ Matching files to your request…[0m[2K[2m⠙ Matching files to your request…[0m[2K[2m⠹ Matching files to your request… · 2s[0m[2K[2m⠸ Matching files to your request… · 2s[0m[2K[2m⠼ Matching files to your request… · 2s[0m[2K[2m⠴ Matching files to your request… · 2s[0m[2K[2m⠦ Matching files to your request… · 2s[0m[2K[2m⠧ Matching files to your request… · 2s[0m[2K[2m⠇ Matching files to your request… · 2s[0m[2K[2m⠏ Matching files to your request… · 2s[0m[2K[2m⠋ Matching files to your request… · 2s[0m[2K[2m⠙ Matching files to your request… · 2s[0m[2K[2m⠹ Matching files to your request… · 2s[0m[2K[2m⠸ Matching files to your request… · 2s[0m[2K[2m⠼ Matching files to your request… · 3s[0m[2K[2m⠴ Matching files to your request… · 3s[0m[2K[2m⠦ Matching files to your request… · 3s[0m[2K[2m⠧ Matching files to your request… · 3s[0m[2K[2m⠇ Matching files to your request… · 3s[0m[2K[2m⠏ Matching files to your request… · 3s[0m[2K[2m⠋ Matching files to your request… · 3s[0m[2K[2m⠙ Matching files to your request… · 3s[0m[2K[2m⠹ Matching files to your request… · 3s[0m[2K[2m⠸ Matching files to your request… · 3s[0m[2K[2m⠼ Matching files to your request… · 3s[0m[2K[2m⠴ Matching files to your request… · 3s[0m[2K[2m⠦ Matching files to your request… · 4s[0m[2K[2m⠧ Matching files to your request… · 4s[0m[2K[2m⠇ Matching files to your request… · 4s[0m[2K[2m⠏ Matching files to your request… · 4s[0m[2K[2m⠋ Matching files to your request… · 4s[0m[2K[2m⠙ Matching files to your request… · 4s[0m[2K[2m⠹ Matching files to your request… · 4s[0m[2K[2m⠸ Matching files to your request… · 4s[0m[2K[2m⠼ Matching files to your request… · 4s[0m[2K[2m⠴ Matching files to your request… · 4s[0m[2K[2m⠦ Matching files to your request… · 4s[0m[2K[2m⠧ Matching files to your request… · 4s[0m[2K[2m⠇ Matching files to your request… · 5s[0m[2K[2m⠏ Matching files to your request… · 5s[0m[2K[2m⠋ Matching files to your request… · 5s[0m[2K[2m⠙ Matching files to your request… · 5s[0m[2K[2m⠹ Matching files to your request… · 5s[0m[2K[2m⠸ Matching files to your request… · 5s[0m[2K[2m⠼ Matching files to your request… · 5s[0m[2K[2m⠴ Matching files to your request… · 5s[0m[2K[2m⠦ Matching files to your request… · 5s[0m[2K[2m⠧ Matching files to your request… · 5s[0m[2K[2m⠇ Matching files to your request… · 5s[0m[2K[2m⠏ Matching files to your request… · 5s[0m[2K[2m⠋ Matching files to your request… · 6s[0m[2K[2m⠙ Matching files to your request… · 6s[0m[2K[2m⠹ Matching files to your request… · 6s[0m[2K[2m⠸ Matching files to your request… · 6s[0m[2K[2m⠼ Matching files to your request… · 6s[0m[2K[2m⠴ Matching files to your request… · 6s[0m[2K[2m⠦ Matching files to your request… · 6s[0m[2K[2m⠧ Matching files to your request… · 6s[0m[2K[2m⠇ Matching files to your request… · 6s[0m[2K[2m⠏ Matching files to your request… · 6s[0m[2K[2m⠋ Matching files to your request… · 6s[0m[2K[2m⠙ Matching files to your request… · 6s[0m[2K[2m⠹ Matching files to your request… · 7s[0m[2K[2m⠸ Matching files to your request… · 7s[0m[2K[2m⠼ Matching files to your request… · 7s[0m[2K[2m⠴ Matching files to your request… · 7s[0m[2K[2m⠦ Matching files to your request… · 7s[0m[2K[2m⠧ Matching files to your request… · 7s[0m[2K[2m⠇ Matching files to your request… · 7s[0m[2K[2m⠏ Matching files to your request… · 7s[0m[2K[2m⠋ Matching files to your request… · 7s[0m[2K[2m⠙ Matching files to your request… · 7s[0m[2K[2m⠹ Matching files to your request… · 7s[0m[2K[2m⠸ Matching files to your request… · 7s[0m[2K[2m⠼ Matching files to your request… · 8s[0m[2K
+Pick the files for this commit · 2 of 3 changed files pre-selected
+[?25l[38;5;10m?[39m Stage which files?  
+[38;5;14m>[39m [38;5;14m[x][39m [38;5;14mauth_login.txt  [2m+1        new · name matches “login”[0m[39m
+  [38;5;10m[x][39m login.txt       [2m+1        new · name matches “login”[0m
+  [ ] readme.txt      [2m+1        new · might be part of “login” — your call[0m
+[38;5;14m[[39m[38;5;14m↑↓ move · Space toggle · → all · ← none · Enter stage · Esc cancel[39m[38;5;14m][39m[4A[21C[?25h[?25l[21D[38;5;10m>[39m Stage which files? [38;5;14mauth_login.txt, login.txt[39m[K
+[2K
+[2K
+[2K
+[2K
+[?25h[4A[?25h[?25l[38;5;10m?[39m Commit message:  
+[38;5;14m[[39m[38;5;14mEnter to continue · Esc to cancel[39m[38;5;14m][39m[1A[18C[?25h[?25l[18D[38;5;10m?[39m Commit message: L [K
+[1A[19C[?25h[?25l[19D[38;5;10m?[39m Commit message: Lo [K
+[1A[20C[?25h[?25l[20D[38;5;10m?[39m Commit message: Lod [K
+[1A[21C[?25h[?25l[21D[38;5;10m?[39m Commit message: Lo [K
+[1A[20C[?25h[?25l[20D[38;5;10m?[39m Commit message: Log [K
+[1A[21C[?25h[?25l[21D[38;5;10m?[39m Commit message: Logi [K
+[1A[22C[?25h[?25l[22D[38;5;10m?[39m Commit message: Login [K
+[1A[23C[?25h[?25l[23D[38;5;10m?[39m Commit message: Login  [K
+[1A[24C[?25h[?25l[24D[38;5;10m?[39m Commit message: Login a [K
+[1A[25C[?25h[?25l[25D[38;5;10m?[39m Commit message: Login ad [K
+[1A[26C[?25h[?25l[26D[38;5;10m?[39m Commit message: Login add [K
+[1A[27C[?25h[?25l[27D[38;5;10m?[39m Commit message: Login adde [K
+[1A[28C[?25h[?25l[28D[38;5;10m?[39m Commit message: Login added [K
+[1A[29C[?25h[?25l[29D[38;5;10m?[39m Commit message: Login added  [K
+[1A[30C[?25h[?25l[30D[38;5;10m?[39m Commit message: Login added t [K
+[1A[31C[?25h[?25l[31D[38;5;10m?[39m Commit message: Login added to [K
+[1A[32C[?25h[?25l[32D[38;5;10m?[39m Commit message: Login added to  [K
+[1A[33C[?25h[?25l[33D[38;5;10m?[39m Commit message: Login added to t [K
+[1A[34C[?25h[?25l[34D[38;5;10m?[39m Commit message: Login added to th [K
+[1A[35C[?25h[?25l[35D[38;5;10m?[39m Commit message: Login added to the [K
+[1A[36C[?25h[?25l[36D[38;5;10m?[39m Commit message: Login added to the  [K
+[1A[37C[?25h[?25l[37D[38;5;10m?[39m Commit message: Login added to the a [K
+[1A[38C[?25h[?25l[38D[38;5;10m?[39m Commit message: Login added to the ap [K
+[1A[39C[?25h[?25l[39D[38;5;10m?[39m Commit message: Login added to the app [K
+[1A[40C[?25h[?25l[40D[38;5;10m?[39m Commit message: Login added to the appl [K
+[1A[41C[?25h[?25l[41D[38;5;10m?[39m Commit message: Login added to the appli [K
+[1A[42C[?25h[?25l[42D[38;5;10m?[39m Commit message: Login added to the applic [K
+[1A[43C[?25h[?25l[43D[38;5;10m?[39m Commit message: Login added to the applica [K
+[1A[44C[?25h[?25l[44D[38;5;10m?[39m Commit message: Login added to the applicat [K
+[1A[45C[?25h[?25l[45D[38;5;10m?[39m Commit message: Login added to the applicati [K
+[1A[46C[?25h[?25l[46D[38;5;10m?[39m Commit message: Login added to the applicatio [K
+[1A[47C[?25h[?25l[47D[38;5;10m?[39m Commit message: Login added to the application [K
+[1A[48C[?25h[?25l[48D[38;5;10m?[39m Commit message: Login added to the application. [K
+[1A[49C[?25h[?25l[49D[38;5;10m>[39m Commit message: [38;5;14mLogin added to the application.[39m[K
+[2K
+[?25h[1A[?25h
+Plan  · 3 steps · [2msnapshot taken at baa8382[0m
+
+  ●  stage     auth_login.txt, login.txt
+  [2m│[0m
+  ●  commit    "Login added to the application."  [33m⚠[0m
+  [2m│[0m
+  ●  push      → origin/main  [33m⚠[0m
+
+
+  [38;5;220m[Enter][0m run · [38;5;220m[e][0m edit message · [38;5;220m[s][0m don't push · [38;5;220m[q][0m cancel  
+  [2m○[0m  stage     auth_login.txt, login.txt[2K  [32m✓[0m  stage     auth_login.txt, login.txt
+  [2m│[0m  [2m→ Staged 2 files[0m
+  [2m│[0m
+  [2m○[0m  commit    "Login added to the application."[2K  [32m✓[0m  commit    "Login added to the application."
+  [2m│[0m  [2m→ Committed: Login added to the application. (baa8382→46fe6da)[0m
+  [2m│[0m
+  [2m○[0m  push      → origin/main[2K  [32m✓[0m  push      → origin/main
+  [2m│[0m  [2m→ Pushed 1 commit(s) to origin/main[0m
+
+  [32m✓[0m [32mDone · 1 commit on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · changed your mind? gitrust "undo" (reverts it — it's pushed)[0m
