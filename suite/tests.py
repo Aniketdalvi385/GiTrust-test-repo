@@ -300,6 +300,7 @@ def c_m08(fx, r):
               shows(r[0], "nothing is lost"), shows(r[0], "continue rebase"),
               ok("the pause names the conflicted file (F17)", any("app.txt" in l for l in pause),
                  " | ".join(pause)),
+              says(r[0], "The push didn't run", "the pause says the push didn't run"),
               ok("git is mid-rebase", os.path.isdir(os.path.join(fx.work, ".git", "rebase-merge"))
                  or os.path.isdir(os.path.join(fx.work, ".git", "rebase-apply"))), no_crash(r[0])]
     # Resolve and continue through gitrust (exact phrase, no model).
@@ -311,6 +312,7 @@ def c_m08(fx, r):
                ok("rebase finished", not os.path.isdir(os.path.join(fx.work, ".git",
                                                                     "rebase-merge"))),
                lacks(r2, "interrupted pipeline", "no 'interrupted pipeline' banner (F7)"),
+               says(r2, 'Next: gitrust "push"', "after continuing, the push is the next step"),
                *no_raw_git(r[0], r2), no_crash(r2)]
     return checks
 
@@ -424,7 +426,8 @@ def s_m14(fx):
           Step(TEXT, BACKSPACE * 20 + type_text("saved-work") + ENTER, "branch name"),
           Step(PLAN, ENTER, "plan")], timeout=60)],
       watch="Says the commit would be stranded and offers a branch first (numbered menu, no Cancel "
-            "row); the plan is: make the branch, then switch to main (F6, F10); nothing lost.")
+            "row); the plan is: make the branch, then switch to main (F6, F10); nothing lost. "
+            "The copy says the branch keeps the commit and the switch then leaves it.")
 def c_m14(fx, r):
     reach = fx.git("branch", "--contains", fx.vars["detached"], check=False)
     return [ok("the detached commit is on a branch", reach.strip() != "", reach),
@@ -432,6 +435,8 @@ def c_m14(fx, r):
                fx.git("rev-parse", "saved-work", check=False) == fx.vars["detached"]),
             ok("on main afterwards (the request was 'checkout main')",
                fx.git("branch", "--show-current") == "main"),
+            lacks(r[0], "Your request runs on", "no 'your request runs on' the branch it leaves"),
+            says(r[0], "then you switch to main"),
             *rescue_menu(r[0], "saved-work", "plan"), no_crash(r[0])]
 
 
@@ -921,11 +926,18 @@ def s_m43(fx):
       runs=[Run(["merge develop into feature"], steps=[
           Step((MENU, PLAN), if_choice("Merge"), "rebase or merge?"),
           Step(PLAN, ENTER, "plan")], timeout=90)],
-      watch="⚡ the echo names the real source ('Update from develop'); the plan merges develop — "
-            "never main (F19); feature ends with develop's commit and without main's.")
+      watch="⚡ the echo names the real source ('Update from develop'); the menu opens on Merge, "
+            "the word the request used; the plan merges develop — never main (F19) — and doesn't "
+            "publish feature, which was never pushed; feature ends with develop's commit and "
+            "without main's.")
 def c_m43(fx, r):
     on = fx.git("branch", "--show-current")
+    menu = [s for _, s in r[0].snaps] + [r[0].screen]
     return [exit_is(r[0], 0), ok("still on feature", on == "feature", on),
+            ok("the menu opens on Merge, the request's word",
+               any(re.search(r"^> \[1\] Merge", x, re.M) for x in menu)),
+            ok("feature isn't published by the merge",
+               fx.git("ls-remote", "--heads", "origin", "feature") == ""),
             ok("feature contains develop's commit", fx.contains(fx.vars["develop"])),
             ok("feature does NOT contain main's new commit", not fx.contains(fx.vars["main"])),
             says(r[0], "Update from develop"),  # copy: plan wording
