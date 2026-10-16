@@ -124,7 +124,10 @@ def if_choice(label: str):
 
 # ---------------------------------------------------------------- reading screens
 def snap(r, label: str) -> str:
-    """The screen recorded at the step labelled `label` ("" if there was none)."""
+    """The screen recorded at the step labelled `label` ("" if there was none). A manual run
+    records no steps, only the whole session — every step's screen is in it, so that is used."""
+    if not r.snaps and r.run.mode != "pipe":
+        return r.screen
     return next((s for l, s in r.snaps if l == label), "")
 
 
