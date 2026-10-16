@@ -743,7 +743,7 @@ def c_m29(fx, r):
             lacks(r[1], "type to filter", "--yes refusal doesn't paste the menu prompt (F15)"),
             says(r[1], "can't tell which operation you mean"),  # copy: plan wording
             exit_is(r[2], 1, "no terminal → exit 1"), shows(r[2], "no terminal to ask in"),
-            lacks(r[2], "--yes", "no-terminal advice for a menu doesn't suggest --yes (F17)"),
+            lacks(r[2], "add --yes", "no-terminal advice for a menu doesn't suggest --yes (F17)"),
             exit_is(r[3], 0, "status still works"), no_crash(r[0]), no_crash(r[1]),
             no_crash(r[2])]
 
@@ -841,7 +841,7 @@ def c_m37(fx, r):
             "terminal — not --yes, which never chooses (F17).")
 def c_m38(fx, r):
     return [exit_is(r[0], 1), shows(r[0], "no terminal to ask in"),
-            lacks(r[0], "--yes", "the advice for a choice doesn't suggest --yes (F17)"),
+            lacks(r[0], "add --yes", "the advice for a choice doesn't suggest --yes (F17)"),
             no_crash(r[0])]
 
 
