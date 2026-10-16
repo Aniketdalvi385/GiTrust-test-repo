@@ -1,0 +1,46 @@
+{
+ "id": "M-12",
+ "title": "Commit a resolved merge: two parents",
+ "part": "3 · Stuck states",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "2 parents",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "merge finished",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit the merge"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 3.5,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

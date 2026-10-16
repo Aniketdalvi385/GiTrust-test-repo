@@ -1,0 +1,57 @@
+######## run 1: gitrust 'clean up my repo'  [pty, model up]  exit=0  1.6s
+
+--- clean-up choice ---
+⚡  Discard uncommitted changes
+? Clean up — what should be removed?
+> [1] Discard changes to 1 tracked file  — backed up to ~/.gitrust/trash first
+  [2] Delete 1 untracked file  — never committed, so the trash backup is their only copy
+  [3] Both  — discard and delete — both backed up first
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- confirmation at the plan ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at 39657ba
+
+  ●  delete    untracked files  ⛔
+
+
+  ⛔ Irreversible: Throws away the uncommitted work you chose: changes to tracked files, untracked
+                   files, or both.
+     Risks:    Untracked files have no git history; once deleted, only GiTrust's trash-net backup
+               can bring them back.
+     Recovery: Everything deleted is copied to ~/.gitrust/trash/ first and kept for the retention
+               window.
+     Safety:   The gate spells out counts before anything is removed, and the trash-net backs up
+               first (fail-closed).
+
+? Type 'delete' to delete 1 untracked file: delete
+[Type it exactly, then Enter · q or Esc cancels]
+
+--- final ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at 39657ba
+
+  ●  delete    untracked files  ⛔
+
+
+  ⛔ Irreversible: Throws away the uncommitted work you chose: changes to tracked files, untracked
+                   files, or both.
+     Risks:    Untracked files have no git history; once deleted, only GiTrust's trash-net backup
+               can bring them back.
+     Recovery: Everything deleted is copied to ~/.gitrust/trash/ first and kept for the retention
+               window.
+     Safety:   The gate spells out counts before anything is removed, and the trash-net backs up
+               first (fail-closed).
+
+> Type 'delete' to delete 1 untracked file: delete
+  ✓  delete    untracked files
+  │  → Deleted untracked files (backed up to the trash-net)
+  │  A backup of the deleted files is in ~/.gitrust/trash/20261016-112524 for 7 days.
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+

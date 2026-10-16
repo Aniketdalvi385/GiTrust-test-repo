@@ -1,0 +1,81 @@
+######## run 1: gitrust "commit everything with message 'try it'"  [pty, model up]  exit=1  3.6s
+
+--- model: routed or asked ---
+✦  Commit everything · 0.7s
+? Commit message (edit or accept): try it
+[Enter to continue · Esc to cancel]
+
+--- message (pre-filled) ---
+✦  Commit everything · 0.7s
+? Commit message (edit or accept): try it
+[Enter to continue · Esc to cancel]
+
+--- waited for '[Enter] run' ---
+✦  Commit everything · 0.7s
+> Commit message (edit or accept): try it
+
+Plan  · 2 steps · snapshot taken at 9284135
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "try it"  ⚠
+
+  Warnings:
+    · Hook(s) present (pre-commit) — GiTrust will run them via system git.
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- v0.4 flow: a menu after the hook failed ---
+✦  Commit everything · 0.7s
+> Commit message (edit or accept): try it
+
+Plan  · 2 steps · snapshot taken at 9284135
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "try it"  ⚠
+
+  Warnings:
+    · Hook(s) present (pre-commit) — GiTrust will run them via system git.
+
+
+  [Enter] run · [e] edit message · [q] cancel
+  ✓  stage     all modified files
+  │  → Staged all changes
+  │
+  ✗  commit    "try it"
+  │  the pre-commit hook refused the operation:
+  │  LINT FAILED
+
+  The pre-commit hook refused the commit (output above). Your files are still staged (app.txt) — fix what it r
+eported, then run gitrust "commit" again.
+
+--- final ---
+✦  Commit everything · 0.7s
+> Commit message (edit or accept): try it
+
+Plan  · 2 steps · snapshot taken at 9284135
+
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "try it"  ⚠
+
+  Warnings:
+    · Hook(s) present (pre-commit) — GiTrust will run them via system git.
+
+
+  [Enter] run · [e] edit message · [q] cancel
+  ✓  stage     all modified files
+  │  → Staged all changes
+  │
+  ✗  commit    "try it"
+  │  the pre-commit hook refused the operation:
+  │  LINT FAILED
+
+  The pre-commit hook refused the commit (output above). Your files are still staged (app.txt) — fix what it r
+eported, then run gitrust "commit" again.
+

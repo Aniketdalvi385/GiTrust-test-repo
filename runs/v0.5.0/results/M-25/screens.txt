@@ -1,0 +1,6 @@
+######## run 1: gitrust 'find my lost work'  [pty, model up]  exit=0  0.0s
+
+--- final ---
+⚡  Find lost work
+Nothing found. Work that was never committed, or that git has already garbage-collected, may be unrecoverable.
+

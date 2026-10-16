@@ -1,0 +1,103 @@
+{
+ "id": "M-45",
+ "title": "Rebase finished with plain git: no stale banner, --recover undoes nothing",
+ "part": "2 · Divergence",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.5",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 15:58",
+ "checks": [
+  {
+   "name": "paused on the conflict (exit ≠ 0)",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "git is mid-rebase",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "git finished the rebase (on top of the teammate's commit)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "status exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "status shows no 'interrupted pipeline' banner",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "status doesn't send you to --recover",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "--recover exits 1 (nothing to restore, D4)",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "--recover left HEAD where git's rebase put it",
+   "ok": true,
+   "detail": "1cf8d95 vs 1cf8d95"
+  },
+  {
+   "name": "the resolution is kept",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "push"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 1.6,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "status"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "--recover"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 1,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "pre": "00cec81d89dfad5288b15733d96e784e2ca57a3d"
+ }
+}

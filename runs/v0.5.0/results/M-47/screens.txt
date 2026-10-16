@@ -1,0 +1,10 @@
+######## run 1: gitrust 'stash pop'  [pty, model up]  exit=1  0.5s
+
+--- v0.4 flow: a plan for a pop that can't work ---
+⚡  Restore stashed changes
+✗  There are no stashed changes to bring back.
+
+--- final ---
+⚡  Restore stashed changes
+✗  There are no stashed changes to bring back.
+

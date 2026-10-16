@@ -1,0 +1,41 @@
+{
+ "id": "M-36",
+ "title": "Not a Git request: refused, exit 1",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows \"doesn't look like a Git request\"",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "write a python function that parses dates"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 1.6,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

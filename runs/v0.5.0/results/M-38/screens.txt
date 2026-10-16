@@ -1,0 +1,6 @@
+######## run 1: gitrust 'undo'  [pipe, model up]  exit=1  0.1s
+
+--- final ---
+*  Undo the last commit
+✗  This needs a choice, and there's no terminal to ask in (input or output is redirected). Run it in a terminal to choose — --yes won't choose for you.
+

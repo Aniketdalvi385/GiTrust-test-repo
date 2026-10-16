@@ -1,0 +1,78 @@
+######## run 1: gitrust "push the login changes with message 'login page'"  [pty, model up]  exit=0  4.8s
+
+--- model: routed or asked ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+? Stage which files?
+> [x] login.txt       +1        new · name matches “login”
+  [x] auth_login.txt  +1        new · name matches “login”
+  [ ] readme.txt      +1        new · might be part of “login” — your call
+[↑↓ move · Space toggle · → all · ← none · Enter stage · Esc cancel]
+
+--- file picker ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+? Stage which files?
+> [x] login.txt       +1        new · name matches “login”
+  [x] auth_login.txt  +1        new · name matches “login”
+  [ ] readme.txt      +1        new · might be part of “login” — your call
+[↑↓ move · Space toggle · → all · ← none · Enter stage · Esc cancel]
+
+--- message (pre-filled) ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+> Stage which files? login.txt, auth_login.txt
+? Commit message (edit or accept): login page
+[Enter to continue · Esc to cancel]
+
+--- plan ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+> Stage which files? login.txt, auth_login.txt
+> Commit message (edit or accept): login page
+
+Plan  · 3 steps · snapshot taken at cb1ab0f
+
+  ●  stage     login.txt, auth_login.txt
+  │
+  ●  commit    "login page"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel
+
+--- final ---
+⚡  Push only the “login” changes
+
+Pick the files for this commit · 2 of 3 changed files pre-selected
+> Stage which files? login.txt, auth_login.txt
+> Commit message (edit or accept): login page
+
+Plan  · 3 steps · snapshot taken at cb1ab0f
+
+  ●  stage     login.txt, auth_login.txt
+  │
+  ●  commit    "login page"  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [e] edit message · [s] don't push · [q] cancel
+  ✓  stage     login.txt, auth_login.txt
+  │  → Staged 2 files
+  │
+  ✓  commit    "login page"
+  │  → Committed: login page (cb1ab0f→1380cb7)
+  │
+  ○  push      → origin/main
+  ✓  push      → origin/main
+  │  → Pushed 1 commit(s) to origin/main
+
+  ✓ Done · 1 commit on main, ↑0 ↓0
+  Next: gitrust "status" · changed your mind? gitrust "undo" (reverts it — it's pushed)
+

@@ -1,0 +1,127 @@
+{
+ "id": "M-29",
+ "title": "Model down: warning, full menu, refusals",
+ "part": "7 · Meta",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "screen shows \"isn't running\"",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "menu lists operations by title",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "Esc at the menu exits 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows 'Canceled — nothing was done.'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "--yes refuses (exit 1)",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "--yes refusal doesn't paste the menu prompt (F15)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen says \"can't tell which operation you mean\"",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no terminal → exit 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows 'no terminal to ask in'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no-terminal advice for a menu doesn't suggest --yes (F17)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "status still works",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "what changed in the auth files?"
+   ],
+   "mode": "pty",
+   "model": "down",
+   "exit": 1,
+   "seconds": 1.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "--yes",
+    "what changed in the auth files?"
+   ],
+   "mode": "pipe",
+   "model": "down",
+   "exit": 1,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "what changed"
+   ],
+   "mode": "pipe",
+   "model": "down",
+   "exit": 1,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "status"
+   ],
+   "mode": "pty",
+   "model": "down",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

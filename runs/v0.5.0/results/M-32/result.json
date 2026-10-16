@@ -1,0 +1,46 @@
+{
+ "id": "M-32",
+ "title": "q at the plan cancels; stray keys are ignored",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows 'Canceled'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "nothing committed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit everything with message 'not this time'"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 5.7,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

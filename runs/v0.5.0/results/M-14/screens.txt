@@ -1,0 +1,76 @@
+######## run 1: gitrust 'checkout main'  [pty, model up]  exit=0  2.4s
+
+--- rescue choice ---
+⚡  Switch to “main”
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 70a6ff8 — not on any branch.
+   You have 1 commit(s) here that are on NO branch — switching away now would strand them.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+? What would you like to do?
+> [1] Create a branch here to keep this work  — keeps this commit; then you switch to main
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- branch name ---
+⚡  Switch to “main”
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 70a6ff8 — not on any branch.
+   You have 1 commit(s) here that are on NO branch — switching away now would strand them.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+? New branch name: rescue-work
+[Enter to continue · Esc to cancel]
+
+--- plan ---
+⚡  Switch to “main”
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 70a6ff8 — not on any branch.
+   You have 1 commit(s) here that are on NO branch — switching away now would strand them.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+> New branch name: saved-work
+  ↳ A new branch "saved-work" keeps this commit, then you switch to main — both when you confirm the plan.
+
+Plan  · 2 steps · snapshot taken at 70a6ff8
+
+  ●  branch    saved-work  ⚠
+  │
+  ●  checkout  main  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Switch to “main”
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 70a6ff8 — not on any branch.
+   You have 1 commit(s) here that are on NO branch — switching away now would strand them.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+> New branch name: saved-work
+  ↳ A new branch "saved-work" keeps this commit, then you switch to main — both when you confirm the plan.
+
+Plan  · 2 steps · snapshot taken at 70a6ff8
+
+  ●  branch    saved-work  ⚠
+  │
+  ●  checkout  main  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  branch    saved-work
+  │  → Created branch saved-work
+  │
+  ✓  checkout  main
+  │  → Switched to main
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+

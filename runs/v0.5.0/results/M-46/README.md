@@ -1,0 +1,40 @@
+# M-46 · Detached-HEAD rescue: q at the plan changes nothing
+
+| | |
+|---|---|
+| **Part** | 3 · Stuck states |
+| **Model** | no |
+| **Flagship** | no |
+| **Run** | auto · 2026-10-16 15:58 |
+| **Automatic checks** | ✅ all passed |
+
+## Checks
+
+- ✅ exits 1
+- ✅ screen shows 'Canceled'
+- ✅ no new branch
+- ✅ HEAD still detached
+- ✅ HEAD still at the same commit
+- ✅ index unchanged (nothing staged)
+- ✅ git status unchanged (the edit still there, unstaged)
+- ✅ the plan shows the branch creation
+- ✅ no panic / raw error chain
+
+## What a human should judge
+
+The rescue only decides: the new branch is the plan's first step, so q at the plan leaves no branch, HEAD still detached and nothing staged — and 'nothing was done' is then true (F6).
+
+## Evidence
+
+- [`screens.txt`](screens.txt) — every screen, run by run
+- [`result.json`](result.json) — checks, exit codes, timings
+
+## Review
+
+Verdict: PASS-WITH-NOTES
+Summary: F6 and F10 are fixed: the rescue is a numbered menu with no Cancel row, the new branch is the plan's first step, and q at the plan leaves nothing behind ("Canceled — nothing was done." is now true), exit 1. Only copy nits remain.
+
+- Right: the menu is "[1] Create a branch here to keep this work — your request then runs on it / [2] Switch to main and leave this commit — your request is not carried out", with no Cancel row and "Esc cancel" in the help line. After the name: "↳ Your request runs on a new branch "kept-work" — created when you confirm the plan." The 4-step plan starts with "branch    kept-work", then checkout, stage and commit, behind one confirmation. q printed "↪  Canceled — nothing was done." and the checks confirm no new branch, HEAD still detached at the same commit, and nothing staged.
+- The commit message prompt is empty ("? Commit message:"), so nothing is drafted. The pre-filled branch name "rescue-work" is a suggestion the user replaced, which is fine.
+- Copy: "⚠  You are in DETACHED HEAD state." is shouted git jargon in a plain-words tool (the next line, "not on any branch", explains it), and "orphaned (lose-able)" is awkward.
+- Polish: the safe rescue steps carry warning marks, "branch    kept-work  ⚠" and "checkout  kept-work  ⚠". Creating a new branch at HEAD can't lose anything, so three ⚠ on this plan dilute the marker. The 2-row menu's help line says "1–9" (see M-34).

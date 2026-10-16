@@ -1,0 +1,40 @@
+{
+ "id": "M-41",
+ "title": "Output piped into head doesn't crash",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "no panic when the reader closes early",
+   "ok": true,
+   "detail": "exit=0 stderr="
+  },
+  {
+   "name": "…and it runs to completion: exit 0 (D5)",
+   "ok": true,
+   "detail": "exit=0"
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "--yes",
+    "log"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "tip": "4b26714f3ccc1f9d273751ec9862b7cb3d13934f",
+  "tree": "c2e606665b5aedcb6079799ca6ec82b7164c8cd2"
+ }
+}

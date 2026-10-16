@@ -1,0 +1,71 @@
+{
+ "id": "M-27",
+ "title": "Backup can't be written → nothing deleted",
+ "part": "6 · Forensics",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "untracked file still there",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "typed confirmation asked at the plan (the plan is above it)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "nothing asks again after the typed value",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "the typed word is 'delete'",
+   "ok": true,
+   "detail": "['delete']"
+  },
+  {
+   "name": "screen says \"Couldn't back up your files first, so nothing was deleted.\"",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "…said once",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no absolute temp path on screen (the plan: a ~ path)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "clean up my repo"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 1.5,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

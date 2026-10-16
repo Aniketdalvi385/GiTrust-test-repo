@@ -1,0 +1,184 @@
+{
+ "set": "_v041_feature_rescore",
+ "model": "AniketDalvi385/gitrust-kev-0.8b@v2",
+ "rows": [
+  {
+   "id": "V1-08",
+   "q": "sync with main",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V1-09",
+   "q": "update feature from main",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V1-10",
+   "q": "pull main into feature",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": null,
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-041",
+   "q": "my feature branch is old, bring the changes of main inside it",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "sync",
+   "kev_top": "sync",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-042",
+   "q": "update my branch with what is new in main",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "newcomer",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-043",
+   "q": "main has new things, i want them in the branch where i am working",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "sync",
+   "kev_top": "sync",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-155",
+   "q": "Bring main into my feature branch so it's current.",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "senior",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-156",
+   "q": "Update this branch with the latest main before I open the PR.",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "senior",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-157",
+   "q": "Merge main into the branch I'm on; it has drifted.",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "senior",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-269",
+   "q": "my feature branch is stale, bring main into it",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "sync",
+   "kev_top": "sync",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-270",
+   "q": "update this branch with whatever's new on main",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "casual",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-271",
+   "q": "how do i catch my branch up to main again",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "sync",
+   "kev_top": "sync",
+   "exit": 0,
+   "output": ""
+  }
+ ],
+ "n": 12,
+ "tally": {
+  "instant-right": 8,
+  "acted-right": 4
+ },
+ "right": 12,
+ "asked": 0,
+ "arg_asked": 0,
+ "wrong_changes_something": 0,
+ "seconds": 13
+}

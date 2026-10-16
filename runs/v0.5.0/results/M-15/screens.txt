@@ -1,0 +1,38 @@
+######## run 1: gitrust 'undo'  [pty, model up]  exit=0  1.5s
+
+--- undo choice ---
+⚡  Undo the last commit
+? Undo 586c41c "feat: the mistake" — what should happen to its changes?
+> [1] Undo, keep the changes staged  — the commit goes; its changes stay staged, ready to re-commit
+  [2] Undo, keep the changes in my files  — the commit goes; its changes stay in your files, unstag…
+  [3] Undo with a revert commit  — a new commit reverses it; history is kept — safe after pushing
+  [4] Undo and throw the changes away  ⚠⚠  — both go (git keeps them ~90 days) · you'll type to con…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- waited for '[Enter] run' ---
+⚡  Undo the last commit
+> Undo 586c41c "feat: the mistake" — what should happen to its changes? Undo, keep the changes staged
+
+Plan  · 1 step · snapshot taken at 586c41c
+
+  ●  undo      586c41c "feat: the mistake"  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Undo the last commit
+> Undo 586c41c "feat: the mistake" — what should happen to its changes? Undo, keep the changes staged
+
+Plan  · 1 step · snapshot taken at 586c41c
+
+  ●  undo      586c41c "feat: the mistake"  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  undo      586c41c "feat: the mistake"
+  │  → Undid commit 586c41c "feat: the mistake" (files re-staged)
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+

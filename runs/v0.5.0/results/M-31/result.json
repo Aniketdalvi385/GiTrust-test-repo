@@ -1,0 +1,48 @@
+{
+ "id": "M-31",
+ "title": "Esc at a menu: calm cancel, exit 1, nothing done",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows 'Canceled — nothing was done.'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "HEAD untouched",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "undo"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 0.8,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "before": "7a0f9e6334f774d0c6721165640e426c562b2a89"
+ }
+}

@@ -1,0 +1,51 @@
+######## run 1: gitrust 'what changed in the auth files?'  [pty, model down]  exit=1  1.0s
+
+--- manual menu ---
+⚠  The Kev model server isn't running at http://127.0.0.1:9.
+  Start it with `gitrust setup`, or set kev_dir + kev_autostart in ~/.gitrust.toml.
+? The local model isn't available — pick what you want to do (type to filter):
+> Show status  — what's changed, staged or untracked
+  Show history  — recent commits
+  Show changes  — line-by-line diff of your edits
+  List branches  — and which one you're on
+  Show Git settings  — your name, email and other config
+  Show a commit  — author, date, message and files
+  Check the remote  — ahead or behind? changes nothing
+  Preview a pull  — would it conflict? changes nothing
+  Commit everything  — stage all changes and commit — no push
+  Commit and push everything  — stage all, commit, push
+  Commit staged files  — only what's already staged
+v Push  — upload all your commits
+[↑↓ move · Enter choose · Esc cancel]
+
+--- final ---
+⚠  The Kev model server isn't running at http://127.0.0.1:9.
+  Start it with `gitrust setup`, or set kev_dir + kev_autostart in ~/.gitrust.toml.
+? The local model isn't available — pick what you want to do (type to filter): <canceled>
+↪  Canceled — nothing was done.
+
+######## run 2: gitrust '--yes' 'what changed in the auth files?'  [pipe, model down]  exit=1  0.0s
+
+--- final ---
+⚠  The Kev model server isn't running at http://127.0.0.1:9.
+  Start it with `gitrust setup`, or set kev_dir + kev_autostart in ~/.gitrust.toml.
+✗  The local model isn't running, so GiTrust can't tell which operation you mean — and --yes won't choose for you. Start it with `gitrust setup`, or use an exact phrase (`gitrust help`).
+
+######## run 3: gitrust 'what changed'  [pipe, model down]  exit=1  0.0s
+
+--- final ---
+⚠  The Kev model server isn't running at http://127.0.0.1:9.
+  Start it with `gitrust setup`, or set kev_dir + kev_autostart in ~/.gitrust.toml.
+✗  This needs a choice, and there's no terminal to ask in (input or output is redirected). Run it in a terminal to choose — --yes won't choose for you.
+
+######## run 4: gitrust 'status'  [pty, model down]  exit=0  0.0s
+
+--- final ---
+⚡  Show status
+On branch main · tracking origin/main · up to date
+Last commit: e55c190 "base" (just now)
+
+Nothing to commit, working tree clean.
+
+Remote state as of the last fetch, just now — gitrust "fetch" refreshes it.
+

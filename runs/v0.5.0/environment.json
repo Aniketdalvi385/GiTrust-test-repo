@@ -1,0 +1,10 @@
+{
+ "binary": "/Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust",
+ "binary_version": "0.5.0",
+ "kev": {
+  "run": "AniketDalvi385/gitrust-kev-0.8b@v2",
+  "temperature": 4.0,
+  "backend": "mlx"
+ },
+ "suite_commit": "4a57ce4"
+}

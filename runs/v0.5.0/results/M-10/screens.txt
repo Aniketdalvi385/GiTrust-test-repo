@@ -1,0 +1,48 @@
+######## run 1: gitrust 'sync with main'  [pty, model up]  exit=0  2.2s
+
+--- model: routed or asked ---
+⚡  Update from main
+Fetching origin… ✓
+? Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge?
+> [1] Rebase  — your commit goes on top; a pushed branch needs a force push
+  [2] Merge  — adds a merge commit; safer if others have your commits
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- waited for 'Esc cancel' ---
+⚡  Update from main
+Fetching origin… ✓
+? Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge?
+> [1] Rebase  — your commit goes on top; a pushed branch needs a force push
+  [2] Merge  — adds a merge commit; safer if others have your commits
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- waited for '[Enter] run' ---
+⚡  Update from main
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 1 step · snapshot taken at 084698d
+
+  ●  rebase    onto origin/main  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Update from main
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 1 step · snapshot taken at 084698d
+
+  ●  rebase    onto origin/main  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  rebase    onto origin/main
+  │  → Rebased onto origin/main
+
+  ✓ Done · on feature
+  Next: gitrust "status"
+  Rebased onto origin/main. This branch isn't on the remote yet — publish it with gitrust "publish".
+

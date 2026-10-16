@@ -1,0 +1,9 @@
+Verdict: PASS-WITH-NOTES
+Summary: Counts per kind, 'delete' typed at the plan, only the untracked file deleted and backed up, result says "deleted files"; the explanation block is full of internal words.
+
+- Right: the menu counts each kind — "[1] Discard changes to 1 tracked file", "[2] Delete 1 untracked file  — never committed, so the trash backup is their only copy", "[3] Both" — numbered, no Cancel row. Picking [2] shows a ⛔ plan and "? Type 'delete' to delete 1 untracked file:" in place of Enter (D2); nothing asks again. Only junk/ went; the tracked edit is untouched; exit 0.
+- Result: "→ Deleted untracked files (backed up to the trash-net)" / "A backup of the deleted files is in ~/.gitrust/trash/20261016-112524 for 7 days." — names the backup and calls them deleted files (F17). No "Removing junk/" line.
+- Copy (internal words): "only GiTrust's trash-net backup", "backed up to the trash-net", "Safety: The gate spells out counts…", "(fail-closed)", "kept for the retention window" (the result says 7 days — say it here too).
+- Copy: the block is generic and contradicts itself — "⛔ Irreversible: Throws away the uncommitted work you chose: changes to tracked files, untracked files, or both." after one kind was chosen, and "Irreversible" sits above "Recovery: Everything deleted is copied to ~/.gitrust/trash/ first".
+- Copy: the first line says "⚡  Discard uncommitted changes" for "clean up my repo", but the pick was "Delete 1 untracked file"; the menu's own "Clean up — what should be removed?" fits better. Nit: "1 untracked file … their only copy".
+- v0.4.1 notes: counts, numbered menu, only the chosen kind removed — still. Deleting untracked files on Enter alone — fixed ("? Type 'delete' to delete 1 untracked file: delete"). "A backup of the discarded changes …" — fixed ("A backup of the deleted files is in …"). "backed up to the trash-net" jargon — still there. Raw "Removing junk/" on the step — fixed ("✓  delete    untracked files").

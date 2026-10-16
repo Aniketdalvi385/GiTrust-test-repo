@@ -1,0 +1,53 @@
+{
+ "id": "M-47",
+ "title": "Bring back a stash when there is none: plain message, exit 1",
+ "part": "1 · Everyday",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.5",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen says 'There are no stashed changes to bring back.'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "blocked before any plan",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "the working tree is untouched",
+   "ok": true,
+   "detail": "M app.txt"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "stash pop"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 0.5,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "status": "M app.txt"
+ }
+}

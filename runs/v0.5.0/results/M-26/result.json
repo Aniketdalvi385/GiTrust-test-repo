@@ -1,0 +1,86 @@
+{
+ "id": "M-26",
+ "title": "Clean up: counts, untracked deleted, backed up",
+ "part": "6 · Forensics",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "junk/ deleted",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "backup holds junk/inner/file.txt",
+   "ok": true,
+   "detail": "['20261016-112524/junk/inner/file.txt']"
+  },
+  {
+   "name": "tracked edit untouched",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "typed confirmation asked at the plan (the plan is above it)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "nothing asks again after the typed value",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "the typed word is 'delete'",
+   "ok": true,
+   "detail": "['delete']"
+  },
+  {
+   "name": "the backup line doesn't call them 'discarded changes' (F17)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Successfully rebased'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Enumerating objects'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Removing'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "clean up my repo"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 1.6,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

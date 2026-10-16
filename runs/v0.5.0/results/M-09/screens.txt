@@ -1,0 +1,41 @@
+######## run 1: gitrust 'abort rebase'  [pty, model up]  exit=0  0.8s
+
+--- waited for '[Enter] run' ---
+⚡  Abort the rebase
+
+Plan  · 1 step
+
+  ●  rebase    abort  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Abort the rebase
+
+Plan  · 1 step
+
+  ●  rebase    abort  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  rebase    abort
+  │  → Rebase aborted — back to the original HEAD
+  │  A backup of the discarded changes is in ~/.gitrust/trash/20261016-112512 for 7 days.
+
+  ✓ Done · on main, ↑1 ↓1
+  Next: gitrust "status"
+
+######## run 2: gitrust 'status'  [pty, model up]  exit=0  0.0s
+
+--- final ---
+⚡  Show status
+On branch main · tracking origin/main · 1 ahead · 1 behind
+Last commit: b0e92d5 "feat: my app change" (just now)
+
+Nothing to commit, working tree clean.
+
+→ Diverged from upstream (1 ahead, 1 behind). Pull first: gitrust "pull"
+
+Remote state as of the last fetch, just now — gitrust "fetch" refreshes it.
+

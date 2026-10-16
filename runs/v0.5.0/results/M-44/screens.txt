@@ -1,0 +1,38 @@
+######## run 1: gitrust 'pull the latest from origin into this branch'  [pty, model up]  exit=0  10.4s
+
+--- model: routed or asked ---
+✦  Pull from origin · 9.1s
+
+Plan  · 1 step · snapshot taken at 63c147a
+
+  ●  pull      from origin
+
+
+  [Enter] run · [q] cancel
+
+--- plan ---
+✦  Pull from origin · 9.1s
+
+Plan  · 1 step · snapshot taken at 63c147a
+
+  ●  pull      from origin
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+✦  Pull from origin · 9.1s
+
+Plan  · 1 step · snapshot taken at 63c147a
+
+  ●  pull      from origin
+
+
+  [Enter] run · [q] cancel
+  ○  pull      from origin
+  ✓  pull      from origin
+  │  → Pulled 1 commit(s) from origin
+
+  ✓ Done · on feature, ↑0 ↓0
+  Next: gitrust "status"
+

@@ -1,0 +1,46 @@
+{
+ "id": "M-02",
+ "title": "Model classification of a read-only request",
+ "part": "1 · Everyday",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "routed to history or status",
+   "ok": true,
+   "detail": "> I'm not sure which operation you meant. Which one? Show history\n  ↳ Learned “anything new in my repo” → Show history ·"
+  },
+  {
+   "name": "no model probability shown",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "anything new in my repo?"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 2.7,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

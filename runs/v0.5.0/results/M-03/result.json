@@ -1,0 +1,46 @@
+{
+ "id": "M-03",
+ "title": "Commit: the message is yours, [e] edits it",
+ "part": "1 · Everyday",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "commit subject is the edited text",
+   "ok": true,
+   "detail": "my message"
+  },
+  {
+   "name": "tree clean afterwards",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit this"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 3.5,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

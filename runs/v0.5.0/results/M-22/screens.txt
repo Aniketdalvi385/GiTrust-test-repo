@@ -1,0 +1,42 @@
+######## run 1: gitrust 'revert last commit'  [pty, model up]  exit=0  0.9s
+
+--- plan ---
+⚡  Revert the last commit
+
+Plan  · 1 step · snapshot taken at c2d58f9
+
+  ●  revert    c2d58f9 "to be reverted"  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- v0.4 flow: the plan after revert's own (Y/n) ---
+⚡  Revert the last commit
+
+Plan  · 1 step · snapshot taken at c2d58f9
+
+  ●  revert    c2d58f9 "to be reverted"  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  revert    c2d58f9 "to be reverted"
+  │  → Reverted c2d58f9 "to be reverted" (inverse commit added)
+
+  ✓ Done · on main, ↑2 ↓0
+  Next: gitrust "status"
+
+--- final ---
+⚡  Revert the last commit
+
+Plan  · 1 step · snapshot taken at c2d58f9
+
+  ●  revert    c2d58f9 "to be reverted"  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  revert    c2d58f9 "to be reverted"
+  │  → Reverted c2d58f9 "to be reverted" (inverse commit added)
+
+  ✓ Done · on main, ↑2 ↓0
+  Next: gitrust "status"
+

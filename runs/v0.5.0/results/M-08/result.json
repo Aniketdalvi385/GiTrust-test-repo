@@ -1,0 +1,128 @@
+{
+ "id": "M-08",
+ "title": "Rebase conflict → calm pause → continue",
+ "part": "2 · Divergence",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 15:58",
+ "checks": [
+  {
+   "name": "paused with a non-zero exit",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows 'nothing is lost'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen shows 'continue rebase'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "the pause names the conflicted file (F17)",
+   "ok": true,
+   "detail": "✗  Paused on conflicts in app.txt — nothing is lost. Resolve it, then `gitrust \"continue rebase\"`, or `gitrust \"abort rebase\"` to return to where you started."
+  },
+  {
+   "name": "the pause says the push didn't run",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "git is mid-rebase",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "continue rebase exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "rebase finished",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no 'interrupted pipeline' banner (F7)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "after continuing, the push is the next step",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Successfully rebased' (run 1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Enumerating objects' (run 1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Removing' (run 1)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Successfully rebased' (run 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Enumerating objects' (run 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Removing' (run 2)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "push"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 1.7,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "continue rebase"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.8,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "pre": "b6f89fe520a7556ab6f842388398629781b73f87"
+ }
+}

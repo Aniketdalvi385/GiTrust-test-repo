@@ -1,0 +1,41 @@
+{
+ "id": "M-40",
+ "title": "Clean tree: 'commit everything' stops before asking",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "screen shows 'Nothing to commit'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen never shows 'message'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit everything"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 1,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

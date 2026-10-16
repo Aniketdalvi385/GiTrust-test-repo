@@ -1,0 +1,49 @@
+######## run 1: gitrust 'create branch feature-x'  [pty, model up]  exit=0  0.8s
+
+--- waited for '[Enter] run' ---
+⚡  Create branch “feature-x”
+
+Plan  · 1 step · snapshot taken at cb1ab0f
+
+  ●  branch    feature-x  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Create branch “feature-x”
+
+Plan  · 1 step · snapshot taken at cb1ab0f
+
+  ●  branch    feature-x  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  branch    feature-x
+  │  → Created branch feature-x
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+
+######## run 2: gitrust 'switch to other'  [pty, model up]  exit=1  0.5s
+
+--- waited for '[Enter] run' ---
+⚡  Switch to “other”
+✗  Switching to other would overwrite your uncommitted changes to app.txt. Commit them (gitrust "commit everyt
+hing") or stash them (gitrust "stash") first.
+
+--- final ---
+⚡  Switch to “other”
+✗  Switching to other would overwrite your uncommitted changes to app.txt. Commit them (gitrust "commit everyt
+hing") or stash them (gitrust "stash") first.
+
+######## run 3: gitrust 'switch to main'  [pty, model up]  exit=0  0.5s
+
+--- waited for '[Enter] run' ---
+⚡  Switch to “main”
+Already on main.
+
+--- final ---
+⚡  Switch to “main”
+Already on main.
+

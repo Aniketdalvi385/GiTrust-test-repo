@@ -1,0 +1,69 @@
+{
+ "id": "M-43",
+ "title": "'merge develop into feature' brings in develop, not main",
+ "part": "2 · Divergence",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.5",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 15:58",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "still on feature",
+   "ok": true,
+   "detail": "feature"
+  },
+  {
+   "name": "the menu opens on Merge, the request's word",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "feature isn't published by the merge",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "feature contains develop's commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "feature does NOT contain main's new commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen says 'Update from develop'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "merge develop into feature"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 1.6,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "develop": "6e941383b7f5760a7e50cc3ea8dd4572f480d407",
+  "main": "1b44b8a844a41a9d5bd22a0e2c555f6428c205ab"
+ }
+}

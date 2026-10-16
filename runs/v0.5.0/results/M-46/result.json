@@ -1,0 +1,75 @@
+{
+ "id": "M-46",
+ "title": "Detached-HEAD rescue: q at the plan changes nothing",
+ "part": "3 · Stuck states",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.5",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 15:58",
+ "checks": [
+  {
+   "name": "exits 1",
+   "ok": true,
+   "detail": "exit=1"
+  },
+  {
+   "name": "screen shows 'Canceled'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no new branch",
+   "ok": true,
+   "detail": "['main']"
+  },
+  {
+   "name": "HEAD still detached",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "HEAD still at the same commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "index unchanged (nothing staged)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "git status unchanged (the edit still there, unstaged)",
+   "ok": true,
+   "detail": "M app.txt"
+  },
+  {
+   "name": "the plan shows the branch creation",
+   "ok": true,
+   "detail": "Plan  · 4 steps · snapshot taken at d03a807\n\n  ●  branch    kept-work  ⚠\n  │\n  ●  checkout  kept-work  ⚠\n  │\n  ●  stage     all modified files\n  │     + app.txt\n  │\n  ●  commit    \"detached work\"  ⚠\n\n\n  [Enter] run · [e] edit message · [q] cancel"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit everything"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 1,
+   "seconds": 2.9,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "head": "d03a8078f03189aad7831f69003d3ebcb4bc846a",
+  "branches": "['main']",
+  "status": "M app.txt"
+ }
+}

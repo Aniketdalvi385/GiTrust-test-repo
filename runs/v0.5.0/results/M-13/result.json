@@ -1,0 +1,61 @@
+{
+ "id": "M-13",
+ "title": "Commit on a detached HEAD → rescue to a branch",
+ "part": "3 · Stuck states",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 15:58",
+ "checks": [
+  {
+   "name": "now on the new branch",
+   "ok": true,
+   "detail": "rescued"
+  },
+  {
+   "name": "the work is committed on it",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rescue menu is numbered",
+   "ok": true,
+   "detail": "> [1] Create a branch here to keep this work  — your request then runs on it |   [2] Switch to main and leave this commit  — your request is not carried out"
+  },
+  {
+   "name": "rescue menu has no Cancel row",
+   "ok": true,
+   "detail": "> [1] Create a branch here to keep this work  — your request then runs on it |   [2] Switch to main and leave this commit  — your request is not carried out"
+  },
+  {
+   "name": "rescue offers 'Create a branch here to keep this work'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "the plan shows the new branch 'rescued'",
+   "ok": true,
+   "detail": "Plan  · 4 steps · snapshot taken at 71b41de\n\n  ●  branch    rescued  ⚠\n  │\n  ●  checkout  rescued  ⚠\n  │\n  ●  stage     all modified files\n  │     + app.txt\n  │\n  ●  commit    \"detached work\"  ⚠\n\n\n  [Enter] run · [e] edit message · [q] cancel"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "commit this with message 'detached work'"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 4.7,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

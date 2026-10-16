@@ -1,0 +1,88 @@
+{
+ "id": "M-35",
+ "title": "Learned phrase: a menu pick is instant next time",
+ "part": "8 · UX",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.4",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "screen shows 'learned'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "learned run exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "screen shows 'whats goin on'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "forget exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "whats goin on"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 3.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "whats goin on"
+   ],
+   "mode": "pty",
+   "model": "down",
+   "exit": 0,
+   "seconds": 0.2,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "aliases"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  },
+  {
+   "argv": [
+    "aliases",
+    "--forget",
+    "whats goin on"
+   ],
+   "mode": "pipe",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.0,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

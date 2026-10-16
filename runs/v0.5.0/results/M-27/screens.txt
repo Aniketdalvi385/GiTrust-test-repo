@@ -1,0 +1,51 @@
+######## run 1: gitrust 'clean up my repo'  [pty, model up]  exit=1  1.5s
+
+--- clean-up choice ---
+⚡  Discard uncommitted changes
+? Clean up — what should be removed?
+> [1] Delete 1 untracked file  — never committed, so the trash backup is their only copy
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- confirmation at the plan ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at af98b52
+
+  ●  delete    untracked files  ⛔
+
+
+  ⛔ Irreversible: Throws away the uncommitted work you chose: changes to tracked files, untracked
+                   files, or both.
+     Risks:    Untracked files have no git history; once deleted, only GiTrust's trash-net backup
+               can bring them back.
+     Recovery: Everything deleted is copied to ~/.gitrust/trash/ first and kept for the retention
+               window.
+     Safety:   The gate spells out counts before anything is removed, and the trash-net backs up
+               first (fail-closed).
+
+? Type 'delete' to delete 1 untracked file: delete
+[Type it exactly, then Enter · q or Esc cancels]
+
+--- final ---
+⚡  Discard uncommitted changes
+> Clean up — what should be removed? Delete 1 untracked file
+
+Plan  · 1 step · snapshot taken at af98b52
+
+  ●  delete    untracked files  ⛔
+
+
+  ⛔ Irreversible: Throws away the uncommitted work you chose: changes to tracked files, untracked
+                   files, or both.
+     Risks:    Untracked files have no git history; once deleted, only GiTrust's trash-net backup
+               can bring them back.
+     Recovery: Everything deleted is copied to ~/.gitrust/trash/ first and kept for the retention
+               window.
+     Safety:   The gate spells out counts before anything is removed, and the trash-net backs up
+               first (fail-closed).
+
+> Type 'delete' to delete 1 untracked file: delete
+  ✗  delete    untracked files
+  │  Couldn't back up your files first, so nothing was deleted. Check that ~/.gitrust/trash is writable.
+

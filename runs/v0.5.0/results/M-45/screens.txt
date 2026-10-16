@@ -1,0 +1,60 @@
+######## run 1: gitrust 'push'  [pty, model up]  exit=1  1.6s
+
+--- reconcile choice ---
+⚡  Push to origin
+Fetching origin… ✓
+? Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge?
+> [1] Rebase  — your commit goes on top of theirs; best if it's only yours
+  [2] Merge  — adds a merge commit; safer if others have your commits
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- plan ---
+⚡  Push to origin
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 2 steps · snapshot taken at 00cec81
+
+  ●  rebase    onto origin/main  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [s] don't push · [q] cancel
+
+--- final ---
+⚡  Push to origin
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 2 steps · snapshot taken at 00cec81
+
+  ●  rebase    onto origin/main  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [s] don't push · [q] cancel
+  ✗  rebase    onto origin/main
+✗  Paused on conflicts in app.txt — nothing is lost. Resolve it, then `gitrust "continue rebase"`, or `gitrust
+ "abort rebase"` to return to where you started.
+   The push didn't run — once it's finished, gitrust "push" sends it.
+
+######## run 2: gitrust 'status'  [pty, model up]  exit=0  0.0s
+
+--- final ---
+⚡  Show status
+On branch main · tracking origin/main · 1 ahead
+Last commit: 1cf8d95 "feat: my app change" (just now)
+
+Nothing to commit, working tree clean.
+
+→ 1 unpushed commit(s). Try: gitrust "push"
+
+Remote state as of the last fetch, just now — gitrust "fetch" refreshes it.
+
+######## run 3: gitrust '--recover'  [pipe, model up]  exit=1  0.0s
+
+--- final ---
+No interrupted GiTrust pipeline found for this repo. If you're looking for lost commits, try `gitrust "find my lost work"`.
+

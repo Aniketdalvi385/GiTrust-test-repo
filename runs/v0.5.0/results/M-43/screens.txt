@@ -1,0 +1,40 @@
+######## run 1: gitrust 'merge develop into feature'  [pty, model up]  exit=0  1.6s
+
+--- rebase or merge? ---
+⚡  Update from develop
+Fetching origin… ✓
+? Your branch and origin/develop have diverged (↑1 ↓1). Rebase or merge?
+> [1] Merge  — adds a merge commit; safer if others have your commits
+  [2] Rebase  — your commit goes on top; a pushed branch needs a force push
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- plan ---
+⚡  Update from develop
+Fetching origin… ✓
+> Your branch and origin/develop have diverged (↑1 ↓1). Rebase or merge? Merge
+
+Plan  · 1 step · snapshot taken at 26d7b78
+
+  ●  merge     origin/develop → "Merge origin/develop into feature"  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Update from develop
+Fetching origin… ✓
+> Your branch and origin/develop have diverged (↑1 ↓1). Rebase or merge? Merge
+
+Plan  · 1 step · snapshot taken at 26d7b78
+
+  ●  merge     origin/develop → "Merge origin/develop into feature"  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  merge     origin/develop → "Merge origin/develop into feature"
+  │  → Merged origin/develop (merge commit recorded)
+
+  ✓ Done · on feature
+  Next: gitrust "status"
+  Merged origin/develop. This branch isn't on the remote yet — publish it with gitrust "publish".
+

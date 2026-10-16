@@ -1,0 +1,4765 @@
+{
+ "set": "v3_blind",
+ "model": "AniketDalvi385/gitrust-kev-0.8b@v2",
+ "rows": [
+  {
+   "id": "V3-001",
+   "q": "which files i changed and not saved yet",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "status",
+   "kev_top": "status",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-002",
+   "q": "i want to see what is modified, staged, and new files",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "status",
+   "kev_top": "status",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-003",
+   "q": "what is the state of my working folder right now",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "status",
+   "kev_top": "status",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-004",
+   "q": "show me the list of old commits",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-005",
+   "q": "what did people do in this project before, i want to see the history",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-006",
+   "q": "i need see all past commits with the author and date",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-007",
+   "q": "show me exactly which lines i changed in my files",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "diff",
+   "kev_top": "diff",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-008",
+   "q": "what is different in the code now compared to the last save, line by line",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "diff",
+   "kev_top": "diff",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-009",
+   "q": "i want to look at my code changes before i commit, the red and green lines",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "diff",
+   "kev_top": "diff",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-010",
+   "q": "what branches do i have in this project",
+   "accept": [
+    "branches"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-011",
+   "q": "in which branch am i now?",
+   "accept": [
+    "branches"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-012",
+   "q": "list all the branch names so i can see them",
+   "accept": [
+    "branches"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-013",
+   "q": "what name and email git is using for me",
+   "accept": [
+    "config"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "config",
+   "kev_top": "config",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-014",
+   "q": "i forgot which email i put in git setup, can you show",
+   "accept": [
+    "config"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "config",
+   "kev_top": "config",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-015",
+   "q": "show me what is inside the commit a1b2c3d",
+   "accept": [
+    "show"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "show",
+   "kev_top": "show",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-016",
+   "q": "i want details of one commit, the last one: who wrote it and which files it touched",
+   "accept": [
+    "show"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "show",
+   "kev_top": "show",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-017",
+   "q": "open commit 9f8e7d6 and tell me what it changed",
+   "accept": [
+    "show"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "show",
+   "kev_top": "show",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-018",
+   "q": "check if my teammates pushed something new, but dont change my files",
+   "accept": [
+    "fetch"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-019",
+   "q": "am i behind the server or ahead? only look, no download to my code",
+   "accept": [
+    "fetch"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-020",
+   "q": "ask the remote if there is new work, i just want to know",
+   "accept": [
+    "fetch"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-021",
+   "q": "if i pull now will i get conflicts? dont do it, just tell me",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-022",
+   "q": "can you test if merging main in my branch will break with conflicts, without changing anything",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-023",
+   "q": "predict conflict before i merge, i am afraid",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-024",
+   "q": "save all my work with message 'add login page'",
+   "accept": [
+    "add_commit"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted+arg-asked-WRONG (changes something)",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": "+  Push only some changes · 2.7s\n  (kev: scoped_push=0.69 add_commit=0.15 __reject__=0.04 status=0.02)\n✗  Couldn't find the feature/topic to push in your request — nothing was done.\n"
+  },
+  {
+   "id": "V3-025",
+   "q": "take all my changed files and make a commit called fix navbar bug",
+   "accept": [
+    "add_commit"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "add_commit",
+   "kev_top": "add_commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-026",
+   "q": "add app.js and style.css then commit them with message 'update colors'",
+   "accept": [
+    "add_commit"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "add_commit",
+   "kev_top": "add_commit",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-027",
+   "q": "i already staged my files, now just commit them with message 'update readme'",
+   "accept": [
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "commit",
+   "kev_top": "commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-028",
+   "q": "commit only what i put in staging area, message: remove old function",
+   "accept": [
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "commit",
+   "kev_top": "commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-029",
+   "q": "make a commit from the staged files only, not other files. say 'fix typo'",
+   "accept": [
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "commit",
+   "kev_top": "commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-030",
+   "q": "upload my branch to github, everything i have committed",
+   "accept": [
+    "push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "push",
+   "kev_top": "push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-031",
+   "q": "my work is already committed, now i want put it online for the team",
+   "accept": [
+    "push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-032",
+   "q": "i changed many things but only want to upload the login related files, not the rest",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-033",
+   "q": "send only the search part of my code to remote, other files stay with me",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-034",
+   "q": "make new branch called feature-search",
+   "accept": [
+    "branch"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "branch",
+   "kev_top": "branch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-035",
+   "q": "i want to start working on something new in separate line, name it bugfix-header",
+   "accept": [
+    "branch"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "branch",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-036",
+   "q": "create a branch for my homework named hw2",
+   "accept": [
+    "branch"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "branch",
+   "kev_top": "branch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-037",
+   "q": "i want to move to my other branch called feature-login",
+   "accept": [
+    "checkout"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "checkout",
+   "kev_top": "checkout",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-038",
+   "q": "my teammate's code is not in my branch, i want it",
+   "accept": [
+    "pull",
+    "sync"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "pull",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-039",
+   "q": "get the newest code from github and put in my project",
+   "accept": [
+    "pull"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "pull",
+   "kev_top": "pull",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-040",
+   "q": "download latest changes from the server and join with mine",
+   "accept": [
+    "pull",
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "pull",
+   "kev_top": "pull",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-041",
+   "q": "my feature branch is old, bring the changes of main inside it",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "sync",
+   "kev_top": "sync",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-042",
+   "q": "update my branch with what is new in main",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "newcomer",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-043",
+   "q": "main has new things, i want them in the branch where i am working",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "sync",
+   "kev_top": "sync",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-044",
+   "q": "i made a mistake in my last commit, take it back",
+   "accept": [
+    "undo",
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "undo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-045",
+   "q": "go back one step, my last save was wrong",
+   "accept": [
+    "undo"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "undo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-046",
+   "q": "i wrote the wrong message in my last commit, change it to 'add footer links'",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-047",
+   "q": "i forgot one file in the commit i just did, put it inside that same commit",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-048",
+   "q": "fix the message of my latest commit, it has a typo",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-049",
+   "q": "put my last 3 commits together to one commit",
+   "accept": [
+    "squash"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "squash",
+   "kev_top": "squash",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-050",
+   "q": "too many small commits, i want make them only one, the last 4",
+   "accept": [
+    "squash"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "squash",
+   "kev_top": "squash",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-051",
+   "q": "combine my recent 2 commits into single one",
+   "accept": [
+    "squash"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "instant-right",
+   "op": "squash",
+   "kev_top": null,
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-052",
+   "q": "commit 4c5d6e7 was bad, make a new commit that cancel it but keep the history",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-053",
+   "q": "i pushed a bug already, i need opposite commit of a1b2c3d so the history stay",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-054",
+   "q": "reverse the changes of commit 7e8f9a0 by adding new commit on top",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-055",
+   "q": "i added the wrong file to staging, take it out but keep my changes",
+   "accept": [
+    "unstage"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "unstage",
+   "kev_top": "unstage",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-056",
+   "q": "remove config.json from the staged files, dont delete the file",
+   "accept": [
+    "unstage"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "unstage",
+   "kev_top": "unstage",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-057",
+   "q": "i did add by mistake, i dont want those files in the next commit",
+   "accept": [
+    "unstage"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "unstage",
+   "kev_top": "unstage",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-058",
+   "q": "i am not ready to commit but i need clean folder for a moment, keep my changes somewhere",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "stash",
+   "kev_top": "stash",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-059",
+   "q": "put my unfinished work aside, i will come back later",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "stash",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-060",
+   "q": "hide my changes temporary so i can change branch",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "stash",
+   "kev_top": "stash",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-061",
+   "q": "delete all my changes and new files, i want fresh folder",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-062",
+   "q": "i broke everything, throw away all not committed work",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-063",
+   "q": "remove the untracked files and reset my modified files to clean state",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-064",
+   "q": "my local commits are bad, make my branch same like the server one and lose mine",
+   "accept": [
+    "discard_local"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "discard_local",
+   "kev_top": "discard_local",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-065",
+   "q": "i want to throw away the commits that i did not push yet",
+   "accept": [
+    "discard_local"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "discard_local",
+   "kev_top": "discard_local",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-066",
+   "q": "reset my branch to what is on origin, i dont need my local commits",
+   "accept": [
+    "discard_local"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "discard_local",
+   "kev_top": "discard_local",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-067",
+   "q": "push my branch and overwrite what is on the server, i know it will replace",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "force_push",
+   "kev_top": "force_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-068",
+   "q": "server doesnt accept my push because history changed, force it",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "force_push",
+   "kev_top": "force_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-069",
+   "q": "make remote branch exactly like my local, replace their history",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "force_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-070",
+   "q": "start git in this folder",
+   "accept": [
+    "init"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "init",
+   "kev_top": "init",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-071",
+   "q": "this project is not tracked yet, make it a new repository",
+   "accept": [
+    "init"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "init",
+   "kev_top": "init",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-072",
+   "q": "i want to use version control for this folder, set it up",
+   "accept": [
+    "init"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "init",
+   "kev_top": "init",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-073",
+   "q": "connect this project to https://github.com/maria/todo-app.git",
+   "accept": [
+    "add_remote"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "add_remote",
+   "kev_top": "add_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-074",
+   "q": "add a remote named origin with url git@github.com:ahmed/shop.git",
+   "accept": [
+    "add_remote"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "add_remote",
+   "kev_top": "add_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-075",
+   "q": "link my local project with the github repo https://github.com/lee/notes.git",
+   "accept": [
+    "add_remote"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "add_remote",
+   "kev_top": "add_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-076",
+   "q": "i deleted a commit by accident, can i get it back",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-077",
+   "q": "my work is gone after reset, search for the lost commits",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-078",
+   "q": "i lost a branch i deleted yesterday, find the work in it",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-079",
+   "q": "where this project is connected online? show the links",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "remotes",
+   "kev_top": "remotes",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-080",
+   "q": "list the remote servers and their urls",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "remotes",
+   "kev_top": "remotes",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-081",
+   "q": "what is the github address saved in this repo",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "remotes",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-082",
+   "q": "bring back the changes i put aside before",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "stash_pop",
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-083",
+   "q": "i want my hidden work back now",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "find_lost_work",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-084",
+   "q": "restore the last thing i stashed",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "stash_pop",
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-085",
+   "q": "get new commits from server and put my own commits after them, no merge commit",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-086",
+   "q": "pull but keep history straight line, my commits on top",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-087",
+   "q": "download remote changes and replay my commits over them",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-088",
+   "q": "make my current branch follow origin/feature-search",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-089",
+   "q": "git says no tracking information for this branch, connect it with the remote branch",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-090",
+   "q": "i want this branch to be linked to same name branch on origin so pull works",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-091",
+   "q": "delete the remote called upstream from my project",
+   "accept": [
+    "remove_remote"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "remove_remote",
+   "kev_top": "remove_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-092",
+   "q": "i dont want the connection named backup anymore, remove it",
+   "accept": [
+    "remove_remote"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "remove_remote",
+   "kev_top": "remove_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-093",
+   "q": "disconnect this repo from the remote origin",
+   "accept": [
+    "remove_remote"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "remove_remote",
+   "kev_top": "remove_remote",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-094",
+   "q": "i dont want git in this folder anymore, but keep my files",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "delete_repo",
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-095",
+   "q": "make this folder a normal folder again, no version control",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "delete_repo",
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-096",
+   "q": "save everything and send it to github with message 'finish contact form'",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-097",
+   "q": "commit my changes and upload them, all in one command, message 'fix bug in cart'",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "commit_push",
+   "kev_top": "commit_push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-098",
+   "q": "add index.html, commit as 'new homepage' and push to server",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "commit_push",
+   "kev_top": "commit_push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-099",
+   "q": "conflict is solved, continue",
+   "accept": [
+    "rebase_continue"
+   ],
+   "situation": "rebase",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "rebase_continue",
+   "kev_top": "rebase_continue",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-100",
+   "q": "this commit in the rebase is not needed, jump over it",
+   "accept": [
+    "rebase_skip"
+   ],
+   "situation": "rebase",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "rebase_skip",
+   "kev_top": "rebase_skip",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-101",
+   "q": "skip the one that is stuck and do the other commits",
+   "accept": [
+    "rebase_skip"
+   ],
+   "situation": "rebase",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "rebase_skip",
+   "kev_top": "rebase_skip",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-102",
+   "q": "too many conflicts, stop the rebase and bring my branch like before",
+   "accept": [
+    "rebase_abort"
+   ],
+   "situation": "rebase",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "rebase_abort",
+   "kev_top": "rebase_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-103",
+   "q": "cancel this rebase, i dont want it anymore",
+   "accept": [
+    "rebase_abort"
+   ],
+   "situation": "rebase",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "rebase_abort",
+   "kev_top": "rebase_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-104",
+   "q": "i dont want this merge anymore, cancel it and go back",
+   "accept": [
+    "merge_abort"
+   ],
+   "situation": "merge",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "merge_abort",
+   "kev_top": "merge_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-105",
+   "q": "the merge has conflicts and i am lost, stop and return like before the merge",
+   "accept": [
+    "merge_abort"
+   ],
+   "situation": "merge",
+   "persona": "newcomer",
+   "outcome": "acted-right",
+   "op": "merge_abort",
+   "kev_top": "merge_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-106",
+   "q": "how is the weather in pune today",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "refused-right",
+   "op": "__reject__",
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-107",
+   "q": "write a python function that reverse a string",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "refused-right",
+   "op": "__reject__",
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-108",
+   "q": "push the button on the page to the right side with css",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-109",
+   "q": "npm install is giving error, fix it",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-110",
+   "q": "what is the difference between a branch and a tree in data structure",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-111",
+   "q": "i have commitment issues with my deadline, give me advice",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-112",
+   "q": "build the docker image and run it",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-113",
+   "q": "translate this sentence to spanish: the build is ready",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "newcomer",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-114",
+   "q": "What's dirty in the tree right now? Modified, staged, untracked, the lot.",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "status",
+   "kev_top": "status",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-115",
+   "q": "Give me the working tree state before I context-switch.",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "status",
+   "kev_top": "status",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-116",
+   "q": "Which files have I touched and which are still untracked?",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "status",
+   "kev_top": "status",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-117",
+   "q": "Show me the last 15 commits on this branch.",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-118",
+   "q": "I need the commit history for the release cut, newest first.",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-119",
+   "q": "Walk me through what landed recently: who committed what, in order.",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-120",
+   "q": "Show me the line-by-line changes in my working files before I commit.",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "diff",
+   "kev_top": "diff",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-121",
+   "q": "What exactly did I change in the tree? Hunks, not just filenames.",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "diff",
+   "kev_top": "diff",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-122",
+   "q": "Print the uncommitted patch so I can eyeball it.",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "show",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-123",
+   "q": "What branches exist in this clone? Mark the checked-out one.",
+   "accept": [
+    "branches"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-124",
+   "q": "What user.name and user.email is git using in this repo?",
+   "accept": [
+    "config"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "config",
+   "kev_top": "config",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-125",
+   "q": "Dump the git config, I suspect my commits are going out under the wrong identity.",
+   "accept": [
+    "config"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "config",
+   "kev_top": "config",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-126",
+   "q": "Print my configured git author details.",
+   "accept": [
+    "config"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "config",
+   "kev_top": "config",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-127",
+   "q": "Show commit a3f9c1e: author, date, message and files touched.",
+   "accept": [
+    "show"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "show",
+   "kev_top": "show",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-128",
+   "q": "Pull up the details of the commit at HEAD.",
+   "accept": [
+    "show"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "show",
+   "kev_top": "show",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-129",
+   "q": "Open up that one commit 7bd02f4 for me; I want the metadata and changed files.",
+   "accept": [
+    "show"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "show",
+   "kev_top": "show",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-130",
+   "q": "Check origin and tell me whether my branch is ahead or behind, but don't touch my files.",
+   "accept": [
+    "fetch"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-131",
+   "q": "Am I behind upstream? Just look, no merging.",
+   "accept": [
+    "fetch"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-132",
+   "q": "Hit the remote and report how many commits I'm ahead/behind without altering the working tree.",
+   "accept": [
+    "fetch"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-133",
+   "q": "Dry-run the pull: will it conflict with what's on origin?",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-134",
+   "q": "Tell me whether merging origin/main into this branch would produce conflicts, and don't change anything.",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-135",
+   "q": "Before I pull, predict if there will be merge conflicts. Read-only.",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-136",
+   "q": "Stage everything and commit it with the message 'fix null deref in parser'.",
+   "accept": [
+    "add_commit"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "add_commit",
+   "kev_top": "add_commit",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-137",
+   "q": "git add -A and commit: 'bump deps for release 2.4'. Don't push.",
+   "accept": [
+    "add_commit"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "add_commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-138",
+   "q": "Stage src/auth.rs and tests/auth_test.rs and commit them as 'tighten token validation', local only.",
+   "accept": [
+    "add_commit"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "add_commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-139",
+   "q": "Commit what's already staged with the message 'refactor: extract retry helper'.",
+   "accept": [
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "commit",
+   "kev_top": "commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-140",
+   "q": "I've staged exactly what I want; just commit it, 'drop deprecated flag'.",
+   "accept": [
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "commit",
+   "kev_top": "commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-141",
+   "q": "Commit the index as-is, message 'wip: schema migration'. Don't add anything else.",
+   "accept": [
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "commit",
+   "kev_top": "commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-142",
+   "q": "Upload my local commits to the remote, all of them.",
+   "accept": [
+    "push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "push",
+   "kev_top": "push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-143",
+   "q": "Send HEAD up to its upstream; everything's already committed.",
+   "accept": [
+    "push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-WRONG (read-only)",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": "+  Check origin · 0.7s  (p=0.56)\nFetching origin… ✓\n\nOn branch main · tracking origin/main · 1 ahead\nLast commit: b40683a \"second\" (just now)\n\n→ 1 unpushed commit(s). Run: gitrust \"push\"\n  (kev: fetch=0.56 show=0.28 push=0.06 commit=0.02)\n"
+  },
+  {
+   "id": "V3-144",
+   "q": "Commit and push only the logging-related files, leave the rest of my changes alone.",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-145",
+   "q": "Only the auth changes should go out: commit and push just those files.",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-146",
+   "q": "Ship just the billing module changes to origin; the other edits stay local and uncommitted.",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-147",
+   "q": "Create a branch called feature/oauth-refresh.",
+   "accept": [
+    "branch"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "branch",
+   "kev_top": "branch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-148",
+   "q": "Cut a new branch named hotfix/null-session off here.",
+   "accept": [
+    "branch"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "branch",
+   "kev_top": "branch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-149",
+   "q": "I need a fresh branch, release/2.4, to work on.",
+   "accept": [
+    "branch"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "branch",
+   "kev_top": "branch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-150",
+   "q": "Check out release/2.3, it already exists.",
+   "accept": [
+    "checkout"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted+arg-asked-right",
+   "op": "checkout",
+   "kev_top": "checkout",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-151",
+   "q": "Move me over to the existing branch fix/login-redirect.",
+   "accept": [
+    "checkout"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "checkout",
+   "kev_top": "checkout",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-152",
+   "q": "Pull the latest from origin into this branch.",
+   "accept": [
+    "pull"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "pull",
+   "kev_top": "pull",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-153",
+   "q": "Bring in whatever's new on the remote and integrate it here.",
+   "accept": [
+    "pull"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "pull",
+   "kev_top": "pull",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-154",
+   "q": "Update my branch from upstream; CI is red so I want the fixes someone pushed.",
+   "accept": [
+    "pull"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "sync",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-155",
+   "q": "Bring main into my feature branch so it's current.",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "senior",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-156",
+   "q": "Update this branch with the latest main before I open the PR.",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "senior",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-157",
+   "q": "Merge main into the branch I'm on; it has drifted.",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "senior",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-158",
+   "q": "Take back that commit I just made, it was a mistake.",
+   "accept": [
+    "undo",
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "undo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-159",
+   "q": "Roll back the most recent commit.",
+   "accept": [
+    "undo",
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "undo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-160",
+   "q": "Amend HEAD's commit message to 'fix: handle empty payload'.",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-161",
+   "q": "I forgot a file in the last commit; fold it into that commit.",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-162",
+   "q": "Rewrite the message on my most recent commit.",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-163",
+   "q": "Collapse the last three commits into a single commit before review.",
+   "accept": [
+    "squash"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "squash",
+   "kev_top": "squash",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-164",
+   "q": "Combine the 5 most recent commits on this branch into one clean commit.",
+   "accept": [
+    "squash"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "instant-right",
+   "op": "squash",
+   "kev_top": null,
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-165",
+   "q": "Revert commit 4e1a9bd with a new commit; it's already on main so no history rewrite.",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-166",
+   "q": "Create an inverse commit for 9c03d12, keep history intact.",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-167",
+   "q": "Back out the change from commit b7720ae by committing its opposite.",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-168",
+   "q": "Unstage everything, but keep my edits.",
+   "accept": [
+    "unstage"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "unstage",
+   "kev_top": "unstage",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-169",
+   "q": "Pull src/config.rs out of the index without touching its contents.",
+   "accept": [
+    "unstage"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "unstage",
+   "kev_top": "unstage",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-170",
+   "q": "I staged too much; remove the files from staging, leave the working copy alone.",
+   "accept": [
+    "unstage"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "unstage",
+   "kev_top": "unstage",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-171",
+   "q": "Stash my uncommitted changes, I need a clean tree.",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "stash",
+   "kev_top": "stash",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-172",
+   "q": "Shelve the work in progress so I can switch branches.",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "stash",
+   "kev_top": "stash",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-173",
+   "q": "Park my local modifications on the stash stack.",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-174",
+   "q": "Discard all my uncommitted changes and untracked files, start fresh.",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-175",
+   "q": "Nuke the working tree back to clean; I don't care about the edits.",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-176",
+   "q": "Throw away every local modification and untracked file.",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-177",
+   "q": "Throw away my unpushed commits and reset to origin's version of this branch.",
+   "accept": [
+    "discard_local"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "discard_local",
+   "kev_top": "discard_local",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-178",
+   "q": "Reset the branch hard to origin; the local commits aren't on the remote and I don't want them.",
+   "accept": [
+    "discard_local"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "discard_local",
+   "kev_top": "discard_local",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-179",
+   "q": "Drop everything I committed locally that isn't pushed and match the remote.",
+   "accept": [
+    "discard_local"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "discard_local",
+   "kev_top": "discard_local",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-180",
+   "q": "Force push this branch to origin, I rebased and rewrote history.",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "force_push",
+   "kev_top": "force_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-181",
+   "q": "Overwrite the remote branch with my local history.",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "force_push",
+   "kev_top": "force_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-182",
+   "q": "Push with force-with-lease to origin; the remote copy is stale after my rebase.",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-183",
+   "q": "Initialize a git repo in this directory.",
+   "accept": [
+    "init"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "init",
+   "kev_top": "init",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-184",
+   "q": "This folder isn't versioned yet; make it a new git repository.",
+   "accept": [
+    "init"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "init",
+   "kev_top": "init",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-185",
+   "q": "Run a fresh git init here.",
+   "accept": [
+    "init"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "init",
+   "kev_top": "init",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-186",
+   "q": "Register upstream as a remote with URL https://github.com/torvalds/linux.git.",
+   "accept": [
+    "add_remote"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "add_remote",
+   "kev_top": "add_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-187",
+   "q": "I lost a commit after a bad reset; dig through the reflog and recover it.",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-188",
+   "q": "Find my deleted commits, I think I dropped some work.",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-189",
+   "q": "Recover the work from the branch I deleted yesterday.",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-190",
+   "q": "List the configured remotes and their URLs.",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "remotes",
+   "kev_top": "remotes",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-191",
+   "q": "Where does origin point? Show me all remotes.",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "remotes",
+   "kev_top": "remotes",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-192",
+   "q": "Show the remote repositories this clone knows about.",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "remotes",
+   "kev_top": "remotes",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-193",
+   "q": "Pop the stash.",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "stash_pop",
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-194",
+   "q": "Restore the changes I stashed earlier into the working tree.",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "stash_pop",
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-195",
+   "q": "Bring back my most recently stashed work.",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "stash_pop",
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-196",
+   "q": "Pull from origin and rebase my local commits on top instead of merging.",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-197",
+   "q": "Fetch and rebase onto upstream, I want linear history.",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-198",
+   "q": "Replay my unpushed commits on top of the remote's latest; no merge commit.",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-199",
+   "q": "Make this branch track origin/feature/oauth-refresh.",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-200",
+   "q": "Set upstream for the current branch to origin.",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-201",
+   "q": "Configure tracking so this branch follows its counterpart on origin.",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-202",
+   "q": "Delete the stale 'backup' remote from this repo.",
+   "accept": [
+    "remove_remote"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "remove_remote",
+   "kev_top": "remove_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-203",
+   "q": "Drop origin from the configured remotes.",
+   "accept": [
+    "remove_remote"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "remove_remote",
+   "kev_top": "remove_remote",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-204",
+   "q": "Delete the .git directory but keep my files.",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "delete_repo",
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-205",
+   "q": "Strip git from this folder entirely; the files stay.",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "delete_repo",
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-206",
+   "q": "Remove this folder's repository so it's no longer under version control.",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "delete_repo",
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-207",
+   "q": "Stage everything, commit as 'hotfix: guard against nil config' and push to origin.",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "commit_push",
+   "kev_top": "commit_push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-208",
+   "q": "Add all, commit 'release 2.4.1 notes' and push in one go.",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "commit_push",
+   "kev_top": "commit_push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-209",
+   "q": "Commit my changes with message 'update lockfile' and push them up right away.",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "commit_push",
+   "kev_top": "commit_push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-210",
+   "q": "Conflicts are resolved and staged; continue the rebase.",
+   "accept": [
+    "rebase_continue"
+   ],
+   "situation": "rebase",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "rebase_continue",
+   "kev_top": "rebase_continue",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-211",
+   "q": "Rebase is stuck, I fixed the markers. Carry on with it.",
+   "accept": [
+    "rebase_continue"
+   ],
+   "situation": "rebase",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "rebase_continue",
+   "kev_top": "rebase_continue",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-212",
+   "q": "Skip the commit the rebase is stuck on and keep going.",
+   "accept": [
+    "rebase_skip"
+   ],
+   "situation": "rebase",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "rebase_skip",
+   "kev_top": "rebase_skip",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-213",
+   "q": "That commit is already upstream; skip it and continue the rebase.",
+   "accept": [
+    "rebase_skip"
+   ],
+   "situation": "rebase",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "rebase_skip",
+   "kev_top": "rebase_skip",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-214",
+   "q": "Abort the rebase, take me back to where the branch was.",
+   "accept": [
+    "rebase_abort"
+   ],
+   "situation": "rebase",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "rebase_abort",
+   "kev_top": "rebase_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-215",
+   "q": "This rebase is a mess; cancel it and restore the original branch.",
+   "accept": [
+    "rebase_abort"
+   ],
+   "situation": "rebase",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "rebase_abort",
+   "kev_top": "rebase_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-216",
+   "q": "Abort the merge, I'm not resolving this.",
+   "accept": [
+    "merge_abort"
+   ],
+   "situation": "merge",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "merge_abort",
+   "kev_top": "merge_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-217",
+   "q": "Cancel the in-progress merge and go back to before it started.",
+   "accept": [
+    "merge_abort"
+   ],
+   "situation": "merge",
+   "persona": "senior",
+   "outcome": "acted-right",
+   "op": "merge_abort",
+   "kev_top": "merge_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-218",
+   "q": "Push the docker image to our registry.",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-219",
+   "q": "Review the merge request from Priya and leave comments.",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-220",
+   "q": "Run the full test suite and tell me what fails.",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-221",
+   "q": "Deploy the staging build to the k8s cluster.",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-222",
+   "q": "npm install the latest lodash.",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-223",
+   "q": "Re-run the failed CI pipeline on the release job.",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-224",
+   "q": "Restart the postgres container.",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "refused-right",
+   "op": "__reject__",
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-225",
+   "q": "What's the weather like in Pune?",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "refused-right",
+   "op": "__reject__",
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-226",
+   "q": "Bump the version in package.json and publish to npm.",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "senior",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-227",
+   "q": "can u show me whats staged and whats untracked",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "status",
+   "kev_top": "status",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-228",
+   "q": "ngl i forgot what state my repo is in, whats going on",
+   "accept": [
+    "status"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "branches",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-229",
+   "q": "show me the last 10 commits pls",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-230",
+   "q": "how do i see what ppl have committed here over time",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-231",
+   "q": "whos been pushing stuff lately? i wanna scroll thru the history",
+   "accept": [
+    "log"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "log",
+   "kev_top": "log",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-232",
+   "q": "what exactly did i change in my files? line by line",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "diff",
+   "kev_top": "diff",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-233",
+   "q": "can u show me the actual code edits i made before i commit",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "diff",
+   "kev_top": "diff",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-234",
+   "q": "pls print the diff of my working changes",
+   "accept": [
+    "diff"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "diff",
+   "kev_top": "diff",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-235",
+   "q": "what branches do i have",
+   "accept": [
+    "branches"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-236",
+   "q": "list all my local branches pls",
+   "accept": [
+    "branches"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "branches",
+   "kev_top": "branches",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-237",
+   "q": "whats my git email and name set to",
+   "accept": [
+    "config"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "config",
+   "kev_top": "config",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-238",
+   "q": "can u check which user.name git is using on this machine",
+   "accept": [
+    "config"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "config",
+   "kev_top": "config",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-239",
+   "q": "show me my git settings",
+   "accept": [
+    "config"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "config",
+   "kev_top": "config",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-240",
+   "q": "show me what commit a1b2c3d did",
+   "accept": [
+    "show"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "show",
+   "kev_top": "show",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-241",
+   "q": "whats in the last commit? like who made it and which files",
+   "accept": [
+    "show"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "show",
+   "kev_top": "show",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-242",
+   "q": "can u open up commit 9f8e7d6 so i can see its details",
+   "accept": [
+    "show"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "show",
+   "kev_top": "show",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-243",
+   "q": "am i behind the remote? dont change anything tho",
+   "accept": [
+    "fetch"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-244",
+   "q": "check if theres anything new on origin without touching my files",
+   "accept": [
+    "fetch"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-245",
+   "q": "is my branch ahead or behind rn, just look",
+   "accept": [
+    "fetch"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "fetch",
+   "kev_top": "fetch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-246",
+   "q": "if i pull now will i get conflicts?? dont actually do it",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-247",
+   "q": "dry run a merge for me, wanna know if it'll blow up with conflicts",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-248",
+   "q": "can u tell me whether merging origin/main would clash with my stuff, without merging",
+   "accept": [
+    "merge_preview"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "merge_preview",
+   "kev_top": "merge_preview",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-249",
+   "q": "save everything i did into a commit saying fix login redirect",
+   "accept": [
+    "add_commit",
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "add_commit",
+   "kev_top": "add_commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-250",
+   "q": "stage all my changes and commit them w the message 'wip nav bar'",
+   "accept": [
+    "add_commit"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "add_commit",
+   "kev_top": "add_commit",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-251",
+   "q": "add src/app.js and commit it, msg: tweak header",
+   "accept": [
+    "add_commit"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "add_commit",
+   "kev_top": "add_commit",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-252",
+   "q": "i already staged my stuff, just commit it with 'update readme'",
+   "accept": [
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "commit",
+   "kev_top": "commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-253",
+   "q": "commit only what ive staged, message is 'bump deps'",
+   "accept": [
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "commit",
+   "kev_top": "commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-254",
+   "q": "pls commit the staged files as 'cleanup tests' and leave the rest alone",
+   "accept": [
+    "commit"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "commit",
+   "kev_top": "commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-255",
+   "q": "ok send everything i've committed to origin",
+   "accept": [
+    "push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "push",
+   "kev_top": "push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-256",
+   "q": "can u upload my branch pls, all the commits",
+   "accept": [
+    "push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "push",
+   "kev_top": "push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-257",
+   "q": "only push the stuff i did for the payments feature, nothing else",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-258",
+   "q": "commit and ship just the auth related files, leave my other junk",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-259",
+   "q": "i only wanna push my search work rn, the rest isnt ready",
+   "accept": [
+    "scoped_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "scoped_push",
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-260",
+   "q": "make a new branch called feature/dark-mode",
+   "accept": [
+    "branch"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "branch",
+   "kev_top": "branch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-261",
+   "q": "can u spin up a branch named hotfix-login for me",
+   "accept": [
+    "branch",
+    "checkout"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "branch",
+   "kev_top": "branch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-262",
+   "q": "i need a fresh branch called experiment-cache pls",
+   "accept": [
+    "branch"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "branch",
+   "kev_top": "branch",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-263",
+   "q": "switch me to the develop branch",
+   "accept": [
+    "checkout"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "checkout",
+   "kev_top": "checkout",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-264",
+   "q": "hop over to main pls",
+   "accept": [
+    "checkout"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "checkout",
+   "kev_top": "checkout",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-265",
+   "q": "can u move me onto release-2.1",
+   "accept": [
+    "checkout"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "checkout",
+   "kev_top": "checkout",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-266",
+   "q": "grab the latest from the remote and merge it in",
+   "accept": [
+    "pull"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "pull",
+   "kev_top": "pull",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-267",
+   "q": "pull pls",
+   "accept": [
+    "pull"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "pull",
+   "kev_top": "pull",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-268",
+   "q": "my teammate pushed stuff, can u get it into my branch",
+   "accept": [
+    "pull"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-269",
+   "q": "my feature branch is stale, bring main into it",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "sync",
+   "kev_top": "sync",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-270",
+   "q": "update this branch with whatever's new on main",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "casual",
+   "outcome": "instant-right",
+   "op": "sync",
+   "kev_top": null,
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-271",
+   "q": "how do i catch my branch up to main again",
+   "accept": [
+    "sync"
+   ],
+   "situation": "feature",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "sync",
+   "kev_top": "sync",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-272",
+   "q": "ugh i messed up, take back my last commit",
+   "accept": [
+    "undo",
+    "discard_local",
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "undo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-273",
+   "q": "undo that pls",
+   "accept": [
+    "undo",
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "undo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-274",
+   "q": "oops committed too early, how do i roll that back",
+   "accept": [
+    "undo",
+    "discard_local",
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "undo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-275",
+   "q": "typo in my last commit message, can u fix it to 'add user avatar'",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-276",
+   "q": "forgot a file in my last commit, add it in without making a new one",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-277",
+   "q": "change the message of my most recent commit pls",
+   "accept": [
+    "amend"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "amend",
+   "kev_top": "amend",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-278",
+   "q": "squish my last 3 commits into one",
+   "accept": [
+    "squash"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "squash",
+   "kev_top": "squash",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-279",
+   "q": "too many tiny wip commits lol, combine the last 5",
+   "accept": [
+    "squash"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "squash",
+   "kev_top": "squash",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-280",
+   "q": "that commit 4c5d6e7 broke prod, make a new commit that reverses it",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-281",
+   "q": "reverse commit abc1234 but keep the history, its already pushed",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "revert",
+   "kev_top": "revert",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-282",
+   "q": "can u cancel out the effects of commit 7a8b9c0 w a new commit",
+   "accept": [
+    "revert"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "undo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-283",
+   "q": "oops i staged the wrong files, pull them out of staging",
+   "accept": [
+    "unstage"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "unstage",
+   "kev_top": "unstage",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-284",
+   "q": "unstage config.json pls but dont lose my edits",
+   "accept": [
+    "unstage"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "unstage",
+   "kev_top": "unstage",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-285",
+   "q": "how do i un-add stuff i git added by mistake",
+   "accept": [
+    "unstage"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "unstage",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-286",
+   "q": "stash my changes real quick",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "stash",
+   "kev_top": "stash",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-287",
+   "q": "boss needs a hotfix, can u shelve what im working on for now",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "stash",
+   "kev_top": "stash",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-288",
+   "q": "put my uncommitted stuff aside so i have a clean tree",
+   "accept": [
+    "stash"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "stash",
+   "kev_top": "stash",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-289",
+   "q": "nuke all my uncommitted changes, i wanna start fresh",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-290",
+   "q": "ugh everything i did today is garbage, wipe the working dir back to clean",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-291",
+   "q": "throw away my modified and untracked files pls",
+   "accept": [
+    "cleanup"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "cleanup",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-292",
+   "q": "my local commits are trash, reset to whatever origin has",
+   "accept": [
+    "discard_local"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "discard_local",
+   "kev_top": "discard_local",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-293",
+   "q": "get rid of the commits i havent pushed and match the remote",
+   "accept": [
+    "discard_local"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "discard_local",
+   "kev_top": "discard_local",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-294",
+   "q": "ngl my branch is a mess, make it exactly like origin again",
+   "accept": [
+    "discard_local"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "discard_local",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-295",
+   "q": "force push my branch, i rewrote history",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "force_push",
+   "kev_top": "force_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-296",
+   "q": "overwrite the remote with my local version pls",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "force_push",
+   "kev_top": "force_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-297",
+   "q": "push got rejected after my squash, just force it up",
+   "accept": [
+    "force_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "force_push",
+   "kev_top": "force_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-298",
+   "q": "start a git repo in this folder",
+   "accept": [
+    "init"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "init",
+   "kev_top": "init",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-299",
+   "q": "i havent set up git here yet, do the initial setup pls",
+   "accept": [
+    "init"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "init",
+   "kev_top": "init",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-300",
+   "q": "hook this up to https://github.com/acme/widgets.git as origin",
+   "accept": [
+    "add_remote"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "add_remote",
+   "kev_top": "add_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-301",
+   "q": "point origin to https://gitlab.com/me/app.git pls",
+   "accept": [
+    "add_remote"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "add_remote",
+   "kev_top": "add_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-302",
+   "q": "i deleted a branch by accident, can u find my lost commits",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-303",
+   "q": "omg i lost my work after a bad reset, bring it back",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "find_lost_work",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-304",
+   "q": "any way to recover commits that vanished?",
+   "accept": [
+    "find_lost_work"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "find_lost_work",
+   "kev_top": "find_lost_work",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-305",
+   "q": "what remotes do i have set up",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "remotes",
+   "kev_top": "remotes",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-306",
+   "q": "where does this repo push to? list the remotes",
+   "accept": [
+    "remotes"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "remotes",
+   "kev_top": "remotes",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-307",
+   "q": "ok hotfix is done, restore my shelved changes",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "stash_pop",
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-308",
+   "q": "pop my stash pls",
+   "accept": [
+    "stash_pop"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "stash_pop",
+   "kev_top": "stash_pop",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-309",
+   "q": "pull but rebase my commits on top instead of merging",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-310",
+   "q": "get the remote's new commits and replay mine after them, no merge bubble pls",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-311",
+   "q": "can u do a rebase pull, i hate merge commits",
+   "accept": [
+    "pull_rebase"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "pull_rebase",
+   "kev_top": "pull_rebase",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-312",
+   "q": "make my branch track origin/feature-x",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-313",
+   "q": "git says no upstream branch, set it to origin pls",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-314",
+   "q": "link this branch to its remote counterpart so push works",
+   "accept": [
+    "set_upstream"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "set_upstream",
+   "kev_top": "set_upstream",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-315",
+   "q": "remove origin from this repo pls",
+   "accept": [
+    "remove_remote"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "remove_remote",
+   "kev_top": "remove_remote",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-316",
+   "q": "i dont want the old-fork remote anymore, delete it",
+   "accept": [
+    "remove_remote"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "remove_remote",
+   "kev_top": "remove_remote",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-317",
+   "q": "delete the git repo here but keep my files",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "delete_repo",
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-318",
+   "q": "i wanna un-git this folder, remove the .git dir",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "delete_repo",
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-319",
+   "q": "ugh strip git history from this project, just leave the files",
+   "accept": [
+    "delete_repo"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "delete_repo",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-320",
+   "q": "commit everything w 'fix typo' and push it",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "commit_push",
+   "kev_top": "commit_push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-321",
+   "q": "can u just save and upload all my changes, msg is 'add tests'",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "scoped_push",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-322",
+   "q": "ship it all: stage, commit 'update footer', push",
+   "accept": [
+    "commit_push"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "commit_push",
+   "kev_top": "commit_push",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-323",
+   "q": "ok conflicts are fixed, keep the rebase going",
+   "accept": [
+    "rebase_continue"
+   ],
+   "situation": "rebase",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "rebase_continue",
+   "kev_top": "rebase_continue",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-324",
+   "q": "resolved everything, can u continue the rebase",
+   "accept": [
+    "rebase_continue"
+   ],
+   "situation": "rebase",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "rebase_continue",
+   "kev_top": "rebase_continue",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-325",
+   "q": "skip this commit in the rebase, i dont need it",
+   "accept": [
+    "rebase_skip"
+   ],
+   "situation": "rebase",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "rebase_skip",
+   "kev_top": "rebase_skip",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-326",
+   "q": "ugh just skip the one thats conflicting and move on",
+   "accept": [
+    "rebase_skip"
+   ],
+   "situation": "rebase",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "rebase_skip",
+   "kev_top": "rebase_skip",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-327",
+   "q": "nope abort the rebase, put my branch back how it was",
+   "accept": [
+    "rebase_abort"
+   ],
+   "situation": "rebase",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "rebase_abort",
+   "kev_top": "rebase_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-328",
+   "q": "this rebase is a nightmare, cancel it pls",
+   "accept": [
+    "rebase_abort"
+   ],
+   "situation": "rebase",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "rebase_abort",
+   "kev_top": "rebase_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-329",
+   "q": "merge is a mess, bail out and go back to before",
+   "accept": [
+    "merge_abort"
+   ],
+   "situation": "merge",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "merge_abort",
+   "kev_top": "merge_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-330",
+   "q": "cancel this merge pls, too many conflicts",
+   "accept": [
+    "merge_abort"
+   ],
+   "situation": "merge",
+   "persona": "casual",
+   "outcome": "acted-right",
+   "op": "merge_abort",
+   "kev_top": "merge_abort",
+   "exit": 0,
+   "output": ""
+  },
+  {
+   "id": "V3-331",
+   "q": "what should i get for lunch",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "refused-right",
+   "op": "__reject__",
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-332",
+   "q": "play some lofi beats",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "refused-right",
+   "op": "__reject__",
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-333",
+   "q": "write an email to my manager saying im out sick tmrw",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "refused-right",
+   "op": "__reject__",
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-334",
+   "q": "my css is broken, the button wont center, fix it",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-335",
+   "q": "i stash snacks in my desk drawer, what snacks are healthy",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-336",
+   "q": "wanna branch out and learn rust, any good beginner books?",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "refused-right",
+   "op": "__reject__",
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-337",
+   "q": "how do i commit to a gym routine lol",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "asked",
+   "op": null,
+   "kev_top": "add_commit",
+   "exit": 1,
+   "output": ""
+  },
+  {
+   "id": "V3-338",
+   "q": "whats the weather like in pune rn",
+   "accept": [
+    "__reject__"
+   ],
+   "situation": "normal",
+   "persona": "casual",
+   "outcome": "refused-right",
+   "op": "__reject__",
+   "kev_top": "__reject__",
+   "exit": 1,
+   "output": ""
+  }
+ ],
+ "n": 338,
+ "tally": {
+  "acted-right": 265,
+  "acted+arg-asked-WRONG (changes something)": 1,
+  "asked": 54,
+  "instant-right": 7,
+  "refused-right": 9,
+  "acted-WRONG (read-only)": 1,
+  "acted+arg-asked-right": 1
+ },
+ "right": 282,
+ "asked": 54,
+ "arg_asked": 2,
+ "wrong_changes_something": 1,
+ "seconds": 821
+}

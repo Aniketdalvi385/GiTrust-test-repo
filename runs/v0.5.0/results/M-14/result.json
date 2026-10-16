@@ -1,0 +1,78 @@
+{
+ "id": "M-14",
+ "title": "Switching away would strand a commit → guard",
+ "part": "3 · Stuck states",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 15:58",
+ "checks": [
+  {
+   "name": "the detached commit is on a branch",
+   "ok": true,
+   "detail": "saved-work"
+  },
+  {
+   "name": "saved-work holds the detached commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "on main afterwards (the request was 'checkout main')",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no 'your request runs on' the branch it leaves",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen says 'then you switch to main'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "rescue menu is numbered",
+   "ok": true,
+   "detail": "> [1] Create a branch here to keep this work  — keeps this commit; then you switch to main"
+  },
+  {
+   "name": "rescue menu has no Cancel row",
+   "ok": true,
+   "detail": "> [1] Create a branch here to keep this work  — keeps this commit; then you switch to main"
+  },
+  {
+   "name": "rescue offers 'Create a branch here to keep this work'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "the plan shows the new branch 'saved-work'",
+   "ok": true,
+   "detail": "Plan  · 2 steps · snapshot taken at 70a6ff8\n\n  ●  branch    saved-work  ⚠\n  │\n  ●  checkout  main  ⚠\n\n\n  [Enter] run · [q] cancel"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "checkout main"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 2.4,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "detached": "70a6ff8e20cd8898329810552a3830b57df12474"
+ }
+}

@@ -1,0 +1,126 @@
+######## run 1: gitrust "fix the last commit message to 'typo message fixed'"  [pty, model up]  exit=0  1.9s
+
+--- model: routed or asked ---
+⚡  Reword the last commit
+  Heads up: the target commit is already published. Amending/squashing it rewrites shared history.
+
+Plan  · 2 steps · snapshot taken at 3899e54
+
+  ●  amend     "typo message fixed"  ⚠
+  │
+  ●  force push → origin/main (with-lease)  ⛔
+
+  Warnings:
+    · This rewrites a commit that's already on the remote — completing it needs a force push (with lease).
+
+
+  ⛔ Irreversible: Replaces the remote branch with your local version, overwriting whatever is
+                   there.
+     Risks:    Anyone who fetched the old version will need to reset. Their commits made on top are
+               abandoned.
+     Recovery: Recovery exists only if someone has the old SHA: `git reflog` finds it locally;
+               otherwise it's gone.
+     Safety:   Uses --force-with-lease — refuses if the remote moved since your last fetch (catches
+               accidental teammate overwrites).
+
+? This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm
+the rewrite + force-push (with lease): main
+[Type it exactly, then Enter · q or Esc cancels]
+
+--- confirmation at the plan ---
+⚡  Reword the last commit
+  Heads up: the target commit is already published. Amending/squashing it rewrites shared history.
+
+Plan  · 2 steps · snapshot taken at 3899e54
+
+  ●  amend     "typo message fixed"  ⚠
+  │
+  ●  force push → origin/main (with-lease)  ⛔
+
+  Warnings:
+    · This rewrites a commit that's already on the remote — completing it needs a force push (with lease).
+
+
+  ⛔ Irreversible: Replaces the remote branch with your local version, overwriting whatever is
+                   there.
+     Risks:    Anyone who fetched the old version will need to reset. Their commits made on top are
+               abandoned.
+     Recovery: Recovery exists only if someone has the old SHA: `git reflog` finds it locally;
+               otherwise it's gone.
+     Safety:   Uses --force-with-lease — refuses if the remote moved since your last fetch (catches
+               accidental teammate overwrites).
+
+? This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm
+the rewrite + force-push (with lease): main
+[Type it exactly, then Enter · q or Esc cancels]
+
+--- v0.4 flow: the plan asked again ---
+⚡  Reword the last commit
+  Heads up: the target commit is already published. Amending/squashing it rewrites shared history.
+
+Plan  · 2 steps · snapshot taken at 3899e54
+
+  ●  amend     "typo message fixed"  ⚠
+  │
+  ●  force push → origin/main (with-lease)  ⛔
+
+  Warnings:
+    · This rewrites a commit that's already on the remote — completing it needs a force push (with lease).
+
+
+  ⛔ Irreversible: Replaces the remote branch with your local version, overwriting whatever is
+                   there.
+     Risks:    Anyone who fetched the old version will need to reset. Their commits made on top are
+               abandoned.
+     Recovery: Recovery exists only if someone has the old SHA: `git reflog` finds it locally;
+               otherwise it's gone.
+     Safety:   Uses --force-with-lease — refuses if the remote moved since your last fetch (catches
+               accidental teammate overwrites).
+
+> This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm
+the rewrite + force-push (with lease): main
+  ✓  amend     "typo message fixed"
+  │  → Amended the last commit
+  │
+  ○  force push → origin/main (with-lease)
+  ✓  force push → origin/main (with-lease)
+  │  → Force-pushed to origin/main (with-lease)
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+
+--- final ---
+⚡  Reword the last commit
+  Heads up: the target commit is already published. Amending/squashing it rewrites shared history.
+
+Plan  · 2 steps · snapshot taken at 3899e54
+
+  ●  amend     "typo message fixed"  ⚠
+  │
+  ●  force push → origin/main (with-lease)  ⛔
+
+  Warnings:
+    · This rewrites a commit that's already on the remote — completing it needs a force push (with lease).
+
+
+  ⛔ Irreversible: Replaces the remote branch with your local version, overwriting whatever is
+                   there.
+     Risks:    Anyone who fetched the old version will need to reset. Their commits made on top are
+               abandoned.
+     Recovery: Recovery exists only if someone has the old SHA: `git reflog` finds it locally;
+               otherwise it's gone.
+     Safety:   Uses --force-with-lease — refuses if the remote moved since your last fetch (catches
+               accidental teammate overwrites).
+
+> This rewrites a commit that's already on the remote — pushing it needs a force push. Type 'main' to confirm
+the rewrite + force-push (with lease): main
+  ✓  amend     "typo message fixed"
+  │  → Amended the last commit
+  │
+  ○  force push → origin/main (with-lease)
+  ✓  force push → origin/main (with-lease)
+  │  → Force-pushed to origin/main (with-lease)
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+

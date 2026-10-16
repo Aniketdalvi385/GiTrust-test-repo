@@ -1,0 +1,116 @@
+######## run 1: gitrust "commit this with message 'detached work'"  [pty, model up]  exit=0  4.7s
+
+--- model: routed or asked ---
+✦  Commit everything · 1.3s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 71b41de — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+? What would you like to do?
+> [1] Create a branch here to keep this work  — your request then runs on it
+  [2] Switch to main and leave this commit  — your request is not carried out
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- rescue choice ---
+✦  Commit everything · 1.3s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 71b41de — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+? What would you like to do?
+> [1] Create a branch here to keep this work  — your request then runs on it
+  [2] Switch to main and leave this commit  — your request is not carried out
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- branch name ---
+✦  Commit everything · 1.3s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 71b41de — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+? New branch name: rescue-work
+[Enter to continue · Esc to cancel]
+
+--- message (pre-filled) ---
+✦  Commit everything · 1.3s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 71b41de — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+> New branch name: rescued
+  ↳ Your request runs on a new branch "rescued" — created when you confirm the plan.
+? Commit message (edit or accept): detached work
+[Enter to continue · Esc to cancel]
+
+--- plan ---
+✦  Commit everything · 1.3s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 71b41de — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+> New branch name: rescued
+  ↳ Your request runs on a new branch "rescued" — created when you confirm the plan.
+> Commit message (edit or accept): detached work
+
+Plan  · 4 steps · snapshot taken at 71b41de
+
+  ●  branch    rescued  ⚠
+  │
+  ●  checkout  rescued  ⚠
+  │
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "detached work"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- final ---
+✦  Commit everything · 1.3s
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit 71b41de — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+> New branch name: rescued
+  ↳ Your request runs on a new branch "rescued" — created when you confirm the plan.
+> Commit message (edit or accept): detached work
+
+Plan  · 4 steps · snapshot taken at 71b41de
+
+  ●  branch    rescued  ⚠
+  │
+  ●  checkout  rescued  ⚠
+  │
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "detached work"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+  ✓  branch    rescued
+  │  → Created branch rescued
+  │
+  ✓  checkout  rescued
+  │  → Switched to rescued
+  │
+  ✓  stage     all modified files
+  │  → Staged all changes
+  │
+  ✓  commit    "detached work"
+  │  → Committed: detached work (71b41de→f0782e4)
+
+  ✓ Done · 1 commit on rescued
+  Next: gitrust "status" · changed your mind? gitrust "undo"
+

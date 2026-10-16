@@ -1,0 +1,69 @@
+######## run 1: gitrust 'push'  [pty, model up]  exit=1  1.7s
+
+--- waited for 'Esc cancel' ---
+⚡  Push to origin
+Fetching origin… ✓
+? Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge?
+> [1] Rebase  — your commit goes on top of theirs; best if it's only yours
+  [2] Merge  — adds a merge commit; safer if others have your commits
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- waited for '[Enter] run' ---
+⚡  Push to origin
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 2 steps · snapshot taken at b6f89fe
+
+  ●  rebase    onto origin/main  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [s] don't push · [q] cancel
+
+--- final ---
+⚡  Push to origin
+Fetching origin… ✓
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 2 steps · snapshot taken at b6f89fe
+
+  ●  rebase    onto origin/main  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [s] don't push · [q] cancel
+  ✗  rebase    onto origin/main
+✗  Paused on conflicts in app.txt — nothing is lost. Resolve it, then `gitrust "continue rebase"`, or `gitrust
+ "abort rebase"` to return to where you started.
+   The push didn't run — once it's finished, gitrust "push" sends it.
+
+######## run 2: gitrust 'continue rebase'  [pty, model up]  exit=0  0.8s
+
+--- waited for '[Enter] run' ---
+⚡  Continue the rebase
+
+Plan  · 1 step · snapshot taken at cfeb836
+
+  ●  rebase    continue  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Continue the rebase
+
+Plan  · 1 step · snapshot taken at cfeb836
+
+  ●  rebase    continue  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  rebase    continue
+  │  → Rebase continued
+
+  ✓ Done · on main, ↑1 ↓0
+  Next: gitrust "push"
+

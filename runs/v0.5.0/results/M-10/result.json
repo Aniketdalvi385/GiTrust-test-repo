@@ -1,0 +1,66 @@
+{
+ "id": "M-10",
+ "title": "Sync feature with main",
+ "part": "2 · Divergence",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 15:58",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "feature contains main's commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no bare --force",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no 're-run and confirm' note (F17)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Successfully rebased'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Enumerating objects'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Removing'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "sync with main"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 2.2,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

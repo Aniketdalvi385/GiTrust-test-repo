@@ -1,0 +1,91 @@
+######## run 1: gitrust 'commit everything'  [pty, model up]  exit=1  2.9s
+
+--- rescue choice ---
+⚡  Commit everything
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit d03a807 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+? What would you like to do?
+> [1] Create a branch here to keep this work  — your request then runs on it
+  [2] Switch to main and leave this commit  — your request is not carried out
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+
+--- branch name ---
+⚡  Commit everything
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit d03a807 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+? New branch name: rescue-work
+[Enter to continue · Esc to cancel]
+
+--- commit message ---
+⚡  Commit everything
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit d03a807 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+> New branch name: kept-work
+  ↳ Your request runs on a new branch "kept-work" — created when you confirm the plan.
+? Commit message:
+[Enter to continue · Esc to cancel]
+
+--- q at the plan ---
+⚡  Commit everything
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit d03a807 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+> New branch name: kept-work
+  ↳ Your request runs on a new branch "kept-work" — created when you confirm the plan.
+> Commit message: detached work
+
+Plan  · 4 steps · snapshot taken at d03a807
+
+  ●  branch    kept-work  ⚠
+  │
+  ●  checkout  kept-work  ⚠
+  │
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "detached work"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+
+--- final ---
+⚡  Commit everything
+
+⚠  You are in DETACHED HEAD state.
+   Currently at commit d03a807 — not on any branch.
+   Any commit you make here will be orphaned (lose-able) unless you save it.
+
+> What would you like to do? Create a branch here to keep this work
+> New branch name: kept-work
+  ↳ Your request runs on a new branch "kept-work" — created when you confirm the plan.
+> Commit message: detached work
+
+Plan  · 4 steps · snapshot taken at d03a807
+
+  ●  branch    kept-work  ⚠
+  │
+  ●  checkout  kept-work  ⚠
+  │
+  ●  stage     all modified files
+  │     + app.txt
+  │
+  ●  commit    "detached work"  ⚠
+
+
+  [Enter] run · [e] edit message · [q] cancel
+↪  Canceled — nothing was done.
+

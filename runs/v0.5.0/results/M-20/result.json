@@ -1,0 +1,76 @@
+{
+ "id": "M-20",
+ "title": "Fix a pushed commit's message: escalate + lease",
+ "part": "4 · Undo",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "message fixed on the remote",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "remote == local",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "screen never shows '--force '",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "typed confirmation asked at the plan (the plan is above it)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "nothing asks again after the typed value",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Successfully rebased'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Enumerating objects'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Removing'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "fix the last commit message to 'typo message fixed'"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 1.9,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

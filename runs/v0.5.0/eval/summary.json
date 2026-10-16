@@ -1,0 +1,53 @@
+{
+ "model": "AniketDalvi385/gitrust-kev-0.8b@v2",
+ "temperature": 4.0,
+ "binary": "/Users/aniket.dalvi/Desktop/personal/Glit/gitrust/target/release/gitrust",
+ "sets": {
+  "v1_44": {
+   "n": 44,
+   "tally": {
+    "instant-right": 23,
+    "acted-right": 12,
+    "acted+arg-asked-right": 1,
+    "asked": 4,
+    "other": 1,
+    "refused-right": 3
+   },
+   "right": 39,
+   "asked": 4,
+   "arg_asked": 1,
+   "wrong_changes_something": 0,
+   "seconds": 107
+  },
+  "v2_owner_68": {
+   "n": 68,
+   "tally": {
+    "asked": 12,
+    "acted-right": 44,
+    "instant-right": 12
+   },
+   "right": 56,
+   "asked": 12,
+   "arg_asked": 0,
+   "wrong_changes_something": 0,
+   "seconds": 218
+  },
+  "v3_blind": {
+   "n": 338,
+   "tally": {
+    "acted-right": 265,
+    "acted+arg-asked-WRONG (changes something)": 1,
+    "asked": 54,
+    "instant-right": 7,
+    "refused-right": 9,
+    "acted-WRONG (read-only)": 1,
+    "acted+arg-asked-right": 1
+   },
+   "right": 282,
+   "asked": 54,
+   "arg_asked": 2,
+   "wrong_changes_something": 1,
+   "seconds": 821
+  }
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "id": "M-22",
+ "title": "Revert succeeds despite the same hook",
+ "part": "5 · Hooks",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 11:25",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "one new (revert) commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "other.txt gone",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no separate (Y/n) question — just the plan (F9)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "the plan names the commit's subject",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Successfully rebased'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Enumerating objects'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Removing'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'delete mode'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "revert last commit"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 0.9,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "count": "2"
+ }
+}

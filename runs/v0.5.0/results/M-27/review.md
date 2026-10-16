@@ -1,0 +1,7 @@
+Verdict: PASS-WITH-NOTES
+Summary: After the typed word, one plain refusal under the step (couldn't back up, nothing deleted, check ~/.gitrust/trash); file kept, exit 1. The plan shares M-26's internal words.
+
+- Right: one-row menu "[1] Delete 1 untracked file", the ⛔ plan, "? Type 'delete' to delete 1 untracked file:" in place of Enter, then "✗  delete    untracked files" / "│  Couldn't back up your files first, so nothing was deleted. Check that ~/.gitrust/trash is writable." — once, a ~ path, no "caused by:", nothing repeated at the end. keep-me.txt still there; exit 1.
+- Copy (same block as M-26): "only GiTrust's trash-net backup", "The gate spells out counts before anything is removed", "(fail-closed)" and "the retention window" are internal words; "⛔ Irreversible" sits above "Everything deleted is copied to ~/.gitrust/trash/ first"; "changes to tracked files, untracked files, or both" when only one untracked file was on offer.
+- Copy: the first line "⚡  Discard uncommitted changes" names something not on offer — there are no tracked changes and the only row is "Delete 1 untracked file".
+- v0.4.1 notes: fail-closed (nothing deleted, file kept, exit 1) — still. "Failed to create trash dir /var/folders/…" + "caused by: Permission denied (os error 13)" — fixed (one plain line, no chain). Printed twice with a long absolute path — fixed (once, "~/.gitrust/trash"). Never said "nothing was deleted" or what to do — fixed (the line is the suggested copy word for word).

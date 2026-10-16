@@ -1,0 +1,59 @@
+{
+ "id": "M-44",
+ "title": "'Pull the latest from origin into this branch' is a pull",
+ "part": "2 · Divergence",
+ "mode": "auto",
+ "flagship": false,
+ "needs_model": true,
+ "since": "v0.5",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 16:00",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "still on feature",
+   "ok": true,
+   "detail": "feature"
+  },
+  {
+   "name": "feature has origin/feature's new commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "feature does NOT contain main's new commit",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "not routed to 'Update from main'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "pull the latest from origin into this branch"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 10.4,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "theirs": "449e2e375b56f42deffbfc80ae0443dacdc15a03",
+  "main": "35213d6efe710f238ea5bda34ca5a242a983a37f"
+ }
+}

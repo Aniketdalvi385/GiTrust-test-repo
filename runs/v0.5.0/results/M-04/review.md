@@ -1,0 +1,7 @@
+Verdict: PASS-WITH-NOTES
+Summary: Topic survives the quoted message: login files pre-selected, 'login page' offered, only they pushed; push line drawn twice.
+
+- F5 fixed: for "push the login changes with message 'login page'" the picker still pre-selects by topic — "[x] login.txt       +1        new · name matches “login”", "[x] auth_login.txt …", "[ ] readme.txt      +1        new · might be part of “login” — your call" — and the quote arrives as "? Commit message (edit or accept): login page" (the user's own words).
+- Honest plan, one confirmation: "●  stage     login.txt, auth_login.txt", "●  commit    "login page"  ⚠", "●  push      → origin/main  ⚠", "[Enter] run · [e] edit message · [s] don't push · [q] cancel". Only the two login files reached origin; readme.txt stays untracked.
+- Polish (new since v0.4.1): the push step is drawn twice — "○  push      → origin/main" stays directly above "✓  push      → origin/main" (the running line is ended early in case git asks for credentials, so the result can't replace it); without a prompt it reads as a duplicate. Also "Pushed 1 commit(s) to origin/main".
+- v0.4.1 notes: picker pre-selection and reasons — unchanged and right. Empty-message rejection — not exercised (message pre-filled from the quote). Undo hint — still "changed your mind? gitrust "undo" (reverts it — it's pushed)". "First line is ⚡ for an interpreted phrase" — still "⚡  Push only the “login” changes"; the scoped-push rule is deterministic, so ⚡ is correct.

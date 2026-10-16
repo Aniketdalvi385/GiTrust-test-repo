@@ -1,0 +1,55 @@
+######## run 1: gitrust 'squash the last 3 commits'  [pty, model up]  exit=0  2.1s
+
+--- model: routed or asked ---
+⚡  Squash the last 3 commits
+  The 3 commits being combined, newest first:
+    · commit 3
+    · commit 2
+    · commit 1
+? Squashed commit message (3 commits):
+[Enter to continue · Esc to cancel]
+
+--- message ---
+⚡  Squash the last 3 commits
+  The 3 commits being combined, newest first:
+    · commit 3
+    · commit 2
+    · commit 1
+? Squashed commit message (3 commits):
+[Enter to continue · Esc to cancel]
+
+--- waited for '[Enter] run' ---
+⚡  Squash the last 3 commits
+  The 3 commits being combined, newest first:
+    · commit 3
+    · commit 2
+    · commit 1
+> Squashed commit message (3 commits): three in one
+
+Plan  · 1 step · snapshot taken at 044a6fe
+
+  ●  squash    last 3 → "three in one"  ⚠
+
+
+  [Enter] run · [q] cancel
+
+--- final ---
+⚡  Squash the last 3 commits
+  The 3 commits being combined, newest first:
+    · commit 3
+    · commit 2
+    · commit 1
+> Squashed commit message (3 commits): three in one
+
+Plan  · 1 step · snapshot taken at 044a6fe
+
+  ●  squash    last 3 → "three in one"  ⚠
+
+
+  [Enter] run · [q] cancel
+  ✓  squash    last 3 → "three in one"
+  │  → Squashed the last 3 commits into one
+
+  ✓ Done · on main, ↑1 ↓0
+  Next: gitrust "status"
+
