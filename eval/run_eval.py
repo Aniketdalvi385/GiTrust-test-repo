@@ -2,8 +2,10 @@
 """Whole-system eval: what does GiTrust DO with each request?
 
 Every request runs as `gitrust --yes "<request>"` in a fresh throwaway repo (a bare
-remote, a pushed main, two edited files — the realistic "dirty" state; or a repo
-stopped mid-rebase / mid-merge for in-progress cases), with GITRUST_DEBUG=1 so the
+remote, a pushed main, two edited files — the realistic "dirty" state; the same on a
+pushed `feature` branch that main has moved past, for requests that bring main into
+"my branch" (situation "feature", from v0.5.0); or a repo stopped mid-rebase /
+mid-merge for in-progress cases), with GITRUST_DEBUG=1 so the
 model's ranking is printed. All deterministic layers are included: exact phrases,
 learned phrases (none here), Kev's confidence bars, the request-words cross-check,
 the reversed-order re-ask for destructive operations, the "not Git" bar.
@@ -54,7 +56,7 @@ TITLES = [("Show status", "status"), ("Show history", "log"), ("Show changes", "
           ("Pull with rebase", "pull_rebase"), ("Force push", "force_push"),
           ("Reset to the remote", "discard_local"), ("Abort the merge", "merge_abort"),
           ("Continue the rebase", "rebase_continue"), ("Skip this commit", "rebase_skip"),
-          ("Abort the rebase", "rebase_abort"), ("Update from main", "sync")]
+          ("Abort the rebase", "rebase_abort"), ("Update from ", "sync")]
 
 
 def git(cwd, *a, check=True):
@@ -81,6 +83,17 @@ def repo(base, env, situation):
     for args in (["add", "."], ["commit", "-qm", "initial"], ["push", "-q", "-u", "origin", "main"],
                  ["commit", "-q", "--allow-empty", "-m", "second"]):
         subprocess.run(["git", *args], cwd=work, env=env, check=True, capture_output=True)
+    if situation == "feature":
+        # On a pushed feature branch that main has moved past. "Sync with main" on
+        # main itself has nothing to bring in, and v0.5.0 reads the real branches.
+        for args in (["checkout", "-q", "-b", "feature"], ["push", "-q", "-u", "origin", "feature"],
+                     ["checkout", "-q", "main"]):
+            subprocess.run(["git", *args], cwd=work, env=env, check=True, capture_output=True)
+        open(os.path.join(work, "README.md"), "a").write("main moves on\n")
+        for args in (["commit", "-qam", "main moves on"], ["push", "-q", "origin", "main"],
+                     ["checkout", "-q", "feature"]):
+            subprocess.run(["git", *args], cwd=work, env=env, check=True, capture_output=True)
+        situation = "normal"
     if situation == "normal":
         for f in ("api_client.py", "login.py"):
             open(os.path.join(work, f), "a").write("edit\n")

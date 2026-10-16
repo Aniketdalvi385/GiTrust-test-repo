@@ -1,5 +1,5 @@
 {
- "about": "The 44-case set from the 2026-08 classifier research (author-labelled; strict single label). Copied from Glit/docs/classifier_eval/eval_set.json.",
+ "about": "The 44-case set from the 2026-08 classifier research (author-labelled; strict single label). Copied from Glit/docs/classifier_eval/eval_set.json. From v0.5.0 the requests that bring main into \"my branch\" run on a feature branch main has moved past (situation \"feature\"): V1-08, V1-09, V1-10. Their words presuppose one; v0.4.1 is re-scored on the same fixture.",
  "cases": [
   {
    "id": "V1-01",
@@ -63,7 +63,8 @@
    "accept": [
     "sync"
    ],
-   "bucket": "variant-M10"
+   "bucket": "variant-M10",
+   "situation": "feature"
   },
   {
    "id": "V1-09",
@@ -71,7 +72,8 @@
    "accept": [
     "sync"
    ],
-   "bucket": "variant-M10"
+   "bucket": "variant-M10",
+   "situation": "feature"
   },
   {
    "id": "V1-10",
@@ -79,7 +81,8 @@
    "accept": [
     "sync"
    ],
-   "bucket": "variant-M10"
+   "bucket": "variant-M10",
+   "situation": "feature"
   },
   {
    "id": "V1-11",

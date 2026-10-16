@@ -1,5 +1,5 @@
 {
- "about": "Blind set written 2026-10-15 by three persona agents (newcomer / senior / casual) that saw only plain-English operation descriptions — never GiTrust's training data or earlier eval sets. 369 written; 31 removed as near-duplicates (exact or word-Jaccard >= 0.6) of training/dev/eval phrasings; 338 kept. An independent annotator labelled every request blind: same best label on 338/338; 'accept' = the writer's label plus either annotator's harmless alternatives. Never to be trained on.",
+ "about": "Blind set written 2026-10-15 by three persona agents (newcomer / senior / casual) that saw only plain-English operation descriptions — never GiTrust's training data or earlier eval sets. 369 written; 31 removed as near-duplicates (exact or word-Jaccard >= 0.6) of training/dev/eval phrasings; 338 kept. An independent annotator labelled every request blind: same best label on 338/338; 'accept' = the writer's label plus either annotator's harmless alternatives. Never to be trained on. From v0.5.0 the requests that bring main into \"my branch\" run on a feature branch main has moved past (situation \"feature\"): V3-041, V3-042, V3-043, V3-155, V3-156, V3-157, V3-269, V3-270, V3-271. Their words presuppose one; v0.4.1 is re-scored on the same fixture.",
  "cases": [
   {
    "id": "V3-001",
@@ -410,7 +410,7 @@
     "sync"
    ],
    "persona": "newcomer",
-   "situation": "normal",
+   "situation": "feature",
    "ambiguous": false
   },
   {
@@ -420,7 +420,7 @@
     "sync"
    ],
    "persona": "newcomer",
-   "situation": "normal",
+   "situation": "feature",
    "ambiguous": false
   },
   {
@@ -430,7 +430,7 @@
     "sync"
    ],
    "persona": "newcomer",
-   "situation": "normal",
+   "situation": "feature",
    "ambiguous": false
   },
   {
@@ -1551,7 +1551,7 @@
     "sync"
    ],
    "persona": "senior",
-   "situation": "normal",
+   "situation": "feature",
    "ambiguous": false
   },
   {
@@ -1561,7 +1561,7 @@
     "sync"
    ],
    "persona": "senior",
-   "situation": "normal",
+   "situation": "feature",
    "ambiguous": false
   },
   {
@@ -1571,7 +1571,7 @@
     "sync"
    ],
    "persona": "senior",
-   "situation": "normal",
+   "situation": "feature",
    "ambiguous": false
   },
   {
@@ -2695,7 +2695,7 @@
     "sync"
    ],
    "persona": "casual",
-   "situation": "normal",
+   "situation": "feature",
    "ambiguous": false
   },
   {
@@ -2705,7 +2705,7 @@
     "sync"
    ],
    "persona": "casual",
-   "situation": "normal",
+   "situation": "feature",
    "ambiguous": false
   },
   {
@@ -2715,7 +2715,7 @@
     "sync"
    ],
    "persona": "casual",
-   "situation": "normal",
+   "situation": "feature",
    "ambiguous": false
   },
   {
