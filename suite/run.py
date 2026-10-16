@@ -2,14 +2,17 @@
 """Run the GiTrust acceptance suite. See gitrust_suite.py for what each mode does.
 
   python3 suite/run.py list
-  uv run --with pyte python suite/run.py auto 0.4.1 [ids…]
-  python3 suite/run.py manual 0.4.1 <id>
+  uv run --with pyte python suite/run.py auto 0.5.0 [ids…]
+  python3 suite/run.py manual 0.5.0 <id>
+
+The tests (suite/tests.py) are the expectations of the release under test; older
+releases' expectations are in git history (suite/README.md, "Versions").
 """
 import json, os, sys, traceback
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gitrust_suite as gs  # noqa: E402
-from tests_v04 import TESTS  # noqa: E402
+from tests import TESTS  # noqa: E402
 
 
 def select(ids):
@@ -35,7 +38,9 @@ def preflight(tests, version):
         print(f"model   {info}")
         if "error" in info:
             print("  !  no Kev server on :8009 — model tests will fail. Start one first.")
-    env = {"binary": gs.BIN, "binary_version": bv, "kev": gs.kev_info()}
+    sc = gs.suite_commit()
+    print(f"suite   {sc}")
+    env = {"binary": gs.BIN, "binary_version": bv, "kev": gs.kev_info(), "suite_commit": sc}
     json.dump(env, open(os.path.join(run_dir, "environment.json"), "w"), indent=1)
     return run_dir
 

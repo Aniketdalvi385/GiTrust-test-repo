@@ -19,12 +19,14 @@ v0.4 replaced the qwen LLM with the Kev decision model and tightened the convent
 back-out exits 1, no Cancel rows, no raw errors), so its ⚠️ count isn't comparable with v0.3's.
 The v0.4.1 findings (F1–F20) are in its [REPORT](runs/v0.4.1/REPORT.md#findings); the plan to fix them lives with the code, in
 GiTrust's [`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/v0.5.0-fixes/docs/v0.5.0_fix_plan.md).
+The suite now holds the v0.5.0 expectations from that plan (M-43…M-47 new, 22 tests updated);
+the v0.4.1 run's are in git history — see [suite/README.md → Versions](suite/README.md#versions).
 
 ## Layout
 
 ```
-suite/                 the v0.4+ acceptance suite (Python) — start with suite/README.md
-  tests_v04.py           43 tests as data: setup, keys to press, checks
+suite/                 the acceptance suite (Python) — start with suite/README.md
+  tests.py               48 tests as data: setup, keys to press, checks (v0.5.0 expectations)
   gitrust_suite.py       fixtures (scratch HOME + bare remote), the PTY driver, records
   run.py                 auto | manual | list
   rollup.py              builds runs/vX/README.md from the records
@@ -48,17 +50,17 @@ legacy/                the v0.2/v0.3 bash runner and 31-test document (kept for 
 (cd ../Glit && KEV_DIR=../kev ./docs/classifier_eval/kevctl.sh start AniketDalvi385/gitrust-kev-0.8b@v2)
 
 # 1. the suite, automatically (4 parallel shards ≈ 10 min)
-for i in 0 1 2 3; do uv run --with pyte python suite/run.py auto 0.4.1 --shard=$i/4 & done; wait
+for i in 0 1 2 3; do uv run --with pyte python suite/run.py auto 0.5.0 --shard=$i/4 & done; wait
 
 # 2. review the screens (an agent or you): write results/<id>/review.md
 #    "Verdict: PASS | PASS-WITH-NOTES | FAIL" + "Summary: …" + notes
 
 # 3. the flagship tests by hand, recorded
-python3 suite/run.py manual 0.4.1 M-06
+python3 suite/run.py manual 0.5.0 M-06
 
 # 4. the eval (≈ 15 min), then the index
-python3 eval/run_eval.py 0.4.1
-python3 suite/rollup.py 0.4.1
+python3 eval/run_eval.py 0.5.0
+python3 suite/rollup.py 0.5.0
 ```
 
 Everything runs in throwaway directories with a scratch `HOME`; your real `~/.gitrust.toml`,

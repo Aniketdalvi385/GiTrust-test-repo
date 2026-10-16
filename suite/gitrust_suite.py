@@ -14,12 +14,12 @@ server on 127.0.0.1:8009 (see README: `kevctl.sh start`); model-down tests point
 a dead port instead.
 
 Usage (from the repo root):
-  uv run --with pyte python suite/run.py auto 0.4.1            # every test
-  uv run --with pyte python suite/run.py auto 0.4.1 M-06 M-23  # some
-  python3 suite/run.py manual 0.4.1 M-06                       # flagship, by hand
+  uv run --with pyte python suite/run.py auto 0.5.0            # every test
+  uv run --with pyte python suite/run.py auto 0.5.0 M-06 M-23  # some
+  python3 suite/run.py manual 0.5.0 M-06                       # flagship, by hand
   python3 suite/run.py list                                    # ids, titles, flags
 """
-import dataclasses, datetime, fcntl, json, os, pty, select, shutil, signal, struct
+import dataclasses, datetime, fcntl, json, os, pty, re, select, shutil, signal, struct
 import subprocess, tempfile, termios, time
 from typing import Callable, Optional
 
@@ -89,14 +89,85 @@ def if_menu(label: str):
     return keys
 
 
+TYPED_RE = re.compile(r"[Tt]ype '([^']+)'")     # a type-to-confirm prompt: "Type 'main' to …"
+
+
 def confirm_typed():
     """Keys for a type-to-confirm prompt: type the word it asks for, then Enter."""
-    import re
-
     def keys(screen: str) -> bytes:
-        m = re.findall(r"[Tt]ype '([^']+)'", screen)
+        m = TYPED_RE.findall(screen)
         return (m[-1].encode() + b"\r") if m else b""
     return keys
+
+
+def plan_confirm():
+    """Keys for the plan's confirmation: the typed value when the plan asks for one
+    in place of Enter (v0.5, D1), otherwise Enter. Only a prompt still waiting at the
+    bottom of the screen counts — an answered one ("> …") is ignored."""
+    def keys(screen: str) -> bytes:
+        tail = [l for l in screen.splitlines() if l.strip()][-4:]
+        m = TYPED_RE.findall("\n".join(l for l in tail if not l.startswith(">")))
+        return (m[-1].encode() + b"\r") if m else ENTER
+    return keys
+
+
+def if_choice(label: str):
+    """Keys that pick `label` if a menu is waiting (its key legend is the last line),
+    otherwise nothing — for a menu that may or may not come before the plan."""
+    chooser = pick(label)
+
+    def keys(screen: str) -> bytes:
+        last = screen.splitlines()[-1] if screen else ""
+        return chooser(screen) if "Esc cancel" in last else b""
+    return keys
+
+
+# ---------------------------------------------------------------- reading screens
+def snap(r, label: str) -> str:
+    """The screen recorded at the step labelled `label` ("" if there was none)."""
+    return next((s for l, s in r.snaps if l == label), "")
+
+
+def logical_lines(screen: str) -> list:
+    """Screen rows with the lines the terminal wrapped joined back into one."""
+    out, cur = [], ""
+    for row in screen.splitlines():
+        cur += row
+        if len(row) < COLS - 2:        # a full-width row continues on the next one
+            out.append(cur)
+            cur = ""
+    if cur:
+        out.append(cur)
+    return out
+
+
+def plan_block(screen: str) -> str:
+    """The last plan on screen: from its "Plan · N steps" header to its key legend."""
+    lines = screen.splitlines()
+    start = max((i for i, l in enumerate(lines) if re.match(r"\s*Plan\b", l)), default=None)
+    if start is None:
+        return ""
+    block = []
+    for l in lines[start:]:
+        block.append(l)
+        if "[q] cancel" in l:
+            break
+    return "\n".join(block)
+
+
+def menu_rows(screen: str) -> list:
+    """The option rows of the last menu on screen (the rows under its "? question")."""
+    lines = screen.splitlines()
+    q = max((i for i, l in enumerate(lines) if l.startswith("? ")), default=None)
+    if q is None:
+        return []
+    rows = []
+    for l in lines[q + 1:]:
+        if l.startswith("[") or not l.strip():
+            break
+        if l.startswith((">", "  ")):  # an option, not the rest of a wrapped question
+            rows.append(l)
+    return rows
 
 
 # ---------------------------------------------------------------- data model
@@ -229,6 +300,15 @@ class Fixture:
 
     def head(self):
         return self.git("rev-parse", "HEAD")
+
+    def contains(self, commit, rev="HEAD"):
+        """True if `commit` is in the history of `rev`."""
+        return sh(self.work, "git", "merge-base", "--is-ancestor", commit, rev, check=False,
+                  env=self.env()).returncode == 0
+
+    def branches(self):
+        """Local branch names (a detached HEAD is not one)."""
+        return self.git("for-each-ref", "--format=%(refname:short)", "refs/heads").split()
 
     def count(self, rev="HEAD"):
         return int(self.git("rev-list", "--count", rev))
@@ -420,6 +500,17 @@ def kev_info():
 def binary_version():
     try:
         return subprocess.run([BIN, "--version"], capture_output=True, text=True).stdout.split()[-1]
+    except Exception:  # noqa: BLE001
+        return "?"
+
+
+def suite_commit():
+    """The commit of this repo the suite ran from ("+edits" if suite/ had uncommitted
+    changes) — a run's expectations are the suite at that commit (README: Versions)."""
+    try:
+        sha = sh(REPO_ROOT, "git", "rev-parse", "--short", "HEAD").stdout.strip()
+        dirty = sh(REPO_ROOT, "git", "status", "--porcelain", "--", "suite").stdout.strip()
+        return sha + ("+edits" if dirty else "")
     except Exception:  # noqa: BLE001
         return "?"
 
