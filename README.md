@@ -13,13 +13,15 @@ releases.
 |---|---|---|---|---|---|
 | [v0.2.0](runs/v0.2.0/) | 2026-07-31 → 08-05 | manual, 31 tests | 19 ✅ · 4 ⚠️ · 8 ❌ | — | [REPORT](runs/v0.2.0/REPORT.md) |
 | [v0.3.0](runs/v0.3.0/) | 2026-08-07 → 08-10 | manual + captured, 31 tests + variants | 40 ✅ · 2 ⚠️ · 0 ❌ | — | [REPORT](runs/v0.3.0/REPORT.md) |
-| [**v0.4.1**](runs/v0.4.1/) | 2026-10-15 | automatic (PTY) + agent screen review + ★ by hand, 43 tests | 19 ✅ · 21 ⚠️ · 3 ❌ (+ 4 ★ by hand: 2 ✅ · 2 ⚠️, recorded) | 377 / 450 right, 68 asked, 3 wrong actions | [REPORT](runs/v0.4.1/REPORT.md) |
+| [v0.4.1](runs/v0.4.1/) | 2026-10-15 | automatic (PTY) + agent screen review + ★ by hand, 43 tests | 19 ✅ · 21 ⚠️ · 3 ❌ (+ 4 ★ by hand: 2 ✅ · 2 ⚠️, recorded) | 377 / 450 right, 68 asked, 3 wrong actions | [REPORT](runs/v0.4.1/REPORT.md) |
+| [**v0.5.0**](runs/v0.5.0/) | 2026-10-16 → 10-29 | automatic (PTY) + agent screen review + ★ by hand, 48 tests | 20 ✅ · 28 ⚠️ · 0 ❌ (+ 4 ★ by hand: 1 ✅ · 3 ⚠️, all checks pass) | 377 / 450 right, 70 asked, 1 wrong action (stops before acting) | [REPORT](runs/v0.5.0/REPORT.md) |
 
 v0.4 replaced the qwen LLM with the Kev decision model and tightened the conventions (every
 back-out exits 1, no Cancel rows, no raw errors), so its ⚠️ count isn't comparable with v0.3's.
-The v0.4.1 findings (F1–F20) are in its [REPORT](runs/v0.4.1/REPORT.md#findings); the plan to fix them lives with the code, in
-GiTrust's [`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/v0.5.0-fixes/docs/v0.5.0_fix_plan.md).
-The suite now holds the v0.5.0 expectations from that plan (M-43…M-47 new, 22 tests updated);
+The v0.4.1 findings (F1–F20) are in its [REPORT](runs/v0.4.1/REPORT.md#findings); the plan that fixed them lives with the code, in
+GiTrust's [`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/main/docs/v0.5.0_fix_plan.md).
+v0.5.0 closes all 20 and 11 more found on the way (F21–F31); its [REPORT](runs/v0.5.0/REPORT.md) has
+what's left. The suite holds the v0.5.0 expectations (M-43…M-47 new, 22 tests updated);
 the v0.4.1 run's are in git history — see [suite/README.md → Versions](suite/README.md#versions).
 
 ## Layout

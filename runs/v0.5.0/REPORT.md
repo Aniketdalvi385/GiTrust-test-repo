@@ -5,7 +5,7 @@
 **Suite:** 48 tests (M-00…M-42 with v0.5 expectations, M-43…M-47 new — one per 🔴 finding)
 **Eval:** the same 450 requests as v0.4.1, through the binary.
 **Fix plan and record:** in the GiTrust repo,
-[`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/v0.5.0-fixes/docs/v0.5.0_fix_plan.md)
+[`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/main/docs/v0.5.0_fix_plan.md)
 — root causes, decisions D1–D9, F21–F31 found during the work.
 
 ## How this run was done

@@ -5,7 +5,7 @@
 **Suite:** 43 tests (M-00…M-30 carried over from v0.2/v0.3 with v0.4 expectations, M-31…M-42 new)
 **Eval:** 450 requests in three held-out sets, through the binary.
 **Fix plan:** in the GiTrust repo,
-[`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/v0.5.0-fixes/docs/v0.5.0_fix_plan.md) —
+[`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/main/docs/v0.5.0_fix_plan.md) —
 all 20 findings, root causes in source, batches, decisions.
 
 ## How this run was done

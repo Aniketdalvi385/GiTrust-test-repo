@@ -53,7 +53,7 @@ saved next to the auto results. To record the screen for the README, start Quick
 ## Versions
 
 `tests.py` holds the expectations of the release under test — now **v0.5.0**, written from
-GiTrust's [`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/v0.5.0-fixes/docs/v0.5.0_fix_plan.md)
+GiTrust's [`docs/v0.5.0_fix_plan.md`](https://github.com/Aniketdalvi385/gitrust/blob/main/docs/v0.5.0_fix_plan.md)
 (decisions D1–D9 as accepted) before the fixes landed. When a release changes what is
 expected, the tests change in place and keep their ids, so results still compare across
 versions (`since` says which version added a test). The expectations a past run was checked
