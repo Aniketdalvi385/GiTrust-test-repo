@@ -1,0 +1,78 @@
+{
+ "id": "M-06-manual",
+ "title": "Diverged push → rebase → pushed",
+ "part": "2 · Divergence",
+ "mode": "manual",
+ "flagship": true,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-29 10:47",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "in sync with origin (0 0)",
+   "ok": true,
+   "detail": "(0, 0)"
+  },
+  {
+   "name": "teammate commit below mine",
+   "ok": true,
+   "detail": "feat: mine\nteammate: hotfix\nbase"
+  },
+  {
+   "name": "linear history (no merge commit)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "menu hints aren't cut off with '…' (F17)",
+   "ok": true,
+   "detail": "> [1] Rebase  — your commit goes on top of theirs; best if it's only yours |   [2] Merge  — adds a merge commit; safer if others have your commits"
+  },
+  {
+   "name": "no 'Consider pulling first' (F13)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Successfully rebased'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Enumerating objects'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no raw git output 'Removing'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "push"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 4.9,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "mine": "708ccd08a3e18f193785b7baf3aed0c6f7bb3064"
+ }
+}

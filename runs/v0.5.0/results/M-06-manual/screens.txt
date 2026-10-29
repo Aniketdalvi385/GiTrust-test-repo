@@ -1,0 +1,32 @@
+######## run 1: gitrust 'push'  [pty, model up]  exit=0  4.9s
+
+--- final ---
+⚡  Push to origin
+Fetching origin… ✓
+? Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge?
+> [1] Rebase  — your commit goes on top of theirs; best if it's only yours
+  [2] Merge  — adds a merge commit; safer if others have your commits
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 2 steps · snapshot taken at 708ccd0
+
+  ●  rebase    onto origin/main  ⚠
+  │
+  ●  push      → origin/main  ⚠
+
+
+  [Enter] run · [s] don't push · [q] cancel  
+  ○  rebase    onto origin/main
+  ✓  rebase    onto origin/main
+  │  → Rebased onto origin/main
+  │
+  ○  push      → origin/main
+
+  ✓  push      → origin/main
+  │  → Pushed 1 commit(s) to origin/main
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+
+

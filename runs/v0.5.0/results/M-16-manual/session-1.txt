@@ -1,0 +1,71 @@
+[36m⚡[0m  Undo the last commit[2m[0m
+? Undo 0059c01 "feat: the mistake" — what should happen to its changes?
+[36m>[0m [1] Undo, keep the changes staged  [2m— the commit goes; its changes stay staged, ready to re-commit[0m
+  [2] Undo, keep the changes in my files  [2m— the commit goes; its changes stay in your files, unstag…[0m
+  [3] Undo with a revert commit  [2m— a new commit reverses it; history is kept — safe after pushing[0m
+  [4] Undo and throw the changes away  [31m⚠⚠[0m  [2m— both go (git keeps them ~90 days) · you'll type to con…[0m
+[2m[1–9 or ↑↓ + Enter to choose · Esc cancel][0m[4A[J  [1] Undo, keep the changes staged  [2m— the commit goes; its changes stay staged, ready to re-commit[0m
+[36m>[0m [2] Undo, keep the changes in my files  [2m— the commit goes; its changes stay in your files, unstag…[0m
+  [3] Undo with a revert commit  [2m— a new commit reverses it; history is kept — safe after pushing[0m
+  [4] Undo and throw the changes away  [31m⚠⚠[0m  [2m— both go (git keeps them ~90 days) · you'll type to con…[0m
+[2m[1–9 or ↑↓ + Enter to choose · Esc cancel][0m[4A[J  [1] Undo, keep the changes staged  [2m— the commit goes; its changes stay staged, ready to re-commit[0m
+  [2] Undo, keep the changes in my files  [2m— the commit goes; its changes stay in your files, unstag…[0m
+[36m>[0m [3] Undo with a revert commit  [2m— a new commit reverses it; history is kept — safe after pushing[0m
+  [4] Undo and throw the changes away  [31m⚠⚠[0m  [2m— both go (git keeps them ~90 days) · you'll type to con…[0m
+[2m[1–9 or ↑↓ + Enter to choose · Esc cancel][0m[4A[J  [1] Undo, keep the changes staged  [2m— the commit goes; its changes stay staged, ready to re-commit[0m
+  [2] Undo, keep the changes in my files  [2m— the commit goes; its changes stay in your files, unstag…[0m
+  [3] Undo with a revert commit  [2m— a new commit reverses it; history is kept — safe after pushing[0m
+[36m>[0m [4] Undo and throw the changes away  [31m⚠⚠[0m  [2m— both go (git keeps them ~90 days) · you'll type to con…[0m
+[2m[1–9 or ↑↓ + Enter to choose · Esc cancel][0m[4A[J[36m>[0m [1] Undo, keep the changes staged  [2m— the commit goes; its changes stay staged, ready to re-commit[0m
+  [2] Undo, keep the changes in my files  [2m— the commit goes; its changes stay in your files, unstag…[0m
+  [3] Undo with a revert commit  [2m— a new commit reverses it; history is kept — safe after pushing[0m
+  [4] Undo and throw the changes away  [31m⚠⚠[0m  [2m— both go (git keeps them ~90 days) · you'll type to con…[0m
+[2m[1–9 or ↑↓ + Enter to choose · Esc cancel][0m[4A[J  [1] Undo, keep the changes staged  [2m— the commit goes; its changes stay staged, ready to re-commit[0m
+  [2] Undo, keep the changes in my files  [2m— the commit goes; its changes stay in your files, unstag…[0m
+  [3] Undo with a revert commit  [2m— a new commit reverses it; history is kept — safe after pushing[0m
+[36m>[0m [4] Undo and throw the changes away  [31m⚠⚠[0m  [2m— both go (git keeps them ~90 days) · you'll type to con…[0m
+[2m[1–9 or ↑↓ + Enter to choose · Esc cancel][0m[5A[J> Undo 0059c01 "feat: the mistake" — what should happen to its changes? Undo and throw the changes away  ⚠⚠
+
+Plan  · 1 step · [2msnapshot taken at 0059c01[0m
+
+  ●  reset     move the branch back to 804a3c6 — changes are discarded  [31m⚠⚠[0m
+
+  Warnings:
+    · Discards uncommitted changes in tracked files — they're backed up to ~/.gitrust/trash first; any dropped commit stays recoverable from git's reflog.
+
+
+  [31m⚠⚠[0m [31mDestructive[0m: Moves HEAD to the parent commit AND throws away every change in the working tree
+                  and index.
+     Risks:    Uncommitted changes to tracked files are thrown away too — GiTrust copies them to
+               ~/.gitrust/trash first (kept 7 days by default). The commit itself is dropped from
+               the branch.
+     Recovery: `git reflog` keeps a record of the old HEAD for ~90 days; you can recover the commit
+               if you remember the SHA.
+     Safety:   This op requires you to type the highlighted value exactly to confirm.
+
+[?25l[38;5;10m?[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: [38;5;8m0059c01[39m 
+[38;5;14m[[39m[38;5;14mType it exactly, then Enter · q or Esc cancels[39m[38;5;14m][39m[1A[84C[?25h[?25l[84D[38;5;9m#[39m [38;5;9mMust type '0059c01' exactly to confirm.[39m[K
+[38;5;10m?[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: [38;5;8m0059c01[39m [K
+[38;5;14m[[39m[38;5;14mType it exactly, then Enter · q or Esc cancels[39m[38;5;14m][39m[1A[84C[?25h[?25l[1A[84D
+[38;5;10m?[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0 [K
+[1A[85C[?25h[?25l[1A[85D
+[38;5;10m?[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 00 [K
+[1A[86C[?25h[?25l[1A[86D
+[38;5;10m?[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 005 [K
+[1A[87C[?25h[?25l[1A[87D
+[38;5;10m?[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059 [K
+[1A[88C[?25h[?25l[1A[88D
+[38;5;10m?[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059c [K
+[1A[89C[?25h[?25l[1A[89D
+[38;5;10m?[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059c0 [K
+[1A[90C[?25h[?25l[1A[90D
+[38;5;10m?[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059c01 [K
+[1A[91C[?25h[?25l[1A[91D[38;5;10m>[39m Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: [38;5;14m0059c01[39m[K
+[2K
+[2K
+[?25h[2A[?25h  [2m○[0m  reset     move the branch back to 804a3c6 — changes are discarded[2K  [32m✓[0m  reset     move the branch back to 804a3c6 — changes are discarded
+  [2m│[0m  [2m→ Moved the branch back — the changes were discarded[0m
+  [2m│[0m  [2mA backup of the discarded changes is in ~/.gitrust/trash/20261029-105037 for 7 days.[0m
+
+  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status"[0m

@@ -20,14 +20,20 @@
    Glit `887670b`, each with a unit test seen failing without its fix; the suite gained checks
    for them (`4a57ce4`) and the seven affected tests (M-08, M-10, M-13, M-14, M-43, M-45, M-46)
    were re-run on the rebuilt binary, M-44 once more on its own (timing). Their reviews say what
-   changed. So 40 tests ran at suite `f5f0b76` and 8 at `4a57ce4` (`environment.json` names the
-   last), which only adds checks.
+   changed.
 4. **Eval** — `eval/run_eval.py`: each request ran as `gitrust --yes "<request>"` in a fresh dirty
    repo (or one stopped mid-rebase / mid-merge / mid-cherry-pick, or — new — on a pushed feature
    branch that main has moved past, for the twelve requests that bring main into "my branch").
    The review fixes don't touch routing or anything `--yes` reaches, so the eval wasn't re-run.
-5. **Flagship tests by hand** — the four ★ tests (M-04, M-06, M-16, M-23): **pending** — to be
-   re-run by the owner in `manual` mode before the release.
+5. **Flagship tests by hand** — the four ★ tests (M-04, M-06, M-16, M-23) were re-run by the
+   owner in `manual` mode, driving every prompt (2026-10-16 and 2026-10-29). All four pass their
+   automatic checks; records in `results/<id>-manual/`, matching the automatic runs. Two first
+   attempts failed for reasons outside GiTrust and were re-run: M-06, a suite bug (manual runs
+   recorded no per-step screens, fixed in `b8a1733`), and M-16, where the keep-staged option was
+   picked instead of throw-away.
+   Suite commits: 40 tests ran at `f5f0b76`, the eight re-runs at `4a57ce4`, the hand runs at
+   `b8a1733` (`environment.json` names the last); the later commits only add checks or fix the
+   harness.
 
 ## Result
 
@@ -35,6 +41,7 @@
 |---|---|---|
 | Automatic checks | 40 / 43 | **48 / 48** |
 | After screen review | 19 ✅ · 21 ⚠️ · 3 ❌ | **20 ✅ · 28 ⚠️ · 0 ❌** |
+| ★ Flagships by hand (owner) | M-04 ✅ · M-06 ⚠️ · M-16 ⚠️ · M-23 ✅ | **M-04 ⚠️ · M-06 ⚠️ · M-16 ⚠️ · M-23 ✅ — all automatic checks pass; the notes are copy** |
 | Raw error chains (`caused by:`) on any screen | M-05, M-27, eval | **none** |
 | Behaviour wrong or unsafe | none in the suite (F19, F21 found later) | **none** |
 

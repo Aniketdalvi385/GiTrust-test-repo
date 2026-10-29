@@ -1,0 +1,73 @@
+{
+ "id": "M-16-manual",
+ "title": "Undo → throw away: type to confirm, trash backup",
+ "part": "4 · Undo",
+ "mode": "manual",
+ "flagship": true,
+ "needs_model": false,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-29 10:50",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "commit gone",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "working tree clean",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "trash backup written",
+   "ok": true,
+   "detail": "['20261029-105037/app.txt']"
+  },
+  {
+   "name": "screen shows 'backup'",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "typed confirmation asked at the plan (the plan is above it)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "nothing asks again after the typed value",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "Risks doesn't say the uncommitted work 'is gone' (F17)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "undo"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 29.7,
+   "timed_out": []
+  }
+ ],
+ "vars": {
+  "before": "804a3c66068e0702bc1ee73b25035a379cbe24b7"
+ }
+}

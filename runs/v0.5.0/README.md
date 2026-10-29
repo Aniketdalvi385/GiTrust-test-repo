@@ -5,7 +5,7 @@
 - **How:** `suite/run.py auto` — a pseudo-terminal drives the release binary, presses the keys each test lists, then checks exit code, repository and screen; every result was then reviewed from its screens (`review.md`). ★ = flagship, also run by hand (`suite/run.py manual`).
 - **Report:** [REPORT.md](REPORT.md)
 
-**Result:** 20 ✅ PASS · 28 ⚠️ PASS-WITH-NOTES
+**Result:** 21 ✅ PASS · 31 ⚠️ PASS-WITH-NOTES
 
 | ID | Test | Since | Mode | Result | Note |
 |---|---|---|---|---|---|
@@ -14,8 +14,10 @@
 | [M-02](results/M-02/) | Model classification of a read-only request | v0.2 | auto | ✅ PASS | Model asked a which-did-you-mean menu; the picked history ran with a ◇ line, exit 0. |
 | [M-03](results/M-03/) | Commit: the message is yours, [e] edits it | v0.2 | auto | ✅ PASS | The message is the user's, the plan shows it, [e] re-opens it with the typed text; committed, exit 0. |
 | [M-04](results/M-04/) | Scoped push: only the login files ★ | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Topic survives the quoted message: login files pre-selected, 'login page' offered, only they pushed; push line drawn twice. |
+| [M-04-manual](results/M-04-manual/) | Scoped push: only the login files ★ | v0.2 | manual | ⚠️ PASS-WITH-NOTES | By hand: the topic survived the quoted message — login files pre-selected, 'login page' offered and kept, only they pushed; the push line is drawn twice, as in the automatic run. |
 | [M-05](results/M-05/) | Create a branch; dirty switch is handled | v0.2 | auto | ✅ PASS | Branch created; the dirty switch is refused before any plan in one plain sentence naming app.txt; "Already on main." exits 0. |
 | [M-06](results/M-06/) | Diverged push → rebase → pushed ★ | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Diverged push: plain rebase/merge choice, rebase + push in one plan, no warning or git noise; push line drawn twice. |
+| [M-06-manual](results/M-06-manual/) | Diverged push → rebase → pushed ★ | v0.2 | manual | ⚠️ PASS-WITH-NOTES | By hand: diverged push → plain rebase/merge choice with both hints whole, rebase + push in one plan, no warning, no git output; the push line is drawn twice. |
 | [M-07](results/M-07/) | Diverged push → merge | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Merge path makes a two-parent merge commit and pushes; warning and cut hints gone; push line drawn twice. |
 | [M-08](results/M-08/) | Rebase conflict → calm pause → continue | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Conflict pause names app.txt and says the push didn't run, no git noise, exit 1; continue is clean with no banner and points at the push. |
 | [M-09](results/M-09/) | Abort rebase restores exactly | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Abort returns exactly to the pre-rebase commit, status clean; the result reports a backup the plan never mentioned. |
@@ -26,6 +28,7 @@
 | [M-14](results/M-14/) | Switching away would strand a commit → guard | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Guard saves the stranded commit on a branch inside the plan, then switches to main; the copy now says the branch keeps the commit and the switch then leaves it. |
 | [M-15](results/M-15/) | Undo: four plain options, keep staged | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Undo names the commit, four numbered options with consequences, keeps changes staged; two hints still cut with "…". |
 | [M-16](results/M-16/) | Undo → throw away: type to confirm, trash backup ★ | v0.2 | auto | ⚠️ PASS-WITH-NOTES | One confirmation now (the SHA typed at the plan), honest Risks text, the result names the backup; menu hints cut and one warning wraps raggedly. |
+| [M-16-manual](results/M-16-manual/) | Undo → throw away: type to confirm, trash backup ★ | v0.2 | manual | ⚠️ PASS-WITH-NOTES | By hand: one confirmation — the plan and its explanation, then '0059c01' typed in place of Enter; honest Risks; the result names the backup. Copy nits: "This op", and Recovery undersells "find my lost work". |
 | [M-17](results/M-17/) | --yes cannot undo | v0.2 | auto | ⚠️ PASS-WITH-NOTES | --yes refuses to choose an undo mode, lists the four choices, exit 1, HEAD untouched; the piped first line still uses "*" for ⚡. |
 | [M-18](results/M-18/) | Undo 3 commits halts with guidance | v0.2 | auto | ⚠️ PASS-WITH-NOTES | The guard comes first now: no "Undo the last commit" echo, guidance, exit 1, nothing changed; the guidance wraps raggedly and revert has no phrase. |
 | [M-19](results/M-19/) | Squash last 3: same content, one commit | v0.2 | auto | ✅ PASS | Squash asks for the message on an empty prompt with the three subjects listed above it; one Enter at a one-line plan; tree identical, exit 0. |
@@ -33,6 +36,7 @@
 | [M-21](results/M-21/) | A failing pre-commit hook blocks the commit | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Hook output shown once under the step, then one plain message naming the staged file and the next step; no menu, exit 1. The message is cut mid-word by the terminal. |
 | [M-22](results/M-22/) | Revert succeeds despite the same hook | v0.2 | auto | ✅ PASS | Revert succeeds past the pre-commit hook, as git does; one Enter at a plan that names the commit's subject; clean step output, exit 0. |
 | [M-23](results/M-23/) | Deleted branch → find my lost work ★ | v0.2 | auto | ✅ PASS | The lost commit is listed in plain words and restored to a rescue branch; current branch and files untouched; exit 0. |
+| [M-23-manual](results/M-23-manual/) | Deleted branch → find my lost work ★ | v0.2 | manual | ✅ PASS | By hand: the lost commit is listed in plain words and restored to a rescue branch; current branch and files untouched; exit 0. |
 | [M-24](results/M-24/) | A dropped stash surfaces | v0.2 | auto | ✅ PASS | The dropped stash is listed on its own, without git's internal "index on …" row, and restored to a rescue branch holding the wip change; exit 0. |
 | [M-25](results/M-25/) | Nothing lost: an honest empty result | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Honest "Nothing found", exit 0 as a query that ran (D4); still no next step, and no word about the trash backups of uncommitted work. |
 | [M-26](results/M-26/) | Clean up: counts, untracked deleted, backed up | v0.2 | auto | ⚠️ PASS-WITH-NOTES | Counts per kind, 'delete' typed at the plan, only the untracked file deleted and backed up, result says "deleted files"; the explanation block is full of internal words. |

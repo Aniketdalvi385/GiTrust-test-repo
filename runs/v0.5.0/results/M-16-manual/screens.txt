@@ -1,0 +1,92 @@
+######## run 1: gitrust 'undo'  [pty, model up]  exit=0  29.7s
+
+--- final ---
+⚡  Undo the last commit
+? Undo 0059c01 "feat: the mistake" — what should happen to its changes?
+> [1] Undo, keep the changes staged  — the commit goes; its changes stay staged, ready to re-commit
+  [2] Undo, keep the changes in my files  — the commit goes; its changes stay in your files, unstag…
+  [3] Undo with a revert commit  — a new commit reverses it; history is kept — safe after pushing
+  [4] Undo and throw the changes away  ⚠⚠  — both go (git keeps them ~90 days) · you'll type to con…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+  [1] Undo, keep the changes staged  — the commit goes; its changes stay staged, ready to re-commit
+> [2] Undo, keep the changes in my files  — the commit goes; its changes stay in your files, unstag…
+  [3] Undo with a revert commit  — a new commit reverses it; history is kept — safe after pushing
+  [4] Undo and throw the changes away  ⚠⚠  — both go (git keeps them ~90 days) · you'll type to con…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+  [1] Undo, keep the changes staged  — the commit goes; its changes stay staged, ready to re-commit
+  [2] Undo, keep the changes in my files  — the commit goes; its changes stay in your files, unstag…
+> [3] Undo with a revert commit  — a new commit reverses it; history is kept — safe after pushing
+  [4] Undo and throw the changes away  ⚠⚠  — both go (git keeps them ~90 days) · you'll type to con…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+  [1] Undo, keep the changes staged  — the commit goes; its changes stay staged, ready to re-commit
+  [2] Undo, keep the changes in my files  — the commit goes; its changes stay in your files, unstag…
+  [3] Undo with a revert commit  — a new commit reverses it; history is kept — safe after pushing
+> [4] Undo and throw the changes away  ⚠⚠  — both go (git keeps them ~90 days) · you'll type to con…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+> [1] Undo, keep the changes staged  — the commit goes; its changes stay staged, ready to re-commit
+  [2] Undo, keep the changes in my files  — the commit goes; its changes stay in your files, unstag…
+  [3] Undo with a revert commit  — a new commit reverses it; history is kept — safe after pushing
+  [4] Undo and throw the changes away  ⚠⚠  — both go (git keeps them ~90 days) · you'll type to con…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+  [1] Undo, keep the changes staged  — the commit goes; its changes stay staged, ready to re-commit
+  [2] Undo, keep the changes in my files  — the commit goes; its changes stay in your files, unstag…
+  [3] Undo with a revert commit  — a new commit reverses it; history is kept — safe after pushing
+> [4] Undo and throw the changes away  ⚠⚠  — both go (git keeps them ~90 days) · you'll type to con…
+[1–9 or ↑↓ + Enter to choose · Esc cancel]
+> Undo 0059c01 "feat: the mistake" — what should happen to its changes? Undo and throw the changes away  ⚠⚠
+
+Plan  · 1 step · snapshot taken at 0059c01
+
+  ●  reset     move the branch back to 804a3c6 — changes are discarded  ⚠⚠
+
+  Warnings:
+    · Discards uncommitted changes in tracked files — they're backed up to ~/.gitrust/trash first; any dropped commit stays recoverable from git's reflog.
+
+
+  ⚠⚠ Destructive: Moves HEAD to the parent commit AND throws away every change in the working tree
+                  and index.
+     Risks:    Uncommitted changes to tracked files are thrown away too — GiTrust copies them to
+               ~/.gitrust/trash first (kept 7 days by default). The commit itself is dropped from
+               the branch.
+     Recovery: `git reflog` keeps a record of the old HEAD for ~90 days; you can recover the commit
+               if you remember the SHA.
+     Safety:   This op requires you to type the highlighted value exactly to confirm.
+
+? Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059c01 
+[Type it exactly, then Enter · q or Esc cancels]
+# Must type '0059c01' exactly to confirm.
+? Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059c01 
+[Type it exactly, then Enter · q or Esc cancels]
+
+? Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0 
+
+
+? Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 00 
+
+
+? Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 005 
+
+
+? Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059 
+
+
+? Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059c 
+
+
+? Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059c0 
+
+
+? Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059c01 
+
+> Type '0059c01' to DISCARD commit 0059c01 "feat: the mistake" and all its changes: 0059c01
+
+
+  ○  reset     move the branch back to 804a3c6 — changes are discarded
+  ✓  reset     move the branch back to 804a3c6 — changes are discarded
+  │  → Moved the branch back — the changes were discarded
+  │  A backup of the discarded changes is in ~/.gitrust/trash/20261029-105037 for 7 days.
+
+  ✓ Done · on main, ↑0 ↓0
+  Next: gitrust "status"
+
+

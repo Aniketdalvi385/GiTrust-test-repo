@@ -1,0 +1,56 @@
+{
+ "id": "M-04-manual",
+ "title": "Scoped push: only the login files",
+ "part": "1 · Everyday",
+ "mode": "manual",
+ "flagship": true,
+ "needs_model": true,
+ "since": "v0.2",
+ "auto_verdict": "PASS",
+ "when": "2026-10-16 16:13",
+ "checks": [
+  {
+   "name": "exits 0",
+   "ok": true,
+   "detail": "exit=0"
+  },
+  {
+   "name": "login.txt pushed",
+   "ok": true,
+   "detail": "['auth_login.txt', 'login.txt']"
+  },
+  {
+   "name": "readme.txt NOT pushed",
+   "ok": true,
+   "detail": "['auth_login.txt', 'login.txt']"
+  },
+  {
+   "name": "readme.txt still uncommitted",
+   "ok": true,
+   "detail": "?? readme.txt"
+  },
+  {
+   "name": "the quoted message is the commit's subject",
+   "ok": true,
+   "detail": "login page"
+  },
+  {
+   "name": "no panic / raw error chain",
+   "ok": true,
+   "detail": ""
+  }
+ ],
+ "runs": [
+  {
+   "argv": [
+    "push the login changes with message 'login page'"
+   ],
+   "mode": "pty",
+   "model": "up",
+   "exit": 0,
+   "seconds": 7.6,
+   "timed_out": []
+  }
+ ],
+ "vars": {}
+}

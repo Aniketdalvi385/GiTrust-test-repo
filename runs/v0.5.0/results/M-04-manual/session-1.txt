@@ -1,0 +1,38 @@
+[36m⚡[0m  Push only the “login” changes[2m[0m
+[2K[2m⠋ Matching files to your request…[0m[2K[2m⠙ Matching files to your request…[0m[2K[2m⠹ Matching files to your request…[0m[2K[2m⠸ Matching files to your request…[0m[2K[2m⠼ Matching files to your request…[0m[2K[2m⠴ Matching files to your request…[0m[2K[2m⠦ Matching files to your request…[0m[2K[2m⠧ Matching files to your request…[0m[2K[2m⠇ Matching files to your request…[0m[2K[2m⠏ Matching files to your request…[0m[2K[2m⠋ Matching files to your request…[0m[2K[2m⠙ Matching files to your request…[0m[2K[2m⠹ Matching files to your request…[0m[2K[2m⠸ Matching files to your request…[0m[2K[2m⠼ Matching files to your request…[0m[2K[2m⠴ Matching files to your request…[0m[2K[2m⠦ Matching files to your request…[0m[2K[2m⠧ Matching files to your request…[0m[2K[2m⠇ Matching files to your request…[0m[2K[2m⠏ Matching files to your request…[0m[2K[2m⠋ Matching files to your request…[0m[2K[2m⠙ Matching files to your request…[0m[2K[2m⠹ Matching files to your request…[0m[2K[2m⠸ Matching files to your request… · 2s[0m[2K[2m⠼ Matching files to your request… · 2s[0m[2K[2m⠴ Matching files to your request… · 2s[0m[2K[2m⠦ Matching files to your request… · 2s[0m[2K[2m⠧ Matching files to your request… · 2s[0m[2K[2m⠇ Matching files to your request… · 2s[0m[2K[2m⠏ Matching files to your request… · 2s[0m[2K
+Pick the files for this commit · 2 of 3 changed files pre-selected
+[?25l[38;5;10m?[39m Stage which files?  
+[38;5;14m>[39m [38;5;14m[x][39m [38;5;14mlogin.txt       [2m+1        new · name matches “login”[0m[39m
+  [38;5;10m[x][39m auth_login.txt  [2m+1        new · name matches “login”[0m
+  [ ] readme.txt      [2m+1        new · might be part of “login” — your call[0m
+[38;5;14m[[39m[38;5;14m↑↓ move · Space toggle · → all · ← none · Enter stage · Esc cancel[39m[38;5;14m][39m[4A[21C[?25h[?25l[21D[38;5;10m>[39m Stage which files? [38;5;14mlogin.txt, auth_login.txt[39m[K
+[2K
+[2K
+[2K
+[2K
+[?25h[4A[?25h[?25l[38;5;10m?[39m Commit message (edit or accept): login page 
+[38;5;14m[[39m[38;5;14mEnter to continue · Esc to cancel[39m[38;5;14m][39m[1A[45C[?25h[?25l[45D[38;5;10m>[39m Commit message (edit or accept): [38;5;14mlogin page[39m[K
+[2K
+[?25h[1A[?25h
+Plan  · 3 steps · [2msnapshot taken at 1fcccca[0m
+
+  ●  stage     login.txt, auth_login.txt
+  [2m│[0m
+  ●  commit    "login page"  [33m⚠[0m
+  [2m│[0m
+  ●  push      → origin/main  [33m⚠[0m
+
+
+  [38;5;220m[Enter][0m run · [38;5;220m[e][0m edit message · [38;5;220m[s][0m don't push · [38;5;220m[q][0m cancel  
+  [2m○[0m  stage     login.txt, auth_login.txt[2K  [32m✓[0m  stage     login.txt, auth_login.txt
+  [2m│[0m  [2m→ Staged 2 files[0m
+  [2m│[0m
+  [2m○[0m  commit    "login page"[2K  [32m✓[0m  commit    "login page"
+  [2m│[0m  [2m→ Committed: login page (1fcccca→e9ca864)[0m
+  [2m│[0m
+  [2m○[0m  push      → origin/main
+[2K  [32m✓[0m  push      → origin/main
+  [2m│[0m  [2m→ Pushed 1 commit(s) to origin/main[0m
+
+  [32m✓[0m [32mDone · 1 commit on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status" · changed your mind? gitrust "undo" (reverts it — it's pushed)[0m

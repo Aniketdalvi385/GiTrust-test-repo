@@ -1,0 +1,24 @@
+[36m⚡[0m  Push to origin[2m[0m
+Fetching origin… ✓
+? Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge?
+[36m>[0m [1] Rebase  [2m— your commit goes on top of theirs; best if it's only yours[0m
+  [2] Merge  [2m— adds a merge commit; safer if others have your commits[0m
+[2m[1–9 or ↑↓ + Enter to choose · Esc cancel][0m[3A[J> Your branch and origin/main have diverged (↑1 ↓1). Rebase or merge? Rebase
+
+Plan  · 2 steps · [2msnapshot taken at 708ccd0[0m
+
+  ●  rebase    onto origin/main  [33m⚠[0m
+  [2m│[0m
+  ●  push      → origin/main  [33m⚠[0m
+
+
+  [38;5;220m[Enter][0m run · [38;5;220m[s][0m don't push · [38;5;220m[q][0m cancel  
+  [2m○[0m  rebase    onto origin/main[2K  [32m✓[0m  rebase    onto origin/main
+  [2m│[0m  [2m→ Rebased onto origin/main[0m
+  [2m│[0m
+  [2m○[0m  push      → origin/main
+[2K  [32m✓[0m  push      → origin/main
+  [2m│[0m  [2m→ Pushed 1 commit(s) to origin/main[0m
+
+  [32m✓[0m [32mDone · on main, ↑0 ↓0[0m
+  [2mNext: gitrust "status"[0m
