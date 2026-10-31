@@ -104,5 +104,6 @@ v0.3.0 ended 40 ✅ · 2 ⚠️ · 0 ❌ on the original 31 tests (+ variants), 
 embedding router, after three fix rounds. This run uses stricter conventions (exit codes on every
 back-out, no Cancel rows, no raw errors) and 12 new tests, so the ⚠️ count is not comparable; the
 three ❌ are all new checks (closed pipe, raw error chains). On the same 44 requests the qwen LLM
-alone routed 41% (2026-08 research, exact phrases bypassed); v0.4.1's whole system, exact
+alone routed 41% (2026-08 research, exact phrases bypassed; corrected 2026-10-31: that run's prompt
+was truncated to 2,048 tokens — with the whole prompt it routes 35/44, 80%); v0.4.1's whole system, exact
 phrases included, gets 39/44 right and asks on the other 5.
