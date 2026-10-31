@@ -1,0 +1,4631 @@
+{
+ "date": "2026-10-31",
+ "model": "AniketDalvi385/gitrust-kev-0.8b@v2",
+ "temperature": 4.0,
+ "states": {
+  "normal": "on branch main, 2 files modified, 1 commit ahead of origin",
+  "feature": "on branch feature, 2 files modified",
+  "rebase": "detached HEAD, rebase in progress (1/2, conflicts in 1 file(s))",
+  "merge": "on branch main, 2 commits ahead of origin, merge in progress (conflicts in 1 file(s))"
+ },
+ "all": {
+  "n": 338,
+  "accuracy": 0.9556213017751479,
+  "mean_confidence": 0.8779431952662722,
+  "ece": 0.07767810650887572,
+  "brier_top_label": 0.04176340147928994,
+  "brier_multiclass": 0.08241476387573965,
+  "nll_accepted_set": 0.20906262354447405,
+  "bins": [
+   {
+    "bin": "0.1-0.2",
+    "n": 1,
+    "confidence": 0.1063,
+    "accuracy": 1.0
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 6,
+    "confidence": 0.24673333333333333,
+    "accuracy": 0.5
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 8,
+    "confidence": 0.3453,
+    "accuracy": 0.5
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 9,
+    "confidence": 0.4466333333333334,
+    "accuracy": 0.5555555555555556
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 4,
+    "confidence": 0.53975,
+    "accuracy": 0.75
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 11,
+    "confidence": 0.6513636363636364,
+    "accuracy": 0.9090909090909091
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 28,
+    "confidence": 0.751425,
+    "accuracy": 0.9642857142857143
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 43,
+    "confidence": 0.8539604651162791,
+    "accuracy": 1.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "n": 228,
+    "confidence": 0.9705780701754386,
+    "accuracy": 0.9956140350877193
+   }
+  ]
+ },
+ "routing": {
+  "n": 315,
+  "accuracy": 0.9523809523809523,
+  "mean_confidence": 0.8719609523809525,
+  "ece": 0.08041999999999996,
+  "brier_top_label": 0.044632977619047616,
+  "brier_multiclass": 0.08813273619047618,
+  "nll_accepted_set": 0.22130156452530256,
+  "bins": [
+   {
+    "bin": "0.1-0.2",
+    "n": 1,
+    "confidence": 0.1063,
+    "accuracy": 1.0
+   },
+   {
+    "bin": "0.2-0.3",
+    "n": 6,
+    "confidence": 0.24673333333333333,
+    "accuracy": 0.5
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 8,
+    "confidence": 0.3453,
+    "accuracy": 0.5
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 9,
+    "confidence": 0.4466333333333334,
+    "accuracy": 0.5555555555555556
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 4,
+    "confidence": 0.53975,
+    "accuracy": 0.75
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 11,
+    "confidence": 0.6513636363636364,
+    "accuracy": 0.9090909090909091
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 28,
+    "confidence": 0.751425,
+    "accuracy": 0.9642857142857143
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 41,
+    "confidence": 0.8529853658536586,
+    "accuracy": 1.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "n": 207,
+    "confidence": 0.9708338164251208,
+    "accuracy": 0.9951690821256038
+   }
+  ]
+ },
+ "in_progress": {
+  "n": 23,
+  "accuracy": 1.0,
+  "mean_confidence": 0.9598739130434784,
+  "ece": 0.040126086956521756,
+  "brier_top_label": 0.0024626847826086963,
+  "brier_multiclass": 0.004103403913043479,
+  "nll_accepted_set": 0.041442344893996716,
+  "bins": [
+   {
+    "bin": "0.8-0.9",
+    "n": 2,
+    "confidence": 0.87395,
+    "accuracy": 1.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "n": 21,
+    "confidence": 0.9680571428571428,
+    "accuracy": 1.0
+   }
+  ]
+ },
+ "unambiguous": {
+  "n": 336,
+  "accuracy": 0.9553571428571429,
+  "mean_confidence": 0.8801636904761905,
+  "ece": 0.07519345238095239,
+  "brier_top_label": 0.03960719571428571,
+  "brier_multiclass": 0.0803532881547619,
+  "nll_accepted_set": 0.20512578588966926,
+  "bins": [
+   {
+    "bin": "0.2-0.3",
+    "n": 6,
+    "confidence": 0.24673333333333333,
+    "accuracy": 0.5
+   },
+   {
+    "bin": "0.3-0.4",
+    "n": 8,
+    "confidence": 0.3453,
+    "accuracy": 0.5
+   },
+   {
+    "bin": "0.4-0.5",
+    "n": 9,
+    "confidence": 0.4466333333333334,
+    "accuracy": 0.5555555555555556
+   },
+   {
+    "bin": "0.5-0.6",
+    "n": 4,
+    "confidence": 0.53975,
+    "accuracy": 0.75
+   },
+   {
+    "bin": "0.6-0.7",
+    "n": 11,
+    "confidence": 0.6513636363636364,
+    "accuracy": 0.9090909090909091
+   },
+   {
+    "bin": "0.7-0.8",
+    "n": 28,
+    "confidence": 0.751425,
+    "accuracy": 0.9642857142857143
+   },
+   {
+    "bin": "0.8-0.9",
+    "n": 43,
+    "confidence": 0.8539604651162791,
+    "accuracy": 1.0
+   },
+   {
+    "bin": "0.9-1.0",
+    "n": 227,
+    "confidence": 0.9708735682819383,
+    "accuracy": 0.9955947136563876
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "V3-001",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "status"
+   ],
+   "top": "status",
+   "conf": 0.9496,
+   "correct": true,
+   "p_targets": 0.9496,
+   "brier_multi": 0.00279182
+  },
+  {
+   "id": "V3-002",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "status"
+   ],
+   "top": "status",
+   "conf": 0.7024,
+   "correct": true,
+   "p_targets": 0.7024,
+   "brier_multi": 0.12997795999999998
+  },
+  {
+   "id": "V3-003",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "status"
+   ],
+   "top": "status",
+   "conf": 0.9877,
+   "correct": true,
+   "p_targets": 0.9877,
+   "brier_multi": 0.00020126999999999946
+  },
+  {
+   "id": "V3-004",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "log"
+   ],
+   "top": "log",
+   "conf": 0.9877,
+   "correct": true,
+   "p_targets": 0.9877,
+   "brier_multi": 0.00021901999999999946
+  },
+  {
+   "id": "V3-005",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "log"
+   ],
+   "top": "log",
+   "conf": 0.9727,
+   "correct": true,
+   "p_targets": 0.9727,
+   "brier_multi": 0.0009630799999999995
+  },
+  {
+   "id": "V3-006",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "log"
+   ],
+   "top": "log",
+   "conf": 0.9956,
+   "correct": true,
+   "p_targets": 0.9956,
+   "brier_multi": 2.4659999999999645e-05
+  },
+  {
+   "id": "V3-007",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "diff"
+   ],
+   "top": "diff",
+   "conf": 0.9964,
+   "correct": true,
+   "p_targets": 0.9964,
+   "brier_multi": 1.5370000000000342e-05
+  },
+  {
+   "id": "V3-008",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "diff"
+   ],
+   "top": "diff",
+   "conf": 0.9901,
+   "correct": true,
+   "p_targets": 0.9901,
+   "brier_multi": 0.0001120400000000004
+  },
+  {
+   "id": "V3-009",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "diff"
+   ],
+   "top": "diff",
+   "conf": 0.8916,
+   "correct": true,
+   "p_targets": 0.8916,
+   "brier_multi": 0.01410689000000001
+  },
+  {
+   "id": "V3-010",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branches"
+   ],
+   "top": "branches",
+   "conf": 0.9965,
+   "correct": true,
+   "p_targets": 0.9965,
+   "brier_multi": 1.3729999999999633e-05
+  },
+  {
+   "id": "V3-011",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branches"
+   ],
+   "top": "branches",
+   "conf": 0.9941,
+   "correct": true,
+   "p_targets": 0.9941,
+   "brier_multi": 4.393000000000019e-05
+  },
+  {
+   "id": "V3-012",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branches"
+   ],
+   "top": "branches",
+   "conf": 0.983,
+   "correct": true,
+   "p_targets": 0.983,
+   "brier_multi": 0.00032258000000000053
+  },
+  {
+   "id": "V3-013",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "config"
+   ],
+   "top": "config",
+   "conf": 0.9953,
+   "correct": true,
+   "p_targets": 0.9953,
+   "brier_multi": 2.575000000000035e-05
+  },
+  {
+   "id": "V3-014",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "config"
+   ],
+   "top": "config",
+   "conf": 0.96,
+   "correct": true,
+   "p_targets": 0.96,
+   "brier_multi": 0.001782160000000003
+  },
+  {
+   "id": "V3-015",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "show"
+   ],
+   "top": "show",
+   "conf": 0.9974,
+   "correct": true,
+   "p_targets": 0.9974,
+   "brier_multi": 7.570000000000243e-06
+  },
+  {
+   "id": "V3-016",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "show"
+   ],
+   "top": "show",
+   "conf": 0.9965,
+   "correct": true,
+   "p_targets": 0.9965,
+   "brier_multi": 1.3969999999999634e-05
+  },
+  {
+   "id": "V3-017",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "show"
+   ],
+   "top": "show",
+   "conf": 0.9134,
+   "correct": true,
+   "p_targets": 0.9134,
+   "brier_multi": 0.013397370000000002
+  },
+  {
+   "id": "V3-018",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "fetch"
+   ],
+   "top": "fetch",
+   "conf": 0.846,
+   "correct": true,
+   "p_targets": 0.846,
+   "brier_multi": 0.026335850000000008
+  },
+  {
+   "id": "V3-019",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "fetch"
+   ],
+   "top": "fetch",
+   "conf": 0.9814,
+   "correct": true,
+   "p_targets": 0.9814,
+   "brier_multi": 0.0004043199999999981
+  },
+  {
+   "id": "V3-020",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "fetch"
+   ],
+   "top": "fetch",
+   "conf": 0.8621,
+   "correct": true,
+   "p_targets": 0.8621,
+   "brier_multi": 0.02269636000000001
+  },
+  {
+   "id": "V3-021",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "merge_preview"
+   ],
+   "top": "merge_preview",
+   "conf": 0.8593,
+   "correct": true,
+   "p_targets": 0.8593,
+   "brier_multi": 0.022120430000000014
+  },
+  {
+   "id": "V3-022",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "merge_preview"
+   ],
+   "top": "merge_preview",
+   "conf": 0.9941,
+   "correct": true,
+   "p_targets": 0.9941,
+   "brier_multi": 3.897000000000019e-05
+  },
+  {
+   "id": "V3-023",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "merge_preview"
+   ],
+   "top": "merge_preview",
+   "conf": 0.9985,
+   "correct": true,
+   "p_targets": 0.9985,
+   "brier_multi": 2.4799999999998373e-06
+  },
+  {
+   "id": "V3-024",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_commit"
+   ],
+   "top": "scoped_push",
+   "conf": 0.6886,
+   "correct": false,
+   "p_targets": 0.1455,
+   "brier_multi": 1.20748057
+  },
+  {
+   "id": "V3-025",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_commit"
+   ],
+   "top": "add_commit",
+   "conf": 0.8311,
+   "correct": true,
+   "p_targets": 0.8311,
+   "brier_multi": 0.04029927000000002
+  },
+  {
+   "id": "V3-026",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_commit"
+   ],
+   "top": "add_commit",
+   "conf": 0.8914,
+   "correct": true,
+   "p_targets": 0.8914,
+   "brier_multi": 0.014700960000000006
+  },
+  {
+   "id": "V3-027",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit"
+   ],
+   "top": "commit",
+   "conf": 0.9566,
+   "correct": true,
+   "p_targets": 0.9566,
+   "brier_multi": 0.0025620999999999994
+  },
+  {
+   "id": "V3-028",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit"
+   ],
+   "top": "commit",
+   "conf": 0.901,
+   "correct": true,
+   "p_targets": 0.901,
+   "brier_multi": 0.014184659999999995
+  },
+  {
+   "id": "V3-029",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit"
+   ],
+   "top": "commit",
+   "conf": 0.9909,
+   "correct": true,
+   "p_targets": 0.9909,
+   "brier_multi": 0.00010212999999999995
+  },
+  {
+   "id": "V3-030",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "push"
+   ],
+   "top": "push",
+   "conf": 0.9698,
+   "correct": true,
+   "p_targets": 0.9698,
+   "brier_multi": 0.0011000200000000002
+  },
+  {
+   "id": "V3-031",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "push"
+   ],
+   "top": "push",
+   "conf": 0.4458,
+   "correct": true,
+   "p_targets": 0.4458,
+   "brier_multi": 0.35133700000000007
+  },
+  {
+   "id": "V3-032",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "scoped_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.9829,
+   "correct": true,
+   "p_targets": 0.9829,
+   "brier_multi": 0.0003278500000000002
+  },
+  {
+   "id": "V3-033",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "scoped_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.8622,
+   "correct": true,
+   "p_targets": 0.8622,
+   "brier_multi": 0.02099564000000001
+  },
+  {
+   "id": "V3-034",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branch"
+   ],
+   "top": "branch",
+   "conf": 0.9963,
+   "correct": true,
+   "p_targets": 0.9963,
+   "brier_multi": 1.497000000000027e-05
+  },
+  {
+   "id": "V3-035",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branch"
+   ],
+   "top": "branch",
+   "conf": 0.2734,
+   "correct": true,
+   "p_targets": 0.2734,
+   "brier_multi": 0.64188206
+  },
+  {
+   "id": "V3-036",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branch"
+   ],
+   "top": "branch",
+   "conf": 0.9974,
+   "correct": true,
+   "p_targets": 0.9974,
+   "brier_multi": 7.4100000000002425e-06
+  },
+  {
+   "id": "V3-037",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "checkout"
+   ],
+   "top": "checkout",
+   "conf": 0.8916,
+   "correct": true,
+   "p_targets": 0.8916,
+   "brier_multi": 0.01807511000000001
+  },
+  {
+   "id": "V3-038",
+   "kind": "routing",
+   "ambiguous": true,
+   "targets": [
+    "pull",
+    "sync"
+   ],
+   "top": "pull",
+   "conf": 0.1063,
+   "correct": true,
+   "p_targets": 0.1861,
+   "brier_multi": 0.8463143199999998
+  },
+  {
+   "id": "V3-039",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull"
+   ],
+   "top": "pull",
+   "conf": 0.7644,
+   "correct": true,
+   "p_targets": 0.7644,
+   "brier_multi": 0.059334800000000014
+  },
+  {
+   "id": "V3-040",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull",
+    "pull_rebase"
+   ],
+   "top": "pull",
+   "conf": 0.9346,
+   "correct": true,
+   "p_targets": 0.9368,
+   "brier_multi": 0.006658350000000002
+  },
+  {
+   "id": "V3-041",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "sync"
+   ],
+   "top": "sync",
+   "conf": 0.9699,
+   "correct": true,
+   "p_targets": 0.9699,
+   "brier_multi": 0.0009445500000000009
+  },
+  {
+   "id": "V3-042",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "sync"
+   ],
+   "top": "sync",
+   "conf": 0.9247,
+   "correct": true,
+   "p_targets": 0.9247,
+   "brier_multi": 0.007972240000000005
+  },
+  {
+   "id": "V3-043",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "sync"
+   ],
+   "top": "sync",
+   "conf": 0.9539,
+   "correct": true,
+   "p_targets": 0.9539,
+   "brier_multi": 0.002285420000000003
+  },
+  {
+   "id": "V3-044",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert",
+    "undo"
+   ],
+   "top": "undo",
+   "conf": 0.7636,
+   "correct": true,
+   "p_targets": 0.8261,
+   "brier_multi": 0.08163557000000003
+  },
+  {
+   "id": "V3-045",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "undo"
+   ],
+   "top": "undo",
+   "conf": 0.3125,
+   "correct": true,
+   "p_targets": 0.3125,
+   "brier_multi": 0.52480759
+  },
+  {
+   "id": "V3-046",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "amend"
+   ],
+   "top": "amend",
+   "conf": 0.9927,
+   "correct": true,
+   "p_targets": 0.9927,
+   "brier_multi": 5.7229999999999606e-05
+  },
+  {
+   "id": "V3-047",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "amend"
+   ],
+   "top": "amend",
+   "conf": 0.8522,
+   "correct": true,
+   "p_targets": 0.8522,
+   "brier_multi": 0.02629012000000001
+  },
+  {
+   "id": "V3-048",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "amend"
+   ],
+   "top": "amend",
+   "conf": 0.969,
+   "correct": true,
+   "p_targets": 0.969,
+   "brier_multi": 0.0010952800000000016
+  },
+  {
+   "id": "V3-049",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "squash"
+   ],
+   "top": "squash",
+   "conf": 0.9973,
+   "correct": true,
+   "p_targets": 0.9973,
+   "brier_multi": 7.960000000000193e-06
+  },
+  {
+   "id": "V3-050",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "squash"
+   ],
+   "top": "squash",
+   "conf": 0.9328,
+   "correct": true,
+   "p_targets": 0.9328,
+   "brier_multi": 0.004836850000000005
+  },
+  {
+   "id": "V3-051",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "squash"
+   ],
+   "top": "squash",
+   "conf": 0.9979,
+   "correct": true,
+   "p_targets": 0.9979,
+   "brier_multi": 4.8199999999999615e-06
+  },
+  {
+   "id": "V3-052",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert"
+   ],
+   "top": "revert",
+   "conf": 0.9628,
+   "correct": true,
+   "p_targets": 0.9628,
+   "brier_multi": 0.0016227300000000008
+  },
+  {
+   "id": "V3-053",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert"
+   ],
+   "top": "revert",
+   "conf": 0.9477,
+   "correct": true,
+   "p_targets": 0.9477,
+   "brier_multi": 0.002906340000000001
+  },
+  {
+   "id": "V3-054",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert"
+   ],
+   "top": "revert",
+   "conf": 0.929,
+   "correct": true,
+   "p_targets": 0.929,
+   "brier_multi": 0.006320649999999994
+  },
+  {
+   "id": "V3-055",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "unstage"
+   ],
+   "top": "unstage",
+   "conf": 0.9828,
+   "correct": true,
+   "p_targets": 0.9828,
+   "brier_multi": 0.00034335999999999975
+  },
+  {
+   "id": "V3-056",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "unstage"
+   ],
+   "top": "unstage",
+   "conf": 0.972,
+   "correct": true,
+   "p_targets": 0.972,
+   "brier_multi": 0.0008906400000000014
+  },
+  {
+   "id": "V3-057",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "unstage"
+   ],
+   "top": "unstage",
+   "conf": 0.7854,
+   "correct": true,
+   "p_targets": 0.7854,
+   "brier_multi": 0.052636970000000005
+  },
+  {
+   "id": "V3-058",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash"
+   ],
+   "top": "stash",
+   "conf": 0.7522,
+   "correct": true,
+   "p_targets": 0.7522,
+   "brier_multi": 0.09948001000000002
+  },
+  {
+   "id": "V3-059",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash"
+   ],
+   "top": "stash",
+   "conf": 0.6256,
+   "correct": true,
+   "p_targets": 0.6256,
+   "brier_multi": 0.23061911999999996
+  },
+  {
+   "id": "V3-060",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash"
+   ],
+   "top": "stash",
+   "conf": 0.9735,
+   "correct": true,
+   "p_targets": 0.9735,
+   "brier_multi": 0.0009613699999999984
+  },
+  {
+   "id": "V3-061",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "cleanup"
+   ],
+   "top": "cleanup",
+   "conf": 0.9259,
+   "correct": true,
+   "p_targets": 0.9259,
+   "brier_multi": 0.007564130000000008
+  },
+  {
+   "id": "V3-062",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "cleanup"
+   ],
+   "top": "cleanup",
+   "conf": 0.8991,
+   "correct": true,
+   "p_targets": 0.8991,
+   "brier_multi": 0.01284142
+  },
+  {
+   "id": "V3-063",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "cleanup"
+   ],
+   "top": "cleanup",
+   "conf": 0.9781,
+   "correct": true,
+   "p_targets": 0.9781,
+   "brier_multi": 0.0006247100000000014
+  },
+  {
+   "id": "V3-064",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local"
+   ],
+   "top": "discard_local",
+   "conf": 0.9306,
+   "correct": true,
+   "p_targets": 0.9306,
+   "brier_multi": 0.005213240000000002
+  },
+  {
+   "id": "V3-065",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local"
+   ],
+   "top": "discard_local",
+   "conf": 0.805,
+   "correct": true,
+   "p_targets": 0.805,
+   "brier_multi": 0.04840944999999998
+  },
+  {
+   "id": "V3-066",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local"
+   ],
+   "top": "discard_local",
+   "conf": 0.9782,
+   "correct": true,
+   "p_targets": 0.9782,
+   "brier_multi": 0.0005853100000000019
+  },
+  {
+   "id": "V3-067",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "force_push"
+   ],
+   "top": "force_push",
+   "conf": 0.9758,
+   "correct": true,
+   "p_targets": 0.9758,
+   "brier_multi": 0.00067652
+  },
+  {
+   "id": "V3-068",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "force_push"
+   ],
+   "top": "force_push",
+   "conf": 0.7893,
+   "correct": true,
+   "p_targets": 0.7893,
+   "brier_multi": 0.049368010000000004
+  },
+  {
+   "id": "V3-069",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "force_push"
+   ],
+   "top": "force_push",
+   "conf": 0.5929,
+   "correct": true,
+   "p_targets": 0.5929,
+   "brier_multi": 0.22724966000000002
+  },
+  {
+   "id": "V3-070",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "init"
+   ],
+   "top": "init",
+   "conf": 0.7566,
+   "correct": true,
+   "p_targets": 0.7566,
+   "brier_multi": 0.06748667999999997
+  },
+  {
+   "id": "V3-071",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "init"
+   ],
+   "top": "init",
+   "conf": 0.9795,
+   "correct": true,
+   "p_targets": 0.9795,
+   "brier_multi": 0.0004720399999999985
+  },
+  {
+   "id": "V3-072",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "init"
+   ],
+   "top": "init",
+   "conf": 0.8504,
+   "correct": true,
+   "p_targets": 0.8504,
+   "brier_multi": 0.028874689999999988
+  },
+  {
+   "id": "V3-073",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_remote"
+   ],
+   "top": "add_remote",
+   "conf": 0.8271,
+   "correct": true,
+   "p_targets": 0.8271,
+   "brier_multi": 0.05103276000000002
+  },
+  {
+   "id": "V3-074",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_remote"
+   ],
+   "top": "add_remote",
+   "conf": 0.9923,
+   "correct": true,
+   "p_targets": 0.9923,
+   "brier_multi": 6.593000000000062e-05
+  },
+  {
+   "id": "V3-075",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_remote"
+   ],
+   "top": "add_remote",
+   "conf": 0.8988,
+   "correct": true,
+   "p_targets": 0.8988,
+   "brier_multi": 0.01110003999999999
+  },
+  {
+   "id": "V3-076",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "find_lost_work"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.781,
+   "correct": true,
+   "p_targets": 0.781,
+   "brier_multi": 0.08748810999999998
+  },
+  {
+   "id": "V3-077",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "find_lost_work"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.9824,
+   "correct": true,
+   "p_targets": 0.9824,
+   "brier_multi": 0.00038322999999999824
+  },
+  {
+   "id": "V3-078",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "find_lost_work"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.9572,
+   "correct": true,
+   "p_targets": 0.9572,
+   "brier_multi": 0.0024065999999999957
+  },
+  {
+   "id": "V3-079",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remotes"
+   ],
+   "top": "remotes",
+   "conf": 0.9082,
+   "correct": true,
+   "p_targets": 0.9082,
+   "brier_multi": 0.012303809999999998
+  },
+  {
+   "id": "V3-080",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remotes"
+   ],
+   "top": "remotes",
+   "conf": 0.9888,
+   "correct": true,
+   "p_targets": 0.9888,
+   "brier_multi": 0.0001691199999999997
+  },
+  {
+   "id": "V3-081",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remotes"
+   ],
+   "top": "remotes",
+   "conf": 0.2642,
+   "correct": true,
+   "p_targets": 0.2642,
+   "brier_multi": 0.63274611
+  },
+  {
+   "id": "V3-082",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash_pop"
+   ],
+   "top": "stash_pop",
+   "conf": 0.742,
+   "correct": true,
+   "p_targets": 0.742,
+   "brier_multi": 0.08329853
+  },
+  {
+   "id": "V3-083",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash_pop"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.3181,
+   "correct": false,
+   "p_targets": 0.1398,
+   "brier_multi": 0.8876066599999999
+  },
+  {
+   "id": "V3-084",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash_pop"
+   ],
+   "top": "stash_pop",
+   "conf": 0.9848,
+   "correct": true,
+   "p_targets": 0.9848,
+   "brier_multi": 0.00029568999999999977
+  },
+  {
+   "id": "V3-085",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull_rebase"
+   ],
+   "top": "pull_rebase",
+   "conf": 0.9185,
+   "correct": true,
+   "p_targets": 0.9185,
+   "brier_multi": 0.007172130000000002
+  },
+  {
+   "id": "V3-086",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull_rebase"
+   ],
+   "top": "pull_rebase",
+   "conf": 0.715,
+   "correct": true,
+   "p_targets": 0.715,
+   "brier_multi": 0.09989318000000001
+  },
+  {
+   "id": "V3-087",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull_rebase"
+   ],
+   "top": "pull_rebase",
+   "conf": 0.9289,
+   "correct": true,
+   "p_targets": 0.9289,
+   "brier_multi": 0.007520650000000006
+  },
+  {
+   "id": "V3-088",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "set_upstream"
+   ],
+   "top": "set_upstream",
+   "conf": 0.9847,
+   "correct": true,
+   "p_targets": 0.9847,
+   "brier_multi": 0.0002577299999999994
+  },
+  {
+   "id": "V3-089",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "set_upstream"
+   ],
+   "top": "set_upstream",
+   "conf": 0.9522,
+   "correct": true,
+   "p_targets": 0.9522,
+   "brier_multi": 0.0025374099999999956
+  },
+  {
+   "id": "V3-090",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "set_upstream"
+   ],
+   "top": "set_upstream",
+   "conf": 0.9555,
+   "correct": true,
+   "p_targets": 0.9555,
+   "brier_multi": 0.0021735999999999986
+  },
+  {
+   "id": "V3-091",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remove_remote"
+   ],
+   "top": "remove_remote",
+   "conf": 0.993,
+   "correct": true,
+   "p_targets": 0.993,
+   "brier_multi": 5.956000000000009e-05
+  },
+  {
+   "id": "V3-092",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remove_remote"
+   ],
+   "top": "remove_remote",
+   "conf": 0.7711,
+   "correct": true,
+   "p_targets": 0.7711,
+   "brier_multi": 0.06125993
+  },
+  {
+   "id": "V3-093",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remove_remote"
+   ],
+   "top": "remove_remote",
+   "conf": 0.9823,
+   "correct": true,
+   "p_targets": 0.9823,
+   "brier_multi": 0.0005253600000000017
+  },
+  {
+   "id": "V3-094",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "delete_repo"
+   ],
+   "top": "delete_repo",
+   "conf": 0.8846,
+   "correct": true,
+   "p_targets": 0.8846,
+   "brier_multi": 0.01595140999999999
+  },
+  {
+   "id": "V3-095",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "delete_repo"
+   ],
+   "top": "delete_repo",
+   "conf": 0.6389,
+   "correct": true,
+   "p_targets": 0.6389,
+   "brier_multi": 0.16298917999999998
+  },
+  {
+   "id": "V3-096",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.3118,
+   "correct": false,
+   "p_targets": 0.2821,
+   "brier_multi": 0.67975863
+  },
+  {
+   "id": "V3-097",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit_push"
+   ],
+   "top": "commit_push",
+   "conf": 0.7505,
+   "correct": true,
+   "p_targets": 0.7505,
+   "brier_multi": 0.08016051000000003
+  },
+  {
+   "id": "V3-098",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit_push"
+   ],
+   "top": "commit_push",
+   "conf": 0.6108,
+   "correct": true,
+   "p_targets": 0.6108,
+   "brier_multi": 0.20848851999999998
+  },
+  {
+   "id": "V3-099",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_continue"
+   ],
+   "top": "rebase_continue",
+   "conf": 0.9749,
+   "correct": true,
+   "p_targets": 0.9749,
+   "brier_multi": 0.0008880100000000005
+  },
+  {
+   "id": "V3-100",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_skip"
+   ],
+   "top": "rebase_skip",
+   "conf": 0.9568,
+   "correct": true,
+   "p_targets": 0.9568,
+   "brier_multi": 0.0027465800000000015
+  },
+  {
+   "id": "V3-101",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_skip"
+   ],
+   "top": "rebase_skip",
+   "conf": 0.961,
+   "correct": true,
+   "p_targets": 0.961,
+   "brier_multi": 0.0022939300000000026
+  },
+  {
+   "id": "V3-102",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_abort"
+   ],
+   "top": "rebase_abort",
+   "conf": 0.965,
+   "correct": true,
+   "p_targets": 0.965,
+   "brier_multi": 0.002176740000000002
+  },
+  {
+   "id": "V3-103",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_abort"
+   ],
+   "top": "rebase_abort",
+   "conf": 0.9697,
+   "correct": true,
+   "p_targets": 0.9697,
+   "brier_multi": 0.0017211899999999996
+  },
+  {
+   "id": "V3-104",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "merge_abort"
+   ],
+   "top": "merge_abort",
+   "conf": 0.9873,
+   "correct": true,
+   "p_targets": 0.9873,
+   "brier_multi": 0.00032258000000000113
+  },
+  {
+   "id": "V3-105",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "merge_abort"
+   ],
+   "top": "merge_abort",
+   "conf": 0.9665,
+   "correct": true,
+   "p_targets": 0.9665,
+   "brier_multi": 0.0022444999999999982
+  },
+  {
+   "id": "V3-106",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.9572,
+   "correct": true,
+   "p_targets": 0.9572,
+   "brier_multi": 0.0019214699999999957
+  },
+  {
+   "id": "V3-107",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.9112,
+   "correct": true,
+   "p_targets": 0.9112,
+   "brier_multi": 0.00871494
+  },
+  {
+   "id": "V3-108",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.7081,
+   "correct": true,
+   "p_targets": 0.7081,
+   "brier_multi": 0.12180601000000003
+  },
+  {
+   "id": "V3-109",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.7195,
+   "correct": true,
+   "p_targets": 0.7195,
+   "brier_multi": 0.08204538999999998
+  },
+  {
+   "id": "V3-110",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.7342,
+   "correct": true,
+   "p_targets": 0.7342,
+   "brier_multi": 0.07394160000000001
+  },
+  {
+   "id": "V3-111",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.7886,
+   "correct": true,
+   "p_targets": 0.7886,
+   "brier_multi": 0.046453830000000015
+  },
+  {
+   "id": "V3-112",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.8563,
+   "correct": true,
+   "p_targets": 0.8563,
+   "brier_multi": 0.021706500000000014
+  },
+  {
+   "id": "V3-113",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.7594,
+   "correct": true,
+   "p_targets": 0.7594,
+   "brier_multi": 0.06184859000000002
+  },
+  {
+   "id": "V3-114",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "status"
+   ],
+   "top": "status",
+   "conf": 0.762,
+   "correct": true,
+   "p_targets": 0.762,
+   "brier_multi": 0.07325445
+  },
+  {
+   "id": "V3-115",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "status"
+   ],
+   "top": "status",
+   "conf": 0.5013,
+   "correct": true,
+   "p_targets": 0.5013,
+   "brier_multi": 0.28506018000000005
+  },
+  {
+   "id": "V3-116",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "status"
+   ],
+   "top": "status",
+   "conf": 0.9655,
+   "correct": true,
+   "p_targets": 0.9655,
+   "brier_multi": 0.0013404499999999985
+  },
+  {
+   "id": "V3-117",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "log"
+   ],
+   "top": "log",
+   "conf": 0.988,
+   "correct": true,
+   "p_targets": 0.988,
+   "brier_multi": 0.00015458000000000024
+  },
+  {
+   "id": "V3-118",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "log"
+   ],
+   "top": "log",
+   "conf": 0.9806,
+   "correct": true,
+   "p_targets": 0.9806,
+   "brier_multi": 0.0003999599999999989
+  },
+  {
+   "id": "V3-119",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "log"
+   ],
+   "top": "log",
+   "conf": 0.96,
+   "correct": true,
+   "p_targets": 0.96,
+   "brier_multi": 0.0018645800000000028
+  },
+  {
+   "id": "V3-120",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "diff"
+   ],
+   "top": "diff",
+   "conf": 0.9968,
+   "correct": true,
+   "p_targets": 0.9968,
+   "brier_multi": 1.1739999999999876e-05
+  },
+  {
+   "id": "V3-121",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "diff"
+   ],
+   "top": "diff",
+   "conf": 0.828,
+   "correct": true,
+   "p_targets": 0.828,
+   "brier_multi": 0.03254640000000001
+  },
+  {
+   "id": "V3-122",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "diff"
+   ],
+   "top": "show",
+   "conf": 0.4752,
+   "correct": false,
+   "p_targets": 0.2194,
+   "brier_multi": 0.84651291
+  },
+  {
+   "id": "V3-123",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branches"
+   ],
+   "top": "branches",
+   "conf": 0.9914,
+   "correct": true,
+   "p_targets": 0.9914,
+   "brier_multi": 8.35400000000009e-05
+  },
+  {
+   "id": "V3-124",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "config"
+   ],
+   "top": "config",
+   "conf": 0.9871,
+   "correct": true,
+   "p_targets": 0.9871,
+   "brier_multi": 0.00019325000000000058
+  },
+  {
+   "id": "V3-125",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "config"
+   ],
+   "top": "config",
+   "conf": 0.989,
+   "correct": true,
+   "p_targets": 0.989,
+   "brier_multi": 0.00018893000000000024
+  },
+  {
+   "id": "V3-126",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "config"
+   ],
+   "top": "config",
+   "conf": 0.9861,
+   "correct": true,
+   "p_targets": 0.9861,
+   "brier_multi": 0.0003051300000000006
+  },
+  {
+   "id": "V3-127",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "show"
+   ],
+   "top": "show",
+   "conf": 0.9951,
+   "correct": true,
+   "p_targets": 0.9951,
+   "brier_multi": 2.791000000000015e-05
+  },
+  {
+   "id": "V3-128",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "show"
+   ],
+   "top": "show",
+   "conf": 0.9943,
+   "correct": true,
+   "p_targets": 0.9943,
+   "brier_multi": 4.2710000000000436e-05
+  },
+  {
+   "id": "V3-129",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "show"
+   ],
+   "top": "show",
+   "conf": 0.9942,
+   "correct": true,
+   "p_targets": 0.9942,
+   "brier_multi": 3.876000000000031e-05
+  },
+  {
+   "id": "V3-130",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "fetch"
+   ],
+   "top": "fetch",
+   "conf": 0.9886,
+   "correct": true,
+   "p_targets": 0.9886,
+   "brier_multi": 0.00015389999999999921
+  },
+  {
+   "id": "V3-131",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "fetch"
+   ],
+   "top": "fetch",
+   "conf": 0.8653,
+   "correct": true,
+   "p_targets": 0.8653,
+   "brier_multi": 0.023566600000000014
+  },
+  {
+   "id": "V3-132",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "fetch"
+   ],
+   "top": "fetch",
+   "conf": 0.9781,
+   "correct": true,
+   "p_targets": 0.9781,
+   "brier_multi": 0.0005163000000000013
+  },
+  {
+   "id": "V3-133",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "merge_preview"
+   ],
+   "top": "merge_preview",
+   "conf": 0.8287,
+   "correct": true,
+   "p_targets": 0.8287,
+   "brier_multi": 0.04649841
+  },
+  {
+   "id": "V3-134",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "merge_preview"
+   ],
+   "top": "merge_preview",
+   "conf": 0.988,
+   "correct": true,
+   "p_targets": 0.988,
+   "brier_multi": 0.00020454000000000026
+  },
+  {
+   "id": "V3-135",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "merge_preview"
+   ],
+   "top": "merge_preview",
+   "conf": 0.9913,
+   "correct": true,
+   "p_targets": 0.9913,
+   "brier_multi": 9.558000000000072e-05
+  },
+  {
+   "id": "V3-136",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_commit"
+   ],
+   "top": "add_commit",
+   "conf": 0.7829,
+   "correct": true,
+   "p_targets": 0.7829,
+   "brier_multi": 0.07219730999999999
+  },
+  {
+   "id": "V3-137",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_commit"
+   ],
+   "top": "add_commit",
+   "conf": 0.6684,
+   "correct": true,
+   "p_targets": 0.6684,
+   "brier_multi": 0.14485348
+  },
+  {
+   "id": "V3-138",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_commit"
+   ],
+   "top": "add_commit",
+   "conf": 0.4674,
+   "correct": true,
+   "p_targets": 0.4674,
+   "brier_multi": 0.39710931
+  },
+  {
+   "id": "V3-139",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit"
+   ],
+   "top": "commit",
+   "conf": 0.9591,
+   "correct": true,
+   "p_targets": 0.9591,
+   "brier_multi": 0.002436320000000004
+  },
+  {
+   "id": "V3-140",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit"
+   ],
+   "top": "commit",
+   "conf": 0.907,
+   "correct": true,
+   "p_targets": 0.907,
+   "brier_multi": 0.012557059999999995
+  },
+  {
+   "id": "V3-141",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit"
+   ],
+   "top": "commit",
+   "conf": 0.8054,
+   "correct": true,
+   "p_targets": 0.8054,
+   "brier_multi": 0.04452023
+  },
+  {
+   "id": "V3-142",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "push"
+   ],
+   "top": "push",
+   "conf": 0.9018,
+   "correct": true,
+   "p_targets": 0.9018,
+   "brier_multi": 0.01364427999999999
+  },
+  {
+   "id": "V3-143",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "push"
+   ],
+   "top": "fetch",
+   "conf": 0.5599,
+   "correct": false,
+   "p_targets": 0.0616,
+   "brier_multi": 1.2749617199999999
+  },
+  {
+   "id": "V3-144",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "scoped_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.9885,
+   "correct": true,
+   "p_targets": 0.9885,
+   "brier_multi": 0.00017084999999999895
+  },
+  {
+   "id": "V3-145",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "scoped_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.9822,
+   "correct": true,
+   "p_targets": 0.9822,
+   "brier_multi": 0.00045418000000000135
+  },
+  {
+   "id": "V3-146",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "scoped_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.9559,
+   "correct": true,
+   "p_targets": 0.9559,
+   "brier_multi": 0.0020905100000000025
+  },
+  {
+   "id": "V3-147",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branch"
+   ],
+   "top": "branch",
+   "conf": 0.9974,
+   "correct": true,
+   "p_targets": 0.9974,
+   "brier_multi": 7.440000000000243e-06
+  },
+  {
+   "id": "V3-148",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branch"
+   ],
+   "top": "branch",
+   "conf": 0.9949,
+   "correct": true,
+   "p_targets": 0.9949,
+   "brier_multi": 2.767999999999993e-05
+  },
+  {
+   "id": "V3-149",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branch"
+   ],
+   "top": "branch",
+   "conf": 0.9449,
+   "correct": true,
+   "p_targets": 0.9449,
+   "brier_multi": 0.0033217500000000044
+  },
+  {
+   "id": "V3-150",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "checkout"
+   ],
+   "top": "checkout",
+   "conf": 0.8743,
+   "correct": true,
+   "p_targets": 0.8743,
+   "brier_multi": 0.019812180000000006
+  },
+  {
+   "id": "V3-151",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "checkout"
+   ],
+   "top": "checkout",
+   "conf": 0.9794,
+   "correct": true,
+   "p_targets": 0.9794,
+   "brier_multi": 0.000579709999999998
+  },
+  {
+   "id": "V3-152",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull"
+   ],
+   "top": "pull",
+   "conf": 0.8905,
+   "correct": true,
+   "p_targets": 0.8905,
+   "brier_multi": 0.02112991000000001
+  },
+  {
+   "id": "V3-153",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull"
+   ],
+   "top": "pull",
+   "conf": 0.9232,
+   "correct": true,
+   "p_targets": 0.9232,
+   "brier_multi": 0.006900049999999996
+  },
+  {
+   "id": "V3-154",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull"
+   ],
+   "top": "sync",
+   "conf": 0.7871,
+   "correct": false,
+   "p_targets": 0.0583,
+   "brier_multi": 1.5116920200000001
+  },
+  {
+   "id": "V3-155",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "sync"
+   ],
+   "top": "sync",
+   "conf": 0.9664,
+   "correct": true,
+   "p_targets": 0.9664,
+   "brier_multi": 0.0015039999999999973
+  },
+  {
+   "id": "V3-156",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "sync"
+   ],
+   "top": "sync",
+   "conf": 0.8037,
+   "correct": true,
+   "p_targets": 0.8037,
+   "brier_multi": 0.059638270000000014
+  },
+  {
+   "id": "V3-157",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "sync"
+   ],
+   "top": "sync",
+   "conf": 0.9834,
+   "correct": true,
+   "p_targets": 0.9834,
+   "brier_multi": 0.00032416999999999825
+  },
+  {
+   "id": "V3-158",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert",
+    "undo"
+   ],
+   "top": "undo",
+   "conf": 0.9601,
+   "correct": true,
+   "p_targets": 0.9698,
+   "brier_multi": 0.0018157200000000037
+  },
+  {
+   "id": "V3-159",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert",
+    "undo"
+   ],
+   "top": "undo",
+   "conf": 0.5049,
+   "correct": true,
+   "p_targets": 0.9624,
+   "brier_multi": 0.45474678
+  },
+  {
+   "id": "V3-160",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "amend"
+   ],
+   "top": "amend",
+   "conf": 0.9928,
+   "correct": true,
+   "p_targets": 0.9928,
+   "brier_multi": 5.640999999999977e-05
+  },
+  {
+   "id": "V3-161",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "amend"
+   ],
+   "top": "amend",
+   "conf": 0.8732,
+   "correct": true,
+   "p_targets": 0.8732,
+   "brier_multi": 0.018776220000000007
+  },
+  {
+   "id": "V3-162",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "amend"
+   ],
+   "top": "amend",
+   "conf": 0.9946,
+   "correct": true,
+   "p_targets": 0.9946,
+   "brier_multi": 3.187999999999957e-05
+  },
+  {
+   "id": "V3-163",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "squash"
+   ],
+   "top": "squash",
+   "conf": 0.9964,
+   "correct": true,
+   "p_targets": 0.9964,
+   "brier_multi": 1.4250000000000343e-05
+  },
+  {
+   "id": "V3-164",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "squash"
+   ],
+   "top": "squash",
+   "conf": 0.9962,
+   "correct": true,
+   "p_targets": 0.9962,
+   "brier_multi": 1.6210000000000192e-05
+  },
+  {
+   "id": "V3-165",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert"
+   ],
+   "top": "revert",
+   "conf": 0.9648,
+   "correct": true,
+   "p_targets": 0.9648,
+   "brier_multi": 0.0013702800000000006
+  },
+  {
+   "id": "V3-166",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert"
+   ],
+   "top": "revert",
+   "conf": 0.983,
+   "correct": true,
+   "p_targets": 0.983,
+   "brier_multi": 0.0003068400000000005
+  },
+  {
+   "id": "V3-167",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert"
+   ],
+   "top": "revert",
+   "conf": 0.8873,
+   "correct": true,
+   "p_targets": 0.8873,
+   "brier_multi": 0.02031120000000001
+  },
+  {
+   "id": "V3-168",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "unstage"
+   ],
+   "top": "unstage",
+   "conf": 0.8803,
+   "correct": true,
+   "p_targets": 0.8803,
+   "brier_multi": 0.01986107000000001
+  },
+  {
+   "id": "V3-169",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "unstage"
+   ],
+   "top": "unstage",
+   "conf": 0.8075,
+   "correct": true,
+   "p_targets": 0.8075,
+   "brier_multi": 0.04776225
+  },
+  {
+   "id": "V3-170",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "unstage"
+   ],
+   "top": "unstage",
+   "conf": 0.9947,
+   "correct": true,
+   "p_targets": 0.9947,
+   "brier_multi": 3.3489999999999695e-05
+  },
+  {
+   "id": "V3-171",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash"
+   ],
+   "top": "stash",
+   "conf": 0.8919,
+   "correct": true,
+   "p_targets": 0.8919,
+   "brier_multi": 0.019855819999999993
+  },
+  {
+   "id": "V3-172",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash"
+   ],
+   "top": "stash",
+   "conf": 0.9819,
+   "correct": true,
+   "p_targets": 0.9819,
+   "brier_multi": 0.0003847400000000002
+  },
+  {
+   "id": "V3-173",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash"
+   ],
+   "top": "stash_pop",
+   "conf": 0.9097,
+   "correct": false,
+   "p_targets": 0.0319,
+   "brier_multi": 1.7652797999999998
+  },
+  {
+   "id": "V3-174",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "cleanup"
+   ],
+   "top": "cleanup",
+   "conf": 0.9779,
+   "correct": true,
+   "p_targets": 0.9779,
+   "brier_multi": 0.0006486900000000004
+  },
+  {
+   "id": "V3-175",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "cleanup"
+   ],
+   "top": "cleanup",
+   "conf": 0.9132,
+   "correct": true,
+   "p_targets": 0.9132,
+   "brier_multi": 0.009538699999999997
+  },
+  {
+   "id": "V3-176",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "cleanup"
+   ],
+   "top": "cleanup",
+   "conf": 0.9819,
+   "correct": true,
+   "p_targets": 0.9819,
+   "brier_multi": 0.0003907600000000002
+  },
+  {
+   "id": "V3-177",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local"
+   ],
+   "top": "discard_local",
+   "conf": 0.9355,
+   "correct": true,
+   "p_targets": 0.9355,
+   "brier_multi": 0.00529669
+  },
+  {
+   "id": "V3-178",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local"
+   ],
+   "top": "discard_local",
+   "conf": 0.9912,
+   "correct": true,
+   "p_targets": 0.9912,
+   "brier_multi": 8.329000000000053e-05
+  },
+  {
+   "id": "V3-179",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local"
+   ],
+   "top": "discard_local",
+   "conf": 0.9109,
+   "correct": true,
+   "p_targets": 0.9109,
+   "brier_multi": 0.012978279999999993
+  },
+  {
+   "id": "V3-180",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "force_push"
+   ],
+   "top": "force_push",
+   "conf": 0.8998,
+   "correct": true,
+   "p_targets": 0.8998,
+   "brier_multi": 0.016130689999999993
+  },
+  {
+   "id": "V3-181",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "force_push"
+   ],
+   "top": "force_push",
+   "conf": 0.9537,
+   "correct": true,
+   "p_targets": 0.9537,
+   "brier_multi": 0.0027562800000000007
+  },
+  {
+   "id": "V3-182",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "force_push"
+   ],
+   "top": "push",
+   "conf": 0.2191,
+   "correct": false,
+   "p_targets": 0.2091,
+   "brier_multi": 0.7374110299999999
+  },
+  {
+   "id": "V3-183",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "init"
+   ],
+   "top": "init",
+   "conf": 0.9979,
+   "correct": true,
+   "p_targets": 0.9979,
+   "brier_multi": 5.369999999999961e-06
+  },
+  {
+   "id": "V3-184",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "init"
+   ],
+   "top": "init",
+   "conf": 0.9941,
+   "correct": true,
+   "p_targets": 0.9941,
+   "brier_multi": 4.139000000000019e-05
+  },
+  {
+   "id": "V3-185",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "init"
+   ],
+   "top": "init",
+   "conf": 0.9922,
+   "correct": true,
+   "p_targets": 0.9922,
+   "brier_multi": 7.154000000000046e-05
+  },
+  {
+   "id": "V3-186",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_remote"
+   ],
+   "top": "add_remote",
+   "conf": 0.9348,
+   "correct": true,
+   "p_targets": 0.9348,
+   "brier_multi": 0.006541420000000005
+  },
+  {
+   "id": "V3-187",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "find_lost_work"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.8984,
+   "correct": true,
+   "p_targets": 0.8984,
+   "brier_multi": 0.019466180000000007
+  },
+  {
+   "id": "V3-188",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "find_lost_work"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.9953,
+   "correct": true,
+   "p_targets": 0.9953,
+   "brier_multi": 2.753000000000035e-05
+  },
+  {
+   "id": "V3-189",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "find_lost_work"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.9909,
+   "correct": true,
+   "p_targets": 0.9909,
+   "brier_multi": 9.132999999999995e-05
+  },
+  {
+   "id": "V3-190",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remotes"
+   ],
+   "top": "remotes",
+   "conf": 0.9962,
+   "correct": true,
+   "p_targets": 0.9962,
+   "brier_multi": 1.6720000000000192e-05
+  },
+  {
+   "id": "V3-191",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remotes"
+   ],
+   "top": "remotes",
+   "conf": 0.9663,
+   "correct": true,
+   "p_targets": 0.9663,
+   "brier_multi": 0.0012888199999999967
+  },
+  {
+   "id": "V3-192",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remotes"
+   ],
+   "top": "remotes",
+   "conf": 0.9949,
+   "correct": true,
+   "p_targets": 0.9949,
+   "brier_multi": 2.9219999999999934e-05
+  },
+  {
+   "id": "V3-193",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash_pop"
+   ],
+   "top": "stash_pop",
+   "conf": 0.9086,
+   "correct": true,
+   "p_targets": 0.9086,
+   "brier_multi": 0.015389720000000008
+  },
+  {
+   "id": "V3-194",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash_pop"
+   ],
+   "top": "stash_pop",
+   "conf": 0.993,
+   "correct": true,
+   "p_targets": 0.993,
+   "brier_multi": 6.0100000000000085e-05
+  },
+  {
+   "id": "V3-195",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash_pop"
+   ],
+   "top": "stash_pop",
+   "conf": 0.9505,
+   "correct": true,
+   "p_targets": 0.9505,
+   "brier_multi": 0.003952569999999999
+  },
+  {
+   "id": "V3-196",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull_rebase"
+   ],
+   "top": "pull_rebase",
+   "conf": 0.9971,
+   "correct": true,
+   "p_targets": 0.9971,
+   "brier_multi": 9.520000000000078e-06
+  },
+  {
+   "id": "V3-197",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull_rebase"
+   ],
+   "top": "pull_rebase",
+   "conf": 0.9493,
+   "correct": true,
+   "p_targets": 0.9493,
+   "brier_multi": 0.003349499999999997
+  },
+  {
+   "id": "V3-198",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull_rebase"
+   ],
+   "top": "pull_rebase",
+   "conf": 0.9339,
+   "correct": true,
+   "p_targets": 0.9339,
+   "brier_multi": 0.004798890000000006
+  },
+  {
+   "id": "V3-199",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "set_upstream"
+   ],
+   "top": "set_upstream",
+   "conf": 0.9131,
+   "correct": true,
+   "p_targets": 0.9131,
+   "brier_multi": 0.010832799999999997
+  },
+  {
+   "id": "V3-200",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "set_upstream"
+   ],
+   "top": "set_upstream",
+   "conf": 0.9922,
+   "correct": true,
+   "p_targets": 0.9922,
+   "brier_multi": 6.960000000000046e-05
+  },
+  {
+   "id": "V3-201",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "set_upstream"
+   ],
+   "top": "set_upstream",
+   "conf": 0.9933,
+   "correct": true,
+   "p_targets": 0.9933,
+   "brier_multi": 4.766000000000053e-05
+  },
+  {
+   "id": "V3-202",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remove_remote"
+   ],
+   "top": "remove_remote",
+   "conf": 0.9893,
+   "correct": true,
+   "p_targets": 0.9893,
+   "brier_multi": 0.00016150000000000092
+  },
+  {
+   "id": "V3-203",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remove_remote"
+   ],
+   "top": "remove_remote",
+   "conf": 0.9963,
+   "correct": true,
+   "p_targets": 0.9963,
+   "brier_multi": 1.530000000000027e-05
+  },
+  {
+   "id": "V3-204",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "delete_repo"
+   ],
+   "top": "delete_repo",
+   "conf": 0.9873,
+   "correct": true,
+   "p_targets": 0.9873,
+   "brier_multi": 0.00020209000000000115
+  },
+  {
+   "id": "V3-205",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "delete_repo"
+   ],
+   "top": "delete_repo",
+   "conf": 0.8256,
+   "correct": true,
+   "p_targets": 0.8256,
+   "brier_multi": 0.04094967
+  },
+  {
+   "id": "V3-206",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "delete_repo"
+   ],
+   "top": "delete_repo",
+   "conf": 0.9858,
+   "correct": true,
+   "p_targets": 0.9858,
+   "brier_multi": 0.0002565399999999997
+  },
+  {
+   "id": "V3-207",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit_push"
+   ],
+   "top": "commit_push",
+   "conf": 0.7155,
+   "correct": true,
+   "p_targets": 0.7155,
+   "brier_multi": 0.10722749
+  },
+  {
+   "id": "V3-208",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit_push"
+   ],
+   "top": "commit_push",
+   "conf": 0.8051,
+   "correct": true,
+   "p_targets": 0.8051,
+   "brier_multi": 0.05153909999999999
+  },
+  {
+   "id": "V3-209",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit_push"
+   ],
+   "top": "commit_push",
+   "conf": 0.6632,
+   "correct": true,
+   "p_targets": 0.6632,
+   "brier_multi": 0.14112774
+  },
+  {
+   "id": "V3-210",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_continue"
+   ],
+   "top": "rebase_continue",
+   "conf": 0.9711,
+   "correct": true,
+   "p_targets": 0.9711,
+   "brier_multi": 0.001153260000000002
+  },
+  {
+   "id": "V3-211",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_continue"
+   ],
+   "top": "rebase_continue",
+   "conf": 0.8504,
+   "correct": true,
+   "p_targets": 0.8504,
+   "brier_multi": 0.040222649999999985
+  },
+  {
+   "id": "V3-212",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_skip"
+   ],
+   "top": "rebase_skip",
+   "conf": 0.9622,
+   "correct": true,
+   "p_targets": 0.9622,
+   "brier_multi": 0.002075689999999996
+  },
+  {
+   "id": "V3-213",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_skip"
+   ],
+   "top": "rebase_skip",
+   "conf": 0.953,
+   "correct": true,
+   "p_targets": 0.953,
+   "brier_multi": 0.003189010000000004
+  },
+  {
+   "id": "V3-214",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_abort"
+   ],
+   "top": "rebase_abort",
+   "conf": 0.9778,
+   "correct": true,
+   "p_targets": 0.9778,
+   "brier_multi": 0.0008914999999999999
+  },
+  {
+   "id": "V3-215",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_abort"
+   ],
+   "top": "rebase_abort",
+   "conf": 0.9557,
+   "correct": true,
+   "p_targets": 0.9557,
+   "brier_multi": 0.0037872300000000004
+  },
+  {
+   "id": "V3-216",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "merge_abort"
+   ],
+   "top": "merge_abort",
+   "conf": 0.9766,
+   "correct": true,
+   "p_targets": 0.9766,
+   "brier_multi": 0.001095119999999999
+  },
+  {
+   "id": "V3-217",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "merge_abort"
+   ],
+   "top": "merge_abort",
+   "conf": 0.9932,
+   "correct": true,
+   "p_targets": 0.9932,
+   "brier_multi": 9.248000000000039e-05
+  },
+  {
+   "id": "V3-218",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "scoped_push",
+   "conf": 0.4075,
+   "correct": false,
+   "p_targets": 0.2295,
+   "brier_multi": 0.81130302
+  },
+  {
+   "id": "V3-219",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.2528,
+   "correct": true,
+   "p_targets": 0.2528,
+   "brier_multi": 0.62509171
+  },
+  {
+   "id": "V3-220",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.6275,
+   "correct": true,
+   "p_targets": 0.6275,
+   "brier_multi": 0.14416290000000007
+  },
+  {
+   "id": "V3-221",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "scoped_push",
+   "conf": 0.2304,
+   "correct": false,
+   "p_targets": 0.2283,
+   "brier_multi": 0.71316798
+  },
+  {
+   "id": "V3-222",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.7032,
+   "correct": true,
+   "p_targets": 0.7032,
+   "brier_multi": 0.11334334999999998
+  },
+  {
+   "id": "V3-223",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.3942,
+   "correct": true,
+   "p_targets": 0.3942,
+   "brier_multi": 0.38370079
+  },
+  {
+   "id": "V3-224",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.942,
+   "correct": true,
+   "p_targets": 0.942,
+   "brier_multi": 0.0035088300000000057
+  },
+  {
+   "id": "V3-225",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.9651,
+   "correct": true,
+   "p_targets": 0.9651,
+   "brier_multi": 0.001278750000000003
+  },
+  {
+   "id": "V3-226",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.3949,
+   "correct": true,
+   "p_targets": 0.3949,
+   "brier_multi": 0.42248139999999995
+  },
+  {
+   "id": "V3-227",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "status"
+   ],
+   "top": "status",
+   "conf": 0.9674,
+   "correct": true,
+   "p_targets": 0.9674,
+   "brier_multi": 0.0011888199999999973
+  },
+  {
+   "id": "V3-228",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "status"
+   ],
+   "top": "branches",
+   "conf": 0.3715,
+   "correct": false,
+   "p_targets": 0.2457,
+   "brier_multi": 0.7187643699999999
+  },
+  {
+   "id": "V3-229",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "log"
+   ],
+   "top": "log",
+   "conf": 0.9943,
+   "correct": true,
+   "p_targets": 0.9943,
+   "brier_multi": 3.6290000000000434e-05
+  },
+  {
+   "id": "V3-230",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "log"
+   ],
+   "top": "log",
+   "conf": 0.9805,
+   "correct": true,
+   "p_targets": 0.9805,
+   "brier_multi": 0.00048691999999999854
+  },
+  {
+   "id": "V3-231",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "log"
+   ],
+   "top": "log",
+   "conf": 0.966,
+   "correct": true,
+   "p_targets": 0.966,
+   "brier_multi": 0.0013411800000000021
+  },
+  {
+   "id": "V3-232",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "diff"
+   ],
+   "top": "diff",
+   "conf": 0.9927,
+   "correct": true,
+   "p_targets": 0.9927,
+   "brier_multi": 6.36299999999996e-05
+  },
+  {
+   "id": "V3-233",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "diff"
+   ],
+   "top": "diff",
+   "conf": 0.9555,
+   "correct": true,
+   "p_targets": 0.9555,
+   "brier_multi": 0.0023997699999999986
+  },
+  {
+   "id": "V3-234",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "diff"
+   ],
+   "top": "diff",
+   "conf": 0.9962,
+   "correct": true,
+   "p_targets": 0.9962,
+   "brier_multi": 1.6000000000000192e-05
+  },
+  {
+   "id": "V3-235",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branches"
+   ],
+   "top": "branches",
+   "conf": 0.9964,
+   "correct": true,
+   "p_targets": 0.9964,
+   "brier_multi": 1.4560000000000343e-05
+  },
+  {
+   "id": "V3-236",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branches"
+   ],
+   "top": "branches",
+   "conf": 0.9745,
+   "correct": true,
+   "p_targets": 0.9745,
+   "brier_multi": 0.0007268299999999984
+  },
+  {
+   "id": "V3-237",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "config"
+   ],
+   "top": "config",
+   "conf": 0.9975,
+   "correct": true,
+   "p_targets": 0.9975,
+   "brier_multi": 8.019999999999733e-06
+  },
+  {
+   "id": "V3-238",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "config"
+   ],
+   "top": "config",
+   "conf": 0.9938,
+   "correct": true,
+   "p_targets": 0.9938,
+   "brier_multi": 4.529999999999979e-05
+  },
+  {
+   "id": "V3-239",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "config"
+   ],
+   "top": "config",
+   "conf": 0.9969,
+   "correct": true,
+   "p_targets": 0.9969,
+   "brier_multi": 1.2299999999999948e-05
+  },
+  {
+   "id": "V3-240",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "show"
+   ],
+   "top": "show",
+   "conf": 0.9365,
+   "correct": true,
+   "p_targets": 0.9365,
+   "brier_multi": 0.00779041
+  },
+  {
+   "id": "V3-241",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "show"
+   ],
+   "top": "show",
+   "conf": 0.6596,
+   "correct": true,
+   "p_targets": 0.6596,
+   "brier_multi": 0.22301151000000002
+  },
+  {
+   "id": "V3-242",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "show"
+   ],
+   "top": "show",
+   "conf": 0.9976,
+   "correct": true,
+   "p_targets": 0.9976,
+   "brier_multi": 6.3699999999997976e-06
+  },
+  {
+   "id": "V3-243",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "fetch"
+   ],
+   "top": "fetch",
+   "conf": 0.9701,
+   "correct": true,
+   "p_targets": 0.9701,
+   "brier_multi": 0.0009712200000000022
+  },
+  {
+   "id": "V3-244",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "fetch"
+   ],
+   "top": "fetch",
+   "conf": 0.9654,
+   "correct": true,
+   "p_targets": 0.9654,
+   "brier_multi": 0.0012946299999999974
+  },
+  {
+   "id": "V3-245",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "fetch"
+   ],
+   "top": "fetch",
+   "conf": 0.945,
+   "correct": true,
+   "p_targets": 0.945,
+   "brier_multi": 0.0035330300000000056
+  },
+  {
+   "id": "V3-246",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "merge_preview"
+   ],
+   "top": "merge_preview",
+   "conf": 0.8966,
+   "correct": true,
+   "p_targets": 0.8966,
+   "brier_multi": 0.01267222000000001
+  },
+  {
+   "id": "V3-247",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "merge_preview"
+   ],
+   "top": "merge_preview",
+   "conf": 0.9985,
+   "correct": true,
+   "p_targets": 0.9985,
+   "brier_multi": 2.3499999999998373e-06
+  },
+  {
+   "id": "V3-248",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "merge_preview"
+   ],
+   "top": "merge_preview",
+   "conf": 0.9953,
+   "correct": true,
+   "p_targets": 0.9953,
+   "brier_multi": 2.4740000000000353e-05
+  },
+  {
+   "id": "V3-249",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_commit",
+    "commit_push"
+   ],
+   "top": "add_commit",
+   "conf": 0.7565,
+   "correct": true,
+   "p_targets": 0.7696999999999999,
+   "brier_multi": 0.09653666000000002
+  },
+  {
+   "id": "V3-250",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_commit"
+   ],
+   "top": "add_commit",
+   "conf": 0.7362,
+   "correct": true,
+   "p_targets": 0.7362,
+   "brier_multi": 0.10799591000000001
+  },
+  {
+   "id": "V3-251",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_commit"
+   ],
+   "top": "add_commit",
+   "conf": 0.829,
+   "correct": true,
+   "p_targets": 0.829,
+   "brier_multi": 0.03451580000000001
+  },
+  {
+   "id": "V3-252",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit"
+   ],
+   "top": "commit",
+   "conf": 0.9504,
+   "correct": true,
+   "p_targets": 0.9504,
+   "brier_multi": 0.0030016399999999977
+  },
+  {
+   "id": "V3-253",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit"
+   ],
+   "top": "commit",
+   "conf": 0.9845,
+   "correct": true,
+   "p_targets": 0.9845,
+   "brier_multi": 0.0003025399999999987
+  },
+  {
+   "id": "V3-254",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit"
+   ],
+   "top": "commit",
+   "conf": 0.8016,
+   "correct": true,
+   "p_targets": 0.8016,
+   "brier_multi": 0.06866967
+  },
+  {
+   "id": "V3-255",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "push"
+   ],
+   "top": "push",
+   "conf": 0.8095,
+   "correct": true,
+   "p_targets": 0.8095,
+   "brier_multi": 0.043319750000000004
+  },
+  {
+   "id": "V3-256",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "push"
+   ],
+   "top": "push",
+   "conf": 0.9374,
+   "correct": true,
+   "p_targets": 0.9374,
+   "brier_multi": 0.004354539999999999
+  },
+  {
+   "id": "V3-257",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "scoped_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.9918,
+   "correct": true,
+   "p_targets": 0.9918,
+   "brier_multi": 8.612999999999975e-05
+  },
+  {
+   "id": "V3-258",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "scoped_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.9162,
+   "correct": true,
+   "p_targets": 0.9162,
+   "brier_multi": 0.009869339999999999
+  },
+  {
+   "id": "V3-259",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "scoped_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.9832,
+   "correct": true,
+   "p_targets": 0.9832,
+   "brier_multi": 0.00034526000000000126
+  },
+  {
+   "id": "V3-260",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branch"
+   ],
+   "top": "branch",
+   "conf": 0.996,
+   "correct": true,
+   "p_targets": 0.996,
+   "brier_multi": 1.746000000000003e-05
+  },
+  {
+   "id": "V3-261",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branch",
+    "checkout"
+   ],
+   "top": "branch",
+   "conf": 0.9959,
+   "correct": true,
+   "p_targets": 0.9966,
+   "brier_multi": 1.833999999999994e-05
+  },
+  {
+   "id": "V3-262",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "branch"
+   ],
+   "top": "branch",
+   "conf": 0.9902,
+   "correct": true,
+   "p_targets": 0.9902,
+   "brier_multi": 0.0001027000000000006
+  },
+  {
+   "id": "V3-263",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "checkout"
+   ],
+   "top": "checkout",
+   "conf": 0.9972,
+   "correct": true,
+   "p_targets": 0.9972,
+   "brier_multi": 9.020000000000139e-06
+  },
+  {
+   "id": "V3-264",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "checkout"
+   ],
+   "top": "checkout",
+   "conf": 0.9619,
+   "correct": true,
+   "p_targets": 0.9619,
+   "brier_multi": 0.0019215900000000019
+  },
+  {
+   "id": "V3-265",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "checkout"
+   ],
+   "top": "checkout",
+   "conf": 0.944,
+   "correct": true,
+   "p_targets": 0.944,
+   "brier_multi": 0.0034177500000000054
+  },
+  {
+   "id": "V3-266",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull"
+   ],
+   "top": "pull",
+   "conf": 0.9662,
+   "correct": true,
+   "p_targets": 0.9662,
+   "brier_multi": 0.0015370900000000035
+  },
+  {
+   "id": "V3-267",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull"
+   ],
+   "top": "pull",
+   "conf": 0.9697,
+   "correct": true,
+   "p_targets": 0.9697,
+   "brier_multi": 0.0010889699999999997
+  },
+  {
+   "id": "V3-268",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull"
+   ],
+   "top": "scoped_push",
+   "conf": 0.2405,
+   "correct": false,
+   "p_targets": 0.0715,
+   "brier_multi": 0.97348866
+  },
+  {
+   "id": "V3-269",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "sync"
+   ],
+   "top": "sync",
+   "conf": 0.9908,
+   "correct": true,
+   "p_targets": 0.9908,
+   "brier_multi": 9.008999999999974e-05
+  },
+  {
+   "id": "V3-270",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "sync"
+   ],
+   "top": "sync",
+   "conf": 0.8102,
+   "correct": true,
+   "p_targets": 0.8102,
+   "brier_multi": 0.061214789999999984
+  },
+  {
+   "id": "V3-271",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "sync"
+   ],
+   "top": "sync",
+   "conf": 0.938,
+   "correct": true,
+   "p_targets": 0.938,
+   "brier_multi": 0.0043446200000000065
+  },
+  {
+   "id": "V3-272",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local",
+    "revert",
+    "undo"
+   ],
+   "top": "undo",
+   "conf": 0.9159,
+   "correct": true,
+   "p_targets": 0.9453,
+   "brier_multi": 0.008108009999999992
+  },
+  {
+   "id": "V3-273",
+   "kind": "routing",
+   "ambiguous": true,
+   "targets": [
+    "revert",
+    "undo"
+   ],
+   "top": "undo",
+   "conf": 0.9035,
+   "correct": true,
+   "p_targets": 0.9422999999999999,
+   "brier_multi": 0.011171050000000007
+  },
+  {
+   "id": "V3-274",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local",
+    "revert",
+    "undo"
+   ],
+   "top": "undo",
+   "conf": 0.8198,
+   "correct": true,
+   "p_targets": 0.9223,
+   "brier_multi": 0.04148517000000001
+  },
+  {
+   "id": "V3-275",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "amend"
+   ],
+   "top": "amend",
+   "conf": 0.8922,
+   "correct": true,
+   "p_targets": 0.8922,
+   "brier_multi": 0.012567380000000003
+  },
+  {
+   "id": "V3-276",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "amend"
+   ],
+   "top": "amend",
+   "conf": 0.8066,
+   "correct": true,
+   "p_targets": 0.8066,
+   "brier_multi": 0.04621644000000001
+  },
+  {
+   "id": "V3-277",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "amend"
+   ],
+   "top": "amend",
+   "conf": 0.9976,
+   "correct": true,
+   "p_targets": 0.9976,
+   "brier_multi": 6.489999999999797e-06
+  },
+  {
+   "id": "V3-278",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "squash"
+   ],
+   "top": "squash",
+   "conf": 0.9964,
+   "correct": true,
+   "p_targets": 0.9964,
+   "brier_multi": 1.5190000000000344e-05
+  },
+  {
+   "id": "V3-279",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "squash"
+   ],
+   "top": "squash",
+   "conf": 0.9967,
+   "correct": true,
+   "p_targets": 0.9967,
+   "brier_multi": 1.15099999999998e-05
+  },
+  {
+   "id": "V3-280",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert"
+   ],
+   "top": "revert",
+   "conf": 0.9944,
+   "correct": true,
+   "p_targets": 0.9944,
+   "brier_multi": 3.639000000000055e-05
+  },
+  {
+   "id": "V3-281",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert"
+   ],
+   "top": "revert",
+   "conf": 0.9894,
+   "correct": true,
+   "p_targets": 0.9894,
+   "brier_multi": 0.00011957000000000113
+  },
+  {
+   "id": "V3-282",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "revert"
+   ],
+   "top": "undo",
+   "conf": 0.4539,
+   "correct": false,
+   "p_targets": 0.1611,
+   "brier_multi": 0.91882737
+  },
+  {
+   "id": "V3-283",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "unstage"
+   ],
+   "top": "unstage",
+   "conf": 0.9928,
+   "correct": true,
+   "p_targets": 0.9928,
+   "brier_multi": 5.7149999999999776e-05
+  },
+  {
+   "id": "V3-284",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "unstage"
+   ],
+   "top": "unstage",
+   "conf": 0.938,
+   "correct": true,
+   "p_targets": 0.938,
+   "brier_multi": 0.0048040900000000065
+  },
+  {
+   "id": "V3-285",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "unstage"
+   ],
+   "top": "unstage",
+   "conf": 0.4027,
+   "correct": true,
+   "p_targets": 0.4027,
+   "brier_multi": 0.3864723799999999
+  },
+  {
+   "id": "V3-286",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash"
+   ],
+   "top": "stash",
+   "conf": 0.9704,
+   "correct": true,
+   "p_targets": 0.9704,
+   "brier_multi": 0.0012289499999999975
+  },
+  {
+   "id": "V3-287",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash"
+   ],
+   "top": "stash",
+   "conf": 0.9721,
+   "correct": true,
+   "p_targets": 0.9721,
+   "brier_multi": 0.000872980000000002
+  },
+  {
+   "id": "V3-288",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash"
+   ],
+   "top": "stash",
+   "conf": 0.7343,
+   "correct": true,
+   "p_targets": 0.7343,
+   "brier_multi": 0.13562061000000003
+  },
+  {
+   "id": "V3-289",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "cleanup"
+   ],
+   "top": "cleanup",
+   "conf": 0.9651,
+   "correct": true,
+   "p_targets": 0.9651,
+   "brier_multi": 0.0017505500000000028
+  },
+  {
+   "id": "V3-290",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "cleanup"
+   ],
+   "top": "cleanup",
+   "conf": 0.8331,
+   "correct": true,
+   "p_targets": 0.8331,
+   "brier_multi": 0.03898040000000002
+  },
+  {
+   "id": "V3-291",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "cleanup"
+   ],
+   "top": "cleanup",
+   "conf": 0.9725,
+   "correct": true,
+   "p_targets": 0.9725,
+   "brier_multi": 0.0009747699999999983
+  },
+  {
+   "id": "V3-292",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local"
+   ],
+   "top": "discard_local",
+   "conf": 0.9738,
+   "correct": true,
+   "p_targets": 0.9738,
+   "brier_multi": 0.0008496
+  },
+  {
+   "id": "V3-293",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local"
+   ],
+   "top": "discard_local",
+   "conf": 0.9541,
+   "correct": true,
+   "p_targets": 0.9541,
+   "brier_multi": 0.002226570000000005
+  },
+  {
+   "id": "V3-294",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "discard_local"
+   ],
+   "top": "discard_local",
+   "conf": 0.4502,
+   "correct": true,
+   "p_targets": 0.4502,
+   "brier_multi": 0.3233434400000001
+  },
+  {
+   "id": "V3-295",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "force_push"
+   ],
+   "top": "force_push",
+   "conf": 0.9668,
+   "correct": true,
+   "p_targets": 0.9668,
+   "brier_multi": 0.0015017900000000005
+  },
+  {
+   "id": "V3-296",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "force_push"
+   ],
+   "top": "force_push",
+   "conf": 0.9761,
+   "correct": true,
+   "p_targets": 0.9761,
+   "brier_multi": 0.0006722800000000016
+  },
+  {
+   "id": "V3-297",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "force_push"
+   ],
+   "top": "force_push",
+   "conf": 0.7204,
+   "correct": true,
+   "p_targets": 0.7204,
+   "brier_multi": 0.08619455999999998
+  },
+  {
+   "id": "V3-298",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "init"
+   ],
+   "top": "init",
+   "conf": 0.9977,
+   "correct": true,
+   "p_targets": 0.9977,
+   "brier_multi": 6.609999999999856e-06
+  },
+  {
+   "id": "V3-299",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "init"
+   ],
+   "top": "init",
+   "conf": 0.9707,
+   "correct": true,
+   "p_targets": 0.9707,
+   "brier_multi": 0.0009849799999999997
+  },
+  {
+   "id": "V3-300",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_remote"
+   ],
+   "top": "add_remote",
+   "conf": 0.9319,
+   "correct": true,
+   "p_targets": 0.9319,
+   "brier_multi": 0.006112500000000007
+  },
+  {
+   "id": "V3-301",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "add_remote"
+   ],
+   "top": "add_remote",
+   "conf": 0.9041,
+   "correct": true,
+   "p_targets": 0.9041,
+   "brier_multi": 0.010396409999999998
+  },
+  {
+   "id": "V3-302",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "find_lost_work"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.9665,
+   "correct": true,
+   "p_targets": 0.9665,
+   "brier_multi": 0.0017548499999999983
+  },
+  {
+   "id": "V3-303",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "find_lost_work"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.3509,
+   "correct": true,
+   "p_targets": 0.3509,
+   "brier_multi": 0.46272779
+  },
+  {
+   "id": "V3-304",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "find_lost_work"
+   ],
+   "top": "find_lost_work",
+   "conf": 0.9949,
+   "correct": true,
+   "p_targets": 0.9949,
+   "brier_multi": 2.8169999999999932e-05
+  },
+  {
+   "id": "V3-305",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remotes"
+   ],
+   "top": "remotes",
+   "conf": 0.9929,
+   "correct": true,
+   "p_targets": 0.9929,
+   "brier_multi": 6.224999999999993e-05
+  },
+  {
+   "id": "V3-306",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remotes"
+   ],
+   "top": "remotes",
+   "conf": 0.9837,
+   "correct": true,
+   "p_targets": 0.9837,
+   "brier_multi": 0.0003771499999999994
+  },
+  {
+   "id": "V3-307",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash_pop"
+   ],
+   "top": "stash_pop",
+   "conf": 0.9739,
+   "correct": true,
+   "p_targets": 0.9739,
+   "brier_multi": 0.0007657100000000007
+  },
+  {
+   "id": "V3-308",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "stash_pop"
+   ],
+   "top": "stash_pop",
+   "conf": 0.9819,
+   "correct": true,
+   "p_targets": 0.9819,
+   "brier_multi": 0.0005282800000000002
+  },
+  {
+   "id": "V3-309",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull_rebase"
+   ],
+   "top": "pull_rebase",
+   "conf": 0.997,
+   "correct": true,
+   "p_targets": 0.997,
+   "brier_multi": 1.0080000000000015e-05
+  },
+  {
+   "id": "V3-310",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull_rebase"
+   ],
+   "top": "pull_rebase",
+   "conf": 0.9831,
+   "correct": true,
+   "p_targets": 0.9831,
+   "brier_multi": 0.00035557000000000085
+  },
+  {
+   "id": "V3-311",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "pull_rebase"
+   ],
+   "top": "pull_rebase",
+   "conf": 0.9969,
+   "correct": true,
+   "p_targets": 0.9969,
+   "brier_multi": 1.0809999999999949e-05
+  },
+  {
+   "id": "V3-312",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "set_upstream"
+   ],
+   "top": "set_upstream",
+   "conf": 0.9799,
+   "correct": true,
+   "p_targets": 0.9799,
+   "brier_multi": 0.0005439700000000003
+  },
+  {
+   "id": "V3-313",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "set_upstream"
+   ],
+   "top": "set_upstream",
+   "conf": 0.9472,
+   "correct": true,
+   "p_targets": 0.9472,
+   "brier_multi": 0.0029674099999999954
+  },
+  {
+   "id": "V3-314",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "set_upstream"
+   ],
+   "top": "set_upstream",
+   "conf": 0.6587,
+   "correct": true,
+   "p_targets": 0.6587,
+   "brier_multi": 0.13213727000000003
+  },
+  {
+   "id": "V3-315",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remove_remote"
+   ],
+   "top": "remove_remote",
+   "conf": 0.9904,
+   "correct": true,
+   "p_targets": 0.9904,
+   "brier_multi": 0.00011395000000000102
+  },
+  {
+   "id": "V3-316",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "remove_remote"
+   ],
+   "top": "remove_remote",
+   "conf": 0.9352,
+   "correct": true,
+   "p_targets": 0.9352,
+   "brier_multi": 0.007516149999999996
+  },
+  {
+   "id": "V3-317",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "delete_repo"
+   ],
+   "top": "delete_repo",
+   "conf": 0.9819,
+   "correct": true,
+   "p_targets": 0.9819,
+   "brier_multi": 0.0004098400000000002
+  },
+  {
+   "id": "V3-318",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "delete_repo"
+   ],
+   "top": "delete_repo",
+   "conf": 0.9962,
+   "correct": true,
+   "p_targets": 0.9962,
+   "brier_multi": 1.6790000000000193e-05
+  },
+  {
+   "id": "V3-319",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "delete_repo"
+   ],
+   "top": "delete_repo",
+   "conf": 0.4775,
+   "correct": true,
+   "p_targets": 0.4775,
+   "brier_multi": 0.38778941999999994
+  },
+  {
+   "id": "V3-320",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit_push"
+   ],
+   "top": "commit_push",
+   "conf": 0.7925,
+   "correct": true,
+   "p_targets": 0.7925,
+   "brier_multi": 0.053487660000000006
+  },
+  {
+   "id": "V3-321",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit_push"
+   ],
+   "top": "scoped_push",
+   "conf": 0.4395,
+   "correct": false,
+   "p_targets": 0.0593,
+   "brier_multi": 1.1352934399999999
+  },
+  {
+   "id": "V3-322",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "commit_push"
+   ],
+   "top": "commit_push",
+   "conf": 0.6881,
+   "correct": true,
+   "p_targets": 0.6881,
+   "brier_multi": 0.12349543999999998
+  },
+  {
+   "id": "V3-323",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_continue"
+   ],
+   "top": "rebase_continue",
+   "conf": 0.969,
+   "correct": true,
+   "p_targets": 0.969,
+   "brier_multi": 0.0013685400000000016
+  },
+  {
+   "id": "V3-324",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_continue"
+   ],
+   "top": "rebase_continue",
+   "conf": 0.9595,
+   "correct": true,
+   "p_targets": 0.9595,
+   "brier_multi": 0.0024303799999999985
+  },
+  {
+   "id": "V3-325",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_skip"
+   ],
+   "top": "rebase_skip",
+   "conf": 0.963,
+   "correct": true,
+   "p_targets": 0.963,
+   "brier_multi": 0.002157660000000002
+  },
+  {
+   "id": "V3-326",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_skip"
+   ],
+   "top": "rebase_skip",
+   "conf": 0.8975,
+   "correct": true,
+   "p_targets": 0.8975,
+   "brier_multi": 0.014464460000000007
+  },
+  {
+   "id": "V3-327",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_abort"
+   ],
+   "top": "rebase_abort",
+   "conf": 0.9569,
+   "correct": true,
+   "p_targets": 0.9569,
+   "brier_multi": 0.003401860000000002
+  },
+  {
+   "id": "V3-328",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "rebase_abort"
+   ],
+   "top": "rebase_abort",
+   "conf": 0.9591,
+   "correct": true,
+   "p_targets": 0.9591,
+   "brier_multi": 0.003077700000000004
+  },
+  {
+   "id": "V3-329",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "merge_abort"
+   ],
+   "top": "merge_abort",
+   "conf": 0.9819,
+   "correct": true,
+   "p_targets": 0.9819,
+   "brier_multi": 0.0006552200000000002
+  },
+  {
+   "id": "V3-330",
+   "kind": "in_progress",
+   "ambiguous": false,
+   "targets": [
+    "merge_abort"
+   ],
+   "top": "merge_abort",
+   "conf": 0.969,
+   "correct": true,
+   "p_targets": 0.969,
+   "brier_multi": 0.0019220000000000016
+  },
+  {
+   "id": "V3-331",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.978,
+   "correct": true,
+   "p_targets": 0.978,
+   "brier_multi": 0.0005029100000000008
+  },
+  {
+   "id": "V3-332",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.9394,
+   "correct": true,
+   "p_targets": 0.9394,
+   "brier_multi": 0.003963569999999999
+  },
+  {
+   "id": "V3-333",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.92,
+   "correct": true,
+   "p_targets": 0.92,
+   "brier_multi": 0.006736839999999993
+  },
+  {
+   "id": "V3-334",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.6356,
+   "correct": true,
+   "p_targets": 0.6356,
+   "brier_multi": 0.14422217999999998
+  },
+  {
+   "id": "V3-335",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.766,
+   "correct": true,
+   "p_targets": 0.766,
+   "brier_multi": 0.06062964999999999
+  },
+  {
+   "id": "V3-336",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.9276,
+   "correct": true,
+   "p_targets": 0.9276,
+   "brier_multi": 0.005504800000000003
+  },
+  {
+   "id": "V3-337",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "add_commit",
+   "conf": 0.3085,
+   "correct": false,
+   "p_targets": 0.2921,
+   "brier_multi": 0.65660241
+  },
+  {
+   "id": "V3-338",
+   "kind": "routing",
+   "ambiguous": false,
+   "targets": [
+    "__reject__"
+   ],
+   "top": "__reject__",
+   "conf": 0.9356,
+   "correct": true,
+   "p_targets": 0.9356,
+   "brier_multi": 0.004362710000000001
+  }
+ ]
+}
